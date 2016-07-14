@@ -1,0 +1,600 @@
+{
+  "index.html": {
+    "resources": [
+      "css/home_lvse.css",
+      "js/swiper-2.4.js",
+      "images/simulationexercises.png",
+      "images/videocourse.png",
+      "images/individualcenter.png",
+      "js/sm-extend.min.js",
+      "images/onlineservice.png",
+      "images/homepage.png",
+      "css/sm.min.css",
+      "js/artTemplate/template.js",
+      "css/index.css",
+      "images/footer_bj.png",
+      "images/banner.jpg",
+      "images/bookstore.png",
+      "images/objectiveexercises.png",
+      "images/subjectivemarking.png",
+      "js/zepto.min.js",
+      "js/sm.min.js",
+      "images/livecourses.png",
+      "js/config.js",
+      "css/sm-extend.min.css",
+      "res/js/config.js",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "css/guide.css",
+      "images/logo.png",
+      "res/jslib/sm.min.js",
+      "res/jslib/artTemplate/template.js",
+      "images/qidong.jpg",
+      "res/css/sm-extend.min.css",
+      "res/jslib/zepto.min.js",
+      "res/css/sm.min.css",
+      "main.html",
+      "login_register/login.html"
+    ],
+    "refer": [
+      "main.html",
+      "login_register/login.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "images/livecourses@2x.png",
+      "images/objectiveexercises@2x.png",
+      "images/banner.jpg",
+      "images/kefu@2x.png",
+      "images/shangcheng@2x.png",
+      "images/subjectivemarking@2x.png",
+      "css/index1.css",
+      "images/shouye_un@2x.png",
+      "images/simulationexercises@2x.png",
+      "images/yonghu@2x.png",
+      "images/videocourse@2x.png",
+      "shipinkecheng/CourseList.html",
+      "zhuguanti/Subjective.html",
+      "zhiboke/preferential.html",
+      "quanzhen/selectarea.html",
+      "keguanti/choicequestions.html",
+      "mine/maine_main.html",
+      "quanzhen/address.html",
+      "js/main.js"
+    ],
+    "refer": [
+      "shipinkecheng/CourseList.html",
+      "zhuguanti/Subjective.html",
+      "zhiboke/preferential.html",
+      "quanzhen/selectarea.html",
+      "keguanti/choicequestions.html",
+      "mine/maine_main.html",
+      "quanzhen/address.html"
+    ]
+  },
+  "shipinkecheng/CourseList.html": {
+    "resources": [
+      "images/my_icon-left.png",
+      "css/viewall.css",
+      "images/coursepicture@1x.jpg",
+      "shipinkecheng/qiangke.html"
+    ],
+    "refer": [
+      "shipinkecheng/qiangke.html"
+    ]
+  },
+  "shipinkecheng/qiangke.html": {
+    "resources": [
+      "images/shouye@2x.png",
+      "images/yonghu_un@2x.png",
+      "images/coursepicture_1@1x.jpg",
+      "shipinkecheng/CourseList.html"
+    ],
+    "refer": [
+      "shipinkecheng/CourseList.html"
+    ]
+  },
+  "mine/personalcenter.html": {
+    "resources": [
+      "images/collection@2x.png",
+      "css/personalcenter.css",
+      "images/allicons@2x.png",
+      "images/task@2x.png",
+      "images/user@2x.png",
+      "images/gouwu@2x.png",
+      "images/vouchers@2x.png",
+      "mine/js/personalcenter.js",
+      "mine/buyvideo.html",
+      "mine/viewall.html",
+      "mine/marking.html",
+      "mine/userinformation.html",
+      "mine/myvoucher.html",
+      "mine/classiccollection.html"
+    ],
+    "refer": [
+      "mine/buyvideo.html",
+      "mine/viewall.html",
+      "mine/marking.html",
+      "mine/userinformation.html",
+      "mine/myvoucher.html",
+      "mine/classiccollection.html"
+    ]
+  },
+  "mine/buyvideo.html": {
+    "resources": [
+      "mine/js/buyvideo.js",
+      "mine/personalcenter.html",
+      "images/shipin.jpg"
+    ],
+    "refer": [
+      "mine/personalcenter.html"
+    ]
+  },
+  "mine/viewall.html": {
+    "resources": [
+      "mine/js/viewall.js",
+      "images/allicons@1x.png",
+      "mine/personalcenter.html"
+    ],
+    "refer": [
+      "mine/personalcenter.html"
+    ]
+  },
+  "mine/marking.html": {
+    "resources": [
+      "mine/js/marking.js",
+      "mine/personalcenter.html"
+    ],
+    "refer": [
+      "mine/personalcenter.html"
+    ]
+  },
+  "mine/userinformation.html": {
+    "resources": [
+      "css/userinfomation.css",
+      "mine/js/userinfomation.js",
+      "mine/personalcenter.html"
+    ],
+    "refer": [
+      "mine/personalcenter.html"
+    ]
+  },
+  "mine/myvoucher.html": {
+    "resources": [
+      "images/cash@2x.jpg",
+      "mine/js/myvoucher.js",
+      "mine/personalcenter.html"
+    ],
+    "refer": [
+      "mine/personalcenter.html"
+    ]
+  },
+  "mine/classiccollection.html": {
+    "resources": [
+      "images/duoxuan@2x.png",
+      "images/cuoti@2x.png",
+      "images/feixi@2x.png",
+      "images/celun@2x.png",
+      "images/bianxiti@2x.png",
+      "images/jianda@2x.png",
+      "css/classiccollection.css",
+      "images/xiezuo@2x.png",
+      "images/danxuan@2x.png",
+      "main.html"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "zhuguanti/Subjective.html": {
+    "resources": [
+      "images/radiobuttonlist@2x.png",
+      "images/mycollection@2x.png",
+      "images/document@2x.png",
+      "images/analysis@2x.png",
+      "css/Subjective.css",
+      "images/debate@2x.png",
+      "images/mcqs@2x.png",
+      "main.html",
+      "zhuguanti/zibeit.html",
+      "zhuguanti/jianda.html",
+      "images/kefu@2x.png",
+      "images/shangcheng@2x.png",
+      "images/shouye_un@2x.png",
+      "images/yonghu@2x.png",
+      "zhuguanti/gongwenxie.html",
+      "zhuguanti/bianxi.html",
+      "images/my_icon-left.png",
+      "mine/maine_main.html"
+    ],
+    "refer": [
+      "main.html",
+      "zhuguanti/zibeit.html",
+      "zhuguanti/jianda.html",
+      "zhuguanti/gongwenxie.html",
+      "zhuguanti/bianxi.html",
+      "mine/maine_main.html"
+    ]
+  },
+  "zhiboke/preferential.html": {
+    "resources": [
+      "main.html"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "quanzhen/selectarea.html": {
+    "resources": [
+      "css/selectarea.css",
+      "images/city@2x.png",
+      "images/city13@2x.png",
+      "images/city12@2x.png",
+      "images/city10@2x.png",
+      "images/city24@2x.png",
+      "images/city9@2x.png",
+      "images/city20@2x.png",
+      "images/city28@2x.png",
+      "images/city25@2x.png",
+      "images/city4@2x.png",
+      "images/city11@2x.png",
+      "images/city14@2x.png",
+      "images/city19@2x.png",
+      "images/city26@2x.png",
+      "images/city17@2x.png",
+      "images/city8@2x.png",
+      "images/city3@2x.png",
+      "images/city16@2x.png",
+      "images/city23@2x.png",
+      "images/city2@2x.png",
+      "images/city1@2x.png",
+      "images/city27@2x.png",
+      "images/city30@2x.png",
+      "images/city21@2x.png",
+      "images/city22@2x.png",
+      "images/city7@2x.png",
+      "images/city5@2x.png",
+      "images/city29@2x.png",
+      "images/city6@2x.png",
+      "images/city18@2x.png",
+      "images/city15@2x.png",
+      "images/city31@2x.png",
+      "main.html"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "keguanti/choicequestions.html": {
+    "resources": [
+      "images/judgmentlist@2x.png"
+    ]
+  },
+  "mine/maine_main.html": {
+    "resources": [
+      "images/my_icon-left.png",
+      "images/collection@2x.png",
+      "css/personalcenter.css",
+      "images/allicons@2x.png",
+      "images/task@2x.png",
+      "images/user@2x.png",
+      "images/gouwu@2x.png",
+      "images/shouye@2x.png",
+      "images/yonghu_un@2x.png",
+      "images/vouchers@2x.png",
+      "index.html",
+      "main.html",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "res/jslib/sm.min.js",
+      "images/shangcheng@2x.png",
+      "res/jslib/artTemplate/template.js",
+      "res/css/sm-extend.min.css",
+      "mine/js/personalcenter.js",
+      "res/css/sm.min.css",
+      "res/jslib/zepto.min.js",
+      "res/js/config.js",
+      "images/kefu@2x.png",
+      "login_register/login.html",
+      "mine/mykecheng.html",
+      "mine/lianxizhongxin.html",
+      "mine/myzhibo.html",
+      "mine/huancunshipin.html",
+      "mine/yonghuxinxi.html"
+    ],
+    "refer": [
+      "index.html",
+      "main.html",
+      "login_register/login.html",
+      "mine/mykecheng.html",
+      "mine/lianxizhongxin.html",
+      "mine/myzhibo.html",
+      "mine/huancunshipin.html",
+      "mine/yonghuxinxi.html"
+    ]
+  },
+  "zhuguanti/zibeit.html": {
+    "resources": [
+      "js/img_upload.js",
+      "js/camera/common.js",
+      "css/zibeit.css",
+      "js/camera/immersed.js",
+      "res/js/mui.min.js",
+      "res/js/upload.js",
+      "images/my_icon-left.png",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "res/jslib/sm.min.js",
+      "res/jslib/artTemplate/template.js",
+      "res/css/sm-extend.min.css",
+      "res/css/sm.min.css",
+      "res/jslib/zepto.min.js",
+      "res/js/config.js",
+      "images/upimg@1x.png",
+      "zhuguanti/Subjective.html",
+      "zhuguanti/js/zibei_img_show.js",
+      "zhuguanti/js/zibei.js"
+    ],
+    "refer": [
+      "zhuguanti/Subjective.html"
+    ]
+  },
+  "zhuguanti/jianda.html": {
+    "resources": [
+      "zhuguanti/Subjective.html",
+      "images/upimg@1x.png",
+      "css/anlifenxi.css",
+      "images/an.jpg",
+      "images/botton_comments@2x.png",
+      "images/an1@2x.jpg",
+      "zhuguanti/js/jianda.js",
+      "res/js/showtime.js",
+      "images/my_icon-left.png",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "res/jslib/sm.min.js",
+      "res/jslib/artTemplate/template.js",
+      "res/css/sm-extend.min.css",
+      "res/css/sm.min.css",
+      "res/jslib/zepto.min.js",
+      "res/js/config.js",
+      "js/camera/immersed.js",
+      "js/img_upload.js",
+      "res/js/mui.min.js",
+      "res/js/upload.js"
+    ],
+    "refer": [
+      "zhuguanti/Subjective.html"
+    ]
+  },
+  "zhuguanti/bianxi.html": {
+    "resources": [
+      "zhuguanti/Subjective.html"
+    ],
+    "refer": [
+      "zhuguanti/Subjective.html"
+    ]
+  },
+  "zhuguanti/gongwenxie.html": {
+    "resources": [
+      "zhuguanti/Subjective.html"
+    ],
+    "refer": [
+      "zhuguanti/Subjective.html"
+    ]
+  },
+  "login_register/login.html": {
+    "resources": [
+      "login_register/js/login.js",
+      "images/phone.png",
+      "css/login.css",
+      "images/password.png",
+      "main.html",
+      "images/my_icon-left.png",
+      "index.html"
+    ],
+    "refer": [
+      "main.html",
+      "index.html"
+    ]
+  },
+  "quanzhen/address.html": {
+    "resources": [
+      "css/selectarea.css",
+      "images/city@2x.png",
+      "images/city13@2x.png",
+      "images/city12@2x.png",
+      "images/city10@2x.png",
+      "images/city24@2x.png",
+      "images/city9@2x.png",
+      "images/city20@2x.png",
+      "images/city28@2x.png",
+      "images/city25@2x.png",
+      "images/city4@2x.png",
+      "images/city11@2x.png",
+      "images/city14@2x.png",
+      "images/city19@2x.png",
+      "images/city26@2x.png",
+      "images/city17@2x.png",
+      "images/city8@2x.png",
+      "images/city3@2x.png",
+      "images/city16@2x.png",
+      "images/city23@2x.png",
+      "images/city2@2x.png",
+      "images/city1@2x.png",
+      "images/city27@2x.png",
+      "images/city30@2x.png",
+      "images/city21@2x.png",
+      "main.html",
+      "images/city22@2x.png",
+      "images/city7@2x.png",
+      "images/city5@2x.png",
+      "images/city29@2x.png",
+      "images/city6@2x.png",
+      "images/city18@2x.png",
+      "images/city15@2x.png",
+      "images/city31@2x.png"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "mine/mykecheng.html": {
+    "resources": [
+      "mine/js/buyvideo.js",
+      "css/viewall.css",
+      "images/shipin.jpg",
+      "images/my_icon-left.png",
+      "res/js/config.js",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "res/jslib/sm.min.js",
+      "images/kefu@2x.png",
+      "images/shangcheng@2x.png",
+      "res/jslib/artTemplate/template.js",
+      "images/gouwu@2x.png",
+      "images/shouye@2x.png",
+      "images/yonghu_un@2x.png",
+      "res/css/sm-extend.min.css",
+      "res/jslib/zepto.min.js",
+      "res/css/sm.min.css",
+      "mine/maine_main.html",
+      "images/pageDown.png",
+      "images/pageUp.png",
+      "res/js/pageGroup.js",
+      "css/pageGroup.css",
+      "mine/mykecheng_content.html"
+    ],
+    "refer": [
+      "mine/maine_main.html",
+      "mine/mykecheng_content.html"
+    ]
+  },
+  "mine/lianxizhongxin.html": {
+    "resources": [
+      "images/pageDown.png",
+      "images/pageUp.png",
+      "css/viewall.css",
+      "mine/js/lianxizhongxin.js",
+      "res/js/pageGroup.js",
+      "css/pageGroup.css",
+      "mine/maine_main.html",
+      "mine/new.html"
+    ],
+    "refer": [
+      "mine/maine_main.html",
+      "mine/new.html"
+    ]
+  },
+  "mine/mykecheng_content.html": {
+    "resources": [
+      "mine/mykecheng.html",
+      "css/suggest.css",
+      "mine/js/mykecheng_content.js",
+      "mine/myzhibo.html"
+    ],
+    "refer": [
+      "mine/mykecheng.html",
+      "mine/myzhibo.html"
+    ]
+  },
+  "mine/myzhibo.html": {
+    "resources": [
+      "res/jslib/mui.min.js",
+      "mine/aaa.mp4",
+      "css/Subjective.css",
+      "res/css/sui.min.css",
+      "mine/js/myzhibo.js",
+      "images/my_icon-left.png",
+      "res/jslib/sm-extend.min.js",
+      "res/css/home_lanse.css",
+      "css/viewall.css",
+      "res/jslib/sm.min.js",
+      "images/shangcheng@2x.png",
+      "res/jslib/artTemplate/template.js",
+      "images/shouye@2x.png",
+      "images/yonghu_un@2x.png",
+      "res/js/pageGroup.js",
+      "res/css/sm-extend.min.css",
+      "res/css/sm.min.css",
+      "res/jslib/zepto.min.js",
+      "images/pageDown.png",
+      "res/js/config.js",
+      "images/pageUp.png",
+      "images/kefu@2x.png",
+      "images/gouwu@2x.png",
+      "css/pageGroup.css",
+      "mine/maine_main.html",
+      "mine/new.html",
+      "mine/mykecheng_content.html"
+    ],
+    "refer": [
+      "mine/maine_main.html",
+      "mine/new.html",
+      "mine/mykecheng_content.html"
+    ]
+  },
+  "mine/huancunshipin.html": {
+    "resources": [
+      "mine/maine_main.html",
+      "mine/js/huancunshipin.js",
+      "images/allicons@1x.png",
+      "shipinkecheng/suggest.html"
+    ],
+    "refer": [
+      "mine/maine_main.html",
+      "shipinkecheng/suggest.html"
+    ]
+  },
+  "mine/new.html": {
+    "resources": [
+      "mine/css/demo_videoPlaySimple.js",
+      "mine/aaa.mp4",
+      "mine/myzhibo.html",
+      "res/jslib/mui.min.js",
+      "css/Subjective.css",
+      "res/css/sui.min.css",
+      "res/jslib/zepto.min.js",
+      "images/an2@3x.jpg",
+      "mine/lianxizhongxin.html"
+    ],
+    "refer": [
+      "mine/myzhibo.html",
+      "mine/lianxizhongxin.html"
+    ]
+  },
+  "shipinkecheng/suggest.html": {
+    "resources": [
+      "shipinkecheng/js/shipinxiangqing.js",
+      "mine/huancunshipin.html"
+    ],
+    "refer": [
+      "mine/huancunshipin.html"
+    ]
+  },
+  "mine/yonghuxinxi.html": {
+    "resources": [
+      "css/userinfomation.css",
+      "mine/js/userinfomation.js",
+      "login_register/forget_pwd.html",
+      "mine/maine_main.html"
+    ],
+    "refer": [
+      "login_register/forget_pwd.html",
+      "mine/maine_main.html"
+    ]
+  },
+  "login_register/forget_pwd.html": {
+    "resources": [
+      "css/forget_pwd.css",
+      "login_register/login.html",
+      "res/js/count_down.js",
+      "css/register.css",
+      "login_register/js/forget_pwd.js"
+    ],
+    "refer": [
+      "login_register/login.html"
+    ]
+  }
+}

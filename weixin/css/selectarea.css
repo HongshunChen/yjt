@@ -1,0 +1,19 @@
+
+.selectarea_city_img {
+	width: 100%;
+	background-position: 50%50%;
+	background-size: contain;
+	border-radius: 5px;
+}
+
+.address_btn {
+	width: 100%;
+	height: 3.8em;
+	display:inline-block;
+	background-color:#1FC1B1;
+	color:white;
+	text-align:center;
+	border-radius: 5px;
+	padding-top:1.2em;
+
+}

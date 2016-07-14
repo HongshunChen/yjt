@@ -1,0 +1,43 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+	</head>
+	<body>
+	<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../main.html">
+						<span class="icon my_icon-home_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">首页</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="tel:123456789">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">
+							在线客服</a></span></span>
+					</a>
+					<a class="tab-item external" onclick="my()">
+						<span class="icon my_icon-individualcentercore"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">个人中心</span></span>
+					</a>
+				</nav>
+				<script>
+			function my() {
+				var token = localStorage.getItem('token');
+				if (token == null) {
+					$.confirm('您还没有登录，是否要登录?', function() {
+
+						window.location.href = '../login_register/login.html';
+					});
+				} else {
+					window.location.href = "../mine/maine_main.html";
+				}
+			}
+		</script>
+</footer>	</body>
+</html>

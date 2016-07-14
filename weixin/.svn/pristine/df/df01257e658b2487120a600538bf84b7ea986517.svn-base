@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>可用代金券</title>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/core1.js"></script>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="wrapper2">
+	<div class="imageContainer2">
+		<img src="../images/daijinquan1.jpg" />
+		<img src="../images/daijinquan.jpg" />	</div>
+</div>
+<div class="wrapper2">
+	<div class="imageContainer2">
+		<img src="../images/daijinquan1.jpg" />
+		<img src="../images/daijinquan.jpg" />	</div>
+</div>
+<div class="wrapper2">
+	<div class="imageContainer2">
+		<img src="../images/daijinquan1.jpg" />
+		<img src="../images/daijinquan.jpg" />	</div>
+</div>
+<a href="#" class="hug">查看更多</a>
+<div class="an10" style="margin-top:1em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+
+</div>
+</body>
+</html>

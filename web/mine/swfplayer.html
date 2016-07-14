@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>缓存视频</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="../css/pageGroup.css" />
+		<style>
+			.ul_li li {
+				margin-top: 20px;
+			}
+		</style>
+<script type="text/javascript">
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]);
+		return null;
+	}
+</script>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/wodeyi.png" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div class="zhongjian">
+			<!--结束-->
+			<div class="youbian">
+				<!--右边-->
+				<div class="shipin">观看课程</div>
+				<div id="huancunshi_pin">
+				</div>				
+			</div>
+			<!--右边-->
+
+		</div>
+<script>
+var test=getQueryString("v");
+var test2="<embed align='center' width='1024' height='580' src='" + test + "' "+ "type='application/x-shockwave-flash' wmode='transparent' quality='high'> </embed>";
+document.getElementById("huancunshi_pin").innerHTML=test2;
+</script>
+	</div></body>
+
+</html>

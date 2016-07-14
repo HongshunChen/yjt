@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>客观题练习-选择题型</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/Subjective.css">
+	</head>
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">客观题练习</div>
+				<div class="my_icon-left_mine" onClick="location='../main.html'"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<div class="col-50 Subjective_col" onclick="_choice.fn.createExam(1,1)">
+							<div class="Subjective_problem"></div>
+							<div class="Subjective_title">单选题</div>
+							<div class="cd-home-block"></div>
+						</div>
+						<div class="col-50 Subjective_col" onclick="_choice.fn.createExam(1,2)">
+							<div class="Subjective_short"></div>
+							<div class="Subjective_title">多选题</div>
+							<div class="cd-home-block"></div>
+						</div>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<div class="col-50 Subjective_col" onclick="_choice.fn.createExam(1,3)">
+							<div class="Subjective_judgmentlist"></div>
+							<div class="Subjective_title">判断题</div>
+							<div class="cd-home-block"></div>
+						</div>
+						<div class="col-50 Subjective_col" onclick="location='../mine/classiccollection.html'">
+							<div class="Subjective_mycollection"></div>
+							<div class="Subjective_title">我的收藏</div>
+							<div class="cd-home-block"></div>
+						</div>
+					</div>
+					<div class="cd-home-block"></div>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+
+			</div>
+			<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../main.html">
+						<span class="icon my_icon-home_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">首页</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+					</a>
+					<a class="tab-item external" href="../mine/maine_main.html">
+						<span class="icon my_icon-individualcentercore"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">个人中心</span></span>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/js/common_func.js' charset='utf-8'></script>
+		<script src='js/choice.js'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

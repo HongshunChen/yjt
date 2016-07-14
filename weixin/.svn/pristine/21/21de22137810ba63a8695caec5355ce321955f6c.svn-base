@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>简答题</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/anlifenxi.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="my_icon-left" onClick="location='mine_main.html'"></div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an.jpg" /><span id="showtime">00:00</span>
+				</div>
+				<div class="anlifenxi_clock">
+					<!--<img src="../images/an1@2x.jpg" /><span>交卷</span>-->
+				</div>
+				<div class="bar_Title_public"></div>
+				<div class="my_icon-right_more"></div>
+			</header>
+			<div class="anlifenxi_clock">
+				<img src="../images/an.jpg" /><span>10:41</span>
+			</div>
+			<!--内容-->
+
+			<div class="content" id="jianda">
+				<!--加载主内容开始-->
+
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</div>
+		<script type="text/html" id="jianDa">
+			<div class="left_tab_bg">
+				<span class="anlifenxi_text" style="margin-left: 3rem;">
+						{{if questid=='4'}}
+						简答题
+						{{else if questid=='5'}}
+						辨析题
+						{{else if questid=='6'}}
+						策论文
+						{{else if questid=='7'}}
+						案例分析
+						{{else if questid=='8'}}
+						公文写作
+						{{/if}}
+						
+					</span>
+			</div>
+			<div class="right_tab_bg"><span>{{no}}</span>/{{total}}</div>
+			<div class="all_divbox">
+				<div class="anlifenxi_box">
+					<span>{{no}}.{{#list.data.question}}</span>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="celunwen_upimg" onclick="selectImg();">
+					<img id="images" tag="zibeit_timu" style="width: 100%;" />
+				</div>
+				<div class="cd-homeline_mine_long"></div>
+			</div>
+			<div class="cd-home-block"></div>
+			<div class="btn_public_normal_qian" onclick="jianda.fn.next({{list.data.next}})">下一题</div>
+			<div class="btn_public_normal_shenlan" onclick="pigai({{list.data.id}})">提交答案</div>
+			<div class="cd-home-block"></div>
+			<div class="cd-home-block"></div>
+			<div class="cd-home-block"></div>
+			<div id="data_img"></div>
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/jianda.js"></script>
+		<script type="text/javascript" src="../res/js/showtime.js"></script>
+		<script type="text/javascript" src="../res/js/mui.min.js" charset='utf-8'></script>
+		<script type="text/javascript" src="../js/img_upload.js" charset='utf-8'></script>
+		<script type="text/javascript" src="../res/js/upload.js" charset='utf-8'></script>
+		<script>
+			function pigai(id) {
+				var path = localStorage.getItem('path');
+				var a = localStorage.getItem('pathto');
+				
+				plus.zip.compressImage({
+						src: path,
+						dst: '_doc' + a,
+						quality: 50,
+					},
+					function() {
+						alert('成功压缩');
+						var token = localStorage.getItem('token');
+						var uploadUrl = config.host + "/exam/submitOne";
+						var localPath = '_doc' + a;
+						//图片上传后台
+						createUpload(uploadUrl, localPath, [{
+								"token": token,
+								paper_question_id: id,
+								answertype: 3,
+								answered: "",
+
+							}], function(t, status) {
+								$.alert('上传成功');
+								localStorage.removeItem('path');
+								localStorage.removeItem('pathto');
+							})
+							///////图片上传后台结束
+					},
+					function(error) {
+						$.alert("请重试！");
+					});
+			}
+		</script>
+
+	</body>
+
+</html>

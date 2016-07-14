@@ -1,0 +1,37 @@
+/* CSS Document */
+/* CSS Document */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+h1,h2,h3,h4{font-size:12px;}
+h5{font-size:12px;}
+h6{font-size:12px; font-weight:normal;}
+ul,li {list-style:none;}
+a{color:#3B3839; font-size:13px;}
+a:hover{color:#000000;}
+img {border:none;}
+div{margin:0px auto;}
+body{margin:0; padding:0; font-size:12px; color:#707070; position:relative; font-family:"Î¢ÈíÑÅºÚ";}
+/*top*/
+.top{width:100%; height:65px;background:url(../images/topxian.jpg); margin:0 auto;}
+.top1{width:1200px; height:65px; margin:0 auto; overflow:hidden;}
+.top1img1{margin-left:129px; float:left; margin-top:3px;}
+.top1img2{margin-left:18px; margin-top:27px;}
+.kecheng{background:url(../images/beijing.jpg); width:123px; height:59px; float:left; margin-left:185px; color:#000000; font-size:14px; line-height:59px; text-align:center;}
+.wode{width:130px; height:59px; font-size:14px; line-height:59px; text-align:center; color:#000000; float:left;}
+.you{float:right; margin-right:100px;}
+.you p{color:#000000; font-size:16px; line-height:65px; font-family:"ËÎÌå"; float:left;}
+.you img{margin-top:22px; margin-left:14px;}
+.you span{color:#000000; font-size:16px; line-height:65px; font-family:"ËÎÌå";}
+
+.xuanzhong9{width:998px; height:813px; border:#c6c6c6 1px solid; margin-top:80px;}
+.xuanzhong1{width:998px; height:270px; border-bottom:#c6c6c6 1px solid; overflow:hidden;}
+.xuanzhong2{border-right:#c6c6c6 1px solid; width:499px; height:270px; float:left;}
+.xuanzhong3{font-size:22px; margin-left:70px; margin-top:35px; color:#6b6b6b;}
+.xuanzhong4{font-size:16px; margin-left:50px; margin-top:52px; width:416px; color:#999;}
+.xuanzhong5{background:url(../images/xuanlian.jpg); width:136px; height:49px; margin-left:342px; margin-top:40px;}
+.xuanzhong5 a{font-size:18px; color:#FFFFFF; text-align:center; line-height:40px; width:136px; text-decoration:none; display:block;}
+.xuanzhong5 a:hover{font-size:18px; color:#00FF66; text-align:center; line-height:40px; width:136px; text-decoration:none; display:block;}
+.xuanzhong6{width:498px; height:270px; float:left;}
+.xuanzhong7{width:998px; height:271px; overflow:hidden;}
+.zuihou{width:1200px; margin:0 auto; margin-top:40px;}
+.zuihou p{font-size:9px; color:#999; margin-left:115px; float:left;}
+.zuihou span{font-size:9px; color:#999; float:right; margin-right:115px;}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>课程介绍</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/suggest.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">课程介绍</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content" id="content">
+				<!--加载主内容开始-->
+
+			</div>
+		</div>
+		<!-- 加载提示符开始 -->
+		<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				    </div>-->
+		<!-- 加载提示符结束 -->
+		<!--加载主内容结束-->
+
+		</div>
+		<footer>
+			<nav class="bar bar-tab foot">
+				<a class="tab-item external active" href="#">
+					<span class="icon my_icon-home"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">首页</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-shop"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-onlineservice"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-individualcentercore_click"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">个人中心</span></span>
+				</a>
+			</nav>
+		</footer>
+		</div>
+		<script type="text/html" id="Content">
+			<div class="suggest_top">
+				<div class="row">
+					<div class="col-50">
+						<img class="suggest_topimg" src="{{files}}{{list.data.coursethumb}}" />
+					</div>
+					<div class="col-50">
+						<div class="cd-home-block"></div>
+						<div class="suggest_advert">{{list.data.coursename}}</div>
+						<div class="suggest_advert">{{list.data.teachername}}</div>
+						<div class="cd-home-block"></div>
+						<div class="suggest_jiage">
+							<span>￥</span>
+							<span>{{list.data.courseprice}}</span>
+						</div>
+						<!--<div class="btn_public_normal_shen suggest_btn_weizhi" onclick="">观看</div>-->
+					</div>
+				</div>
+				<div class="suggest_advert">
+					{{list.data.courseintro}}
+				</div>
+			</div>
+			<div class="cd-home-block"></div>
+			<div class="buttons-tab" style="background-color: #FFFDFA;">
+				<a href="#tab1" id="kecheng" class="tab-link active button">课程简介</a>
+				<a href="#tab2" id="mingshi" class="tab-link button">名师简介</a>
+				<a href="#tab3" id="xueyuan" class="tab-link button">课程内容</a>
+			</div>
+			<div class="tabs">
+				<!-- 第一个选项卡页面开始 -->
+				<div id="tab1" class="tab active">
+					<div class="suggest_kaoshi">
+						<div class="cd-home-block"></div>
+						<div class="suggest_title">课程简介</div>
+						<div class="cd-home-block"></div>
+						<div class="suggest_neirong" id="suggest_neirong">
+							{{list.data.courseintro}}
+							<!--一、公选遴选培训目标：<br /> 主要针对公选、遴选没有考试经历或有一定理论基础和有考试经历却屡败屡战的考生，以及每次考试之后总是排名第二的考生，让考生在短时间内迅速提高10-30分，实现轻松胜出！
+								<br /> 二、适用人群：
+								<br /> 公选遴选考试
+								<br />培训时间：1月1日-1月30日（视频回放无限看）<br /> 三、公选遴选培训重点
+								<br /> 一是指导笔试面试考前冲刺复习的重点、热点和难点。
+								<br /> 二是指导笔试公共卷应试策略和答题技巧。
+								<br /> 三是帮助解决怎样攻克笔试专业卷。
+								<br /> 四是帮助解决领导能力测试人机对话若干疑难问题。
+								<br /> 五是直击考点简洁高效，讲授相应考试的高分策略。
+								<br /> 六是进行考前心理调节和信心培养。
+								<br /> 四、公选遴选培训方式:
+								<br /> 以在线实战模拟为主要方式，每个考生安排一个专家进行一对一的保姆式服务，必要时安排其他专家组成员提供协助！ 教授将针对考生的考试类型，配用不同的辅导资料。
+								<br /> 1.专家团队权威高效
+								<br /> 一讲堂专家团队中，多人曾在各级党政机关担任主要领导干部，深谙党政机关选人用人之道；多次担任全国各地公选、遴选、公务员面试等公职考试的考官工作，多人担任国家高级职业经理人测评专家；预测的试题多次被各地命题组原题采纳；学员屡创总分第一的高分深化。
+								<br /> 2.研发能力全国领跑全国领先的考试研究、开发能力。考点预测首屈一指。
+								<br /> 3.相比其他培训机构
+								<br /> 一讲堂讲干货、传绝技、反套路，少废话、不忽悠、收费低、成功率高、效果好，尤其是冠军学员比例超高，真正实现“投入一次”成就一生的目标在节约经济成本的同时也节约时间成本。-->
+						</div>
+					</div>
+				</div>
+				<div id="tab2" class="tab">
+					<div class="suggest_xiangqing">
+						<div class="cd-home-block"></div>
+						<div class="suggest_title">名师介绍</div>
+						<div class="cd-home-block"></div>
+						<div class="suggest_teacher">
+							<img class="suggest_mingshiimg" src="{{files}}{{list.data.teacherthumb}}" />
+							<div class="suggest_teacherinfo">
+								<div class="suggest_xingming">{{list.data.teachername}}</div>
+								<div class="cd-home-block"></div>
+								<div class="suggest_zhicheng">资深培训师</div>
+								<div class="cd-home-block"></div>
+								<div class="suggest_xingming">评分：9.9分</div>
+							</div>
+						</div>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="suggest_xi">
+						{{list.data.teacherintro}}
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>
+				</div>
+				<div id="tab3" class="tab">
+					<!--此处放评论开始-->
+					<div class="suggest_pinglun">
+						<div>
+
+							<!--<p class="suggest_pq7" style="margin-top: 1.2em;">一袭水袖舞倾城<span>评论时间：2016.01.01</span></p>-->
+							<p class="suggest_pq8">{{#list.data.contentintro}}</p>
+						</div>
+						<!--<div class="cd-homeline_mine_long"></div>
+							<div>
+								<p class="suggest_pq7" style="margin-top: 1.2em;">一袭水袖舞倾城<span>评论时间：2016.01.01</span></p>
+								<p class="suggest_pq8">老师好厉害，老师好厉害，老师好厉害，老师好厉害，老师好厉害，老师好厉害</p>
+							</div>
+							<div class="cd-homeline_mine_long"></div>-->
+					</div>
+					<div class="cd-home-block"></div>
+					<!--<div class="suggest_tijiao">
+						<textarea class="suggest_textarea" name="pinglun">点此输入评论</textarea>
+						</div>
+						<div class="btn_public_normal">提交</div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>-->
+				</div>
+
+				<!--此处放评论结束-->
+			</div>
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/mykecheng_content.js"></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

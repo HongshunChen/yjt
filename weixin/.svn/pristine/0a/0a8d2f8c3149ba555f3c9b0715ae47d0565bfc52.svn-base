@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>客观题练习</title>
+<script src="js/jquery1.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+	$('.theme-login').click(function(){
+		$('.theme-popover-mask').fadeIn(100);
+		$('.theme-popover').slideDown(300);
+	})
+	$('.theme-poptit .close').click(function(){
+		$('.theme-popover-mask').fadeOut(100);
+		$('.theme-popover').slideUp(300);
+	})
+
+})
+</script>
+</head>
+
+<body>
+<div class="cuo5">
+<p style="color:#ba2c2d; font-size:1.2em; margin-left:5%; margin-top:1.5em;">一、单选题</p>
+<div class="an3">
+<p><b>1..根据我国《全国人民代表大会和地方各级人民代表大会选举法》的规定，有关“由选民直接选举的人大代表候选人提名推荐方式”中，不正确的是（ ）。</b></p>
+</div>
+
+<div class="ke">
+<div><span>A</span><p>客观唯心主义观点</p></div></div>
+<div class="ke">
+<div><span>B</span><p>主观唯心主义观点</p></div></div>
+<div class="ke">
+<div><span>C</span><p>形而上学唯物主义观点</p></div></div>
+<div class="ke">
+<div><span>D</span><p>辩证唯物主义观点</p></div></div>
+<div class="an7" style="margin-top:15em; overflow:hidden;">
+<div class="an8">
+<img src="../images/an1.jpg" />
+<a href="#">上一题</a>
+</div>
+<div class="theme-buy">
+<a class="btn-primary btn-large theme-login woya" href="javascript:;">
+<img src="../images/tijiao.jpg" />
+<p>提交试卷</p></a>
+<div class="theme-popover">    
+     <div class="theme-popbod dform" style="width:100%;;">
+                <ol>
+				<div style="overflow:hidden;">
+                     <a class="zaida1" href="index.html">查看主观题得分</a>
+                     <a class="zaida2" href="index.html">查看客观题得分</a></div>
+                </ol>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+</div>
+<div class="an9">
+<img src="../images/an2.jpg" />
+<a href="#">下一题</a>
+</div>
+</div>
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

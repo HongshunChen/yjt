@@ -1,0 +1,84 @@
+
+.suggest_topimg {
+	width: 100%;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.suggest_jiage {
+	font-size: 0.95rem;
+}
+
+.suggest_btn_weizhi {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: -1.3rem;
+}
+
+.suggest_advert {
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 0.55rem;
+}
+
+textarea {
+	border:1px #C8C8C8 solid;
+	border-radius: 3px;	
+	width: 100%;
+}
+
+textarea:focus {
+	border:1px #1f80bf solid;
+	border-radius: 3px;	
+	width: 100%;
+}
+
+.suggest_title {
+	margin-left: 3%;
+	color:#f53c3a; 
+	font-size:0.85rem;
+}
+
+.suggest_neirong {
+	font-size: 0.55rem;
+}
+
+.suggest_mingshiimg {
+	position: relative;
+	width: 40%;
+	background-position: 50%50%;
+	background-size: contain;
+	float: left;
+}
+
+.suggest_teacher {
+	margin-left: 3%;
+}
+
+.suggest_teacherinfo {
+	padding-left: 50%;
+}
+
+.suggest_xingming {
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+.suggest_zhicheng {
+	font-size: 0.75rem;
+}
+
+.suggest_xi {
+	position: absolute;
+	padding-top: 2.5rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 0.65rem;
+	padding-bottom: 2.0rem;
+}
+
+.suggest_tijiao {
+	margin: 0 auto;
+	margin-left: 3%;
+	margin-right: 3%;
+}

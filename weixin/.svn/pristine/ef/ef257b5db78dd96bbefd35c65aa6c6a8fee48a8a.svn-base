@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<link href="css/index1.css" rel="stylesheet" type="text/css" />
+		<title>注册</title>
+	</head>
+
+	<body>
+		<div class="zhifu">
+			<div class="zhifu1">
+				<img src="images/zhifu.png" />
+				<div class="zhifu2">
+					<img src="images/zhifu1.png" />
+					<p>正在安排名师为您批改</p>
+					<p style="margin-top:0.1em;">24小时之内回复批改视频</p>
+				</div>
+			</div>
+			<div class="zhifu3">
+				<p>请在个人中心</p>
+				<li>
+					<a href="#">作业批改</a>
+					<span>中查看</span>
+				</li>
+			</div>
+			<div class="an10" style="margin-top:15em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+		</div>
+
+	</body>
+
+</html>

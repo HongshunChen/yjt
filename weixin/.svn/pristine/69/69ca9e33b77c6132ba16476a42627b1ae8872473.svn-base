@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>名师批改</title>
+</head>
+
+<body>
+<div class="pigai">
+<a href="#" style="margin-top:9em;">自备题目</a>
+<a href="#">简答题</a>
+<a href="#">辨析题</a>
+<a href="#">策论文</a>
+<a href="#">案例分析</a>
+<a href="#">公文写作</a>
+</div>
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</body>
+</html>

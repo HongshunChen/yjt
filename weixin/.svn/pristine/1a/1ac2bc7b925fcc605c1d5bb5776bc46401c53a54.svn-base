@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>视频评论</title>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="huancu">一讲堂|视频评论</div>
+<div class="huancu2">
+<div class="huanc">2016年省考视频</div>
+<div class="huan">
+<img src="../images/huancu.jpg" />
+<div class="hua">
+<p class="huq">主讲师：王建伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适用人群：公务员</p>
+<div class="hus">
+<div class="shipin">￥<span>399</span></div>
+<div class="huz">
+<p class="huc">5课时</p>
+<p class="huv">已有3000人购买</p>
+<div class="huf">
+<a href="#"><p>已缓存</p></a>
+<a href="#"><span>开始学习</span></a>
+</div>
+</div>
+</div>
+</div>
+<div style="height:12em;"></div>
+</div>
+</div>
+<div class="shipin1">
+<p>学员评价</p>
+</div>
+<div class="shipin2">
+<div class="shipin3">
+<li>
+<p>WEWQW</p>
+<span class="shipin3span">2016-01-02</span>
+</li>
+<p class="shipi">老师好厉害，老师好厉害，老师好厉害，老师好厉害，老师好厉害,好厉害，好厉害，好厉害，好厉害，好厉害</p>
+<div style="height:1em; border-bottom:#e5e5e5 1px solid; width:95%; margin:0 auto;"></div>
+</div>
+<div class="shipin3">
+<li>
+<p>WEWQW</p>
+<span class="shipin3span">2016-01-02</span>
+</li>
+<p class="shipi">老师好厉害，老师好厉害，老师好厉害，老师好厉害，老师好厉害,好厉害，好厉害，好厉害，好厉害，好厉害</p>
+<div style="height:1em; border-bottom:#e5e5e5 1px solid; width:95%; margin:0 auto;"></div>
+</div>
+</div>
+<div class="ship">
+<textarea name="" style="width:100%; margin:0 auto; height:10em; color:#999;" cols="" rows="">输入您的评论</textarea>
+<a href="#">提交评论</a>
+</div>
+<div class="an10" style="margin-top:1em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

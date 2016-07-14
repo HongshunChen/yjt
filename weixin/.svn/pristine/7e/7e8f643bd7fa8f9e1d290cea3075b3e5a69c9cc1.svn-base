@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>多选</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/anlifenxi.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="my_icon-left" onClick="javascript :history.back(-1);"></div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an.jpg" /><span>10:23</span>
+				</div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an1@2x.jpg" /><span>交卷</span>
+				</div>
+				<div class="bar_Title_public"></div>
+				<div class="my_icon-right_more"></div>
+			</header>
+			<div class="anlifenxi_clock">
+				<img src="../images/an.jpg" /><span>10:41</span>
+			</div>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="left_tab_bg">
+					<span class="anlifenxi_text" style="margin-left: 1.0rem;">全真模拟练习</span>
+				</div>
+				<div class="right_tab_bg"><span>1</span>/15</div>
+				<div class="cd-home-block"></div>
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div>
+						<span>1.某个体户甲被其所在区的公安分局干警张某、管某滥用职权非法拘留，对其损失的赔偿，下列说法正确的是（ ）。</span>
+						<span style="color:#1f80bf;">（多选题）</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="quanzhen">
+						<p>A</p><span>区公安分局为赔偿义务机关</span>
+					</div>
+					<div class="quanzhen">
+						<p>B</p><span>区公安分局向甲赔偿后，再向张某和管某追偿</span>
+					</div>
+					<div class="quanzhen">
+						<p>C</p><span>张某和管某直接向甲赔偿</span>
+					</div>
+					<div class="quanzhen">
+						<p>D</p><span>由市公安局直接向甲赔偿</span>
+					</div>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="btn_public_normal_qian">下一题</div>
+				<div class="btn_public_normal_shenlan">提交答案</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

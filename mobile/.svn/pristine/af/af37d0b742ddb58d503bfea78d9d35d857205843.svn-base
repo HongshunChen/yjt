@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>错题解析</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/viewallanalysis.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">错题解析</div>
+				<div class="my_icon-left_mine" onClick="location='address.html'"></div>
+				<div class="my_icon-right_more"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->	
+					<div id="quanzhen_state_content">
+
+					</div>
+					<script type="text/html" id="quanzhen_state_tpl">
+						<div class="left_tab_bg">
+							<img src="../images/cuo1@1x.jpg" class="viewallanalysis_clock">
+							<span class="viewallanalysis_clock_contents" >用时：20:23</span>
+						</div>
+						<div class="right_tab_bg">{{correct_num}}/{{did_num}}</div>
+						<div class="viewallanalysis_chengji_box">
+							<div class="viewallanalysis_zuotishu">本次练习{{did_num}}道，您答对了{{correct_num}}道</div>
+							<div class="viewallanalysis_zuotishu">获得</div>
+							<div id="viewallanalysis_box_chengji">
+								<span class="viewallanalysis_chengji">{{scored}}</span>
+								<span class="viewallanalysis_chengji_danwei">分</span>
+							</div>
+							<div class="cd-home-block"></div>
+						</div>
+					</script>
+					<div id="quanzhen_parse_content">
+
+					</div>
+					<script type="text/html" id="quanzhen_parse_tpl">
+						<div style="padding:10px;">
+							{{each list as item}}
+							<div class="viewallanalysis_biaoti">错题</div>
+							<br/>
+							<div class="viewallanalysis_timu">
+								<span class="viewallanalysis_timu_neirong">{{item.question_no}}. {{#item.question}}</span>
+								<span class="viewallanalysis_timu_leixing"></span>
+							</div>
+							<br/>
+							<div class="viewallanalysis_daan">
+								<span class="daan_nide">你的答案：
+									{{if item.answered}}
+										{{item.answered}}
+									{{else}}
+										未做
+									{{/if}}
+								</span>
+								<span>&nbsp;&nbsp;&nbsp;</span>
+								<span class="daan_zhengquede">正确答案：{{#item.questionanswer}}</span>
+							</div>
+							<br/>
+							<div class="viewallanalysis_biaoti">本题解析：</div>
+							<div class="viewallanalysis_jiexi">
+								{{if item.questiondescribe}}
+									{{#item.questiondescribe}}
+								{{else}}
+								<div class="viewallanalysis_desc">没有解析描述 :(</div>
+								{{/if}}
+							</div>
+							<div class="cd-home-block"></div>
+							<br/>
+							{{/each}}
+						</div>
+					</script>
+					<br/>
+				    <div class="cd-home-block"></div>
+					<div class="btn_public_normal" onclick="quanzhen.fn.errParse(1)">错题解析</div>
+					<div class="cd-home-block"></div>
+					<div class="btn_public_normal" onclick="quanzhen.fn.errParse(2)">主观题答案</div>
+					<div class="cd-home-block"></div>
+					<div class="btn_public_normal" onclick="quanzhen.fn.pinggu()">主观题估分批改</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+			<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../home/main.html">
+						<span class="icon my_icon-home"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">首页</span></span>
+					</a>
+					<a class="tab-item external" href="../activity/activity.html">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="../find/find_main.html">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+					</a>
+					<a class="tab-item external" href="../mine/main.html">
+						<span class="icon my_icon-individualcentercore_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">个人中心</span></span>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script src="../res/js/common_func.js"></script>
+		<script src="./js/quanzhen.js"></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

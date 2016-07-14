@@ -1,0 +1,84 @@
+.guide_content{
+	text-align: center;margin-top: 8rem;
+}
+
+.guide_content img{
+	height: 100px;
+	width: 100px;
+	background-position: 50%50%;
+	background-size: contain; 
+	border-radius: 20px;
+}
+
+.guide_bg {
+	width: 100%;
+	background-position: 50%50%;
+	background-size: cover;
+    background-image:url(../images/qidong.jpg);
+	background-repeat:no-repeat;
+}
+
+.login {
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 2.5rem;
+	border-right: 1px solid #C0C0C0;
+}
+
+.reg {width: 50%;
+	float: right;
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+.foot {
+	border-top: 1px solid #C0C0C0;
+	background-color: white;
+}
+.foot a{color: #000000;}
+
+.guang{
+	display: inline-block;
+	position: fixed;
+    bottom: 5em;
+	left: 50%;
+	text-align:center;
+
+    font-weight: bold;
+	font-size: 1.0rem;
+	color: #FFFFFF;
+}
+
+.guang span {
+	position: relative;
+	display: inline-block;
+	margin-left: -100%;
+}
+
+
+.name{text-align: center;margin-top: .5rem;}
+
+.logo {
+	width: 88px;
+	height: 88px;
+	background-color: #FFFFFF;
+	background-image:url(../images/logo.png) ;
+	background-position: 50%50%;
+	background-size: contain;
+	border: 1px #FFFFFF solid;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.logostyle {
+	margin-top: 30%;	
+}
+
+.logotext {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}

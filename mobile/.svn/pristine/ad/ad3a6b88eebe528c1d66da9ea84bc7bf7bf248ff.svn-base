@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>忘记密码</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/register.css" />
+		<link rel="stylesheet" href="../css/forget_pwd.css" />
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部-->
+			<header class="bar bar-nav">
+				<div class="bar_Title_teachercomments">{{bar_Title}}</div>
+				<div class="my_icon-left_mine" onclick="location='login.html'"></div>
+			</header>
+			<!--加载主内容开始-->
+			<div class="content">
+				<div class="list-block">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="label">
+								<img src="../images/phone.png" />
+							</div>
+							<input type="text" id="mobile" placeholder="手机号">
+						</div>
+					</div>
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="label">
+								<img src="../images/password.png" />
+							</div>
+							<input id="verify-code" type="text" style="width: 50%;" class="register_yanzheng" placeholder="验证码" >
+							<input id="biaozhi_code" style="width: 40%;" value="获取验证码" class="register_yanzheng_btn" onclick="forget_pwd.fn.getyanzheng()" type="button"/>
+						</div>
+					</div>
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="label">
+								<img src="../images/password.png" />
+							</div>
+							<input type="password" id="password" placeholder="重设密码">
+						</div>
+					</div>
+				</div>
+
+				<div class="register_mingxi">密码为6~16位的字母，数字或字母数字组合</div>
+				<div class="content-block">
+					<div class="row">
+						<div class="col-100">
+							<div class="btn_public_normal_shenlan" onclick="forget_pwd.fn.make_pwd()">确定</div>
+						</div>
+					</div>
+				</div>
+
+				<!--加载主内容结束-->
+
+			</div>
+			<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+			<script type='text/javascript' src='js/forget_pwd.js' charset='utf-8'></script>
+			<script type="text/javascript" src="../res/js/count_down.js"></script>
+	</body>
+
+</html>

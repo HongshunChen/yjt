@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>直播课</title>
+</head>
+
+<body>
+<div class="ge">
+<div class="geimg"><a href="#"><img src="../images/geren.jpg" /></a></div>
+<p>个人中心</p>
+<div class="geimg1"><img src="../images/geren1.jpg" /></div>
+</div>
+<div class="ge1">
+<div class="ge2">
+<p class="g">修改昵称</p>
+<div class="g1">
+<p class="ggp1">昵称</p>
+<p class="ggp2">yjt888</p>
+</div>
+<div class="gg">
+<input class="g2" value="设置新昵称" />
+<div class="ggp">新昵称</div>
+</div>
+<a href="#" class="gg1">提交</a>
+</div>
+<div style="height:2em; border-bottom:#e5e5e5 1px solid; width:100%;"></div>
+<div class="ge2">
+<p class="g">修改昵称</p>
+
+<div class="gg">
+<input class="g2" value="请输入原密码" />
+<div class="ggp">原密码</div>
+</div>
+<div class="gg">
+<input class="g2" value="请设置密码" />
+<div class="ggp">新密码</div>
+</div>
+<div class="gg">
+<input class="g2" value="请确认您的密码" />
+<div class="ggp">确认密码</div>
+</div>
+<a href="" class="gg1">提交</a>
+</div>
+<div style="height:10em;"></div>
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

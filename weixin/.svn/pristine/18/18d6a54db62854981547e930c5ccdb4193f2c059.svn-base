@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<title>一讲堂官网</title>
+<link rel="stylesheet" type="text/css" href="../css/index1.css"/>
+</head>
+
+<body>
+<div class="bgg page-current">
+	<img onclick="backs()" src="../images/zhao.jpg" style="margin: 80px 0px 0px 77px;"/>
+	<div class="yjt_logo">
+		
+		<img src="../images/yjt_logo.png"/>
+	</div>
+    <div class="tm_bgq" style="top: 13em">
+    	<ul>
+        <a href="mykecheng.html">> 我的课程</a>
+        <!--<a href="myzhibo.html">> 我的直播课</a>-->
+        <a href="lianxizhongxin.html">> 练习中心</a>
+        <a href="huancunshipin.html">> 缓存视频</a>
+        <a href="yonghuxinxi.html">> 用户信息</a>
+        <a href="wodedaijinquan.html">> 我的代金券</a>
+        <a href="classiccollection.html">> 经典收藏</a>
+        </ul>
+    </div>
+</div>
+
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+<script>
+	function backs(){
+				window.location.href='../index.html';
+			}
+</script>
+</body>
+</html>

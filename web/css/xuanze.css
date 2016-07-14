@@ -1,0 +1,34 @@
+/* CSS Document */
+/* CSS Document */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+h1,h2,h3,h4{font-size:12px;}
+h5{font-size:12px;}
+h6{font-size:12px; font-weight:normal;}
+ul,li {list-style:none;}
+a{color:#3B3839; font-size:13px;}
+a:hover{color:#000000;}
+img {border:none;}
+div{margin:0px auto;}
+body{margin:0; padding:0; font-size:12px; color:#707070; position:relative; font-family:"Î¢ÈíÑÅºÚ";}
+/*top*/
+.top{width:100%; height:65px;background:url(../images/topxian.jpg); margin:0 auto;}
+.top1{width:1200px; height:65px; margin:0 auto; overflow:hidden;}
+.top1img1{margin-left:129px; float:left; margin-top:3px;}
+.top1img2{margin-left:18px; margin-top:27px;}
+.kecheng1{background:url(../images/beijing.jpg); width:123px; height:59px; float:left; color:#000000; font-size:14px; line-height:59px; text-align:center;}
+.wode1{width:130px; height:59px; font-size:14px; line-height:59px; text-align:center; color:#000000; float:left; margin-left:185px;}
+.you{float:right; margin-right:100px;}
+.you p{color:#000000; font-size:16px; line-height:65px; font-family:"ËÎÌå"; float:left;}
+.you img{margin-top:22px; margin-left:14px;}
+.you span{color:#000000; font-size:16px; line-height:65px; font-family:"ËÎÌå";}
+
+.xuanzhon1{width:630px; height:330px; border:#c6c6c6 1px solid; margin-top:8px; overflow:hidden;}
+.xuanzhon1 ul{margin-left:60px; margin-top:20px; overflow:hidden;}
+.xuanzhon1 ul li{float:left;}
+.xuanzhon1 ul li a{font-size:16px; color:#000000; margin-left:30px; text-decoration:none;}
+
+
+
+.zuihou{width:1200px; margin:0 auto; margin-top:40px;}
+.zuihou p{font-size:9px; color:#999; margin-left:115px; float:left;}
+.zuihou span{font-size:9px; color:#999; float:right; margin-right:115px;}

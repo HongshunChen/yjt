@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>单选</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/anlifenxi.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="my_icon-left" onClick="javascript :history.back(-1);"></div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an.jpg" /><span>10:23</span>
+				</div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an1@2x.jpg" /><span>交卷</span>
+				</div>
+				<div class="bar_Title_public"></div>
+				<div class="my_icon-right_more"></div>
+			</header>
+			<div class="anlifenxi_clock">
+				<img src="../images/an.jpg" /><span>10:41</span>
+			</div>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="left_tab_bg">
+					<span class="anlifenxi_text" style="margin-left: 1.5rem;">全真模拟练习</span>
+				</div>
+				<div class="right_tab_bg"><span>1</span>/15</div>
+				<div class="cd-home-block"></div>
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div>
+						<span>1.根据我国《全国人民代表大会和地方各级人民代表大会选举法》的规定，有关“由选民直接选举的人大代表候选人提名推荐方式”中，不正确的是（ ）。</span>
+						<span style="color:#1f80bf;">（单选题）</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="quanzhen">
+						<p>A</p><span>客观唯心主义观点</span>
+					</div>
+					<div class="quanzhen">
+						<p>B</p><span>主观唯心主义观点</span>
+					</div>
+					<div class="quanzhen">
+						<p>C</p><span>形而上学唯物主义观点</span>
+					</div>
+					<div class="quanzhen">
+						<p>D</p><span>辩证唯物主义观点</span>
+					</div>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="btn_public_normal_qian" onclick="location='?t=next'">下一题</div>
+				<div class="btn_public_normal_shenlan" onclick="location='?t=upload'">提交答案</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

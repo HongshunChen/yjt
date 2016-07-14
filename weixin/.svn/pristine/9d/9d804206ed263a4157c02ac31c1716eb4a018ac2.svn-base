@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>辨析</title>
+</head>
+
+<body>
+
+<div class="cuo5">
+<p style="color:#ba2c2d; font-size:1.2em; margin-left:5%; margin-top:1.5em;">辨析</p>
+<div class="an3">
+<p><b>1..甲市人民政府在召集有关职能部门、城市公共交通运营公司（以下简称城市公交公司）召开协调会后，下发了甲市人民政府《会议纪要》，明确：城市公交公司的运营范围，...</b></p>
+<p><b>64.甲市人民政府《会议纪要》所作出的城市公交公司免缴交通税费的内容是否属于行政诉讼受案范围？为什么？</b></p>
+</div>
+<div class="an4">
+<div class="demo">
+<img class="an6" src="../images/an.jpg" />
+	<form id="imageform" method="post" enctype="multipart/form-data" action="upload.php">
+		<div id="up_status" style="display:none"></div>
+		<div id="up_btn" class="btn">
+	<span class="btmspa">选择文件</span>
+			<input id="photoimg" style="height:6em;" type="file" name="photoimg">
+		</div></form>
+</div>
+</div>
+<div class="an5"><a href="#">开始上传</a></div>
+<div class="an7">
+<div class="a">
+<img src="../images/an1.jpg" />
+<a href="#">上一题</a>
+</div>
+<div class="a1">
+<img src="../images/an2.jpg" />
+<a href="#">下一题</a>
+</div>
+</div>
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

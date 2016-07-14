@@ -1,0 +1,56 @@
+/* CSS Document */
+/* CSS Document */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+h1,h2,h3,h4{font-size:12px;}
+h5{font-size:12px;}
+h6{font-size:12px; font-weight:normal;}
+ul,li {list-style:none;}
+a{color:#3B3839; font-size:13px; text-decoration:none;}
+a:hover{color:#000000;}
+img {border:none;}
+div{margin:0px auto;}
+body{margin:0; padding:0; font-size:12px; color:#707070; position:relative; font-family:"Î¢ÈíÑÅºÚ";}
+/*top*/
+.top2{width:100%; background:url(../images/deng.jpg); height:800px; margin:0 auto;}
+.top1{width:1200px; height:65px; margin:0 auto; overflow:hidden;}
+.top1img1{margin-left:129px; float:left; margin-top:3px;}
+.top1img2{margin-left:18px; margin-top:27px;}
+.yo{width:1000px; margin:0 auto; margin-top:40px;}
+.yoimg{margin-left:60px; float:left;}
+.yoimg1{margin-left:120px; float:left;}
+.yo p{color:#666666; font-size:16px; margin-left:80px;}
+.zh{width:1200px; margin:0 auto; height:400px; margin-top:50px;}
+.huode{margin-left:220px; float:left;}
+.zhanghao{margin-left:581px;}
+.rounded1{color:#333; font-size:14px;}
+.zhanghaoyou1{width:350px; overflow:hidden; margin-left:90px; margin-top:20px;}
+.zhangp4{background:url(../images/deng5.jpg); width:54px; height:26px; margin-left:10px; float:left;}
+.zhangp3{float:left; font-size:10px; color:#333333; margin-left:20px; margin-top:-15px;}
+.zhangp2{float:right; font-size:12px; color:#0a56b6; margin-top:-15px; margin-right:50px;}
+.zhyou{width:350px; float:left; margin-left:140px;}
+.zhy1{background:url(../images/deng8.jpg); width:216px; height:52px; overflow:hidden; margin-top:20px; margin-left:100px;}
+.zhy1 p{margin-left:20px; font-size:14px; color:#128ed8; float:left; line-height:40px;}
+.zhy1 img{margin-right:30px; float:right; margin-top:15px;}
+.wrapper {
+	width: 280px;
+	margin: 0 auto;
+}
+.imageContainer {
+	width: 14px;
+	height: 12px;
+	position: relative;
+	margin-top:10px;
+	margin-left:35px;
+}
+.imageContainer img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.imageContainer img.active {
+	z-index: 3;
+}
+.zuihou1{width:1200px; margin:0 auto; margin-top:40px;}
+.zuihou1 p{font-size:9px; color:#666666; margin-left:115px; float:left;}
+.zuihou1 span{font-size:9px; color:#666666; float:right; margin-right:115px;}

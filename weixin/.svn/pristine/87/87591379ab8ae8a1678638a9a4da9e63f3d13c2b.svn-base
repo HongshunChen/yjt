@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>视频列表</title>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="huancu2">
+<div class="huanc">2016年省考视频</div>
+<div class="huan">
+<img src="../images/huancu.jpg" />
+<div class="hua">
+<p class="huq">主讲师：王建伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适用人群：公务员</p>
+<div class="hus">
+<div class="hud">￥<span>399</span></div>
+<div class="huz">
+<p class="huc">5课时</p>
+<p class="huv">已有3000人购买</p>
+<div class="huf">
+<a href="#"><p>已缓存</p></a>
+<a href="#"><span>开始学习</span></a>
+</div>
+</div>
+</div>
+</div>
+<div style="height:12em;"></div>
+</div>
+</div>
+<div class="huancu3">
+<div class="huanc">2016年省考视频</div>
+<div class="huan">
+<img src="../images/huancu.jpg" />
+<div class="hua">
+<p class="huq">主讲师：王建伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适用人群：公务员</p>
+<div class="hus">
+<div class="hud">￥<span>399</span></div>
+<div class="huz">
+<p class="huc">5课时</p>
+<p class="huv">已有3000人购买</p>
+<div class="huf">
+<a href="#"><p>已缓存</p></a>
+<a href="#"><span>开始学习</span></a>
+</div>
+</div>
+</div>
+</div>
+<div style="height:12em;"></div>
+</div>
+</div>
+<div class="huancu4">
+<div class="huanc">2016年省考视频</div>
+<div class="huan">
+<img src="../images/huancu.jpg" />
+<div class="hua">
+<p class="huq">主讲师：王建伟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;适用人群：公务员</p>
+<div class="hus">
+<div class="hud">￥<span>399</span></div>
+<div class="huz">
+<p class="huc">5课时</p>
+<p class="huv">已有3000人购买</p>
+<div class="huf">
+<a href="#"><p>已缓存</p></a>
+<a href="#"><span>开始学习</span></a>
+</div>
+</div>
+</div>
+</div>
+<div style="height:12em;"></div>
+</div>
+</div>
+<a href="#" class="hug">查看更多</a>
+<a href="#" class="shipinliebiao">查看学员评价</a>
+<div class="an10" style="margin-top:1em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

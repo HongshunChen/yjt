@@ -1,0 +1,14 @@
+
+.zibeit_upimg {
+	width: 100%;
+	background-color: #FFFFFF;
+	background-image: url(../images/upimg@1x.png);
+	border-radius: 5px;
+	background-position: 50%50%;
+	background-size: contain
+}
+
+.zibeit_subtitle {
+	font-size: 14px;
+	
+}

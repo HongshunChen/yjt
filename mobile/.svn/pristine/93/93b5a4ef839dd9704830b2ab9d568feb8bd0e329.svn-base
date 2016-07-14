@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>案例分析</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/anlifenxi.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="my_icon-left" onClick="location='Subjective.html'"></div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an.jpg" /><span>10:23</span>
+				</div>
+				<div class="anlifenxi_clock">
+					<img src="../images/an1@2x.jpg" /><span>交卷</span>
+				</div>
+				<div class="bar_Title_public"></div>				
+				<div class="my_icon-right_more"></div>				
+			</header>
+			<div class="anlifenxi_clock">
+				<img src="../images/an.jpg" /><span>10:41</span>
+			</div>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="left_tab_bg">
+					<span class="anlifenxi_text">案例分析</span>
+				</div>
+				<div class="right_tab_bg"><span>1</span>/15</div>
+
+				<div class="anlifenxi_box">
+					<span>1.甲市人民政府在召集有关职能部门、城市公共交通运营公司（以下简称城市公交公司）召开协调会后，下发了甲市人民政府《会议纪要》，明确：城市公交公司的运营范围，...甲市人民政府在召集有关职能部门、城市公共交通运营公司（以下简称城市公交公司）召开协调会后，下发了甲市人民政府《会议纪要》，明确：城市公交公司的运营范围，...
+				    </span>
+				</div>
+
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="btn_public_normal_qian2">下一题</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="btn_public_normal_shenlan">提交答案</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

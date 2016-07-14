@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>登录</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/login.css" />
+	</head>
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部-->
+			<header class="bar bar-nav">
+				<div class="bar_Title_teachercomments">{{bar_Title}}</div>
+				<div class="my_icon-left_mine" onclick="location='../index.html'"></div>
+			</header>
+			<!--加载主内容开始-->
+			<div class="content">
+				<div class="list-block">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="label">
+								<img src="../images/phone.png" />
+							</div>
+							<input type="text" placeholder="手机号码" id="number">
+
+						</div>
+					</div>
+					<div class="item-content"> 
+						<div class="item-inner">
+							<div class="label">
+								<img src="../images/password.png" />
+							</div>
+
+							<input type="password" placeholder="密码" id="password">
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				    	<div class="col-10">&nbsp;</div>
+					    <div class="col-40 btn_public_normal_shen50" onclick="login.fn.login()">登录</div>
+					    <div class="col-40 btn_public_normal_qian50" onclick="login.fn.forget_password()">忘记密码</div>
+					 	<div class="col-10">&nbsp;</div>
+				</div>
+				</div>
+				<!--加载主内容结束-->
+			</div>
+			<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+			<script type='text/javascript' src='./js/login.js' charset='utf-8'></script>
+	</body>
+
+</html>

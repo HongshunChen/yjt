@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>特惠专区</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/pageGroup.css" />
+		<style>
+			.ul_li li {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/wenzi.png" /></div>
+				<div class="kecheng">全部课程</div>
+				<div class="wode"><a href="../mine/yigoushipin.html">我的视频课程</a></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+		<div style="position:relative;top:65px;">
+			<div class="zhongjian">
+				<div class="liebiao1" id="type">
+					<!--开始-->
+					<!--视频类型-->
+				</div>
+				<!--结束-->
+				<div class="youbian2" id="tehui_list">
+					<!--右边-->
+
+				</div>
+				<!--右边-->
+			</div>
+
+			<div class="zuihou">
+
+			</div>
+		</div>
+		<script type="text/html" id="tehuiList">
+			<ul style="margin-top:-20px;" class="ul_li">
+				{{if total>0}}
+				{{each list.data.data as shipin i}}
+				<li>
+					<a href="shipinxiangqing.html?id={{shipin.courseid}}"><img style="width: 267px; height: 185px;"  src="{{files}}{{shipin.coursethumb}}" /></a>
+					<div class="wen">
+						<p>{{shipin.coursename}}</p>
+						<ul>主讲老师：<span>{{shipin.courseusername}}</span></ul>
+						<ul>适用人群：<span>公务员</span></ul>
+						<ul>购买人数：<span><span id="by{{i}}"></span>人已购买</span>
+						</ul>
+					</div>
+					<div class="wenb">
+						<div style="overflow:hidden;">
+							<b class="tehui">￥399</b>
+							<p class="tehui1">限时特惠</p>
+							<b class="tehui2">￥{{shipin.courseprice}}</b>
+						</div>
+						<div class="tehui3">
+							<p>倒计时</p><span>01</span>
+							<p>天</p><span>01</span>
+							<p>时</p><span>01</span>
+							<p>分</p><span>01</span>
+							<p>秒</p>
+						</div>
+						<div class="tehui4">
+							<a onclick="location='../payment/payment.html?t=1&id={{shipin.courseid}}'">
+								<div class="wenbp1">购买课程</div>
+							</a>
+							<a href="shipinxiangqing.html?id={{shipin.courseid}}">
+								<div class="wenbspan">查看详情</div>
+							</a>
+						</div>
+					</div>
+					<div style="width:100px; height:6px;"></div>
+				</li>
+				{{/each}} 
+				<!--分页开始-->
+				
+				<div id="pageGro" class="cb" style="margin-top:20px;clear: both; ">
+				{{if list.data.current_page==1}}
+				<div class="pageUp" style="cursor:not-allowed;">上一页</div>
+				{{else}}
+				<div class="pageUp" onclick="one({{list.data.current_page-1}})">上一页</div>
+				{{/if}}
+				<div class="pageList">
+					<ul style="margin-top: -20px">
+
+					</ul>
+				</div>
+				{{if list.data.last_page==list.data.current_page}}
+				<div class="pageDown" style="cursor:not-allowed;;">下一页</div>
+				{{else}}
+				<div class="pageDown" onclick="one({{list.data.current_page+1}})">下一页</div>
+				{{/if}}
+			</div>
+			
+				{{else}}
+				<div>暂无视频</div>
+				{{/if}}
+			</ul>
+			
+			
+			
+		</script>
+
+		<script type="text/html" id="Type">
+			{{each list.data as type i}}
+			<div class="tabPanel" style="height: auto;">
+				<span class="kespan">{{type.catname}}</span>
+				<ul id="left{{i}}">
+					<li class="hit" onclick="tehuikecheng.fn.xuan(this)"><a>全部</a></li>
+					{{each type.list as xiao i}}
+					<li onclick="tehuikecheng.fn.xuan(this)"><a>{{xiao.catname}}</a></li>
+					{{/each}}
+				</ul>
+				<div class="dixian"><img src="../images/dixian.jpg" /></div>
+			</div>
+			{{/each}}
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/tehuikecheng.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/pageGroup.js"></script>
+		<script>
+			function one(no) {
+				localStorage.setItem('pageto', no);
+				tehuikecheng.fn.left_type();
+			}
+		</script>
+	</body>
+
+</html>

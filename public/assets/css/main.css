@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+.sub-nav {
+  margin-left: 20px;
+}
+#left {
+  position: absolute;
+  overflow: auto;
+  height: 100%;
+}
+#center {
+  position: absolute;
+  margin-left: 16%;
+  height: 100%;
+  overflow: auto;
+}
+.row {
+  margin-top: 10px;
+}
+.panel-body:first-child {
+  margin-top: 20px;
+}
+.panel-body {
+  padding-left: 50px;
+}
+.welcome {
+  padding: 20px;
+  font-size: 20px;
+  color: gray;
+}
+input[type="button"] {
+  margin-top: 20px;
+  margin-left: 330px;
+}
+.main-title {
+  color: black;
+}
+.sub-title {
+  color: red;
+}
+.sub {
+  margin-top: 10px 30px;
+  color: blue;
+}
+
+.sub2 {
+  margin:10px;
+  color:green;
+}
+
+.sub div {
+  margin-top: 10px;
+}
+
+.del {
+	text-decoration:line-through
+}
+
+/*# sourceMappingURL=main.css.map */

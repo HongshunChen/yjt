@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>分析报告</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="../js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery_cmhello.js"></script>
+		<!--导航-->
+	</head>
+
+	<body>
+		<!--<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>-->
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/pinggubaogao.png" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+		<div style="position:relative;top:65px;">
+		<div class="zhongjian">
+			<div class="da">
+				<!--大-->
+				<div class="daohang">
+					<a href="#">
+						<div class="xi6"><img src="../images/pinggu1.jpg" />
+							<p>分析报告</p>
+						</div>
+					</a>
+					<a href="cuotijiexi.html">
+						<div class="xi4"><img src="../images/fenxi7.jpg" />
+							<p>错题解析</p>
+						</div>
+					</a>
+					<a href="quanbujiexi.html">
+						<div class="xi3"><img src="../images/fenxi2.jpg" />
+							<p>全部解析</p>
+						</div>
+					</a>
+				</div>
+				<img style="margin-top:12px;" src="../images/you.jpg" />
+				<div class="daohangxia"></div>
+			</div>
+			<!--大-->
+
+			<div class="ti" id="fen_xi">
+				<!--题-->
+				<!--分析报告内容填充-->
+			</div>
+		</div>
+		<!--题-->
+		</div>
+		<!--<div style="width:1000px; margin:0 auto;">
+			<div class="navmenu" style="margin-top:-82px;">
+				<ul class="menu">
+					<li><a  class="jp21" style="margin-right:45px;">立即分享</a>
+
+						<ul style="display: none; margin-left:-10px;">
+
+							<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+								<div class="wei">
+									<a onclick="share('wx')">
+										<div style="margin-left:5px; float:left;">
+											<p><img src="../images/f.jpg" />
+												<p>微信</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('bd')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f1.jpg" />
+												<p>百度</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('kj')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f2.jpg" />
+												<p>空间</p>
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="wei">
+									<a onclick="share('xl')">
+										<div style="float:left;">
+											<p><img src="../images/f3.jpg" />
+												<p>新浪</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('qq')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f4.jpg" />
+												<p>QQ</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('rr')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f5.jpg" />
+												<p>人人</p>
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+		<div class="zuihou">
+
+		</div>
+		<script type="text/html" id="cuoTi">
+			<div class="kuai3">
+				<div class="quan1">
+					<div class="j6">
+						<p class="j7">{{list.data.scored}}</p>
+						<p class="jp10">分</p>
+					</div>
+					<div class="yuce">总分：100分</div>
+					<div class="yizuo">
+						<p class="jp11">已做天数：</p>
+						<p class="jp12">{{list.data.did_days}}天</p>
+						<img src="../images/di.jpg" />
+					</div>
+					<div class="yizuo">
+						<p class="jp11">打败考生：</p>
+						<p class="jp12">{{list.data.correct_rate}}</p>
+					</div>
+				</div>
+				<div class="quan1">
+					<div class="j6">
+						<p class="j7">{{list.data.did_num_total}}</p>
+						<p class="jp10">题</p>
+					</div>
+					<div class="yuce">已做题量</div>
+					<div class="yizuo">
+						<p class="jp11">目前已错</p>
+						<p class="jp12"><span>{{list.data.err_num}}</span>题</p>
+						<img src="../images/di.jpg" />
+					</div>
+					<div class="yizuo">
+						<p class="jp11">打败考生：</p>
+						<p class="jp12">{{list.data.err_win_rate}}</p>
+					</div>
+				</div>
+				<div class="quan2">
+
+					<div class="jp16">
+						<p class="jp17">根据答题表现</p>
+						<p class="jp18">你获得</p>
+					</div>
+					<div class="jp13">
+						<p class="jp14">{{list.data.couponvalue}}</p>
+						<p class="jp19">元</p>
+					</div>
+					<div class="yuce1">代金券</div>
+
+					<div style=" width:280px; margin-top:30px; margin-left: 90px;">
+						<a href="keguanti.html" class="jp20" style="margin-left: 47px;">	
+									再刷一轮
+							</a></div>
+
+				</div>
+			</div>
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/fenxibaogao.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/share.js"></script>
+	</div></body>
+
+</html>

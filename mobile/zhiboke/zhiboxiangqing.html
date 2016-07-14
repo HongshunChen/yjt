@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>直播课介绍</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/suggest.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">直播课介绍</div>
+				<div class="my_icon-left_mine" onClick="location='zhibo.html'"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content" id="zhibo_ke">
+				
+			</div>
+		</div>
+		<!-- 加载提示符开始 -->
+		<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				    </div>-->
+		<!-- 加载提示符结束 -->
+		<!--加载主内容结束-->
+
+		</div>
+		<script type="text/html" id="zhiboKe">
+<!--加载主内容开始-->
+				<div class="suggest_top">
+					<div class="row">
+						<div class="col-50">
+							<img class="suggest_topimg" src="{{list.data.videohumb}}" />
+						</div>
+						<div class="col-50">
+							<div class="cd-home-block"></div>
+							<div class="suggest_advert">{{list.data.vname}}</div>
+							<div class="suggest_advert">{{list.data.teachername}}</div>
+							<div class="cd-home-block"></div>
+							<div class="suggest_jiage">
+								<span style="color: red;">￥</span>
+								<span style="color: red;">{{list.data.vprice}}</span>
+							</div>
+							<div class="btn_public_normal_shen suggest_btn_weizhi" onclick="location='../payment.html?t=zhiboke&id={{list.data.vid}}&price={{list.data.vprice}}'" style="margin-top: 0.5rem;">点击购买</div>
+							<div class="btn_public_normal_qian suggest_btn_weizhi" style="background: #FFF;color: #000;margin-top: -2.5rem;">联系客服</div>
+						</div>
+					</div>
+					<div class="suggest_advert">{{list.data.vintro}}
+						~
+					</div>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="buttons-tab" style="background-color: #FFFDFA;">
+					<a href="#tab1" id="kecheng" class="tab-link active button">名师介绍</a>
+					<a href="#tab2" id="mingshi" class="tab-link button">课程安排</a>
+					<a href="#tab3" id="xueyuan" class="tab-link button">听课流程</a>
+				</div>
+				<div class="tabs">
+					<!-- 第一个选项卡页面开始 -->
+					<div id="tab1" class="tab active">
+						<div class="suggest_xiangqing">
+							<div class="cd-home-block"></div>
+							<div class="suggest_title">名师介绍</div>
+							<div class="cd-home-block"></div>
+							<div class="suggest_teacher">
+								<img class="suggest_mingshiimg" height="100px" src="{{files}}{{list.data.teacherthumb}}" />
+								<div class="suggest_teacherinfo">
+									<div class="suggest_xingming">{{list.data.teachername}}</div>
+									<div class="cd-home-block"></div>
+									<div class="suggest_zhicheng">资深培训师</div>
+									<div class="cd-home-block"></div>
+									<div class="suggest_xingming">评分：9.9分</div>
+								</div>
+							</div>
+						</div>
+						<div class="cd-home-block"></div>
+						<div class="suggest_xi">{{list.data.teacherintro}}
+						
+						</div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block">&nbsp;</div>
+						<div class="cd-home-block">&nbsp;</div>
+						<div class="cd-home-block">&nbsp;</div>
+						<div class="cd-home-block">&nbsp;</div>
+						<div class="cd-home-block">&nbsp;</div>
+						<div class="cd-homeline_mine_long"></div>
+						<div class="cd-home-block"></div>
+					</div>
+					<div id="tab2" class="tab">
+						<div class="suggest_kaoshi">
+							<div class="cd-home-block"></div>
+							<div class="suggest_title">课程表</div>
+							<div class="cd-home-block"></div>
+							<div class="suggest_neirong" id="suggest_neirong">
+								<div class="kechengbiao1"><img src="../images/courselist@2x.png" style="width:90%;background-position: 50%50%;background-size: contain;margin-left: 5%;"></div>
+							</div>
+						</div>
+					</div>
+										
+					<div id="tab3" class="tab">
+						<div class="suggest_kaoshi">
+							<div class="cd-home-block"></div>
+							<div class="suggest_title">听课流程</div>
+							<div class="cd-home-block"></div>
+							<div class="suggest_neirong" id="suggest_neirong">
+								<div class="kechengbiao1"><img src="../images/flow@2x.png" style="width:90%;background-position: 50%50%;background-size: contain;margin-left: 5%;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src='js/zhibokejieshao.js'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

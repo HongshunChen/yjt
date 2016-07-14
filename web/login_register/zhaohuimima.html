@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>找回密码</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.rounded {
+				border: #c5cdd8 1px solid;
+				margin-left: 10px;
+				width: 208px;
+				height: 28px;
+				padding: 3px 5px;
+				font-size: 85%;
+				color: #aeb5ba;
+				border-radius: 5px
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top2" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/deng1.jpg" /></div>
+			</div>
+			<div class="yo">
+				<img class="yoimg" src="../images/deng2.jpg" />
+				<p>找回密码</p>
+				<img class="yoimg1" src="../images/deng3.jpg" />
+			</div>
+			<div class="zh">
+				<div class="huode">
+					<img src="../images/deng4.png" />
+				</div>
+				<div class="zhyou1">
+					<!--右-->
+					<div>
+						<label class="rounded1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号：</label>
+						<input id="number" class="rounded" placeholder="请输入手机号" />
+					</div>
+					<div style="margin-top:20px;width: 420px;">
+						<label class="rounded1">短信验证码：</label>
+						<input id="code" class="rounded" placeholder="请输入短信验证码" />
+						<input onclick="zhaohuimima.fn.get_code()" type="button" id="biaozhi_code" style="font-size:12px; color:#118fd9;background: none;" value="点此获取验证码" />
+					</div>
+					<div style="margin-top:20px;">
+						<label class="rounded1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：</label>
+						<input id="password" class="rounded" placeholder="请设置密码" />
+					</div>
+					<div style="margin-top:20px;">
+						<label class="rounded1">&nbsp;&nbsp;&nbsp;确认密码：</label>
+						<input id="pwd_again" class="rounded" placeholder="确认您的密码" />
+					</div>
+					<a>
+						<p onclick="zhaohuimima.fn.get_pwd_again()" class="zhaohuim"></p>
+					</a>
+				</div>
+				<!--右-->
+			</div>
+			<div class="zuihou1">
+				
+			</div>
+		</div>
+		<!--top-->
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="../res/js/count_down.js"></script>
+		<script type="text/javascript" src="js/zhaohuimima.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.zuihou1').load('../foot.html');
+			});
+		</script>
+	</body>
+
+</html>

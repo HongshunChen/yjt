@@ -1,0 +1,35 @@
+.list-block .item-content {
+	padding: 0rem 1.5rem;
+}
+
+.register_yanzheng {
+	float: left;
+}
+
+.register_yanzheng_btn {
+	float: right;
+	border: 1px solid #C0C0C0;
+	border-radius: 10px;
+	background-color: white;
+	padding: .3rem .5rem;
+	font-size: 14px;
+}
+
+.register_mingxi {
+	font-size: 13px;
+	padding: 0rem 1.5rem;
+	margin-top: -1rem;
+}
+
+.register_next {
+	margin-top: 1rem;
+	border-color: #C0C0C0;
+	color: #C0C0C0;
+	background-color: white;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-align: center;
+	border: 1px solid #C0C0C0;
+	border-radius: 10px;
+}
+.content-block{padding: 0rem 1.5rem;}

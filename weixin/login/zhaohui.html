@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+		<title>找回密码</title>
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="denglu page" id="page">
+			<div class="denglu6">
+				<a href="denglu.html"><img src="../images/zhao.jpg" /></a>
+				<p>忘记密码</p>
+			</div>
+			<div style="width:100%; margin:0 auto; overflow:hidden;">
+				<!--w-->
+				<input class="denglu2" id="mobile" placeholder="请输入手机号" />
+				<div class="zhao1">
+					<!--验证-->
+					<input id="verify-code" class="zhao" placeholder="输入验证码" />
+					<input id="biaozhi_code" onclick="forget_pwd.fn.getyanzheng()" type="button" value="获取验证码" />
+				</div>
+				<!--验证-->
+				<input id="password" class="denglu3" placeholder="重设密码" />
+				<!--<input class="denglu3" placeholder="再次输入新密码" />-->
+			</div>
+			<!--w-->
+			<a onclick="forget_pwd.fn.make_pwd()" class="zhao2">提交</a>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/forget_pwd.js' charset='utf-8'></script>
+		<script type="text/javascript" src="../res/js/count_down.js"></script>
+	</body>
+
+</html>

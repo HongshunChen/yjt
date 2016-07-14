@@ -1,0 +1,26 @@
+
+.index_contents_h {
+	width: 100%;
+	text-align: center;
+	border: 0px #ffffff solid;
+	border-radius: 1px;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.index_contents_h_m {
+	position: relative;
+	width: 77%;
+	text-align: center;
+	border: 0px #ffffff solid;
+	border-radius: 1px;
+	background-position: 50%50%;
+	background-size: contain;
+	margin: 0 auto;	
+	margin-top: -46.7%;
+}
+
+.swiper-pagination {
+	position: relative;
+	margin-top: -1.0rem;
+}

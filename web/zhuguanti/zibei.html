@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>自备题目</title>
+		
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <link href="../css/index.css" type="text/css" rel="stylesheet" />
+         <link href="../css/img_css.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html">	<img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/anlifenxi.jpg" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div class="shangchuan">上传题目</div>
+		<div class="shiti4" style="padding-top:10px ;">
+			<div id="image-wrap_qu" style="display: none;"></div>
+			<textarea id="text-wrap_qu" style="width: 1000px;height: 300px;display: none;"></textarea>
+			<div class="demo">
+
+				<!--<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>-->
+				<div id="up_btn_text" class="btn" style="margin-left:237px;">
+					<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
+					<span style="">文字题目上传</span>
+					<input id="texts" style="height:100px;" type="input" onclick="none_blo(0,'image-wrap_qu','text-wrap_qu')">
+				</div>
+				<div id="up_btn_img" class="btn" style="margin-left:20px;">
+					<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen1.jpg" />
+					<span style="">图片题目上传</span>
+					<input id="file_question" style="height:100px;" type="file" onclick="none_blo(1,'image-wrap_qu','text-wrap_qu')" onchange="show_img(this,'#image-wrap_qu',-1)" />
+				</div>
+			</div>
+			<div style="height:60px;"></div>
+		</div>
+		<!--<div class="dashiz">
+			<!--狂-->
+		<!--<div class="shiz">
+				<p class="shida">六、案例分析题（本大题共2 题，每题5 分）</p>
+				<p class="shida1">案例</p>
+				<p class="shizp">甲市人民政府在召集有关职能部门、城市公共交通运营公司（以下简称城市公交公司）召开协调会后，下发了甲市 人民政府《会议纪要》，明确：城市公交公司的运营范围，界定在经批准的城市规划区内；城市公交公司在城市规 划区内开通的线路要保证正常运营，免缴交通税费，在规划区范围内，原由交通部门负责的对城市公交公司违法运 营的查处，交由建设部门负责。《会议纪要》下发后，甲市城区交通局按照《会议纪要》的要求，中止了对城市公 交公司违法运营的查处。田某、孙某和王某是经交通部门批准的三家运输经营户，他们运营的线路与《会议纪要》
+					规定免缴交通税费的城市公交公司的两条运营线路重叠，但依《会议纪要》，不能享受免缴交通税费的优惠。三人 不服，向法院提起诉讼，要求撤销《会议纪要》中关于城市公交公司免缴交通税费的规定，并请求确认市政府《会 议纪要》关于中止城区交通局对城市公交公司违法运营查处的内容违法。
+				</p>
+				<p class="shidaxia">(1)甲市人民政府《会议纪要》所作出的城市公交公司免缴交通税费的内容是否属于行政诉讼受案范围？为什么？</p>
+				<p class="shidaxia">(2)田某、孙某和王某三人是否具有原告资格？为什么？</p>
+				<div style="height:20px;"></div>
+			</div>
+		</div>-->
+		<!--狂-->
+		<div class="shangchuan">上传答案(选择一种提交方式)</div>
+		<div class="shiti4" style="padding-top: 10px;">
+			<div id="image-wrap" style="display: none;"></div>
+			<textarea id="text-wrap" style="width: 1000px;height: 300px;display: none;"></textarea>
+			<div class="demo">
+
+				<!--<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>-->
+				<div id="up_btn_text" class="btn" style="margin-left:237px;">
+					<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
+					<span style="">文字答案上传</span>
+					<input id="texts" style="height:100px;" type="input" onclick="none_blo(0,'image-wrap','text-wrap')">
+				</div>
+				<div id="up_btn_img" class="btn" style="margin-left:20px;">
+					<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen1.jpg" />
+					<span style="">图片答案上传</span>
+					<input id="file" style="height:100px;" type="file" onchange="show_img(this,'#image-wrap',-1)" onclick="none_blo(1,'image-wrap','text-wrap')" />
+				</div>
+			</div>
+			<div style="height:60px;"></div>
+		</div>
+		<div class="daan">
+			<a onclick="zibei.fn.payment()">
+				<p style="background:url(../images/fufei.jpg); float:left; font-size:18px; width:139px; height:49px; line-height:49px; text-align:center; color:#FFFFFF; margin-left:410px; margin-top:55px;">付费批改</p>
+			</a>
+		</div>
+
+		<div class="zuihou">
+
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/zibei.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/zhuguan_div_none_block.js"></script>
+		<!--//图片显示插件-->
+		<script type="text/javascript" src="../res/js/img_show.js"></script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+.simpleanswer_subtitle_img {
+	position: absolute;
+	height: 21px;
+	width: 13px;
+	background-image: url(../images/allicons@1x.png);
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.simpleanswer_subtitle_title {
+	margin-left: 1.0rem;
+}
+
+
+.questions {
+	position: absolute;
+	width: 90%;
+	float: left;
+	overflow: hidden;
+}
+
+.questions dl dt {
+	font-size: 0.65rem;
+	color: #666;
+}
+
+.questions dl dd {
+	font-size: 0.65rem;
+	color: #666;
+	margin-top: 0.5em;
+}
+
+.remove {
+	width: 21%;
+	text-align: center;
+	float: right;
+	font-size: 0.55rem;
+	color: #666;
+}
+
+.remove img {
+	margin-top: 0.3em;
+}

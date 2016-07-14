@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="一讲堂在线教育后台管理">
+<meta name="description" content="一讲堂在线教育后台管理">
+<meta name="keywords" content="一讲堂在线教育后台管理">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>一讲堂在线教育后台管理</title>
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">一讲堂系统管理平台<span class="label">版本:1.0</span></a>
+			<div class="nav-collapse navbar-responsive-collapse collapse">
+				<ul class="nav">
+					<li>
+						<a href="index.php?core-master">全局</a>
+					</li>
+															<li>
+						<a href="index.php?user-master">用户模块</a>
+					</li>
+																				<li>
+						<a href="index.php?exam-master">题库模块</a>
+					</li>
+																														<li>
+						<a href="index.php?document-master">名师批改</a>
+					</li>
+																														<li>
+						<a href="index.php?bank-master">财务模块</a>
+					</li>
+																				<li class="active">
+						<a href="index.php?vedio-master">视频模块</a>
+					</li>
+														</ul>
+				<ul class="nav pull-right">
+					<li>
+						<a href="index.php" target="_blank">网站首页</a>
+					</li>
+					<li class="divider-vertical">
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							
+							<!-- <li>
+								<a href="index.php?user-app-privatement">个人中心</a>
+							</li>
+							<li class="divider">
+							</li> -->
+							
+							<li>
+								<a href="index.php?core-master-logout">退出管理</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<div class="accordion" id="accordion-13465">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">课程管理</a>
+		</div>
+		<div class="accordion-body in collapse" id="accordion-element-707348">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<!-- <li><a href="?vedio-master-demand-vedio">视频列表</a></li> -->
+		    		<li><a href="?vedio-master-demand-area">课程分类</a></li>
+		    		<li><a href="?vedio-master-demand-subject">视频列表</a></li>
+		    		<li><a href="?vedio-master-demand-course">课程管理</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">直播管理 </a>
+		</div>
+		<div class="accordion-body collapse" id="accordion-element-212090">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<li><a href="index.php?vedio-master-seeding">直播列表</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212091">回收站</a>
+		</div>
+		<div class="accordion-body collapse" id="accordion-element-212091">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<li><a href="index.php?vedio-master-recyle-course">课程回收站</a></li>
+					<li><a href="index.php?vedio-master-recyle-vedio">视频回收站</a></li>
+					<li><a href="index.php?vedio-master-recyle-seeding">直播课程回收站</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>		</div>
+		<div class="span10">
+			<ul class="breadcrumb">
+				<li><a href="index.php?vedio-master">视频模块</a> <span class="divider">/</span></li>
+				<li><a href="#">课程管理</a> <span class="divider">/</span></li>
+				<li class="active">视频列表 </li>
+				
+			</ul>
+		
+				<fieldset>
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								
+						<th>视频ID</th>
+						<th>视频名称</th>
+						<th>视频时长</th>
+						<th>视频vid</th>
+						<th>上传时间</th>
+							</tr>
+						</thead>
+						<tbody>
+												<tr>
+				
+						<td>57</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=57" data-target="#modal">sdsdf</a></td>
+						<td>00:00:02</td>
+						<td>e48926e81061024dfc45dab4f8953f0c_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>56</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=56" data-target="#modal">test</a></td>
+						<td>00:04:38</td>
+						<td>e48926e8107d3e8aeded3d24e4de5e9a_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>55</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=55" data-target="#modal">aaaaa</a></td>
+						<td></td>
+						<td></td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>51</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=51" data-target="#modal">第一讲 哇哇哇哇</a></td>
+						<td>00:00:11</td>
+						<td>e48926e8109be72f1d211d9f01347405_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>53</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=53" data-target="#modal">111111111111111111111</a></td>
+						<td>00:00:19</td>
+						<td>e48926e810b49775641d982a5ffe1ac8_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>1</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=1" data-target="#modal">第一讲 公务员考试第一讲 公务员考试第一讲 公务员考试</a></td>
+						<td>00:10:42</td>
+						<td>e48926e810a12061abfeb841c2b1e0f8_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>3</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=3" data-target="#modal">第二讲 公务员面试</a></td>
+						<td>00:01:30</td>
+						<td>e48926e810de61086e6fe79d5c388dbc_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>8</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=8" data-target="#modal">第三讲 如何面试申论</a></td>
+						<td>00:00:19</td>
+						<td>e48926e8108d760f460a7643a959a7ec_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>19</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=19" data-target="#modal">第四讲 呵呵呵呵呵呵呵</a></td>
+						<td>00:00:23</td>
+						<td>e48926e810376930ec8f0815480d21f5_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>18</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=18" data-target="#modal">第三讲 呵呵呵呵呵呵而后</a></td>
+						<td>00:01:30</td>
+						<td>e48926e8109923ab31902e624a9f250f_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>17</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=17" data-target="#modal">第二讲 哈哈哈哈哈</a></td>
+						<td>00:00:19</td>
+						<td>e48926e8101b38af1b355d25470a5f26_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>16</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=16" data-target="#modal">第一讲 呵呵呵呵而后</a></td>
+						<td>00:00:19</td>
+						<td>e48926e810ff763521a775351074a30e_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>25</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=25" data-target="#modal">第一讲 公务员如何申论</a></td>
+						<td>00:01:30</td>
+						<td>e48926e810dd91797b437485817db416_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>30</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=30" data-target="#modal">第五讲</a></td>
+						<td>00:01:23</td>
+						<td>e48926e810a985d7769f3ca62b430e66_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>29</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=29" data-target="#modal">第四讲</a></td>
+						<td>00:00:23</td>
+						<td>e48926e810389f02cb6cae8580063043_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>27</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=27" data-target="#modal">第二讲</a></td>
+						<td>00:01:30</td>
+						<td>e48926e810fc15913de72f637552dda9_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>26</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=26" data-target="#modal">第一讲</a></td>
+						<td>00:01:30</td>
+						<td>e48926e8109923ab31902e624a9f250f_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>28</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=28" data-target="#modal">第三讲</a></td>
+						<td>00:01:30</td>
+						<td>e48926e8109923ab31902e624a9f250f_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>31</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=31" data-target="#modal">第一讲</a></td>
+						<td>00:00:23</td>
+						<td>e48926e810376930ec8f0815480d21f5_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+										<tr>
+				
+						<td>32</td>
+						<td><a title="查看视频" class="selfmodal" href="javascript:;" url="index.php?vedio-master-demand-detail&videoid=32" data-target="#modal">第二讲</a></td>
+						<td>00:01:23</td>
+						<td>e48926e81092706960539775f4587d9e_e</td>
+						<td>
+			          		2016-06-08
+			          	</td>
+
+					</tr>
+											
+						</tbody>
+					</table>
+					
+					<div class="pagination pagination-right">
+						<ul><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?vedio-master-demand-subject&page=2">2</a></li><li><a>共38条数据</a></li></ul>
+					</div>
+				</fieldset>
+			
+			 <div aria-hidden="true" id="modal" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-header">
+					<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+					<h3 id="myModalLabel">
+						订单详情
+					</h3>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

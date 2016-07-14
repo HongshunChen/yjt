@@ -1,0 +1,153 @@
+<!DOCTYPE html >
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>一讲堂-公职培训平台</title>
+		<link href="../css/index.css" rel="stylesheet" type="text/css" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.you p {
+				line-height: 99px;
+			}
+			
+			.you {
+				line-height: 99px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top_1">
+			<div class="top_1_zj">
+				<div class="top_1_logo"><a href="../index/index.html"><img src="../images/logo1.png" /></a></div>
+					<div class="you">
+					<div class="top_1_register"><img src="../images/xiaoren.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="../login_register/zhuce.html"><img src="../images/zhuce.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<img src="../images/diandian.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="../login_register/deng.html"><img src="../images/denglu.png" /></a>
+									</div>
+									<div class="top_1_register_right"></div>
+					</div>
+			</div>
+		</div>
+		<div style="position:relative;top:99px;z-index:2;">
+		<!--banner开始-->
+		<div class="indexFlash fadeFlash">
+			<ul>
+				<li>
+					<a style="background: url(../images/banner.jpg) center top no-repeat;"> </a>
+				</li>
+			</ul>
+		</div>
+		<!--banner结束-->
+		<div class="middle" id="zhuYe">
+
+		</div>
+		<div class="zuihou">
+
+		</div>
+		<script type="text/html" id="zhu_ye">
+			<div class="course">
+				<div class="course_1">
+					<p>课程点播</p>
+				</div>
+				<div class="course_2">
+					<div class="clear"></div>
+					<div class="iservice iwidth">
+						<ul class="servicelist" id="page"><a href="../shipinkecheng/shipinkecheng.html" target="_blank">
+							<li>
+								
+									<div class="s1 serico"></div>
+								
+								<div class="serico_top"><a>视频课程</a>
+									<p>已有
+										<dr>{{list.data.video}}</dr>名考生加入</p>
+								</div>
+							</li></a><a href="../zhiboke/zhibo.html" target="_blank">
+							<li>
+								
+									<div class="s2 serico"></div>
+								
+								<div class="serico_top"><a href="#">直播课</a>
+									<p>已有
+										<dr>{{list.data.live}}</dr>名考生加入</p>
+								</div>
+							</li></a>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="course1">
+				<div class="course1_1">
+					<p>在线刷题</p>
+				</div>
+				<div class="course1_2">
+					<div class="clear"></div>
+					<div class="iservice iwidth">
+						<ul class="servicelist1"><a href="../keguanti/keguanti.html" target="_blank">
+							<li>
+								
+									<div class="s3 serico"></div>
+								
+								<div class="serico_top1"><a>客观题练习</a>
+									<p>已有
+										<dr>{{list.data.objective}}</dr>名考生练习</p>
+								</div>
+							</li></a><a href="../keguanti/address.html" target="_blank">
+							<li>
+								
+									<div class="s4 serico"></div>
+								
+								<div class="serico_top1"><a>全真模拟练习</a>
+									<p>已有
+										<dr>{{list.data.simulate}}</dr>名考生练习</p>
+								</div>
+							</li></a>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="course2">
+				<div class="course2_1">
+					<p>名师批改</p>
+				</div>
+				<div class="course2_2">
+					<div class="clear"></div>
+					<div class="iservice iwidth">
+						<ul class="servicelist2"><a href="../zhuguanti/zhuguan.html" target="_blank">
+							<li>
+								
+									<div class="s5 serico"></div>
+								
+								<div class="serico_top2"><a href="#">主观题批改</a>
+									<p>已有
+										<dr>{{list.data.subjective}}</dr>名考生使用</p>
+								</div>
+							</li></a><a href="#" target="_blank">
+							<li>
+								
+									<div class="s6 serico"></div>
+								
+								<div class="serico_top2"><a href="#">图书商城</a></div>
+							</li></a>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/index.js' charset='utf-8'></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="一讲堂在线教育后台管理">
+<meta name="description" content="一讲堂在线教育后台管理">
+<meta name="keywords" content="一讲堂在线教育后台管理">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>一讲堂在线教育后台管理</title>
+<!–[if lt IE9]>
+<script src="app/core/styles/js/html5.js"></script>
+<![endif]–>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">一讲堂系统管理平台<span class="label">版本:1.0</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li class="active">						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li>						<a href="index.php?exam-master">题库模块</a>					</li>																														<li>						<a href="index.php?document-master">名师批改</a>					</li>																														<li>						<a href="index.php?bank-master">财务模块</a>					</li>																				<li>						<a href="index.php?vedio-master">视频模块</a>					</li>														</ul>				<ul class="nav pull-right">					<li>						<a href="index.php" target="_blank">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<ul class="nav nav-tabs nav-stacked">	<li>		<a href="index.php?core-master">首页</a>	</li>	<li>		<a href="index.php?core-master-apps">模块管理</a>	</li>		<li>		<a href="index.php?core-master-playapi">支付接口</a>	</li>	<li class="active">		<a href="index.php?core-master-message">短信设置</a>	</li></ul>		</div>
+		<div class="span10">
+			<ul class="breadcrumb">
+				<li><a href="index.php?core-master">全局</a> <span class="divider">/</span></li>
+				<li class="active">短信设置</li>
+			</ul>
+      
+        <table class="table table-hover table-bordered"> 
+          <thead>
+            <tr>
+              <th >短信接口API</th>
+              <th ><a href="#myModal" role="button" data-toggle="modal" class="btn btn-primary disabled">修改</a></th>
+            </tr>
+          </thead>
+            <tbody><tr>
+              <td width="16%">账号</td>
+              <td id="cfgapp">
+                18606439382 </td>
+            </tr>
+              <tr>
+              <td>密钥</td>
+              <td>203264C80B0F0A6DC07B52434A59</td>
+            </tr>
+
+           
+                      </tbody></table>
+   <table class="table table-hover table-bordered"> 
+          <thead>
+            <tr>
+              <th >短信模板</th>
+              <th ><a href="#SmsModal" role="button" data-toggle="modal" class="btn btn-primary disabled">修改</a></th>
+            </tr>
+          </thead>
+            <tbody>
+            <tr>
+              <td width="16%">模板名称</td>
+              <td>
+                注册验证</td>
+            </tr>
+              <tr>
+              <td>模板内容</td>
+              <td>短信验证码为：@，请勿将验证码提供给他人。</td>
+            </tr>
+             <tr>
+              <td>用户签名</td>
+              <td>【一讲堂科技】</td>
+            </tr>
+                      </tbody></table>
+
+		</div>
+	</div>
+</div>
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">修改短信接口API</h3>
+  </div>
+
+  <div class="modal-body">
+ 
+      <table class="table table-hover table-bordered"> 
+            <tbody><tr>
+              <td width="16%">账号</td>
+              <td>
+               <input name="args[smsname]" id="smsname" type="text" value="18606439382"  alt="请输入账号" /></td>
+            </tr>
+              <tr>
+              <td>密钥</td>
+              <td><input name="args[smspwd]" id="smspwd" type="text" value="203264C80B0F0A6DC07B52434A59"  alt="请输入密钥"  /></td>
+            </tr>
+            
+           
+                      </tbody></table>
+                      <script type="text/javascript">
+                      function  addsms() {
+                        var smsname = document.getElementById('smsname').value;
+                        var smspwd  = document.getElementById('smspwd').value;
+                        $.post('index.php?core-master-message-addsms',{
+                          cfid:1,
+                          smsname:smsname,
+                          smspwd:smspwd
+                        },function (data) {
+                           $('#myModal').modal('hide')
+                        });
+                      }
+                      </script>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    <button class="btn btn-primary" onclick="addsms();">提交</button>
+  </div>
+</div>
+  <div id="SmsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">修改短信模板</h3>
+  </div>
+
+  <div class="modal-body">
+ 
+      <table class="table table-hover table-bordered"> 
+            <tbody> <tr>
+              <td width="16%">模板名称</td>
+              <td>
+                <input name="name" id="name" type="text" value=""  alt="请输入"  /></td>
+            </tr>
+              <tr>
+              <td>模板内容</td>
+              <td><textarea class="input-xlarge" rows="4" name="template" id="template"></textarea><span class="help-block">@为可变值；可代替任意多个字符<br>
+例：尊敬的：@，您的余额为：@，为确保正常使用，请及时充值【企业签名】 </span></td>
+            </tr>
+             <tr>
+              <td>签名</td>
+              <td><input name="autograph" id="autograph" type="text" value=""  alt="请输入"  /></td>
+            </tr>
+            
+             <script type="text/javascript">
+                      function  addtempalte() {
+                        var name = document.getElementById('name').value;
+                        var template  = document.getElementById('template').value;
+                        var autograph = document.getElementById('autograph').value;
+                        $.post('index.php?core-master-message-addtemplate',{
+                          name:name,
+                          template:template,
+                          autograph:autograph,
+                          id:1,
+                        },function (data) {
+                               $('#SmsModal').modal('hide');
+                                
+                        });
+
+                      }
+                      </script>
+                      </tbody></table>
+                   
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    <button class="btn btn-primary" onclick="addtempalte();">提交</button>
+  </div>
+</div>
+
+
+</body>
+</html>

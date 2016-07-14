@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心—已购视频</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/viewall.css">
+		<link rel="stylesheet" href="../css/pageGroup.css" />
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">个人中心</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div id="viewall_subtitle">
+						<span class="viewall_gouwu_img"></span>
+						<span class="viewall_subtitle_title">我的课程</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>
+
+					<div id="buyvideo_list">
+
+					</div>
+
+					<!--分页开始-->
+
+					<!--分页结束-->
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/html" id="buyvideoList">
+			<div id="subdiv" class="row">
+				{{if total>0}} {{each list.data.data as shipin i}}
+				<!--循环-->
+				<div class="col-45 viewall_areabg" style="margin-bottom: 10px;">
+					<div id="cacheimg">
+						
+						<img src="{{files}}{{shipin.coursethumb}}" class="viewall_shipinimg">
+						<div class="viewall_areadiv">
+							<div class="viewall_subdivtitle">{{shipin.videoname}}</div>
+							<div id="viewall_zhujiang">主讲老师：<b>{{shipin.courseusername}}</b></div>
+							<div id="viewall_shiyongrenqun">适用人群：<b>公务员</b></div>
+							<div id="viewall_goumairenshu">购买人数：<b id="by{{i}}"></b>人已购买</div>
+
+							<div class="viewall_jiage">
+								<!--<span>￥:{{shipin.courseprice}}</span>-->
+								<input class="btn_normal_shens" style="clear: both;" value="已购买" type="button" />
+								<input class="btn_normal_qians" value="查看详情" type="button" onclick="content({{shipin.videoid}})" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--循环-->
+				{{/each}} {{else}}
+				<div>暂无视频</div>
+				{{/if}}
+			</div>
+			<div class="cd-home-block"></div>
+			<!--分页开始-->
+			{{if total>0}}
+			<div id="pageGro" class="cb">
+				{{if list.data.current_page==1}}
+				<div class="pageUp" style="cursor:not-allowed;">上一页</div>
+				{{else}}
+				<div class="pageUp" onclick="one({{list.data.current_page-1}})">上一页</div>
+				{{/if}}
+				<div class="pageList">
+					<ul>
+						<li onclick='one(1)' class="on">1</li>
+					</ul>
+				</div>
+				{{if list.data.last_page==list.data.current_page}}
+				<div class="pageDown" style="cursor:not-allowed">下一页</div>
+				{{else}}
+				<div class="pageDown" onclick="one({{list.data.current_page+1}})">下一页</div>
+				{{/if}}
+			</div>
+			{{/if}}
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/buyvideo.js' charset='utf-8'></script>
+		<script type="text/javascript" src="../res/js/pageGroup.js"></script>
+		<script type="text/javascript">
+			function one(no) {
+				buyvideo.fn.shipinList(no);
+			}
+
+			function content(id) {
+				window.location.href = 'mykecheng_content.html?id=' + id;
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>课程介绍</title>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="kecheng">
+<div class="kecheng1"></div>
+<div class="kecheng2">
+<div class="kecheng3"><img src="../images/kechengjieshao1.jpg" /></div>
+<div class="kecheng4">
+<p>课程名称：<span>公务员晋升视频录播</span></p>
+</div>
+<div class="kecheng5">
+<p>主讲老师：<span>王建伟</span></p>
+</div>
+<div class="kecheng6">￥<span><b>399</b></span></div>
+</div>
+<div style="height:1em;"></div>
+</div>
+<!--代码部分begin-->
+<div id="menuq">
+<!--tag标题-->
+    <ul id="nav">
+        <li><a href="#" class="selected">名师介绍</a></li>
+        <li><a href="#" class="">课程详情</a></li>
+        <li><a href="#" class="">听课流程</a></li>
+    </ul>
+<!--二级菜单-->
+    <div id="menuq_con">
+        <div class="tag" style="display:block">
+		<span class="mingshijieshao">
+		<li class="mingshijieshao1">
+		<img src="../images/mingshijieshao.jpg" />
+		<p>胡敬源</p>
+		<span class="mingshijieshao1li">资深培训师</span>
+		</li>
+		<ul class="mingshijieshao2">公选培训资深名师，10年从业经验，培训考生过百万人，是公考行业最具影响力的领军人物。</ul>
+		<a href="#" class="kechengxi" style="margin-top:15em;">点击购买/联系客服</a>
+		</span>
+         </div> 
+        <div class="tag" style="display:none">
+		<p class="kechen">名师介绍</p>
+		<span class="kechengxiangqing2">
+         <p class="kechengxiangqing">一、公选遴选培训目标</p>
+		 <p class="kecehngxiangqing1">主要针对没有公选、遴选考试经历和有考试经历却屡败屡战的考生，以及每次考试之后总是排名第二之后的考生，让考生在短时间内迅速提高10-30分实现轻松胜出.</p></span>
+		 <span class="kechengxiangqing3">
+         <p class="kechengxiangqing">二、适用人群</p>
+		 <p class="kecehngxiangqing1" style="padding-left:8%;">公选遴选考试</p>
+		 <p class="kecehngxiangqing1" style="padding-left:12%;">培训时间：1月1日-1月31日（视频回放无限看）</p>
+		 </span>
+		 <span class="kechengxiangqing4">
+         <p class="kechengxiangqing">三、公选遴选培训重点</p>
+		 <p class="kecehngxiangqing1">一是指导笔试面试考前冲刺复习的重点</p>
+		 <p class="kecehngxiangqing1">二是指导笔试公共卷应试策略和答题技巧</p>
+		 <p class="kecehngxiangqing1">三是帮助解决怎样攻克笔试专业卷</p>
+		 <p class="kecehngxiangqing1">四是帮助解决领导能力测试人机对话若干问题</p>
+		 <p class="kecehngxiangqing1">五是直击考点、简洁高效，讲授相应考试的高分策略</p>
+		 <p class="kecehngxiangqing1">六是进行考前心理调节和信心培养</p>
+		 </span>
+		 <span class="kechengxiangqing5">
+         <p class="kechengxiangqing">四、公选、遴选培训方式</p>
+		 <p class="kecehngxiangqing1">以在线实战模拟为主要方式，每个考生安排一个专家进行一对一的保姆式服务，必要时安排其他专家组成员进行协助！</p>
+		 <p class="kecehngxiangqing1">教授将针对考生的考试类型，配用不同的辅导资料。</p>
+		 </span>
+		 <span class="kechengxiangqing6">
+         <p class="kechengxiangqing">1.专家团队权威高效</p>
+		 <p class="kecehngxiangqing1">一讲堂专家团队中，多人曾在各级党政机关担任主要领导干部，深谙党政机关选人用人之道；多次担任全国各地公选、遴选、公务员面试等公职考试的考官工作；多人担任国家高级职业经理人测评专家；预测的试题多次被各地命题组原题采纳，学员屡创总分第一的高分神话。</p>
+		 </span>
+		 <span class="kechengxiangqing7">
+         <p class="kechengxiangqing">2研发能力全国领跑全国领先的考试研究、开发能力。考点预测首屈一指。</p>
+		 </span>
+		 <span class="kechengxiangqing8">
+         <p class="kechengxiangqing">3.相比其他培训机构</p>
+		 <p class="kecehngxiangqing1">一讲堂讲干货、传绝技、反套路，少废话、不忽悠，收费低、成功率高、效果好，尤其是冠军学员比例超高，真正实现“投入一次、成就一生”的目标，在节省经济成本的同时也节省着时间成本。</p>
+		 </span>
+		 <a class="kechengxi" href="#">点击购买/联系客服</a>
+         </div> 
+        <div class="tag"  style="display:none">
+             <span class="tingke">
+		 <p>QQ直播</p>
+		 <p><img src="../images/tingke.png" /></p>
+		 <p style="margin-top:1.8em;">上传回放</p>
+		 <p><img src="../images/tingke1.png" /></p>
+		 <p style="margin-top:0.2em;">回看回放</p>
+		 </span>
+		 <span class="tingke1">欲了解更多详情请登录一讲堂官网</span>
+		 <span class="tingke2">www.yijiangtang.com</span>
+		 <a class="kechengxi" href="#">点击购买/联系客服</a>
+        </div> 
+</div>
+</div>
+<script>
+var tabs=function(){
+    function tag(name,elem){
+        return (elem||document).getElementsByTagName(name);
+    }
+    //获得相应ID的元素
+    function id(name){
+        return document.getElementById(name);
+    }
+    function first(elem){
+        elem=elem.firstChild;
+        return elem&&elem.nodeType==1? elem:next(elem);
+    }
+    function next(elem){
+        do{
+            elem=elem.nextSibling;  
+        }while(
+            elem&&elem.nodeType!=1  
+        )
+        return elem;
+    }
+    return {
+        set:function(elemId,tabId){
+            var elem=tag("li",id(elemId));
+            var tabs=tag("div",id(tabId));
+            var listNum=elem.length;
+            var tabNum=tabs.length;
+            for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selected";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                    })(i)
+            }
+        }
+    }
+}();
+tabs.set("nav","menuq_con");//执行
+</script>
+<!--代码部分end-->
+<div class="an10" style="margin-top:1em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

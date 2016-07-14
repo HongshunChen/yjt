@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>案例分析</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="../css/img_css.css" type="text/css" rel="stylesheet"  />
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<!--导航-->
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top">
+			<!--top-->
+			<div class="top1">
+				<a href="../index/index.html">
+					<div style="float:left;" id="logo"></div>
+				</a>
+				<div class="you"></div>
+
+			</div>
+		</div>
+		<!--top-->
+		<div style="position:relative;top:65px;">
+			<div class="da">
+
+				<div class="daohang">
+					<a>
+						<div class="xia1"><img src="../images/biao.jpg" />
+							<p id="showtime">已用时 &nbsp;00:00</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="xia2"><img src="../images/biao1.jpg" />
+							<p>名师批改</p>
+						</div>
+					</a>
+					<a onclick="anlifenxi.fn.pigai()">
+						<div class="xia3"><img src="../images/biao2.jpg" />
+							<p>付费批改</p>
+						</div>
+					</a>
+					<!--<a href="#">
+					<div class="xia4"><img src="../images/biao3.jpg" />
+						<p>下载本题</p>
+					</div>
+				</a>
+			</div>-->
+				</div>
+
+				<div id="anli">
+					<!--内容填充-->
+				</div>
+			</div>
+
+			<!--狂-->
+
+			<!--<div style="width:1000px; margin:0 auto;">
+			<div class="navmenu">
+				<ul class="menu">
+					<li>
+						
+						
+					</li>
+				</ul>
+			</div>
+		</div>-->
+			<img style="margin:0 auto; width:1000px; display:block;" src="../images/di2.jpg" />
+			<div class="zuihou">
+				<!--底部-->
+			</div>
+
+			<script type="text/html" id="logo_">
+				<img class="top1img1" src="../images/logo.png" /> {{if questid=='4'}}
+				<img class="top1img2" src="../images/jianda.jpg" /> {{else if questid=='5'}}
+				<img class="top1img2" src="../images/bianxi.jpg" /> {{else if questid=='6'}}
+				<img class="top1img2" src="../images/celunwen.jpg" /> {{else if questid=='7'}}
+				<img class="top1img2" src="../images/anlifenxi.jpg" /> {{else if questid=='8'}}
+				<img class="top1img2" src="../images/gongwen.jpg" /> {{/if}}
+			</script>
+			<script type="text/html" id="anLi">
+
+				<img style="margin-top:12px;" src="../images/you.jpg" />
+				<div class="daohangxia"></div>
+
+				<div class="dashi">
+					<div class="sh"><span>{{no}}、</span>
+						<p>{{#list.data.question}}</p>
+						<div style="width:1000px; margin:0 auto; height:20px;"></div>
+					</div>
+					<div class="shiti">
+						<!--<p>(1)甲市人民政府《会议纪要》所作出的城市公交公司免缴交通税费的内容是否属于行政诉讼受案范围？为什么？</p>
+					<p>(2)田某、孙某和王某三人是否具有原告资格？为什么？</p>-->
+						{{#list.data.questiondescribe}}
+						<div class="shangchuan" style="margin-left: 35px;">上传答案(选择一种提交方式)</div>
+
+						<div id="image-wrap" style="display: none;"></div>
+						<textarea id="text-wrap" style="width: 1000px;height: 300px;display: none;"></textarea>
+						<div class="demo">
+							<form id="imageform" method="post" enctype="multipart/form-data" action="upload.php">
+								<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>
+								<div id="up_btn" class="btn" style="margin-left:237px;" onclick="none_blo(0,'image-wrap','text-wrap')">
+									<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
+									<span style="">文字答案上传</span>
+									<input style="height:100px;" type="button">
+								</div>
+								<div id="up_btn" class="btn" style="margin-left:20px;">
+									<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen1.jpg" />
+									<span style="">图片答案上传</span>
+									<input style="height:100px;" type="file" onchange="show_img(this,'#image-wrap')" onclick="none_blo(1,'image-wrap','text-wrap')" id="file">
+								</div>
+							</form>
+
+							<div id="preview"></div>
+						</div>
+						<div class="daan">
+							<!--付费批改-->
+							<a onclick="anlifenxi.fn.pigai({{list.data.id}})">
+								<p style="background:url(../images/fu.jpg); float:left; font-size:18px; width:132px; height:45px; line-height:36px; text-align:center; color:#FFFFFF; margin-left:410px;">付费批改</p>
+							</a>
+						</div>
+						<div class="fenxiaqq" style="margin-top:-45px;">
+							{{if list.data.prev==0}}
+							<a style="cursor:not-allowed;">
+					{{else}}
+						<a onclick="anlifenxi.fn.prev({{list.data.prev}})">
+						{{/if}}
+							<img style="margin-left:80px; float:left;" src="../images/quanzhen11.jpg" /></a> {{if list.data.next==0}}
+							<a style="cursor: not-allowed;">
+						{{else}}
+						<a onclick="anlifenxi.fn.next({{list.data.next}})">
+							{{/if}}
+							<img style="margin-left:20px; float:left;" src="../images/quanzhen10.jpg" /></a>
+							<div class="wrapper">
+								<div class="imageContainer" onclick="change_one(this),collect({{list.data.questionid}})">
+									<img style="padding-top:8px;" src="../images/quanzhe6.jpg" />
+									<img style="padding-top:8px;" src="../images/quanzhen6.jpg" />
+								</div>
+							</div>
+						</div>
+						<!--分享-->
+						<div style="width:1000px; margin:0 auto; height:20px;"></div>
+					</div>
+				</div>
+			</script>
+			<script type="text/javascript" src="../res/js/config.js"></script>
+			<script type="text/javascript" src="js/anlifenxi.js"></script>
+			<script type="text/javascript" src="../res/js/quit.js"></script>
+			<script type="text/javascript" src="../res/js/showtime.js"></script>
+			<script type="text/javascript" src="../js/common.js"></script>
+			<script type="text/javascript" src="../res/js/collection.js"></script>
+			<script type="text/javascript" src="../res/js/zhuguan_div_none_block.js"></script>
+			<script type="text/javascript" src="../res/js/img_show.js"></script>
+
+		</div>
+	</body>
+
+</html>

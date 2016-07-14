@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="一讲堂在线教育后台管理">
+<meta name="description" content="一讲堂在线教育后台管理">
+<meta name="keywords" content="一讲堂在线教育后台管理">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>一讲堂在线教育后台管理</title>
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">一讲堂系统管理平台<span class="label">版本:1.0</span></a>
+			<div class="nav-collapse navbar-responsive-collapse collapse">
+				<ul class="nav">
+					<li>
+						<a href="index.php?core-master">全局</a>
+					</li>
+															<li>
+						<a href="index.php?user-master">用户模块</a>
+					</li>
+																				<li>
+						<a href="index.php?exam-master">题库模块</a>
+					</li>
+																														<li>
+						<a href="index.php?document-master">名师批改</a>
+					</li>
+																														<li>
+						<a href="index.php?bank-master">财务模块</a>
+					</li>
+																				<li class="active">
+						<a href="index.php?vedio-master">视频模块</a>
+					</li>
+														</ul>
+				<ul class="nav pull-right">
+					<li>
+						<a href="index.php" target="_blank">网站首页</a>
+					</li>
+					<li class="divider-vertical">
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							
+							<!-- <li>
+								<a href="index.php?user-app-privatement">个人中心</a>
+							</li>
+							<li class="divider">
+							</li> -->
+							
+							<li>
+								<a href="index.php?core-master-logout">退出管理</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<div class="accordion" id="accordion-13465">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">课程管理</a>
+		</div>
+		<div class="accordion-body collapse" id="accordion-element-707348">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<!-- <li><a href="?vedio-master-demand-vedio">视频列表</a></li> -->
+		    		<li><a href="?vedio-master-demand-area">课程分类</a></li>
+		    		<li><a href="?vedio-master-demand-subject">视频列表</a></li>
+		    		<li><a href="?vedio-master-demand-course">课程管理</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">直播管理 </a>
+		</div>
+		<div class="accordion-body in collapse" id="accordion-element-212090">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<li><a href="index.php?vedio-master-seeding">直播列表</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212091">回收站</a>
+		</div>
+		<div class="accordion-body collapse" id="accordion-element-212091">
+			<div class="accordion-inner">
+				<ul class="unstyled">
+					<li><a href="index.php?vedio-master-recyle-course">课程回收站</a></li>
+					<li><a href="index.php?vedio-master-recyle-vedio">视频回收站</a></li>
+					<li><a href="index.php?vedio-master-recyle-seeding">直播课程回收站</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?vedio-master">视频模块</a> <span class="divider">/</span></li>
+				<li><a href="#">直播课程管理</a> <span class="divider">/</span></li>
+				<li  class="active">添加直播课程</li>
+				
+			</ul>
+				<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">添加直播课程</a>
+				</li>
+				<li class="pull-right">
+					<a href="index.php?vedio-master-seeding">直播课程管理</a>
+				</li>
+			</ul>
+	      <form action="index.php?vedio-master-seeding-addseeding" method="post" class="form-horizontal">
+				<fieldset>
+				<div class="top_left" style="width: 40%;float: left;">
+				<div class="control-group">
+					<label for="vname" class="control-label">直播课程名称</label>
+					<div class="controls">
+						<input id="vname" name="args[vname]" type="text" value="" needle="needle" msg="您必须输入视频名称" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="vprice" class="control-label">直播课程价格</label>
+					<div class="controls">
+						<input id="vprice" name="args[vprice]" type="text" value="" needle="needle" msg="您必须输入视频名称" />
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label for="basicthumb" class="control-label">直播课程上传</label>
+					<div class="controls">
+
+				<input type="button" id="upload" value="上传"></input>	
+			
+				<script src="app/core/styles/js/polyv-upload.js"></script>
+				
+<script type="text/javascript">
+
+    var obj = {
+            uploadButtton: "upload",   //打开上传控件按钮id
+            writeToken: "c7679704-ffbc-40ab-839d-72a8e4521a10",
+            userid : 'e48926e810',
+            ts : '1468200848',
+            hash : '4f8ddcdaf50b05c882c1454a8f383164' ,
+            readToken: 'c05bccf2-849b-4ce0-97ee-12ac810a35c3',
+             response: function(json) { 
+             	document.getElementById('VEDIO_IMG').src = json.swf_link;
+             	var html = "<table class='table table-hover'><thead><tr><th width='20%'>项目</th><th>参数</th></tr></thead><tbody><tr><td>视频地址</td><td>"+json.swf_link+"</td></tr><tr><td>视频时长</td><td>"+json.duration+"</td></tr><tr><td>播放次数</td><td>"+json.times+"</td></tr>	<tr><td>视频大小</td><td>"+json.source_filesize+"</td></tr></tbody></table>";
+
+             	document.getElementById('HTML').innerHTML = html;
+             	document.getElementById('imaes').value = json.first_image;
+     			document.getElementById('remoteurl').value = json.swf_link;
+     			document.getElementById('mp4').value = json.mp4;
+     			document.getElementById('videovid').value = json.vid;
+        //如果需要关闭窗口
+        upload.closeWrap();
+         
+    }
+   }
+    var upload = new PolyvUpload(obj);
+
+	
+</script>
+					</div>
+				</div>
+	
+				<div class="control-group">
+					<label for="basicsubjectid" class="control-label">课程内容</label>
+					<div class="controls">
+						<select id="basicsubjectid" name="args[courseify1]" needle="needle" msg="您必须选择课程分类">
+		        		<option value="">选择分类</option>
+				  						  							  		<option value="专项精讲">专项精讲</option>
+				  						  						  							  		<option value="系统课程">系统课程</option>
+				  						  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  		</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="basicareaid" class="control-label">课程类别</label>
+					<div class="controls">
+						<select id="basicareaid" name="args[courseify2]" needle="needle" msg="您必须选择课程类别">
+		        		<option value="">选择类别</option>
+				  													  													  													  		<option value="面试">面试</option>
+				  						  													  		<option value="申论">申论</option>
+				  						  													  		<option value="行测">行测</option>
+				  						  													  		<option value="公益课">公益课</option>
+				  						  													  													  													  													  						  		</select>
+					</div>
+				</div>
+			</div>
+				<div class="top_right" style="width: 50%;float: left;height: 260px;">
+
+				<div class="control-group">
+				<div >
+					
+<embed width="320" height="240" src="/i/bookmark.swf" id="VEDIO_IMG" />
+					</div>
+					<div id="HTML">
+			
+					</div>
+				</div>
+				</div>
+				<div class="control-group">
+					<label for="basicareaid" class="control-label">考试类别</label>
+					<div class="controls">
+						<select id="basicareaid" name="args[courseify3]" needle="needle" msg="您必须选择课程类别">
+		        		<option value=""></option>
+				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		<option value="国考">国考</option>
+				  						  						  						  						  						  						  						  						  		</select>
+					</div>
+				</div>
+
+				
+				<div class="control-group">
+					<label for="basic" class="control-label">截止时间</label>
+					<div class="controls">
+						<input class="input-small datetimepicker" data-date="2016-07-11" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="10" id="stime" value=""/>
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label for="vintro" class="control-label">直播课程简介</label>
+					<div class="controls">
+						<textarea class="input-xlarge" rows="4" name="args[vintro]" id="vintro"></textarea>
+					  	<span class="help-block">介绍一下课程，限制200字</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">直播课程内容</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[vcontent]" id="vcontent"></textarea>
+					  	<span class="help-block">无选择项的请不要填写，如填空题、问答题等主观题。</span>
+					</div>
+				</div>
+			
+				<div class="control-group">
+					<div class="controls">
+						<button class="btn btn-primary" onclick="ceshi();" type="submit">提交</button>
+						
+						<input type="hidden" name="args[vurl]" id="remoteurl" value="">
+						<input type="hidden" name="args[videoid]" id="videovid" value="">
+						<input type="hidden" name="args[videohumb]" id="imaes" value="">
+						<input type="hidden" name="args[mp4url]" id="mp4" value="">
+						<input type="hidden" name="insertquestype" value="1"/>
+				
+						
+					</div>
+				</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+  					$("form").submit(function(){
+    				  var  vid = document.getElementById('videovid').value;
+    				  var  basic = document.getElementById('vname').value;
+    				  var  basicprice = document.getElementById('vcontent').value;
+    				  $.post("http://v.polyv.net/uc/services/rest?method=editById",{
+    				  		"writetoken":"c7679704-ffbc-40ab-839d-72a8e4521a10",
+    				  		"vid":vid,
+    				  		"title":basic,
+    				  		"context":basicprice,
+    				  },function (data) {
+    				  	
+    				  });
+    				 
+ 					 });
+				});
+			</script>	
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

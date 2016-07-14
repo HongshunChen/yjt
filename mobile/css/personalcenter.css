@@ -1,0 +1,21 @@
+.cd-baby-block {
+	height: 65px;
+}
+
+.icon_img_bg {
+	width: 29px;
+	height: 29px;
+	background-position: 50%50%;
+	background-size: contain;
+	border-radius: 5px;
+	float: left;
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.icon_img {
+	width: 30px;
+	height: 30px;
+	background-position: 50%50%;
+	background-size: contain;
+}

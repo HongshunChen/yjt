@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心—用户信息</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/classiccollection.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">个人中心</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div id="classiccollection_subtitle">
+						<span class="classiccollection_subtitle_img"></span>
+						<span class="classiccollection_subtitle_title">经典收藏</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>					
+					<div class="all_divbox">
+						<div class="row classiccollection_row_box">
+							<div class="col-50 classiccollection_col_box" onclick="location='shoucangList.html?type=1'">
+								<div class="classiccollection_img_danxuan"></div>
+								<div class="classiccollection_img_danxuan_title">单选题</div>
+								<div class="cd-home-block"></div>
+							</div>
+							<div class="col-50" onclick="location='shoucangList.html?type=5'">
+								<div class="classiccollection_img_bianxiti"></div>
+								<div class="classiccollection_img_danxuan_title">辨析题</div>
+								<div class="cd-home-block"></div>
+							</div>
+						</div>
+						<div class="row classiccollection_row_box2" >
+							<div class="col-50 classiccollection_col_box" onclick="location='shoucangList.html?type=2'">
+								<div class="classiccollection_img_duoxuan"></div>
+								<div class="classiccollection_img_danxuan_title">多选题</div>
+								<div class="cd-home-block"></div>
+							</div>
+							<div class="col-50" onclick="location='shoucangList.html?type=6'">
+								<div class="classiccollection_img_celun"></div>
+								<div class="classiccollection_img_danxuan_title">策论题</div>
+								<div class="cd-home-block"></div>
+							</div>
+						</div>
+						<div class="row classiccollection_row_box2" >
+							<div class="col-50 classiccollection_col_box" onclick="location='shoucangList.html?type=3'">
+								<div class="classiccollection_img_panduan"></div>
+								<div class="classiccollection_img_danxuan_title">判断题</div>
+								<div class="cd-home-block"></div>
+							</div>
+							<div class="col-50" onclick="location='collectList?type=7'">
+								<div class="classiccollection_img_fenxi"></div>
+								<div class="classiccollection_img_danxuan_title">案例分析</div>
+								<div class="cd-home-block"></div>
+							</div>
+						</div>
+						<div class="row classiccollection_row_box2">
+							<div class="col-50 classiccollection_col_box" onclick="location='shoucangList.html?type=4'">
+								<div class="classiccollection_img_jianda"></div>
+								<div class="classiccollection_img_danxuan_title">简答题</div>
+								<div class="cd-home-block"></div>
+							</div>
+							<div class="col-50" onclick="location='shoucangList.html?type=8'">
+								<div class="classiccollection_img_xiezuo"></div>
+								<div class="classiccollection_img_danxuan_title">公文写作</div>
+								<div class="cd-home-block"></div>
+							</div>
+						</div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+			<!--<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../main.html">
+						<span class="icon my_icon-home"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">首页</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+					</a>
+					<a class="tab-item external" href="../mine/maine_main.html">
+						<span class="icon my_icon-individualcentercore_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">个人中心</span></span>
+					</a>
+				</nav>
+			</footer>-->
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

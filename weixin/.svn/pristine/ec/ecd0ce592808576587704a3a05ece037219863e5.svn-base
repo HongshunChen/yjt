@@ -1,0 +1,181 @@
+{
+	"index.html": {
+		"resources": [
+			"res/js/config.js",
+			"res/jslib/sm-extend.min.js",
+			"js/main.js",
+			"css/index.css",
+			"res/css/home_lanse.css",
+			"res/jslib/sm.min.js",
+			"images/index.jpg",
+			"res/jslib/artTemplate/template.js",
+			"images/yjt_logo.png",
+			"res/css/sm-extend.min.css",
+			"res/jslib/zepto.min.js",
+			"res/css/sm.min.css",
+			"zhuguanti/mine_main.html",
+			"mine/xinxi.html"
+		],
+		"refer": [
+			"zhuguanti/mine_main.html",
+			"mine/xinxi.html"
+		]
+	},
+	"login/denglu.html": {
+		"resources": [
+			"images/denglu2.png",
+			"images/denglu.jpg",
+			"res/js/config.js",
+			"res/jslib/sm-extend.min.js",
+			"images/denglu1.png",
+			"res/jslib/sm.min.js",
+			"res/jslib/artTemplate/template.js",
+			"css/index1.css",
+			"login/js/login.js",
+			"res/css/sm-extend.min.css",
+			"res/jslib/zepto.min.js",
+			"res/css/sm.min.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"zhuguanti/mine_main.html": {
+		"resources": [
+			"zhuguanti/zibeitimu.html",
+			"images/mingshipigai.jpg",
+			"zhuguanti/jianda.html",
+			"images/zhao.jpg",
+			"index.html",
+			"css/index1.css"
+		],
+		"refer": [
+			"zhuguanti/zibeitimu.html",
+			"zhuguanti/jianda.html",
+			"index.html"
+		]
+	},
+	"zhuguanti/zibeitimu.html": {
+		"resources": [
+			"zhuguanti/js/zibei_img_show.js",
+			"js/img_upload.js",
+			"images/upimg@1x.png",
+			"zhuguanti/js/zibei.js",
+			"js/camera/common.js",
+			"res/js/mui.min.js",
+			"images/tijiao.jpg",
+			"zhuguanti/mine_main.html",
+			"res/jslib/sm-extend.min.js",
+			"res/jslib/sm.min.js",
+			"css/index1.css",
+			"res/jslib/artTemplate/template.js",
+			"res/css/sm-extend.min.css",
+			"res/css/sm.min.css",
+			"res/jslib/zepto.min.js",
+			"res/js/config.js"
+		],
+		"refer": []
+	},
+	"zhuguanti/jianda.html": {
+		"resources": [
+			"images/my_icon-left.png",
+			"js/img_upload.js",
+			"zhuguanti/js/jianda.js",
+			"images/upimg@1x.png",
+			"res/js/mui.min.js",
+			"css/anlifenxi.css",
+			"images/an.jpg",
+			"res/js/showtime.js",
+			"res/js/upload.js",
+			"zhuguanti/mine_main.html",
+			"res/jslib/sm-extend.min.js",
+			"res/css/home_lanse.css",
+			"res/jslib/sm.min.js",
+			"res/jslib/artTemplate/template.js",
+			"res/css/sm-extend.min.css",
+			"res/css/sm.min.css",
+			"res/jslib/zepto.min.js",
+			"res/js/config.js"
+		],
+		"refer": [
+			"zhuguanti/mine_main.html"
+		]
+	},
+	"mine/myzhibo.html": {
+		"resources": [
+			"css/viewall.css",
+			"res/jslib/mui.min.js",
+			"mine/xinxi.html",
+			"images/gouwu@2x.png",
+			"css/Subjective.css",
+			"res/css/sui.min.css",
+			"res/js/pageGroup.js",
+			"css/pageGroup.css",
+			"mine/js/myzhibo.js"
+		],
+		"refer": [
+			"mine/xinxi.html"
+		]
+	},
+	"mine/xinxi.html": {
+		"resources": [
+			"mine/myzhibo.html",
+			"images/gw_bg.jpg",
+			"mine/lianxizhongxin.html",
+			"mine/mykecheng.html",
+			"mine/huancunshipin.html",
+			"images/zhao.jpg",
+			"css/index1.css",
+			"images/yjt_logo.png"
+		],
+		"refer": [
+			"mine/myzhibo.html",
+			"mine/lianxizhongxin.html",
+			"mine/mykecheng.html",
+			"mine/huancunshipin.html"
+		]
+	},
+	"mine/lianxizhongxin.html": {
+		"resources": [
+			"images/pageDown.png",
+			"mine/new.html",
+			"images/pageUp.png",
+			"images/task@2x.png",
+			"mine/js/lianxizhongxin.js",
+			"mine/xinxi.html"
+		],
+		"refer": [
+			"mine/new.html",
+			"mine/xinxi.html"
+		]
+	},
+	"mine/mykecheng.html": {
+		"resources": [
+			"mine/js/buyvideo.js",
+			"mine/xinxi.html"
+		],
+		"refer": [
+			"mine/xinxi.html"
+		]
+	},
+	"mine/new.html": {
+		"resources": [
+			"mine/css/demo_videoPlaySimple.js",
+			"mine/lianxizhongxin.html"
+		],
+		"refer": [
+			"mine/lianxizhongxin.html"
+		]
+	},
+	"mine/huancunshipin.html": {
+		"resources": [
+			"mine/js/huancunshipin.js",
+			"mine/xinxi.html",
+			"images/allicons@1x.png"
+		],
+		"refer": [
+			"mine/xinxi.html"
+		]
+	}
+}

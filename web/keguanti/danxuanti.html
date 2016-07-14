@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>单选题</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.questionselect {
+				margin-left: 100px;
+				width: 600px;
+			}
+			
+			.questionselect p {
+				font-size: 16px;
+				margin: 5px 0px;
+				margin-left: 96px;
+				float: left;
+			}
+		</style>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery_cmhello.js"></script>
+		<!--导航-->
+	</head>
+	<body>
+
+		
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<!--单选题的-->
+					<img class="top1img2" src="../images/logo3.png" />
+					<!--单选题结束-->
+					
+					<!--多选题开始-->
+					<img class="top1img2" src="../images/logo4.png" />
+					<!--判断题-->
+					<img class="top1img2" src="../images/logo2.png" />
+					<!--全真模拟-->
+					<img class="top1img2" src="../images/quanzhen.jpg" />
+					
+					
+					
+				</div>
+				<div class="you">
+					<!--you-->
+					<!--用户信息-->
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+		<div style="position:relative;top:65px;">
+		<div class="da1">
+			<!--大-->
+			<div class="daohang">
+				<a href="#">
+					<div class="xia1"><img src="../images/biao.jpg" />
+						<p id="showtime"></p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="xia2"><img src="../images/biao1.jpg" />
+						<p>收藏本卷</p>
+					</div>
+				</a>
+				<a onclick="danxuanti.fn.papers()">
+					<div class="xia3" style="border-right: 0px;"><img src="../images/biao2.jpg" />
+						<p>我要交卷</p>
+					</div>
+				</a>
+				<!--<a href="#">
+					<div class="xia4"><img src="../images/biao3.jpg" />
+						<p>下载本卷</p>
+					</div>
+				</a>-->
+			</div>
+			<img style="margin-top:12px;" src="../images/you.jpg" />
+			<div class="daohangxia"></div>
+		</div>
+		<!--大-->
+		<div class="timu">
+			<p>一、单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分，共5题，20分。）</p>
+		</div>
+		<div class="dashi" id="dan_xuan">
+			<!--狂-->
+
+		</div>
+		<!--狂-->
+		<div style="width:1000px; margin:0 auto;">
+			<div class="navmenu" style="margin-top:-53px;">
+				<ul class="menu">
+					<li>
+						<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
+
+						<ul style="display: none; margin-left:-20px;">
+
+							<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+								<div class="wei">
+									<a onclick="share('wx')">
+										<div style="margin-left:5px; float:left;">
+											<p><img src="../images/f.jpg" />
+												<p>微信</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('bd')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f1.jpg" />
+												<p>百度</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('kj')" target="_blank">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f2.jpg" />
+												<p>空间</p>
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="wei">
+									<a onclick="share('xl')">
+										<div style="float:left;">
+											<p><img src="../images/f3.jpg" />
+												<p>新浪</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('qq')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f4.jpg" />
+												<p>QQ</p>
+											</p>
+										</div>
+									</a>
+									<a onclick="share('rr')">
+										<div style="margin-left:10px; float:left;">
+											<p><img src="../images/f5.jpg" />
+												<p>人人</p>
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="theme-buy">
+			<a class="btn-primary btn-large theme-login woya" href="javascript:;"></a>
+		</div>
+		<div class="theme-popover">
+			<div class="theme-popbod dform">
+				<ol>
+					<p class="zaida">再答十题即可获得<span style="color:#a00a2e; font-size:24px;">20元代金券</span></p>
+					<div style="width:269px; margin:0 auto; overflow:hidden; margin-top:10px;">
+						<a class="zaida1" onclick="danxuanti.fn.carry_over()">继续答题</a>
+						<a class="zaida2" href="fenxibaogao.html">强制交卷</a></div>
+				</ol>
+			</div>
+		</div>
+		<div class="theme-popover-mask"></div>
+		<div class="zuihou">
+			<!--底部信息存放-->
+		</div>
+		<script type="text/html" id="danXuan">
+
+			<div class="shi1">
+				<p id="title">{{shu}}、{{question}}</p>
+			</div>
+			<div class="shiti1">
+				<div class="questionselect" id="content">
+					{{#questionselect}}
+				</div>
+				<!--<div class="shiti2">
+					<p>A.客观性</p>
+					<p style="float:right; margin-left:90px;">B.能动性</p>
+				</div>
+				<div class="shiti2">
+					<p>C.对象性</p>
+					<p style="float:right; margin-left:90px;">D.任意性</p>
+				</div>-->
+				<div class="tabPanel1" style="clear: both;">
+					<ul id="dan_one">
+						<li onclick="dan(this)" style="margin-left:10px;" value="A"><a>A</a></li>
+						<li onclick="dan(this)" value='B'><a>B</a></li>
+						<li onclick="dan(this)" value='C'><a>C</a></li>
+						<li onclick="dan(this)" value='D'><a>D</a></li>
+					</ul>
+				</div>
+				<div class="fenxiang">
+					{{if shu==1}}
+					<a class="fenxianga1" style="margin-left:15px;cursor:not-allowed;"><img src="../images/quanzhen11.jpg" /></a>
+					{{else}}
+					<a onclick="danxuanti.fn.one_more({{shu}},{{id}})" class="fenxianga1" style="margin-left:15px;"><img src="../images/quanzhen11.jpg" /></a>
+					{{/if}}
+					<!--下一题-->
+					{{if shu==total}}
+					<a style="cursor:not-allowed;"><img src="../images/quanzhen10.jpg" /></a>
+					{{else}}
+					<a onclick="danxuanti.fn.next({{shu}},{{id}})"><img src="../images/quanzhen10.jpg" /></a>
+					{{/if}}
+					<div class="wrapper">
+						<div class="imageContainer" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+							<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
+						</div>
+					</div>
+				</div>
+				<!--分享-->
+			</div>
+			<div><img src="../images/quanzhen3.jpg" /></div>
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/danxuanti.js"></script>
+		<script type="text/javascript" src="../res/js/showtime.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/collection.js"></script>
+		<script type="text/javascript" src="../res/js/share.js"></script>
+		<script>
+			
+			
+		</script>
+		</div>
+	</body>
+
+</html>

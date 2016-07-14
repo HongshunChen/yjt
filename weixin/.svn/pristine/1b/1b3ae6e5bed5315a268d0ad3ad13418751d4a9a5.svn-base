@@ -1,0 +1,47 @@
+.index {
+	width: 100%;
+	height: 60em;
+	background: url(../images/index.jpg) center no-repeat;
+	overflow: hidden;
+}
+
+.yjt_logo {
+	margin-top: 2em;
+	float: right;
+	margin-right: 1.2em
+}
+
+.index1 {
+	width: 60%;
+	height: 33em;
+	background: rgba(249, 249, 241, 0.8);
+	border-radius: 10px;
+	margin-left: 5%;
+	margin-top: 19em;
+	overflow: hidden;
+}
+
+.index1 ul a {
+	width: 90%;
+	height: 2.4em;
+	background: #6faace;
+	border-radius: 10px;
+	text-indent: 18px;
+	margin-top: 1.5em;
+	margin-left: 0.5rem;
+	display: block;
+	font-size: 0.8rem;
+	color: #fff;
+	line-height: 2.6em;
+	font-family: "微软雅黑";
+}
+
+.an10 {
+	height: 2em;
+	background: #dedede;
+	width: 100%;
+	text-align: center;
+	line-height: 2em;
+	font-size: 0.9em;
+	color: #333;
+}

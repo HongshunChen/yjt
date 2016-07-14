@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+		<title>名师批改</title>
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+		<div class="content">
+			
+		<div class="pigai">
+			<img onclick="backs()" src="../images/zhao.jpg" style="margin: 80px 0px 0px 77px;"/>
+			<a onclick="turns(0)" style="margin-top:5em;">自备题目</a>
+			<a onclick="turns(4)">简答题</a>
+			<a onclick="turns(5)">辨析题</a>
+			<a onclick="turns(6)">策论文</a>
+			<a onclick="turns(7)">案例分析</a>
+			<a onclick="turns(8)">公文写作</a>
+		</div>
+		</div>
+		<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+		</div>
+		<script>
+			function turns(no) {
+				var token = localStorage.getItem('token');
+				if (token == null) {
+					$.confirm('您还没有登录，是否要登录?', function() {
+						window.location.href = '../login/denglu.html';
+					});
+				} else {
+					if (no == 0) {
+						window.location.href = 'zibeit.html';
+					} else {
+						window.location.href = 'jianda.html?id=' + no;
+					}
+				}
+			}
+			function backs(){
+				window.location.href='../index.html';
+			}
+		</script>
+	</body>
+
+</html>

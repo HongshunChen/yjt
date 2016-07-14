@@ -1,0 +1,127 @@
+
+.classiccollection_subtitle_img {
+	position: absolute;
+	height: 19px;
+	width: 19px;
+	background-image: url(../images/collection@2x.png);
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.classiccollection_subtitle_title {
+	margin-left: 1.5rem;
+}
+
+
+.classiccollection_row_box {
+	border: 1px #C8C8C8 solid;
+	margin-right: -4%;
+}
+
+.classiccollection_col_box {
+	border-right: 1px #C8C8C8 solid;
+}
+
+.classiccollection_row_box2 {
+	border-left: 1px #C8C8C8 solid;
+	border-bottom: 1px #C8C8C8 solid;
+	border-right: 1px #C8C8C8 solid;
+	margin-right: -4%;
+}
+
+.classiccollection_img_danxuan {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/danxuan@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_danxuan_title {
+	font-family: "微软雅黑";
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+	color: #666;
+	text-align: center;
+	margin-left: -10%;
+}
+
+.classiccollection_img_bianxiti {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/bianxiti@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_duoxuan {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/duoxuan@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_celun {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/celun@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_panduan {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/cuoti@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_fenxi {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/feixi@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_jianda {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/jianda@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}
+
+.classiccollection_img_xiezuo {
+	width: 50%;
+	height: 6.267em;
+	margin: 0em auto;
+	background: url(../images/xiezuo@2x.png) no-repeat ;	
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+	margin-left: 19%;
+}

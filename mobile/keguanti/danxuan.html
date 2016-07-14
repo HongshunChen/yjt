@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>试题练习</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/anlifenxi.css">
+		<link rel="stylesheet" href="../res/css/common_style.css">
+	</head>
+	<body>
+		<script src="../res/js/common_func.js"></script>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<div id="dan_xuan">
+				<!-- 内容--->
+			</div>
+			<script id="danXuan" type="text/html">
+				<header class="bar bar-nav" style="display:block;">
+					<div class="my_icon-left" onClick="javascript :history.back(-1);"></div>
+					<div class="anlifenxi_clock">
+						<img src="../images/an.jpg" /><span id="timer">00:00:00</span>
+					</div>
+					<div class="anlifenxi_clock" onclick="danxuanti.fn.paperSubmit({{data.paper_id}})">
+						<img src="../images/an1@2x.jpg" /><span>交卷</span>
+					</div>
+					<div class="bar_Title_public"></div>
+					<!--<div class="bdsharebuttonbox my_icon-right_more" data-tag="share_1">-->
+						<!--<a class="bds_mshare" data-cmd="mshare"></a>-->
+						<!--<a class="bds_qzone" data-cmd="qzone" href="#"></a>-->
+						<!--<a class="bds_tsina" data-cmd="tsina"></a>-->
+						<!--<a class="bds_baidu" data-cmd="baidu"></a>-->
+						<!--<a class="bds_renren" data-cmd="renren"></a>-->
+						<!--<a class="bds_tqq" data-cmd="tqq"></a>-->
+					<!--</div>-->
+				</header>
+				<div class="anlifenxi_clock">
+					<img src="../images/an.jpg" /><span>10:41</span>
+				</div>
+				<!--内容-->
+				<div class="content">
+					<!--加载主内容开始-->
+				<div class="left_tab_bg">
+					<span class="anlifenxi_text" style="margin-left: 3rem;">{{data.paper_type}}</span>
+				</div>
+				<div class="right_tab_bg"><span>{{data.question_no}}</span>/{{data.total_count}}</div>
+				<div style="clear:both"></div>
+				<div class="cd-home-block"></div>
+				<div class="all_divbox" style="min-height:70%">
+					<div class="cd-home-block"></div>
+					<div>
+						<span></span>
+						<span style="color:#1f80bf;display:inline-block;margin-top:10px;">（{{data.paper_type}}）</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="">{{#data.question}}</div>
+				<div class="row" id="question_options" style="text-align: center;margin: 0 auto;" >
+					{{if data.questiontype ==2}}
+						{{each data.questionSelectArr as value i}}
+							<span class="col-20" onclick="danxuanti.fn.submit_answer({{data.question_no}}, {{data.id}}, 1 )" "><label><input class="question_option" type="checkbox" name="selects" data-no="{{i}}" />{{value}}</label></span>
+						{{/each}}
+					{{else}}
+						{{each data.questionSelectArr as value i}}
+							<span class="col-20" onclick="danxuanti.fn.submit_answer({{data.question_no}}, {{data.id}}, 1 )" "><label><input class="question_option" type="radio" name="selects" data-no="{{i}}" />{{value}}</label></span>
+						{{/each}}
+					{{/if}}
+				</div>
+					<div style="height:10%">
+						{{#data.questionselect}}
+					</div>
+				<div class="cd-home-block"></div>
+
+
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="btn_public_normal_qian2" onclick="danxuanti.fn.next({{data.next}})">下一题</div>
+				<div style="clear:both"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</script>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script src="../res/js/common_func.js"></script>
+		<script src="js/danxuanti.js"></script>
+		<script>
+			$.init();
+		</script>
+		<script>
+//			window._bd_share_config = {
+//				common : {
+//					bdText : '自定义分享内容',
+//					bdDesc : '自定义分享摘要',
+//					bdUrl : '自定义分享url地址',
+//					bdPic : '自定义分享图片'
+//				},
+//				share : [{
+//					"bdSize" : 16
+//				}],
+//				slide : [{
+//					bdImg : 0,
+//					bdPos : "right",
+//					bdTop : 100
+//				}],
+//				image : [{
+//					viewType : 'list',
+//					viewPos : 'top',
+//					viewColor : 'black',
+//					viewSize : '16',
+//					viewList : ['qzone','tsina','huaban','tqq','renren']
+//				}],
+//				selectShare : [{
+//					"bdselectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf']
+//				}]
+//			}
+
+			//以下为js加载部分
+//			with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+		</script>
+	</body>
+
+</html>

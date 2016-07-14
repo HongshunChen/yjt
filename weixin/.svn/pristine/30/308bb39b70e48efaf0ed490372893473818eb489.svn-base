@@ -1,0 +1,146 @@
+
+.viewallanalysis_clock {
+	position: absolute;
+	padding-top: 0.5rem;
+}
+
+.viewallanalysis_clock_contents {
+	margin-left: 1.2rem;
+}
+
+.viewallanalysis_chengji_box {
+	background-color: #56B3F6;
+	color: #FFFFFF;	
+	padding-left: 15%;
+	padding-top: 2.3rem;
+}
+
+.viewallanalysis_chengji_box1 {
+	background-color: #56B3F6;
+	color: #FFFFFF;	
+	padding-left: 15%;
+	padding-top: 1.0rem;
+}
+
+.viewallanalysis_chengji_box3 {
+	background-color: #56B3F6;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.5rem;
+	clear:both;
+}
+
+.viewallanalysis_zuotishu {
+	font-size: 12px;
+}
+
+.viewallanalysis_chengji {
+	font-size: 2.6rem;
+    padding-left: 30%;
+}
+
+.viewallanalysis_chengji_xiaofen {
+	position: absolute;
+	font-size: 12px;
+	float: right;
+	margin-top: -1.8rem;
+	margin-left: 6.5rem;
+}
+
+.viewallanalysis_chengji_danwei {
+	float: right;
+	margin-right: 2.0rem;
+	margin-top: 18%;
+}
+
+.viewallanalysis_chengji_difen {
+    font-size: 12px;
+    float: right;
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+.viewallanalysis_biaoti {
+	color: #1f80bf;
+	font-weight: bold;
+}
+
+.viewallanalysis_biaoti1 {
+	color: #1f80bf;
+	font-weight: bold;
+	margin-left: 1.0rem;
+}
+
+.viewallanalysis_biaoti2 {
+	color: #1f80bf;
+	font-weight: bold;
+	margin-left: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.viewallanalysis_desc {
+	padding: 10px;
+}
+
+.viewallanalysis_weizhi {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.viewallanalysis_timu {
+	font-weight: bold;
+}
+
+.viewallanalysis_timu_leixing {
+	color: #1f80bf;
+}
+
+.viewallanalysis_daan {
+	font-weight: blod;
+}
+
+.viewallanalysis_daan .daan_nide {
+	color: #BF1F3D;
+}
+
+.viewallanalysis_daan .daan_zhengquede {
+	color: #25CF5C;
+}
+
+
+.jiexianli{
+	font-size: 0.68rem;
+	margin-left: 2.5rem;
+}
+
+/* 全部解析css */
+.viewallanalysis_chengji_box2 {	
+	color: #FFFFFF;	
+	padding-left: 15%;
+	padding-top: 4rem;
+}
+
+.text_style{
+	margin-left: 0.6rem;
+	margin-right: 0.6rem;
+}
+
+.viewallanalysis_daan .daan_zhengquede2 {
+	color: #25CF5C;
+	line-height: 3rem;
+	margin-left: 1.7rem;
+}
+
+.viewallanalysis_biaoti2 {
+	color: #1f80bf;
+	font-weight: bold;
+	
+}
+
+.btn_public_normal_shenlan{
+	margin-top: 4rem;
+}

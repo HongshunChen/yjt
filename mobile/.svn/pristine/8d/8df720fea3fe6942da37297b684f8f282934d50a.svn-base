@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>注册</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/register.css" />
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部-->
+			<header class="bar bar-nav">
+				<div class="bar_Title_teachercomments">{{bar_Title}}</div>
+				<div class="my_icon-left_mine" onclick="location='../index.html'"></div>
+			</header>
+			<!--加载主内容开始-->
+			<div class="content">
+				<div class="list-block">
+					<div class="item-content">
+						<div class="item-inner">
+							<input type="text" id="number" placeholder="手机号">
+						</div>
+					</div>
+					<div class="item-content">
+						<div class="item-inner">
+							<input id="code" type="text" class="register_yanzheng" style="width: 50%;" placeholder="验证码">
+							<input id="biaozhi_code" style="width: 95px;" value="获取验证码" class="register_yanzheng_btn" onclick="register.fn.get_code()" type="button" />
+						</div>
+					</div>
+					<div class="item-content">
+						<div class="item-inner">
+
+							<input id="password" type="password" placeholder="密码，6位以上字母或数字">
+
+						</div>
+					</div>
+					<div class="item-content">
+						<div class="item-inner">
+
+							<input id="pwd_again" type="password" placeholder="再次输入密码">
+
+						</div>
+					</div>
+				</div>
+				<div class="register_mingxi">
+					<span>首次注册可获99元代金券</span>
+					<span>&nbsp;</span>
+					<span><input type="checkbox" checked="checked">《同意注册协议》</span>
+				</div>
+				<div class="content-block">
+					<div class="row">
+						<div class="col-100">
+							<div class="btn_public_normal_shenlan" onclick="register.fn.register()">注册</div>
+						</div>
+					</div>
+				</div>
+
+				<!--加载主内容结束-->
+
+			</div>
+			<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+			<script type='text/javascript' src='js/register.js' charset='utf-8'></script>
+			<script type="text/javascript" src="../res/js/count_down.js"></script>
+	</body>
+
+</html>

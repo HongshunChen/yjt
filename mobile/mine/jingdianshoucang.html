@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心-简答题</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/simpleanswer.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">{{user_name}}</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content" id="shoucang_content">
+				<!--加载主内容开始-->
+
+				<!-- 加载提示符开始 -->
+				<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+				<!-- 加载提示符结束 -->
+				<!--加载主内容结束-->
+			</div>
+		</div>
+		<footer>
+			<nav class="bar bar-tab foot">
+				<a class="tab-item external active" href="#">
+					<span class="icon my_icon-home"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">首页</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-shop"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-onlineservice"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon my_icon-individualcentercore_click"></span>
+					<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">个人中心</span></span>
+				</a>
+			</nav>
+		</footer>
+		</div>
+		<script type="text/html" id="shoucangContent">
+			<div class="all_divbox">
+				<div class="cd-home-block"></div>
+				<div id="viewall_subtitle">
+					<span class="simpleanswer_subtitle_img"></span>
+					<span class="simpleanswer_subtitle_title">
+							{{if qtype==1}} 单选题 {{else if qtype==2}} 多选题 {{else if qtype==3}} 判断题 {{else if qtype==4}} 简答题 {{else if qtype==5}} 辨析题 {{else if qtype==6}} 策论文 {{else if qtype==7}} 案例分析 {{else if qtype==8}} 公文写作 {{/if}}
+						</span>
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-homeline_mine_long"></div>
+				<div class="cd-home-block"></div>
+				<div id="ques">
+					<div>
+						<span style="float: left;">问题</span>
+						<div class="remove" onclick="jiandashoucang.fn.delete_collect({{list.data.favorid}})">
+							移除此题
+							<img src="../images/shanchu@1x.png" />
+						</div>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+
+					<div class="questions">
+						<dl>
+							<!--<dt>问题</dt>-->
+							<dd>{{list.data.question}}</dd>
+							<dd>选项：{{#list.data.questionselect}}</dd>
+							<dd>参考答案</dd>
+
+							<dd>
+								{{list.data.questionanswer}}
+							</dd>
+							<dd>
+								解析：{{list.data.questiondescribe}}
+							</dd>
+						</dl>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+					</div>
+				</div>
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/jiandashoucang.js"></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

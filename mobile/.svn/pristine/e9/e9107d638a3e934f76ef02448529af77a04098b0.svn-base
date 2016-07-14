@@ -1,0 +1,50 @@
+var zibei = {
+	data: {},
+	dataInit: function() {
+
+	},
+	eventBind: function() {},
+	fn: {
+		pigai: function() {
+			var yasuo = localStorage.getItem('yasuo');
+			var yasuo1 = localStorage.getItem('yasuo1');
+			if (yasuo == null || yasuo1 == null) {
+				$.alert('请上传相关的图片');
+			} else {
+				$.ajax({
+					type: "get",
+					url: config.host + "/self/upload",
+					data: {
+						token: localStorage.getItem('token'),
+						question_type: 3,
+						question: "",
+						question_file: yasuo,
+						answer_type: 3,
+						answer :"",
+						answer_file: yasuo1,
+					},
+					dataType: "jsonp",
+					success: function(data) {
+						localStorage.removeItem('yasuo');
+						localStorage.removeItem('yasuo1');
+
+						if(data.status==1){
+							$.alert('提交成功');
+						}else{
+							$.alert(data.data);
+						}
+					},
+					error: function() {
+						$.alert('网络异常');
+					}
+				});
+			}
+		},
+
+		cordavaDataGet: function() {},
+
+	}
+}
+Zepto(function($) {
+	zibei.fn.cordavaDataGet();
+});

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>客观题得分</title>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="fe">
+<div class="fe1">
+<img src="../images/fe.png" />
+</div>
+<div class="keguan"><!--2-->
+<p>本次客观题获得</p>
+<span>99分</span>
+<li>总分100分</li>
+</div><!--2-->
+</div>
+<div class="fe3">
+<img style="margin-left:7%;" src="../images/fe1.jpg" />
+<div class="keguan1">
+<p>做题用时：00:05:02</p><p class="fe5">答对50题，共61题</p>
+</div>
+<div class="keguan2">错题</div>
+<div class="keguan3">
+<p>1</p>
+<p>2</p>
+<p>20</p>
+<p>22</p>
+<p>30</p>
+<p>40</p>
+<p>41</p>
+<p>42</p>
+<p>50</p>
+<p>51</p>
+</div>
+<div class="keguan4">分享后可查看错题解析跟全部解析</div>
+<a href="#" class="keguan5">查看主观题得分</a>
+</div>
+<div class="an10" style="margin-top:15em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

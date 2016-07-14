@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>特惠课程</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/viewall.css">
+		<link rel="stylesheet" href="../css/pageGroup.css">
+	</head>
+
+	<body>
+
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/pageGroup.js"></script>
+
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">课程列表</div>
+				<div class="my_icon-left_mine" onClick="location='CourseList.html'"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<!-- 修改前文件-->
+				<div class="headxia">
+					<!-- 课程分类开始 -->
+					<div class="headmenu" id="type">
+
+					</div>
+					<!-- 课程分类结束 -->
+				</div>
+
+				<div class="cd-home-block"></div>
+
+				<div class="all_divbox" id="kecheng_list">
+
+					<!-- 加载开始 -->
+
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>
+					<!-- 加载结束 -->
+
+					<script type="text/html" id="kechengList">
+						{{if total>0}} {{each list.data.data as shipin i}}
+						<div class="col-50 viewall_areabg video_list" style="height: auto;">
+							<div id="cacheimg">
+								<img width="100%" height="100px" src="{{files}}{{shipin.coursethumb}}" class="viewall_shipinimg" onclick="location='suggest.html?id={{shipin.courseid}}'">
+								<div class="viewall_areadiv">
+									<div class="viewall_subdivtitle">{{shipin.coursename}}</div>
+									<div id="viewall_jiage">
+										<div class="viewall_jiage2">
+											<span>￥</span>
+											<span>{{shipin.courseprice}}</span>
+										</div>
+									</div>
+									<!--<div class="cd-home-block"></div>
+									<div class="cd-home-block"></div>-->
+									<div class="btn_normal_shen" style="margin-top: 0.9rem;" onclick="location='../payment.html?t=video&id={{shipin.courseid}}&price={{shipin.courseprice}}'">立即购买</div>
+									<div class="btn_normal_qian" style="margin-top: 0.9rem;" onclick="location='suggest.html?id={{shipin.courseid}}'">查看详情</div>
+									<div class="cd-home-block"></div>
+									<div class="cd-home-block"></div>
+									<div class="cd-home-block"></div>
+									<div class="viewall_goumairenshu2">购买人数：<b id="by{{i}}"></b>人已购买</div>
+									<div class="viewall_goumairenshu2" style="margin-top: 2px;">倒计时：天 时分秒</div>
+									<div class="cd-home-block"></div>
+									<div class="cd-home-block"></div>
+								</div>
+							</div>
+						</div>
+						{{/each}} {{else}}
+						<div>暂无视频</div>
+						{{/if}}
+
+						<div class="fenye" style="width:100%;height: 60px;">
+							{{if total>0}}
+							<div id="pageGro" class="cb" style="margin-top:20px ">
+								{{if list.data.current_page==1}}
+								<div class="pageUp" style="cursor:not-allowed;padding-right:2px">上一页</div>
+								{{else}}
+								<div class="pageUp" onclick="one({{list.data.current_page-1}})" style="padding-right:2px">上一页</div>
+								{{/if}}
+								<div class="pageList">
+									<ul>
+										<li onclick='one(1)' class="on">1</li>
+									</ul>
+								</div>
+								{{if list.data.last_page==list.data.current_page}}
+								<div class="pageDown" style="cursor:not-allowed;text-align:left;">下一页</div>
+								{{else}}
+								<div class="pageDown" onclick="one({{list.data.current_page+1}})" style="text-align:left;">下一页</div>
+								{{/if}}
+							</div>
+							{{/if}}
+						</div>
+
+						<div style="height: 2.5rem;"></div>
+
+					</script>
+
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+			<script type="text/html" id="Type">
+				{{each list.data as type i}} {{if type.catname =='课程内容'}}
+				<ul id="left{{i}}">
+					<li class="hit" onclick="tehuikecheng.fn.xuan(this)"><a class="ner">全部</a></li>
+					{{each type.list as xiao i}}
+
+					<li onclick="tehuikecheng.fn.xuan(this)"><a>{{xiao.catname}}</a></li>
+					{{/each}}
+				</ul>
+				{{else}}
+				<ul id="left{{i}}" style="display:none">
+					<li class="hit" onclick="tehuikecheng.fn.xuan()"><a class="ner">全部</a></li>
+				</ul>
+				{{/if}} {{/each}}
+			</script>
+			<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../main.html">
+						<span class="icon my_icon-home_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">首页</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+					</a>
+					<a class="tab-item external" href="../mine/maine_main.html">
+						<span class="icon my_icon-individualcentercore"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">个人中心</span></span>
+					</a>
+				</nav>
+			</footer>
+		</div>
+
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src="js/tehuikecheng.js"></script>
+		<script type='text/javascript' src='../res/jslib/jquery-1.7.1.min.js' charset='utf-8'></script>
+		<script>
+			function one(no) {
+				//localStorage.setItem('pageto', no);
+				tehuikecheng.fn.left_type(no);
+			}
+		</script>
+	</body>
+
+</html>

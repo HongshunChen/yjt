@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+	</head>
+
+	<body>
+		<p></p><a href="../mine/yonghuxinxi.html" style=" text-decoration: none">
+		<img src="../images/yonghu.jpg" />
+		<b style="font-size:18px; ">一讲堂账号：</b>
+			<span><span id="username" style="font-size:16px;"></span>
+		<img style="margin-left:-1px; margin-bottom:2px;" src="../images/jiantou.jpg" />
+		</span></a>
+		<p></p>&nbsp;&nbsp;&nbsp;<a onclick="quit_user()">退出</a> 
+<script>
+        var a = JSON.parse(localStorage.getItem('userInfo')).nickname;
+	$('#username').html(a);
+</script>
+	</body>
+
+</html>

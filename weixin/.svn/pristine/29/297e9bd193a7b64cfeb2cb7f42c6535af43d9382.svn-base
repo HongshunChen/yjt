@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心—用户信息</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/userinfomation.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">{{bar_Title}}</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div id="userinfomation_subtitle">
+						<span class="userinfomation_subtitle_img"></span>
+						<span class="userinfomation_subtitle_title">用户信息</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>
+					<div class="userinfomation_subtitle">修改昵称</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<span class="col-33" style="text-align: right;">昵称：</span>
+				
+						<span class="col-60">{{user_name}}</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<span class="col-33" style="text-align: right;">新昵称：</span>
+						<span class="col-60"><input id="nick_name" name="nick_name" class="userinfomation_input"></span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="userinfomation_jiange" onclick="userinfomation.fn.change_name()">
+						<div class="btn_public_normal_shen">提交</div>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div class="cd-home-block"></div>
+					<div class="userinfomation_subtitle">修改密码</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<span class="col-33" style="text-align: right;">原密码：</span>
+						<span class="col-60"><input type='password' name="password" id="oldpwd" class="userinfomation_input"></span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<span class="col-33" style="text-align: right;">新密码：</span>
+						<span class="col-60"><input type='password' name="newpassword" id="newpwd" class="userinfomation_input"></span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="row">
+						<span class="col-33" style="text-align: right;">确认密码：</span>
+						<span class="col-60"><input type='password' name="repassword" id="again_pwd" class="userinfomation_input"></span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="userinfomation_jiange">
+						<div class="btn_public_normal_shen" onclick="userinfomation.fn.change_pwd()">提交</div>
+						<span class="userinfomation_zhaohuimima" onclick="userinfomation.fn.zhao_pwd()">忘记原密码？点此找回</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<div class="cd-home-block"></div>
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/userinfomation.js' charset='utf-8'></script>
+		
+	</body>
+
+</html>

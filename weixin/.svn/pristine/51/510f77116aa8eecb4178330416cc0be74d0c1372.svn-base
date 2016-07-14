@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+		<title>登录</title>
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="denglu page" id="page">
+			<div class="denglu1">
+				<p>登录</p>
+				<a href="zhuceyongh.html">注册</a>
+			</div>
+			<div style="width:100%; margin:0 auto; overflow:hidden;">
+				<input class="denglu2" id="number" placeholder="请输入手机号" />
+				<input class="denglu3" placeholder="请输入密码" id="password" /></div>
+			<div style="width:77%; margin:0 auto; overflow:hidden;"><a class="denglu4" href="zhaohui.html">忘记密码</a></div>
+			<a onclick="login.fn.login()" class="denglu5">登录</a>
+		</div>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/login.js' charset='utf-8'></script>
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+
+
+.payment_text{
+	float: left;
+}
+
+.payment_text .kecheng_text{
+	color: #1f80bf;
+	font-size: 0.65rem;
+	margin-left: 0.5rem;
+}
+
+.jiage_text{
+	color: #ff0000;
+	font-size: 0.75rem;
+	margin-left: 0.5rem;
+}
+.jiage_text span{
+	color: #ff0000;
+	font-size: 3rem;
+	font-family: "微软雅黑";
+	
+}
+
+.payment_box_img{
+	background-image: url(../images/paypicture@2x.jpg);
+	width: 141px;
+	height: 97px;
+	margin: 0 0.05rem;	
+	background-repeat:no-repeat;
+	background-position: 50%50%;
+	background-size: contain;
+	display: block;
+	float: left;
+	
+}
+
+.btn_public_normal_lijizhifu{
+	position: relative;
+	background: #1f80bf;
+	/* #fcc83f */
+	border: 1px solid #F2F2F2;
+	border-radius: 3px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 0.65rem;
+	line-height: 2.0rem;
+	font-weight: bold;
+	line-height: 1.60rem;
+	width: 90%;
+	height: 2rem;
+	margin: 2rem auto;
+	clear: left;
+}
+
+.fangshi_text{
+	clear: left;
+	color: #959595;
+	margin-left: 1rem;
+}
+
+.zhifubao_img{
+	background-image: url(../images/alipay2@2x.png);
+	width: 29px;
+	height: 29px;	
+	background-repeat:no-repeat;
+	background-position: 50%50%;
+	background-size: contain;
+	display: block;
+	float: left;
+}
+
+.weixin_img{
+	background-image: url(../images/weixin2@2x.png);
+	width: 29px;
+	height: 29px;	
+	background-repeat:no-repeat;
+	background-position: 50%50%;
+	background-size: contain;
+	display: block;
+	float: left;
+}
+
+.daijinquan_img{
+	background-image: url(../images/vouchers@2x.png);
+	width: 24px;
+	height: 24px;	
+	background-repeat:no-repeat;
+	background-position: 50%50%;
+	background-size: contain;
+	display: block;
+	float: left;
+}
+
+.zfb span{
+	line-height: 29px;
+	margin-left: 0.4rem;
+}
+.zfb{
+	position: relative;
+	margin-left: 1rem;
+}

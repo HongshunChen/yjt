@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>特惠专区</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/viewall.css">
+		<link rel="stylesheet" href="../css/pageGroup.css">
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-1.7.1.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">直播课</div>
+				<div class="my_icon-left_mine" onClick="location='shipindianbo.html'"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+
+				<div class="headxia">
+					<div class="headmenu" id="type">
+
+					</div>
+				</div>
+
+				<div class="cd-home-block"></div>
+				<div class="all_divbox" id="zhibo_list">
+
+				</div>
+				<div class="cd-home-block"></div>
+				<div class="cd-homeline_mine_long"></div>
+				<div class="cd-home-block"></div>
+				<!--<div id="fenye">-->
+
+				<!--<div class="pager">
+							<div class="pager-linkPage">
+								<a href="#" class="upPage">上一页</a>
+								<a href="#">1</a>
+								<a href="javascript:void(0);" class="current">2</a>
+								<a href="#">3</a>
+								<span>…</span>
+								<a href="#" class="downPage">下一页</a>
+							</div>
+						</div>-->
+				<!--</div>-->
+				<div class="cd-home-block"></div>
+				<div class="cd-home-block"></div>
+			</div>
+			<div class="cd-home-block"></div>
+			<div class="cd-home-block"></div>
+			<div class="cd-home-block"></div>
+			<!-- 加载提示符开始 -->
+			<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+			<!-- 加载提示符结束 -->
+			<!--加载主内容结束-->
+		</div>
+		</div>
+
+		</div>
+		<script type="text/html" id="zhiboList">
+			{{each list.data.data as zhibo i}}
+			<div id="subdiv">
+				<div class="viewall_areabg3" onclick="location='zhiboxiangqing.html?id={{zhibo.vid}}'">
+					<img src="{{zhibo.videohumb}}" class="viewall_shipinimg2" onclick="location='liveclassintroduction.html?id={{listid}}'">
+					<div class="viewall_areadiv2">
+						<div class="viewall_subdivtitle2">{{zhibo.vname}}</div>
+						<div class="viewall_goumairenshu">讲师：{{zhibo.usertruename}}</div>
+						<div class="viewall_goumairenshu">开课时间：2016.3.10~3.20</div>
+						<div id="viewall_jiage">
+							<div class="viewall_jiage4">
+								<span>￥</span>
+								<span>{{zhibo.vprice}}</span><span>&nbsp;&nbsp;&nbsp;</span>
+								<span class="btn_normal_shen" style="margin-top: 0.2rem;vertical-align: middle;" onclick="location='zhiboxiangqing.html?id={{zhibo.vid}}'">立即购买</span>
+							</div>
+						</div>
+						<div class="viewall_goumairenshu">&nbsp;已有<b id="by{{i}}"></b>人已购买</div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+						<div class="cd-home-block"></div>
+					</div>
+				</div>
+			</div>
+			<div class="cd-home-block"></div>
+			{{/each}}
+			<div style="clear:both"></div>
+			<!--分页开始-->
+			<div class="fenye" style="width:100%;">
+				{{if total>0}}
+				<div id="pageGro" class="cb">
+					{{if list.data.current_page==1}}
+					<div class="pageUp" style="cursor:not-allowed;">上一页</div>
+					{{else}}
+					<div class="pageUp" onclick="one({{list.data.current_page-1}})">上一页</div>
+					{{/if}}
+					<div class="pageList">
+						<ul>
+
+						</ul>
+					</div>
+					{{if list.data.last_page==list.data.current_page}}
+					<div class="pageDown" style="text-indent: -12px;cursor:not-allowed">下一页</div>
+					{{else}}
+					<div class="pageDown" onclick="one({{list.data.current_page+1}})" style="text-indent: -12px;">下一页</div>
+					{{/if}}
+				</div>
+				{{/if}}
+			</div>
+		</script>
+		<script type="text/html" id="Type">
+			{{each list.data as type i}} {{if type.catname =='课程内容'}}
+			<ul id="left{{i}}">
+				<li class="hit" onclick="zhibo.fn.xuan(this)"><a class="ner">全部</a></li>
+				{{each type.list as xiao i}}
+
+				<li onclick="zhibo.fn.xuan(this)"><a>{{xiao.catname}}</a></li>
+				{{/each}}
+			</ul>
+			{{else}}
+			<ul id="left{{i}}" style="display:none">
+				<li class="hit" onclick="zhibo.fn.xuan()"><a class="ner">全部</a></li>
+			</ul>
+			{{/if}} {{/each}}
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type="text/javascript" src='js/zhibo.js'></script>
+		<script type="text/javascript" src="../res/js/pageGroup.js"></script>
+		<script>
+			function one(no) {
+				zhibo.fn.zhiboList(no);
+			}
+		</script>
+	</body>
+
+</html>

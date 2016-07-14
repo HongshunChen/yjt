@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="../css/index1.css" rel="stylesheet" type="text/css" />
+<title>客观题练习</title>
+</head>
+
+<body>
+<div class="cuo5">
+<div class="fe">
+<div class="fe1">
+<img src="../images/fe.png" />
+</div>
+<div class="fe2"><!--2-->
+<p>本次答题获得</p>
+<span>99分</span>
+<li>总分100分</li>
+</div><!--2-->
+</div>
+<div class="fe3">
+<img style="margin-left:7%;" src="../images/fe1.jpg" />
+<div class="fe4">
+<p>做题用时：00:05:02</p><p class="fe5">答对60题，共61题</p>
+</div>
+<div class="fe6">根据您的答题表现</div>
+<div class="fe7"><b>一讲堂送您</b></div>
+<div class="fe8"><img src="../images/fe2.png" /></div>
+<div class="fe9">
+<a href="#"><p>立即使用</p></a>
+<a href="#"><span>错题解析</span></a>
+<a href="#"><span>分享</span></a>
+</div>
+</div>
+<div class="an10" style="margin-top:3em;">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

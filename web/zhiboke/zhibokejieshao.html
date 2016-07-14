@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>直播课介绍</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+		<script src="../js/lab1.js"></script>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/zhibo.jpg" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<div style="width: 1000px;margin-left: 10%;">
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div id="zhibo_ke" style="width: 684px;float: left;">
+
+		</div>
+		
+		<div class="y" id="teacher_list">
+			<!--右-->
+		</div>
+		</div>
+		<!--中间-->
+		<div class="zuihou" style="clear: both;">
+
+		</div>
+		<script type="text/html" id="zhiboKe">
+			<div class="ke">
+				<!--缩略-->
+				<div style="margin-top:-15px; float:left; width:630px;">
+					<img style="float:left;margin: 15px; padding: 15px;" src="{{list.data.videohumb}}" />
+					<div style="margin-top:15px; overflow:hidden;">
+						<p class="kep">课程名称：{{list.data.vname}}</p>
+						<p class="kep1">主播老师：{{list.data.teachername}}</p>
+						<!--<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：300天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>-->
+					</div>
+					<p class="kep3" style="margin-top: 115px;">历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火~</p>
+				</div>
+				<img style="margin-top:23px; float:left;" src="../images/xian.jpg" />
+				<div class="zi">
+					<p>￥<b>{{list.data.vprice}}</b></p>
+					<p></p>
+					<a onclick="location='../payment/payment.html?t=2&id={{list.data.vid}}'"><span>点击购买</span></a>
+					<!--<div class="xia">
+						<ul>
+							<h5>已有</h5>
+							<li>1253121</li>
+							<h5>人购买</h5></ul>
+						<ul style="margin-left:210px;">
+							<h5>距离停售</h5>
+							<li>10天</li>
+						</ul>
+					</div>-->
+				</div>
+			</div>
+			<!--缩略-->
+			<div class="zhongjian1">
+				<!--中间-->
+				<div class="zuo">
+					<!--左-->
+
+					<div class="neiye_r_tit" id="tabHead">
+						<div class="neiye_tit_l">
+							<ul>
+								<li>
+									<a onclick="easytabs('1', '1');" class="tabactive" id="tablink1">
+										<p>课程价格</p>
+									</a>
+								</li>
+								<li><a onclick="easytabs('1', '2');" id="tablink2">课程介绍</a></li>
+								<li><a onclick="easytabs('1', '3');" id="tablink3">课程内容</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="zuo2">
+						<div id="tabcontent1">
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程价格</p>
+								<div class="zi1">
+									<p>￥<b>{{list.data.vprice}}</b></p>
+								</div>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="kaoshi">
+								<p style="color:#f53c3a; font-size:22px;">课程介绍</p>
+								<p class="pq2">{{list.data.vintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
+								<p class="pq2">{{#list.data.vcontent}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+						</div>
+						<div id="tabcontent2" style="display:none;">
+							<div class="kaoshi">
+								<p style="color:#f53c3a; font-size:22px;">课程介绍</p>
+								<p class="pq2">{{list.data.vintro}}</p>
+
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程价格</p>
+								<div class="zi1">
+									<p>￥<b>{{list.data.vprice}}</b></p>
+								</div>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
+								<p class="pq2">{{#list.data.vcontent}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+						</div>
+						<div id="tabcontent3" style="display:none;">
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
+								<p class="pq2">{{#list.data.vcontent}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程价格</p>
+								<div class="zi1">
+									<p>￥<b>{{list.data.vprice}}</b></p>
+								</div>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="kaoshi">
+								<p style="color:#f53c3a; font-size:22px;">课程介绍</p>
+								<p class="pq2">{{list.data.vintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+						</div>
+					</div>
+				</div>
+				<!--左-->
+				
+				<!--右-->
+			</div>
+		</script>
+		<script type="text/html" id="teacherList">
+			{{each list.data as teacher i}} {{if i==0}}
+			<div class="yo1" style="height: auto;margin-top: 246px">
+				{{else}}
+				<div class="yo1" style="margin-top: 10px;">
+					{{/if}}
+					<div class="m">
+						<img src="{{files}}{{teacher.photo}}" style="width: 115px;height: 120px;" />
+						<span></span>
+						<p>{{teacher.title}}</p>
+						<p>评分：{{teacher.score}}分</p>
+					</div>
+					<div class="pq6">{{teacher.teacher_subjects}}
+
+					</div>
+					<a href="#">
+						<p class="pd7"></p>
+					</a>
+				</div>
+				{{/each}}
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/zhibokejieshao.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/ding_fudong.js"></script>
+		<script type="text/javascript" src="../common.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//智能浮动层
+				$("#tabHead").smartFloat();
+			});
+		</script>
+</div>	</body>
+
+</html>

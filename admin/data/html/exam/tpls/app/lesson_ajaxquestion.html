@@ -1,0 +1,50 @@
+			<form id="form1" name="form1" action="index.php?exam-app-lesson-ajax-questions">
+                                <div id="question_8452" class="paperexamcontent">
+					<div class="media well">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<span class="badge badge-info questionindex">1</span></a>
+							</li>
+							<li class="btn-group pull-right">
+								<button class="btn" type="button" onclick="javascript:favorquestion('8452');"><em class="icon-heart" title="收藏"></em></button>
+							</li>
+						</ul>
+						<div class="media-body well text-warning">
+							<a name="question_8452"></a><p>我的第二个问答题</p>						</div>
+												<div class="media-body well questionanswerbox">
+														<textarea class="jckeditor" etype="simple" id="editor8452" name="question[8452]" rel="8452"></textarea>
+						</div>
+												<div class="media-body well">
+							<div class="btn-group pull-right hide answerbox">
+			            										<a class="btn ajax" target="questionpanel" href="index.php?exam-app-lesson-ajax-questions&number=2" title="下一题">下一题</a>
+			            	</div>
+			            	<div class="btn-group pull-right">
+			            		<a class="btn questionbtn" href="javascript:;" onclick="javascript:$('.questionbtn').addClass('hide');$('.answerbox').removeClass('hide');" title="查看答案">查看答案</a>
+			            	</div>
+		            	</div>
+						<div class="media-body well answerbox hide">
+							<h5>答案</h5>
+							<p>我的问答题答案。。。。。</p>						</div>
+						<div id="rightanswer_8452" class="hide"><p>我的问答题答案。。。。。</p></div>
+						<div class="media-body well answerbox hide">
+							<h5>解析</h5>
+							<p>更符合规范更符合规范和规范和规范化符合符合规范和规范符合规范和规范和规范化股份哈飞股份活该符合规范和规范化股份和规范化符合<img alt="" src="http://127.0.0.2/ejtxm/ejtsp//files/attach/files/content/20160527/14643296438439.jpeg" style="width: 900px; height: 442px;" /></p>						</div>
+					</div>
+				</div>
+							</form>
+			<script type="text/javascript">
+				$("input:radio").click(function(){
+					var _this = $(this);
+					var qid = _this.attr('rel');
+					if(_this.val() == $("#rightanswer_"+qid).html())
+					{
+						_this.parents('.media-body').addClass('alert-success').addClass('alert').html('恭喜您回答正确！');
+					}
+					else
+					{
+						_this.parents('.media-body').addClass('alert-error').addClass('alert').html('回答错误，正确答案为：'+$("#rightanswer_"+qid).html()+'，您选择的答案是：'+_this.val());
+					}
+					$('.questionbtn').addClass('hide');
+					$('.answerbox').removeClass('hide');
+				});
+			</script>

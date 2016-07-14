@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>全部解析</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/pinggubaogao.png" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div class="zhongjian">
+			<div class="da">
+				<!--大-->
+				<div class="daohang">
+					<a href="fenxibaogao.html">
+						<div class="xia5"><img src="../images/fenxi.jpg" />
+							<p>分析报告</p>
+						</div>
+					</a>
+					<a href="cuotijiexi.html">
+						<div class="xia8"><img src="../images/fenxi7.jpg" />
+							<p>错题解析</p>
+						</div>
+					</a>
+					<a href="quanbujiexi.html">
+						<div class="xia9"><img src="../images/fenxi8.jpg" />
+							<p>全部解析</p>
+						</div>
+					</a>
+				</div>
+				<img style="margin-top:12px;" src="../images/you.jpg" />
+				<div class="daohangxia"></div>
+			</div>
+			<!--大-->
+
+			<div class="ti" id="quanbu_jiexi">
+				<!--题-->
+
+			</div>
+
+			<!--题-->
+		</div>
+
+		<div class="zuihou">
+
+		</div>
+		<script type="text/html" id="quanbuJiexi">
+			{{each data as all i}}
+			<div class="kuai">
+				<div class="duo">
+					<img class="duoimg" src="../images/shou.jpg" />
+					<p class="duop">全部解析</p>
+				</div>
+				<div class="cuo">解析案例</div>
+				<div class="shoucang">
+					<p class="jp">{{all.question_no}}.{{#all.question}}</p>
+					<p style="font-size: 14px;margin-left: 36px;">选项：{{#all.questionselect}}</p>
+					<p class="jp9">你的答案：{{all.answered}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正确答案：{{all.questionanswer}}</p>
+					
+					<P class="jp" style="margin-top:30px;">解析：{{#all.questiondescribe}}
+					</P>
+					<div style="height:20px;"></div>
+				</div>
+			</div>
+			<img style="margin-left:100px;" src="../images/fenxi3.jpg" />
+			{{/each}}
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="js/quanbujiexi.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+	</div></body>
+
+</html>

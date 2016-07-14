@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人中心—我的代金券</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../res/css/sm.min.css">
+		<link rel="stylesheet" href="../res/css/sm-extend.min.css">
+		<link rel="stylesheet" href="../res/css/home_lanse.css">
+		<link rel="stylesheet" href="../css/viewall.css">
+	</head>
+
+	<body>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/sm-extend.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="page" id="page">
+			<!--头部   无-->
+			<header class="bar bar-nav" style="display:block;">
+				<div class="bar_Title_public">{{user_name}}</div>
+				<div class="my_icon-left_mine" onClick="javascript :history.back(-1);"></div>
+			</header>
+			<!--内容-->
+
+			<div class="content">
+				<!--加载主内容开始-->
+				<div class="all_divbox">
+					<div class="cd-home-block"></div>
+					<div id="viewall_subtitle">
+						<span class="viewall_daijinquan_img"></span>
+						<span class="viewall_subtitle_title">我的代金券</span>
+					</div>
+					<div class="cd-home-block"></div>
+					<div class="cd-homeline_mine_long"></div>
+					<div id="daijin_quan">
+
+					</div>
+
+					<div class="btn_public_normal_lijishiyong"> 立即使用</div>
+					<!-- 加载提示符开始 -->
+					<!--<div id="infinite-scroll-preloader1" class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+				</div>-->
+					<!-- 加载提示符结束 -->
+					<!--加载主内容结束-->
+				</div>
+			</div>
+			<footer>
+				<nav class="bar bar-tab foot">
+					<a class="tab-item external active" href="../main.html">
+						<span class="icon my_icon-home"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">首页</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-shop"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">图书商城</span></span>
+					</a>
+					<a class="tab-item external" href="#">
+						<span class="icon my_icon-onlineservice"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-normal">在线客服</span></span>
+					</a>
+					<a class="tab-item external" href="personalcenter.html">
+						<span class="icon my_icon-individualcentercore_click"></span>
+						<span class="tab-label" style="margin-bottom: 5px;"><span class="color-active">个人中心</span></span>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<script type="text/html" id="daijinQuan">
+			{{if total>0}} {{each list.data as quan i}} 
+			<!--{{quan.couponvalue}}-->
+			<div class="myvoucher_daijinquan_img"></div>
+			{{/each}} {{else}}
+			<div>暂无代金券</div>
+			{{/if}}
+		</script>
+		<script type='text/javascript' src='../res/js/config.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/myvoucher.js' charset='utf-8'></script>
+		<script>
+			$.init();
+		</script>
+	</body>
+
+</html>

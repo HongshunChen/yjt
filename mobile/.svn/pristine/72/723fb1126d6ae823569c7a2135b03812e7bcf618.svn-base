@@ -1,0 +1,36 @@
+.userinfomation_subtitle {
+	font-size: 0.55rem;
+}
+
+.userinfomation_subtitle_img {
+	position: absolute;
+	height: 19px;
+	width: 19px;
+	background-image: url(../images/user@2x.png);
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.userinfomation_subtitle_title {
+	margin-left: 1.5rem;
+}
+
+.userinfomation_input {
+	border:1px #C8C8C8 solid;
+	border-radius: 3px;
+}
+
+input:focus{
+	border:1px #1f80bf solid;
+}
+
+.userinfomation_jiange {
+	margin-left: 35%;
+}
+
+.userinfomation_zhaohuimima {
+	float: right;
+    margin-right: 5%;
+    font-size: 0.55rem;
+    margin-top: -1.0rem;
+}

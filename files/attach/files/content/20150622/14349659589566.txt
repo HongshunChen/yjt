@@ -1,0 +1,214 @@
+//=============================网页下的微订单
+{
+    "shopid": "MD2015011116490600122",
+    "type": "TAKEO",
+    "data": {
+        "orderpayfortype": 1,
+        "ordertype": 2,
+        "orderinformationcode": "WX201506161009178584",
+        "tableinformationno": "一楼大厅0102",
+        "mealsnumber": "3",
+        "tableinformationcode": "TOR2015050409440100002",
+        "ordernum": 8,
+        "orderdetail": [
+            {
+                "greenid": "75966",
+                "greensinformationcode": "G2015030310315000001",
+                "greensinformationname": "法式焗蜗牛",
+                "greenscategorycode": "GLA2015030310285700001",
+                "greenscategoryname": "西式经典",
+                "greensinformationprice": "50",
+                "greensinformationownnum": "0",
+                "greenuserid": "298",
+                "greensinformationimage": "files/attach/images/content/20150611/14340046512818.jpg",
+                "onlinestoreprice": "0.00",
+                "ishide": "0",
+                "greenmodifytime": "1434080239",
+                "greentoptype": "0",
+                "greenweekdate": "0",
+                "greenstarttime": "0",
+                "greenendtime": "0",
+                "greensinformation": "0",
+                "greenworkingtime": "",
+                "greenofftime": "",
+                "greensaletime": "",
+                "onlinestorediscount": "1",
+                "number": "2",
+                "greensnum": "2"
+            },
+            {
+                "greenid": "75967",
+                "greensinformationcode": "G2015030310315000002",
+                "greensinformationname": "法式煎鹅肝",
+                "greenscategorycode": "GLA2015030310285700001",
+                "greenscategoryname": "西式经典",
+                "greensinformationprice": "50",
+                "greensinformationownnum": "0",
+                "greenuserid": "298",
+                "greensinformationimage": "files/attach/images/content/20150611/14340046521303.jpg",
+                "onlinestoreprice": "0.00",
+                "ishide": "0",
+                "greenmodifytime": "1434080240",
+                "greentoptype": "0",
+                "greenweekdate": "0",
+                "greenstarttime": "0",
+                "greenendtime": "0",
+                "greensinformation": "0",
+                "greenworkingtime": "",
+                "greenofftime": "",
+                "greensaletime": "",
+                "onlinestorediscount": "1",
+                "number": "2",
+                "greensnum": "2"
+            },
+            {
+                "greenid": "75968",
+                "greensinformationcode": "G2015030310315000003",
+                "greensinformationname": "瑞典肉丸",
+                "greenscategorycode": "GLA2015030310285700001",
+                "greenscategoryname": "西式经典",
+                "greensinformationprice": "48",
+                "greensinformationownnum": "0",
+                "greenuserid": "298",
+                "greensinformationimage": "files/attach/images/content/20150611/14340046521706.jpg",
+                "onlinestoreprice": "0.00",
+                "ishide": "0",
+                "greenmodifytime": "1434004652",
+                "greentoptype": "0",
+                "greenweekdate": "0",
+                "greenstarttime": "0",
+                "greenendtime": "0",
+                "greensinformation": "0",
+                "greenworkingtime": "",
+                "greenofftime": "",
+                "greensaletime": "",
+                "onlinestorediscount": "1",
+                "number": "2",
+                "greensnum": "2"
+            },
+            {
+                "greenid": "75969",
+                "greensinformationcode": "G2015030310315000004",
+                "greensinformationname": "德式香肠",
+                "greenscategorycode": "GLA2015030310285700001",
+                "greenscategoryname": "西式经典",
+                "greensinformationprice": "30",
+                "greensinformationownnum": "0",
+                "greenuserid": "298",
+                "greensinformationimage": "files/attach/images/content/20150611/14340046523396.jpg",
+                "onlinestoreprice": "0.00",
+                "ishide": "0",
+                "greenmodifytime": "1434004652",
+                "greentoptype": "0",
+                "greenweekdate": "0",
+                "greenstarttime": "0",
+                "greenendtime": "0",
+                "greensinformation": "0",
+                "greenworkingtime": "",
+                "greenofftime": "",
+                "greensaletime": "",
+                "onlinestorediscount": "1",
+                "number": "2",
+                "greensnum": "2"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=============================================小龙APP下微点单
+
+
+
+{
+    "shopid": "xw123456",
+    "type": "TAKEO",
+    "data": {
+        "boid": "WX201506161016238331",
+        "botype": "2",
+        "bodetail": {
+            "number": 3
+        },
+        "bomenu": {
+            "cs": {
+                "greenid": "715",
+                "greensinformationcode": "cs",
+                "greensinformationname": "测试很长的菜品测试测试",
+                "greenscategorycode": "139",
+                "greensinformationprice": "60.00",
+                "greensinformationownnum": "0",
+                "greenuserid": "692",
+                "greensinformationimage": "",
+                "greenmodifytime": "0",
+                "greensdescribe": null,
+                "number": 1
+            },
+            "df": {
+                "greenid": "714",
+                "greensinformationcode": "df",
+                "greensinformationname": "豆腐",
+                "greenscategorycode": "139",
+                "greensinformationprice": "68.00",
+                "greensinformationownnum": "0",
+                "greenuserid": "692",
+                "greensinformationimage": "",
+                "greenmodifytime": "0",
+                "greensdescribe": null,
+                "number": 1
+            },
+            "ljcr": {
+                "greenid": "713",
+                "greensinformationcode": "ljcr",
+                "greensinformationname": "辣椒炒肉",
+                "greenscategorycode": "139",
+                "greensinformationprice": "58.00",
+                "greensinformationownnum": "0",
+                "greenuserid": "692",
+                "greensinformationimage": "",
+                "greenmodifytime": "0",
+                "greensdescribe": null,
+                "number": 1
+            }
+        },
+        "botable": "0102",
+        "bouserid": "692",
+        "botableinfo": {
+            "tableinformationcode": "179",
+            "tableinformationno": "0102",
+            "tablepcode": "57",
+            "tablestate": "1",
+            "tableuserid": "692",
+            "tablenformationname": "大厅3",
+            "startnumber": "4",
+            "tableareaname": "大厅"
+        },
+        "botime": 1434420983,
+        "bocusid": null,
+        "bosessionid": "b3m5j9oqov20r31r14en9a4ql0",
+        "bodeliveryfee": 0,
+        "bototal": 186,
+        "ordertype": "2"
+    }
+}

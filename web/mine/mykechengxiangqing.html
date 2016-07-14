@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>视频介绍</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="../js/ding_fudong.js"></script>
+		<script src="../js/lab.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//智能浮动层
+				$("#tabHead").smartFloat();
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>-->
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/wodeyi.png" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div id="shipin_xiangqing">
+
+		</div>
+		<!--中间-->
+
+		<!--////////////////////////////视频详情/////////////////-->
+		<script type="text/html" id="shipinXiangqing">
+			<div class="ke">
+				<!--缩略-->
+				<div style="margin-top:-15px; float:left; width:630px;">
+					<img style="float:left;width: 168px; padding: 5px; margin: 5px;" src="{{files}}{{list.data.coursethumb}}" />
+					<div style="margin-top:15px; overflow:hidden;">
+						<p class="kep">{{list.data.coursename}}</p>
+						<p class="kep1" style="margin-top: 22px;">主讲老师：{{list.data.teachername}}</p>
+						<!--<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：300天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>-->
+						<p class="" style="margin-top:5px; float:left;"> 历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火</p>
+
+					</div>
+
+				</div>
+				<img style="margin-top:5px; float:left;" src="../images/xian.jpg" />
+				<div style="margin-left:5px; margin-top:10px; overflow:hidden;white-space:break-word;">
+					<p style="font-size:18px; color:#666; margin-left:19px; margin-bottom: 15px;;">名师简介</p>
+					<p style="font-size:12px; color:#666; margin-left:19px; margin-bottom: 5px;;">资深培训师</p>
+					<p style="font-size:12px; color:#666; margin-left:19px; margin-bottom: 5px;;">评分：10.0分</p>
+					<p style="white-space:break-word;float:left; margin-left: 5px;;">{{list.data.teacherintro}}</p>
+				</div>
+			</div>
+			<!--缩略-->
+			<div class="zhongjian1">
+				<!--中间-->
+				<div class="zuo">
+					<!--左-->
+
+					<div class="neiye_r_tit" id="tabHead">
+						<div class="neiye_tit_l">
+							<ul>
+								<li>
+									<a onclick="easytabs('1', '1');" class="tabactive" id="tablink1">
+										<p>课程简介</p>
+									</a>
+								</li>
+								<li><a onclick="easytabs('1', '2');" id="tablink2">课程内容</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="zuo2">
+						<div id="tabcontent1">
+							<div class="kaoshi">
+								<p style="color:#f53c3a; font-size:22px;">课程简介</p>
+								<p class="pq2">{{#list.data.courseintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
+								<p class="pq2">{{#list.data.contentintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+
+						</div>
+						<div id="tabcontent2" style="display:none;">
+							<div class="xiangqing">
+								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
+								<p class="pq2">{{#list.data.contentintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							<div class="kaoshi">
+								<p style="color:#f53c3a; font-size:22px;">课程简介</p>
+								<p class="pq2">{{#list.data.courseintro}}</p>
+							</div>
+							<div class="xi"><img src="../images/x.jpg" /></div>
+							</div>
+						</div>
+					</div>
+					<!--左-->
+					<div class="y" id="teacher_list">
+						<!--右-->
+						{{each list.data as teacher i}} {{if i==0}}
+						<div class="yo1" style="height: auto;">
+							{{else}}
+							<div class="yo1" style="margin-top: 10px;">
+								{{/if}}
+								<div class="m">
+									<img src="{{files}}{{teacher.photo}}" style="width: 115px;height: 120px;" />
+									<span></span>
+									<p>{{teacher.title}}</p>
+									<p>评分：{{teacher.score}}分</p>
+								</div>
+								<div class="pq6">{{teacher.teacher_subjects}}
+
+								</div>
+								<a href="#">
+									<p class="pd7"></p>
+								</a>
+							</div>
+							{{/each}}
+
+						</div>
+						<!--右-->
+					</div>
+		</script>
+		<script type="text/html" id="teacherList">
+			{{each list.data as teacher i}} {{if i==0}}
+			<div class="yo1" style="height: auto;">
+				{{else}}
+				<div class="yo1" style="margin-top: 10px;">
+					{{/if}}
+					<div class="m">
+						<img src="{{files}}{{teacher.photo}}" style="width: 115px;height: 120px;" />
+						<span></span>
+						<p>{{teacher.title}}</p>
+						<p>评分：{{teacher.score}}分</p>
+					</div>
+					<div class="pq6">{{teacher.teacher_subjects}}
+
+					</div>
+					<a href="#">
+						<p class="pd7"></p>
+					</a>
+				</div>
+				{{/each}}
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/mykechengxiangqing.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+</div>	</body>
+
+</html>

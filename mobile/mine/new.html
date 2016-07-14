@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../res/css/sui.min.css" />
+		<link rel="stylesheet" href="../css/Subjective.css" />
+	</head>
+
+	<body onload="ttt()">
+
+		<div class="mui-content">
+			<div id="videoContainer">
+				<video id="videoMedia" style="width: 100%;" controls="controls" preload>
+					<source id="video" src="" type='video/mp4'>
+			</video>
+				<!--<img id="videoMediaDefaultImg" src="../images/an2@3x.jpg" />-->
+			</div>
+
+		</div>
+		<script>
+			function ttt() {
+				var urls = window.location.href;
+				var id = urls.substring(urls.indexOf("=") + 1, urls.length);
+				document.getElementById('video').src = id;
+			}
+		</script>
+		<script type="text/javascript" src="../res/jslib/mui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript" src="css/demo_videoPlaySimple.js"></script>
+	</body>
+
+</html>

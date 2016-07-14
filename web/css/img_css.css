@@ -1,0 +1,23 @@
+		.close {
+				position: absolute;
+				display: inline-block;
+				right: -6px;
+				top: -6px;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 12px;
+				background-color: #FF5053;
+				color: #f3f3f3;
+				border: solid 1px #FF5053;
+				font-size: 9px;
+				font-weight: 200;
+				z-index: 1;
+				cursor: pointer;
+			}			
+			.div0 {
+				float: left;
+				position: relative;
+				margin-left: 20px;
+			}

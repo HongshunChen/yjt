@@ -1,0 +1,109 @@
+
+.Subjective_col {
+	background: #f0f4f6;
+	border: 1px solid #91a9b8;
+}
+
+.Subjective_title {
+	font-family: "微软雅黑";
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+	color: #666;
+	text-align: center;
+}
+
+.Subjective_problem {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/radiobuttonlist@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_short {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/mcqs@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_mination {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/debate@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_strategy {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/mycollection@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_analysis {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/analysis@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_writing {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/document@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_judgmentlist {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/judgmentlist@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}
+
+.Subjective_mycollection {
+	width: 63.96%;
+	height: 10.267em;
+	margin: 0em auto;
+	background: url(../images/mycollection@2x.png) no-repeat center;
+	position: relative;
+	top: 19%;
+	overflow: hidden;
+	background-position: 50%50%;
+	background-size: contain;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.57, user-scalable=no, minimum-scale=0.57, maximum-scale=0.57">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<title>客观题练习</title>
+<link rel="stylesheet" type="text/css" href="../css/index1.css"/>
+</head>
+
+<body>
+<div class="cuo5">
+<p style="color:#ba2c2d; font-size:1.2em; margin-left:5%; margin-top:1.5em;">三、判断题</p>
+<div class="an3">
+<p><b>3.科学技术是第一生产力，是推动经济和社会发展的强大动力。高技术则是一切现代化国家的立国基础，是衡量任何一个国家综合国力的主要标志。（ ）</b></p>
+</div>
+
+<div class="ke">
+<div><span>A</span><p>正确</p></div>
+</div>
+<div class="ke">
+<div><span>B</span><p>错误</p></div>
+</div>
+
+<div class="an7" style="margin-top:15em;">
+<div class="an8">
+<img src="../images/an1.jpg" />
+<a href="#">上一题</a>
+</div>
+<div class="an0">
+<img src="../images/tijiao.jpg" />
+<p>提交试卷</p>
+</div>
+
+<div class="an9">
+<img src="../images/an2.jpg" />
+<a href="#">下一题</a>
+</div>
+</div>
+<div class="an10">版权归一讲堂所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：国迅科技</div>
+</div>
+</body>
+</html>

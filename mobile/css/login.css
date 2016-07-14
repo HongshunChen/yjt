@@ -1,0 +1,24 @@
+.label img{}
+
+.list-block .item-content {
+	padding: 0rem 1.5rem;
+}
+
+.content-block {
+	padding: 0rem 1.5rem;
+}
+
+.login,
+.forgetpwd {
+	margin-top: 1rem;
+	border-color: #C0C0C0;
+	color: #C0C0C0;
+	background-color: white;
+	width: 100%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-align: center;
+	border: 1px solid #C0C0C0;
+	border-radius: 10px;
+}
+.label img{width: 20px;    margin-right: .8rem;}

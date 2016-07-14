@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>全真模拟练习</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.questionselect {
+				margin-left: 100px;
+				width: 600px;
+			}
+			
+			.questionselect p {
+				font-size: 16px;
+				margin: 5px 0px;
+				margin-left: 96px;
+				float: left;
+			}
+		</style>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+
+		<!--导航-->
+	</head>
+
+	<body>
+
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<img class="top1img1" src="../images/logo.png" />
+					<img class="top1img2" src="../images/quanzhen.jpg" /></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div class="da1">
+			<!--大-->
+			<div class="daohang">
+				<a>
+					<div class="xia1"><img src="../images/biao.jpg" />
+						<p id="showtime">已用时 &nbsp;00:00</p>
+					</div>
+				</a>
+				<a>
+					<div class="xia2"><img src="../images/biao1.jpg" />
+						<p>收藏本卷</p>
+					</div>
+				</a>
+				<a>
+					<div class="xia3" style="border-right: 0px;"><img src="../images/biao2.jpg" />
+						<p>我要交卷</p>
+					</div>
+				</a>
+				<!--<a href="#">
+					<div class="xia4"><img src="../images/biao3.jpg" />
+						<p>下载本卷</p>
+					</div>
+				</a>-->
+			</div>
+			<img style="margin-top:12px;" src="../images/you.jpg" />
+			<div class="daohangxia"></div>
+		</div>
+		<!--大-->
+
+		<div id="quan_zhen">
+			<!--数据填充-->
+
+		</div>
+
+		<!--狂-->
+		<div style="margin:0 auto; width:1000px;"><img src="../images/quanzhen3.jpg" /></div>
+		<div style="width:1000px; margin:0 auto;">
+			<a class="woya"></a>
+		</div>
+
+		<div class="zuihou">
+
+		</div>
+		<script type="text/html" id="quanZhen">
+			<!--单选题开始-->
+			<div class="timu">
+				<p>一、单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分，共5题，20分。）</p>
+			</div>
+			{{each radio_list as radios i}}
+			<div class="dashiq">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{i+1}}、{{radios.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="questionselect" >
+						{{#radios.questionselect}}
+					</div>
+					<div class="tabPanel1">
+						<ul>
+							<li style="margin-left:10px;" onclick="dan(this)" value="A"><a>A</a></li>
+							<li onclick="dan(this)" value="B"><a>B</a></li>
+							<li onclick="dan(this)" value="C"><a>C</a></li>
+							<li onclick="dan(this)" value="D"><a>D</a></li>
+						</ul>
+					</div>
+					<div class="fenxiangq">
+						<img style="margin-left:240px;" src="../images/quanzh.jpg">
+						<div class="wrapper">
+							<div class="imageContainer" onclick="change_one(this)">
+								<img style="padding-top:15px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:15px;" src="../images/quanzhen6.jpg" /> </div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--狂-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+					<ul class="menu">
+						<li>
+							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
+							<ul style="display: none; margin-left:-20px;">
+								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+									<div class="wei">
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","wx")'>
+											<div style="margin-left:5px; float:left;">
+												<p><img src="../images/f.jpg" />
+													<p>微信</p>
+												</p>
+											</div>
+										</a>
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","bd")'>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f1.jpg" />
+													<p>百度</p>
+												</p>
+											</div>
+										</a>
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","kj")'>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f2.jpg" />
+													<p>空间</p>
+												</p>
+											</div>
+										</a>
+									</div>
+									<div class="wei">
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","xl")'>
+											<div style="float:left;">
+												<p><img src="../images/f3.jpg" />
+													<p>新浪</p>
+												</p>
+											</div>
+										</a>
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","qq")'>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f4.jpg" />
+													<p>QQ</p>
+												</p>
+											</div>
+										</a>
+										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","rr")'>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f5.jpg" />
+													<p>人人</p>
+												</p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+			<!--多选题开始-->
+			<div class="timu">
+				<p>二、多选题（下列各题所给选项中有两个或两个以上符合题意的正确答案，少答、不答或多答均不得分。共3题，40 分）</p>
+			</div>
+			{{each multiple_list as multiple i}}
+			<!--狂-->
+			
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+i+1}}、{{multiple.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="questionselect">
+					{{#multiple.questionselect}}
+				</div>
+					<!--<div class="shiti2">
+						<p>A.真理的有限性</p>
+						<p style="float:right; margin-left:90px;">B.真理的条件性</p>
+					</div>
+					<div class="shiti2">
+						<p>C.任何真理都是对客观事物近似的正确反映</p>
+						<p style="float:right; margin-left:90px;">D.真理中有错误</p>
+					</div>-->
+					<div class="wrapper4">
+						<div class="imageContainer4" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/du.jpg" />
+							<img style="padding-top:7px;" src="../images/du1.jpg" />
+							<ul>
+								<li style="margin-left:10px;"><a>A</a></li>
+							</ul>
+						</div>
+						<div class="imageContainer4" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/du2.jpg" />
+							<img style="padding-top:7px;" src="../images/du3.jpg" />
+							<ul>
+								<li><a>B</a></li>
+							</ul>
+						</div>
+						<div class="imageContainer4" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/du4.jpg" />
+							<img style="padding-top:7px;" src="../images/du5.jpg" />
+							<ul>
+								<li><a>C</a></li>
+							</ul>
+						</div>
+						<div class="imageContainer4" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/du6.jpg" />
+							<img style="padding-top:7px;" src="../images/du7.jpg" />
+							<ul>
+								<li><a>D</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="fenxiangq">
+						<img style="margin-left:240px;" src="../images/quanzh.jpg">
+
+						<div class="wrapper5">
+
+							<div class="imageContainer5" onclick="change_one(this)">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
+							</div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--狂-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+					<ul class="menu">
+						<li>
+							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
+
+							<ul style="display: none; margin-left:-20px;">
+
+								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+									<div class="wei">
+										<a>
+											<div style="margin-left:5px; float:left;">
+												<p><img src="../images/f.jpg" />
+													<p>微信</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f1.jpg" />
+													<p>百度</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f2.jpg" />
+													<p>空间</p>
+												</p>
+											</div>
+										</a>
+									</div>
+									<div class="wei">
+										<a>
+											<div style="float:left;">
+												<p><img src="../images/f3.jpg" />
+													<p>新浪</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f4.jpg" />
+													<p>QQ</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f5.jpg" />
+													<p>人人</p>
+												</p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+{{/each}}
+			<!--狂-->
+			<!--判断题开始-->
+			<!--狂-->
+			<div class="timu">
+				<p>三、判断题（20 分）</p>
+			</div>
+			
+			{{each judgement_list as judgement i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+multipleT+i+1}}、{{judgement.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="tabPanel2">
+						<ul class="tabPane12ul">
+							<li onclick="dan(this)"><a>错</a></li>
+							<li onclick="dan(this)"><a>对</a></li>
+						</ul>
+					</div>
+					<div class="fenxiangq">
+						<img style="margin-left:240px;" src="../images/quanzh.jpg">
+
+						<div class="wrapper">
+
+							<div style="margin-left:850px;" class="imageContainer" onclick="change_one(this)">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--狂-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+					<ul class="menu">
+						<li>
+							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
+							<ul style="display: none; margin-left:-20px;">
+								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+									<div class="wei">
+										<a>
+											<div style="margin-left:5px; float:left;">
+												<p><img src="../images/f.jpg" />
+													<p>微信</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f1.jpg" />
+													<p>百度</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f2.jpg" />
+													<p>空间</p>
+												</p>
+											</div>
+										</a>
+									</div>
+									<div class="wei">
+										<a>
+											<div style="float:left;">
+												<p><img src="../images/f3.jpg" />
+													<p>新浪</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f4.jpg" />
+													<p>QQ</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f5.jpg" />
+													<p>人人</p>
+												</p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+			<!--简答题开始-->
+			<div class="timu" style="margin-top:20px;">
+				<p>四、简答题（本大题共1 题，每题5 分）</p>
+			</div>
+			{{each subject_list as subject i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+multipleT+judgementT+i+1}}、{{subject.question}}</p>
+				</div>
+				<div>
+					<textarea rows="7" class="shiti3" style="color:#333; font-size:14px; line-height:30px; display:block; width:998px;" align="center">
+					【参考答案】科学发展观，是立足社会主义初级阶段基本国情，总结我国发展实践，借鉴国外发展经验，适应新的发展要求提出来的。科学发展观，第一要义是发展，核心是以人为本，基本要求是全面协调可持续，根本方法是统筹兼顾。
+					坚持科学发展观：
+					（1）必须坚持把发展作为党执政兴国的第一要务；
+					（2）必须坚持以人为本；
+					（3）必须坚持全面协调可持续发展；
+					（4）必须坚持统筹兼顾。
+					</textarea>
+				</div>
+
+				<div class="fenxiang1" style="position:absolute; margin-left:490px; margin-top:230px; overflow:hidden;">
+					<img style="margin-left:240px;" src="../images/quanzh.jpg">
+
+					<div class="wrapper">
+
+						<div class="imageContainer" onclick="change_one(this)">
+							<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+							<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
+					</div>
+				</div>
+				<!--分享-->
+			</div>
+
+			<!--狂-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+					<ul class="menu">
+						<li>
+							<a><img style="padding-top:14px;" src="../images/fe.jpg" /></a>
+
+							<ul style="display: none; margin-left:-20px;">
+
+								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
+									<div class="wei">
+										<a>
+											<div style="margin-left:5px; float:left;">
+												<p><img src="../images/f.jpg" />
+													<p>微信</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f1.jpg" />
+													<p>百度</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f2.jpg" />
+													<p>空间</p>
+												</p>
+											</div>
+										</a>
+									</div>
+									<div class="wei">
+										<a>
+											<div style="float:left;">
+												<p><img src="../images/f3.jpg" />
+													<p>新浪</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f4.jpg" />
+													<p>QQ</p>
+												</p>
+											</div>
+										</a>
+										<a>
+											<div style="margin-left:10px; float:left;">
+												<p><img src="../images/f5.jpg" />
+													<p>人人</p>
+												</p>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/quanzhenmoni.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../res/js/showtime.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../res/js/collection.js"></script>
+		<script type="text/javascript" src="../res/js/share.js"></script>
+		<script>
+			window.onload  =   function() {
+				//全部加载完成！！ 
+				$(".navmenu ul li:has(ul)").hover(function() {
+						$(this).find("li").children("a").css({
+							color: "#fff"
+						});
+						if ($(this).find("li").length > 0) {
+							$(this).children("ul").stop(true, true).slideDown(100)
+						}
+					},
+					function() {
+						$(this).find("li").children("a").css({
+							color: "#fff"
+						});
+						$(this).children("ul").stop(true, true).slideUp("fast")
+					});
+			}
+		</script>
+</div>	</body>
+
+</html>
