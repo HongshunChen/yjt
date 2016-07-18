@@ -90,21 +90,20 @@ class coupon_bank
  * @param  [type] $endtime [description]
  * @return [type]          [description]
  */
-	public function randCoupon($value,$endtime = NULL)
+	public function randCoupon($value,$rule,$endtime = NULL)
 	{
-		if(!$value)return 0;
 		
-			$t = microtime.rand(1000,9999).CS;
-
-			$sn = strtoupper(substr(md5($t),0,16));
-			$r = $this->getCouponById($sn);
-			if($r)$this->randCoupon($value);
-			else
-			{
-			$args = array('couponsn' => $sn,'couponvalue'=>$value,'couponstatus'=>0);
+                if(!$value)return 0;
+		if(!$endtime)$endtime = TIME + 3600*24*TIME_COUPON;
+		$t = microtime.rand(1000,9999).CS;
+		$sn = strtoupper(substr(md5($t),0,16));
+		$r = $this->getCouponById($sn);
+		if($r)$this->randCoupon($value);
+		else
+		{
+			$args = array('couponsn' => $sn,'couponvalue'=>$value,'couponstatus'=>0,'couponaddtime'=>TIME,'couponendtime'=>$endtime,'couponrule'=>$rule);
 			$this->addCoupon($args);
-			}
-		
+		}
 		return true;
 	}
 	public function seletNumber($value)

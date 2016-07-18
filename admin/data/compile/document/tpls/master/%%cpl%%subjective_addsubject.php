@@ -66,11 +66,11 @@
 					</thead>
 						<tr>
 							<td>视频标题</td>
-							<td><input id="basic" name="argss[videoname]" type="text" value="" needle="needle" msg="您必须输入视频名称" /></td>
+							<td><input id="basic" name="args[videoname]" type="text" value="" needle="needle" msg="您必须输入视频名称" /></td>
 						</tr>
 						<tr>
 							<td>视频简介</td>
-							<td><textarea class="input-xlarge" rows="4" name="argss[content]" id="basicprice"></textarea>
+							<td><textarea class="input-xlarge" rows="4" name="args[content]" id="basicprice"></textarea>
 					  	<span class="help-block">介绍一下课程，限制200字</span></td>
 						</tr>
 						<tr>

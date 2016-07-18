@@ -41,7 +41,7 @@
 				<div class="gerenzhong">
 					<p>个人中心</p>
 					<ul>
-						<li style="color:#0173ba; margin-top:20px;"><img src="../images/yi.jpg" /><b>&nbsp;&nbsp;&nbsp;&nbsp;我的课程</b></li>
+						<li style="color:#0173ba; margin-top:20px;"><img src="../images/yi.jpg" /><b class="gerenzhongb">我的课程</b></li>
 						<li><img src="../images/yi3.jpg" /><a href="myzhibo.html">课程回放</a></li>
 						<li><img src="../images/yi2.jpg" /><a href="huancunshipin.html">已学课程</a></li>
 						<li><img src="../images/yi1.jpg" /><a href="lianxizhongxin.html">作业批改</a></li>
@@ -84,11 +84,13 @@
 						</ul>
 					</div>
 					<div class="wenb"><b>￥{{shipin.courseprice}}</b>
-						<a onclick="yigoushipin.fn.jilu({{shipin.videoid}})" href="swfplayer.html?v={{shipin.remoteurl}}" target="_blank">
-							<div class="wenbp1">观看</div>
-						</a>
 						<a href="mykechengxiangqing.html?id={{shipin.videoid}}">
 							<div class="wenbspan">查看详情</div>
+						</a>
+							<a onclick="yigoushipin.fn.jilu({{shipin.videoid}})" href="swfplayer.html?v={{shipin.remoteurl}}" target="_blank">
+							<div class="wenbp1">观看</div>
+						</a>
+						</a>
 						</a>
 					</div>
 					<div style="width:100px; height:6px;"></div>

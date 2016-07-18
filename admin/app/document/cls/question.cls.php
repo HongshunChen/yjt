@@ -36,12 +36,12 @@ class question_document
 		$page = $page > 0?$page:1;
 		$r = array();
 
-		$data = array(false,array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"is_correcting = :catid",'catid',$catid),array('AND',"orderid = :bid",'bid',1)),'questions_sub.subid DESC','',array(intval($page-1)*$number,$number));
+		$data = array(false,array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"orderid = :bid",'bid',1)),'questions_sub.subid DESC','',array(intval($page-1)*$number,$number));
 		$sql = $this->pdosql->makeSelect($data);
 
 		$r['data'] = $this->db->fetchAll($sql);
 
-		$data = array('count(*) AS number',array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"is_correcting = :catid",'catid',$catid),array('AND',"orderid = :bid",'bid',1)));
+		$data = array('count(*) AS number',array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"orderid = :bid",'bid',1)));
 		$sql = $this->pdosql->makeSelect($data);
 		$t = $this->db->fetch($sql);
 

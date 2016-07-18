@@ -126,14 +126,15 @@ class VideoController extends Controller
      */
     public function create (Request $request, Valid $valid)
     {
+       
         $valid->rule($request, [
             'courseid' => 'require|integer',
         ]);
-        //课程ID
+      
         $courseid = $request->input('courseid');
         $user = JWTAuth::parseToken()->authenticate();
         $userid = $user->userid;
-
+       
         //首先判断是否已经有这个课程了，有的话直接返回
         $IsHaveCourse = DB::table('x2_user_video')
                             ->where([

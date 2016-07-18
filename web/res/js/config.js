@@ -1,4 +1,4 @@
-config = window.config || {
+﻿config = window.config || {
 	host: 'http://120.27.47.182/public/',
 	files:'http://120.27.47.182/',
 	jsonToString: function(o) {
