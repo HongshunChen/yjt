@@ -456,11 +456,11 @@ class ExamController extends Controller
 						->where('A.paper_id', $paper_id)
 						->where('A.question_no', $question_no)
 						->first();
-
-		$question->question = htmlspecialchars_decode($question['question']);
-		$question->questionselect = htmlspecialchars_decode($question['questionselect']);
-		$question->questiondescribe = htmlspecialchars_decode($question['questiondescribe']);
-
+                    
+		$question->question = htmlspecialchars_decode($question->question);
+		$question->questionselect = htmlspecialchars_decode($question->questionselect);
+		$question->questiondescribe = htmlspecialchars_decode($question->questiondescribe);
+               //file_put_contents('./b.txt', var_export($question,true).PHP_EOL.PHP_EOL);
 		if ($question) {
 			return $this->succ($request, $question);
 		} else {
@@ -503,7 +503,7 @@ class ExamController extends Controller
 			})
 			->orderBy('A.question_no')
 			->get();
-
+               // file_put_contents('./a.txt', var_export($list,true).PHP_EOL.PHP_EOL);
 		foreach ($list as $key => $question) {
 			$list[$key]->question = htmlspecialchars_decode($question->question);
 			$list[$key]->questionselect = htmlspecialchars_decode($question->questionselect);
@@ -568,7 +568,7 @@ class ExamController extends Controller
 	 */
 	private function _getQuestionsAboutPaper ($paper_id, $questiontype) {
 
-//		$questions = PaperQuestions::select('id', 'answered')
+//		$questions = PaperQuestions::select('id', 'answered') 
 //									->where('paper_id', $paper_id)
 //									->with(['question' => function ($query) use ($questiontype) {
 //										if ($questiontype > 0) {
@@ -582,7 +582,7 @@ class ExamController extends Controller
 //									->get();
 		$questions = DB::table('x2_paper_questions as A')
 						->join('x2_questions as B', 'A.questionid', '=', 'B.questionid')
-						->select('A.id', 'A.answered', 'B.question', 'B.questiontype', 'B.questionselect')
+						->select('A.id', 'A.questionid','A.answered', 'B.question', 'B.questiontype', 'B.questionselect')
 						->addSelect('B.questionselectnumber', 'B.questiondescribe')
 						->where(function ($query) use ($questiontype) {
 							if ($questiontype > 0) {

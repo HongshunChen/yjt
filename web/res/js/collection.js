@@ -91,6 +91,26 @@ function collect(id){
 	});
 }
 
-function del_collect(id){
-	alert("删除");
+function del_collect(id,type){
+        $.ajax({
+		type:"get",
+		url:config.host+"/collect/update",
+		data:{
+			token:localStorage.getItem('token'),
+			questionid:id,
+		},
+		dataType:"jsonp",
+		success:function(data){
+			if(data.status==1 && data.data.tips==='取消收藏'){
+                            window.location.href='./collectList.html?type='+type;
+				//alert(data.data.tips);
+			}else{
+				
+			}
+		},
+		error:function(){
+			alert('网络异常');
+		}
+	});
+	//alert("删除");
 }

@@ -72,10 +72,10 @@
 						<p class="duop">
 					{{if qtype==1}} 单选题 {{else if qtype==2}} 多选题 {{else if qtype==3}} 判断题 {{else if qtype==4}} 简答题 {{else if qtype==5}} 辨析题 {{else if qtype==6}} 策论文 {{else if qtype==7}} 案例分析 {{else if qtype==8}} 公文写作 {{/if}}
 				</p>
-					<div onclick="del_collect({{list.data.favorid}})">
+					<div onclick="del_collect({{list.data.questionid}},{{qtype}})">
 						<a><img class="duoimg1" src="../images/la.jpg" /></a>
 						<a>
-							<p class="duopp">移除本题</p>
+							<p class="duopp" >移除本题</p>
 						</a>
 						</div>
 					</div>
@@ -86,13 +86,14 @@
 						<div class="xuanxiang">
 							{{#list.data.questionselect}}
 						</div>
-						<p class="pa1">正确答案：{{list.data.questionanswer}}</p>
+						<p class="pa1">正确答案：{{#list.data.questionanswer}}</p>
 						<P class="pa" style="margin-top:30px;">解析：{{#list.data.questiondescribe}}</P>
 						<div style="height:20px;"></div>
 					</div>
 		</script>
 		<script type="text/javascript" src="../res/js/config.js"></script>
 		<script type="text/javascript" src="js/shoucangdan.js"></script>
+                <script type="text/javascript" src="../res/js/collection.js"></script>
 		<script type="text/javascript" src="../res/js/quit.js"></script>
 		<script type="text/javascript" src="../common.js" ></script>
 </div>	</body>

@@ -1,0 +1,10 @@
+stdClass::__set_state(array(
+   'question_no' => 29,
+   'answered' => 'B',
+   'question' => '<p><span style="color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;">在西方，足球曾经是卑贱、粗野的代名词。那时的足球活动没有什么规则，更谈不上什么礼仪，和打群架没有什么区别，弄出人命是常有的事。但这种游戏特别血腥，特别刺激，特别有吸引力，虽屡屡遭禁，却每每&ldquo;春风吹又生&rdquo;。为了使得这个人们又爱又恨的游戏益于身心，也为了改变&ldquo;下贱的踢球人&rdquo;的形象，人们创造了足球规则，增加了足球礼仪。</span><br style="margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;" />
+<span style="color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;">这段文字意在强调（规则和礼仪对足球运动很重要）</span></p>',
+   'questionselect' => '<p><font color="#000000" face="宋体, tahoma, arial, Hiragino Sans GB, 宋体, sans-serif"><span style="font-size: 14px; line-height: 26px;">A、对 &nbsp; &nbsp; B、错</span></font></p>',
+   'questionanswer' => 'A',
+   'questiondescribe' => '<p><span style="color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;">文段讲的是有了规则和礼仪后，足球运动改变了过去的不良形象，有益于身心。分析文段主要内容可知，作者强调的重点在最后一句，作者想通过文段论述说明在足球运动中，规则和礼仪非常重要</span></p>',
+))
+

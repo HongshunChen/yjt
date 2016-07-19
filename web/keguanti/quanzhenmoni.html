@@ -49,7 +49,7 @@
 						<p>考题练习</p>
 					</div>
 				</a>
-				<a onclick="quanzhenmoni.fn.papers()">
+				<a onclick="myFunction()">
 					<div class="xia3 xia4" ><img src="../images/biao2.jpg" />
 						<p>我要交卷</p>
 					</div>
@@ -67,10 +67,25 @@
 var jiathis_config={
 	siteNum:7,
 	sm:"weixin,qzone,tqq,tsina,cqq,kaixin001,hi",
-	summary:":快来看呀，我在一讲堂获得的代金券,可以购买使用它购买公职人员考试培训课程哟！",
+	summary:":快来看呀，我在一讲堂获得的代金券,可以使用它购买公职人员考试培训课程哟！",
 	boldNum:5,
 	shortUrl:false,
 	hideMore:true
+}
+function myFunction()
+{
+	var x='你确定是否要交卷？';
+	var r=confirm(x);
+	if (r==true)
+	{
+		
+                quanzhenmoni.fn.papers()
+	}
+	else
+	{
+		x="你按下了\"取消\"按钮!";
+	}
+	
 }
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>

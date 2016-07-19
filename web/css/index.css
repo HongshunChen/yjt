@@ -486,7 +486,7 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/ }
 .tehui3 span{background:url(../images/be.jpg); width:19px; height:18px; margin-left:10px; color:#FFFFFF; font-size:10px; display:block; float:left; text-align:center;}
 .tehui4{margin-top:10px; margin-left:50px;}
 /*视频详情*/
-.ke{width:998px; height:148px; background:#f5f5f5; border:#dfdfdf 1px solid; margin:0 auto;  overflow:hidden;}
+.ke{width:998px; background:#f5f5f5; border:#dfdfdf 1px solid; margin:0 auto;  overflow:hidden;}
 .kep{font-size:18px; color:#666; margin-left:29px; margin-top:15px;}
 .kep1{font-size:14px; color:#666; margin-left:29px; margin-top:15px;}
 .kep2{font-size:12px; color:#2a2829; margin-left:29px; margin-top:30px; line-height:20px; height:21px;}
@@ -531,6 +531,7 @@ box-shadow:2px 2px 10px #909090;/*opera或ie9*/ }
 .pq6{width:225px; font-size:16px; color:#999999; margin-left:18px; margin-top:20px;}
 .pinglun{border:#dfdfdf 1px solid; margin-top:30px;}
 .pinglun1{margin-top:25px;}
+.xian{margin:0 auto; margin-top:5px; width:260px; height: 1px;background: #dfdfdf;}
 .pq7{color:#6a9fdd; font-size:12px; margin-top:20px; margin-left:15px;}
 .pq8{width:200px; color:#333; font-size:14px; margin-left:30px;}
 .pq9{font-size:12px; color:#999999; margin-left:130px; margin-top:10px;}

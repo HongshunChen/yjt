@@ -1,0 +1,647 @@
+array (
+  0 => 
+  stdClass::__set_state(array(
+     'question_no' => 1,
+     'answered' => 'B',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;①明末试图实践西法建筑城的仅是个别具有西学背景的地方豪绅，尚处于实验性起步阶段&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;②与欧洲的情况不同，西式火炮在明军方面主要是一种守城武器&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;③西炮在明清战争中扮演了极为重要的角色，相比之下，西洋建筑术在明末很少得到实际应用，对战局影响甚微&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;④改造防御工事的需求，主要源于增强守城火炮效力，而非抵御炮击&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;⑤西洋火炮与筑城术，几乎同时传入中国，效果却大相径庭&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;⑥然而，明朝的迅速败亡，终结了推广新型防御工事的可能，西洋筑城法也失去了在实战中充分证明其有效性的机会&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;将以上6个句子重新排列，语序正确的是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;③②①⑤④⑥&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;①⑤⑥②④③&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;⑤③②④①⑥&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;④①⑥②⑤③&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'C',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;C。分析可知，⑥以&amp;ldquo;然而&amp;rdquo;开头，是对①句内容的转折，二者应紧密相连，顺序为①⑥，排除A、B两项。与④相比，⑤句引入&amp;ldquo;西洋火炮与筑城术&amp;rdquo;放在文段开头引领下文更恰当，排除D项。因此C项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'question_no' => 2,
+     'answered' => 'C',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;在现实生活中，&amp;ldquo;读什么信什么&amp;rdquo;的现象并不少见，这可能产生两种不同的后果：或者是被一种______的观念俘虏，变成错误学说的信徒；或者由于自己没有主见，觉得书中讲的都有道理，观点一日三变，特别是当书中的观点彼此矛盾时，更是______。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;依次填入画横线处最恰当的一项是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;先入为主 无所适从&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;口耳相传 手足无措&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;模棱两可 莫衷一是&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;深入人心 朝令夕改&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;A。第一空，文段通过&amp;ldquo;或者&amp;hellip;&amp;hellip;或者&amp;hellip;&amp;hellip;&amp;rdquo;列举两种不同的情况，根据&amp;ldquo;或者由于自己没有主见&amp;rdquo;可知第一空表示已有主见和观念，由&amp;ldquo;变成错误学说的信徒&amp;rdquo;可知，这类读者被错误学说俘虏而深信不疑，&amp;ldquo;模棱两可&amp;rdquo;意为不表示明确的态度，或没有明确的主张，与文意相悖，排除C项。&amp;ldquo;口耳相传&amp;rdquo;指口说耳听地往下传授，文段只提到读书，没有提到&amp;ldquo;耳听&amp;rdquo;，排除B项。第二空表示面对&amp;ldquo;书中的观点彼此矛盾&amp;rdquo;后的反应，&amp;ldquo;无所适从&amp;rdquo;指不知听从哪一个好，符合语境，A项正确，当选。&amp;ldquo;朝令夕改&amp;rdquo;指早晨发布的命令，晚上就改了，表示办法经常改变，文段并非形容命令或办法，排除D项。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'question_no' => 3,
+     'answered' => 'C',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;机会分配不仅能对收入分配结果产生重要影响，而且会直接影响到社会的经济发展效率。在不公正的机会分配下，一些人会因为某些特殊原因而获得发展机会，但这些获得机会的人很可能缺乏利用发展机会从事社会劳动和创造的能力，这必然导致他们所从事的劳动或经营项目的生产效率在下降，进而影响到整个社会的经济发展效率。让真正有才华的人获得机会，把合适的人放在适合的岗位上，是经济体系健康运行的基础。只有实现机会平等，才能最大限度地激发社会活力和人的积极性、主动性、创造性，提高社会劳动生产率和生产力发展水平。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;这段文字意在说明（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;收入分配的差距主要由机会分配不平等造成&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;经济体系健康运行的标志是公平的机会分配&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;公平的机会分配有助于提高社会经济发展效率&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;机会分配是维护社会公平正义不可或缺的内容&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'C',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;C。文段开头指出机会分配会直接影响到社会的经济发展效率，接着对此观点进行反面论证，最后用&amp;ldquo;只有&amp;hellip;&amp;hellip;才&amp;hellip;&amp;hellip;&amp;rdquo;提出对策，机会要平等才能提高社会劳动生产率和生产力发展水平。文段重点强调公平的机会分配对于提高社会经济发展效率的重要作用，对应C项。A项非文段论述重点，排除。B项&amp;ldquo;经济体系健康运行&amp;rdquo;为对策前的内容，非文段重点，排除。D项&amp;ldquo;维护社会公平正义&amp;rdquo;无中生有，排除。因此C项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'question_no' => 4,
+     'answered' => 'D',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;在社会中不同地位不同阶层的人的行为，对群众的影响是不同的，地位越高，影响越大，所以才会有&amp;ldquo;______&amp;rdquo;的说法。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;填入画横线处最恰当的一项是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;人云亦云&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;上行下效&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;从善如流&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;高山仰止&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'B',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;B。文段为因果结构，填入的成语与前文&amp;ldquo;地位越高，影响越大&amp;rdquo;形成对应，表示因位置高低所带来的影响程度不同，地位越高说话越有影响。&amp;ldquo;上行下效&amp;rdquo;是指上面的人怎么做，下面的人就跟着怎么干，通常用在上下级的语境中，文段对此处加了引号，表示特殊用法，即指地位高的人对群众的影响。因此B项当选。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;【成语积累】&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;人云亦云：人家怎么说，自己也跟着怎么说。指没有主见，只会随声附和&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;从善如流：形容能迅速地接受别人的好意见。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;高山仰止：比喻对高尚的品德的仰慕。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'question_no' => 5,
+     'answered' => 'D',
+     'question' => '&lt;div class=&quot;title&quot; style=&quot;margin: 0px auto 10px; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;
+&lt;div class=&quot;title_c&quot; style=&quot;margin: 0px auto; padding: 0px; float: left; width: 775px;&quot;&gt;文物是历史留下的印记，是过去写给今天和未来的&amp;ldquo;书信&amp;rdquo;，也是人类存在于历史中的______。历史文化古迹损毁的后果是任何人都担不起的，每一次随意破坏文物的行为，都应被视作对文明传承的挑衅。因为，那些留在历史中的足迹都是______的，没有备份，也没有重来的可能。&lt;br style=&quot;margin: 0px auto; padding: 0px;&quot; /&gt;
+依次填入画横线处最恰当的一项是（ &amp;nbsp;）&lt;/div&gt;
+&lt;/div&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;见证 唯一&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;记录 珍贵&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;痕迹 脆弱&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;标志 模糊&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;A。先看第二空，&amp;ldquo;没有备份，也没有重来的可能&amp;rdquo;是对空中所填词语的解释说明，表现出文物是独一无二的，因此&amp;ldquo;唯一&amp;rdquo;最为准确，答案暂定为A项。验证第一空，文物是人类存在于历史中的一种&amp;ldquo;见证&amp;rdquo;，搭配恰当。因此A项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'question_no' => 6,
+     'answered' => 'D',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;以往在讨论国人不文明出游现象的时候，往往将原因归结为国民素质没跟上经济发展的步伐。至于对策，除了强烈的舆论谴责，就是建议重罚。虽然说这样的原因分析和对策建议并非全无道理，但我们却忽视了一个事实，那就是很少有游客真的想当不文明的典型，更没有人想故意去给国家和民族形象抹黑。无论是政府部门，还是旅行社，对文明旅游方面的宣传和提醒基本为&amp;ldquo;零&amp;rdquo;，多数游客是无心而为。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;根据这段文字，接下来会说明（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;外界对国人形成不文明出游的印象可能存在误解&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;国人能否养成文明出游的习惯与整体国民素质高低有关&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;对不文明旅游行为的谴责和重罚带来的效果只是一时的&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;培养国人文明旅游的意识需要加大宣传教育和引导&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'D',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;D。文段开头论述以往对国人不文明出游的的原因和对策，接着通过转折词&amp;ldquo;但&amp;rdquo;指出我们忽视的事实，重点看文段尾句，指出多数游客的不文明出游现象是因为文明旅游方面的宣传提醒不到位，因此文段接下来应对问题进行解决，即应加强培养国人文明旅游意识的宣传教育，对应D项。A项&amp;ldquo;误解&amp;rdquo;无中生有，排除。B项&amp;ldquo;国民素质&amp;rdquo;并非尾句强调内容，排除。C项，尾句并非强调&amp;ldquo;谴责和重罚&amp;rdquo;的弊端，排除。因此D项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'question_no' => 7,
+     'answered' => 'D',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;人们刚开始在纸上绘画时，沿用的也是帛画的技法、图式和法度要求。经过一千多年的发展，纸画才逐渐形成与帛画______的唯有宣纸才有的水墨表现体系。至此，纸本画终于蜕变为一个独立的画种，更在宋元之后，日渐兴盛。而以重彩见长的帛画反而______，以致使世人产生了中国画等于纸本画的错误印象，甚至还因中国画色彩表现力不如西洋画而生愧色。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;依次填入画横线处最恰当的一项是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;截然不同 日渐式微&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;大同小异 江河日下&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;大相径庭 不值一提&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;背道而驰 力不从心&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;A。第一空，根据&amp;ldquo;纸本画终于蜕变为一个独立的画种&amp;rdquo;可知，空中所填成语表示纸画形成了与帛画完全不同的风格，&amp;ldquo;大同小异&amp;rdquo;是指大体相同，略有差异，与文意不符，排除B项。第二空，根据&amp;ldquo;反而&amp;rdquo;可知，所填成语与前文&amp;ldquo;日渐兴盛&amp;rdquo;形成反义对应，表示逐渐衰落的意思。&amp;ldquo;不值一提&amp;rdquo;表示不值得提起，形容事情很轻微或者不重要；&amp;ldquo;力不从心&amp;rdquo;表示心里想做，可是力量够不上，均无法与&amp;ldquo;日渐兴盛&amp;rdquo;形成对应，排除C、D两项。&amp;ldquo;日渐式微&amp;rdquo;指事物逐渐地由兴盛而衰落，符合语境，因此A项当选。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;【成语积累】&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;截然不同：形容两件事物毫无共同之处。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;江河日下：比喻情况一天天地坏下去。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;大相径庭：比喻相差很远，大不相同。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;背道而驰：比喻彼此的方向和目的完全相反。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  7 => 
+  stdClass::__set_state(array(
+     'question_no' => 8,
+     'answered' => 'D',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;中国正掀起3D打印投资热。面对3D打印的广阔前景，各地纷纷兴建3D打印产业园，并出台各项优惠政策等。但发展3D打印这项新兴技术，凭借热情是不够的，3D打印产业链中，关键技术、材料、软件的制约有待突破，3D打印技术现在还处在初级阶段，如果企业和资本大量涌入，短时间内不能产生效益。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;这段文字意在说明（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;3D打印的应用范围有待充分挖掘&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;3D打印技术的发展遭遇瓶颈&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;应出台政策鼓励3D打印技术的发展&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;资金不宜盲目涌入3D打印领域&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'D',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;D。文段先描写3D打印的火热现状，接着通过转折词&amp;ldquo;但&amp;rdquo;揭示重点，仅凭热情并不够，3D打印还处在初级阶段，很多方面都有待突破，尾句&amp;ldquo;如果现阶段大量资本涌入，短时间内不能产生效益&amp;rdquo;，强调风险大，投资需谨慎，同义替换D项。A项&amp;ldquo;应用范围&amp;rdquo;在文段中没有提到，无中生有，排除。B项，文段只说3D打印技术在一些方面有待突破，并未达到遇到瓶颈的程度，程度过重，排除。C项，文段中各地已出台各项优惠政策，&amp;ldquo;应出台&amp;rdquo;表述错误，且&amp;ldquo;政策&amp;rdquo;为转折前的表述，排除。因此D项当选&lt;/span&gt;&lt;/p&gt;',
+  )),
+  8 => 
+  stdClass::__set_state(array(
+     'question_no' => 9,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;现代媒介生态表现出一种&amp;ldquo;微&amp;rdquo;特质，碎片化的信息通过社交网络等链状系统被连接与组合起来。媒体要想生存，就要在一个个&amp;ldquo;微链&amp;rdquo;中把握传播机会，创造可能的舆论热点。因此，现代的媒体，除了要竞争信息的&amp;ldquo;独到解释权&amp;rdquo;外，还要在纷繁的&amp;ldquo;微链&amp;rdquo;世界中排兵布阵，成为一个个关键节点的组织者与传播者；报道组织形式不再是先前的&amp;ldquo;一刀切&amp;rdquo;，而是在无数个中心节点上进行&amp;ldquo;疏通&amp;rdquo;与&amp;ldquo;引导&amp;rdquo;。特别是在突发事件中，这种新型舆论引导方式的特点更加凸显。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;在这段文字中，作者强调现代媒体更需要具备的能力是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;构建独有的链状传播系统&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;在关键节点进行舆论引导&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;密切关注社交网络信息动向&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;争取信息的&amp;ldquo;独到解释权&amp;rdquo;&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'B',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;B。现代媒体更需要具备的能力在文中体现为&amp;ldquo;因此&amp;rdquo;引导的递进句，以及分号引导两个并列句，共同强调的内容为&amp;ldquo;关键节点&amp;rdquo;，文段最后一句又用&amp;ldquo;这种&amp;rdquo;强调关键节点的舆论引导非常重要，对应B项。A项，&amp;ldquo;构建独有的链状传播系统&amp;rdquo;并非现代媒体的作用，文段强调其在关键节点上的作用，排除。C项&amp;ldquo;关注动向&amp;rdquo;无中生有，排除。D项，&amp;ldquo;独到解释权&amp;rdquo;为&amp;ldquo;除了&amp;rdquo;后的内容，非重点，排除。因此B项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  9 => 
+  stdClass::__set_state(array(
+     'question_no' => 10,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;①但实证是手段而不是目的，史学的真正使命是探索社会变迁的内在逻辑与规律，为文明的提升提供借鉴与参考&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;②清儒章学诚强调&amp;ldquo;言性命者必究于史&amp;rdquo;，反对离事而言理。体现了史学在真理探索中的重要作用&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;③史学是一门科学，其最显著的学术特点是实证&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;④力图通过对社会关系、社会形态的反思，通过对人和自然关系的反思，总结出有普遍意义的历史结论&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;⑤真正的史学家从来都将认识人类的命运作为自己全部学术活动的出发点&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;⑥事实上，高层次的史学活动从来都是思辨性的，充满了理性的睿智&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;将以上6个句子重新排列，语序正确的是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;②⑥①③⑤④&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;②⑤④⑥③①&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;③④②⑥①⑤&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;③①⑤④②⑥&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'D',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;D。从选项入手，对比首句可知，③句指出史学最显著的学术特点是&amp;ldquo;实证&amp;rdquo;，②是对史学&amp;ldquo;实证&amp;rdquo;特点的具体解释，因此③为首句，排除A、B两项。①以&amp;ldquo;但&amp;rdquo;作转折指出&amp;ldquo;实证是手段而不是目的&amp;hellip;&amp;hellip;&amp;rdquo;，与③话题相同，且二者构成转折关系，顺序为③①，排除C项。因此D项当选。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  10 => 
+  stdClass::__set_state(array(
+     'question_no' => 11,
+     'answered' => '',
+     'question' => '&lt;p&gt;11.&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;（不定项选择）新能源、新材料、信息产业、新医药、生物育种、节能环保、电动汽车---七大战略性新兴产业被表述为&amp;ldquo;战略性新兴产业&amp;rdquo;。&amp;ldquo;战略性新兴产业&amp;rdquo;除了具有良好的经济技术效益，还具有的特点是（）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;资源消耗低&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;环境污染少&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;投入少、见效快&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;带动相关产业的兴起&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'ABD',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;ABD。战略性新兴产业是以重大技术突破和重大发展需求为基础，对经济社会全局和长远发展具有重大引领带动作用的产业。特点是知识技术密集、物质资源消耗少、成长潜力大、综合效益好，并且可以带动其它产业发展。但战略新兴产业投入较大，不能在短时间内见效，C错误。故选ABD&lt;/span&gt;&lt;/p&gt;',
+  )),
+  11 => 
+  stdClass::__set_state(array(
+     'question_no' => 12,
+     'answered' => '',
+     'question' => '&lt;p&gt;23.&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-size: 14px; font-family: Arial, Verdana, Lucida, Helvetica, sans-serif; line-height: normal;&quot;&gt;（不定项选择）&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;近年来，我国多地出现冬季因雨雪天气导致蔬菜价格明显上涨。另有报道显示，我国目前蔬菜流通环节的成本要占到菜价的60%，有的甚至占到了90%。这表明&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; line-height: normal;&quot;&gt;（ &amp;nbsp;）&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;气候因素通过供求关系对商品价格产生影响&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;蔬菜价格的高低在一定程度上受制于流通成本&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;提高生产蔬菜的劳动生产率可抑制其价格上涨&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;新鲜蔬菜的价格不受生产蔬菜劳动时间的影响&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'AB',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;AB。A项考察价值规律的三个表现形式--价格、供求和竞争。B项表述正确，在题干中亦有所体现。C项表述正确，但在题目中并没有体现。D项表述错误，任何商品的价格都由生产商品的社会必要劳动生产率决定。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  12 => 
+  stdClass::__set_state(array(
+     'question_no' => 13,
+     'answered' => '',
+     'question' => '&lt;p&gt;18.&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-size: 14px; font-family: Arial, Verdana, Lucida, Helvetica, sans-serif; line-height: normal;&quot;&gt;（不定项选择）&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;人体内免疫系统能发现和清除外来入侵的病原微生物，还能识别和清除体内发生突变的肿瘤细胞，衰老细胞，死亡细胞或其他有害的成分，并且通过自身免疫耐受和免疫调节使免疫系统内环境保持稳定。下列属于免疫系统疾病的是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;冠心病&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;艾滋病&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;尿毒症&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;红斑狼疮&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'BD',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;BD。本题考查生物医学知识，艾滋病又称获得性免疫缺陷综合症，由感染艾滋病病毒（HIV病毒）引起。HIV是一种能攻击人体免疫系统的病毒。红斑狼疮是一种典型的自身免疫性结缔组织病，多见于15～40岁女性。本题选择BD项。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  13 => 
+  stdClass::__set_state(array(
+     'question_no' => 14,
+     'answered' => '',
+     'question' => '&lt;p&gt;4.&lt;span style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;（不定项选择）按照国家对上海发展的战略定位，到2020年上海要基本建成国际经济、金融、贸易、航运中心和社会主义现代化国际大都市。上海作为资源缺乏的城市，为了实现这一战略目标，已经把发展的第一资源确定为（&amp;nbsp; ）。&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;资金&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;土地&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;高新技术&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;人才和智力&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'D',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;D。处在发展转型关键时期的上海，必须把人才和智力作为上海发展的第一资源，把实现经济发展方式转变、增强城市核心竞争力建立在上海的人才优势和教育优势这个基础之上，坚持优先发展教育事业，为上海实现创新驱动、转型发展提供强有力的支撑和强大的动力。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  14 => 
+  stdClass::__set_state(array(
+     'question_no' => 15,
+     'answered' => '',
+     'question' => '&lt;p&gt;13.&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;（不定项选择）社会公共权威在一定的条件下，针对一定的对象，为达到一定的目标而制定的行动方案或行为准则称为（）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;公共诉求&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;公共利益&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;公共权力&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;公共政策&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'D',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;D。公共政策是指社会公共权威在一定的条件下，针对一定的对象，为达到一定的目标而制定的行动方案或行为准则。其表达形式包括法律规、行政规定或命令、国家领导人口头或书面的指示、政府规划等。故选D&lt;/span&gt;&lt;/p&gt;',
+  )),
+  15 => 
+  stdClass::__set_state(array(
+     'question_no' => 16,
+     'answered' => '',
+     'question' => '&lt;p&gt;10.&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;（不定项选择）&amp;ldquo;&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻她千百度，&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&amp;mdash;&amp;mdash;&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;蓦然回首，那人却在，灯火阑珊处。&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&amp;rdquo;&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;这首诗描述了我国民间一个传统节令的景象，这个传统节令是（）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;中秋&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;清明&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;元宵&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;七夕&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'C',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;C。此词出自宋代词人辛弃疾《青玉案》。这是诗人落职后在上饶闲居时所作。词中大力渲染元宵佳节满城灯火，满街游人，通宵欢乐的热闹景象和夜市风光。但实质是抒发自己不肯随波逐流，趋炎附势的孤高性格：&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&amp;ldquo;&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;众里寻他千百度。蓦然回首，那人却在，灯火阑珊处&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&amp;rdquo;&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;。全篇采用反衬手法，别具一格。王国维曾以为人之成大事业者，必皆经历三个境界，而辛弃疾此词的境界为第三境界，亦最终最高境界。故选&lt;/span&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;C&lt;/span&gt;&lt;/p&gt;',
+  )),
+  16 => 
+  stdClass::__set_state(array(
+     'question_no' => 17,
+     'answered' => '',
+     'question' => '&lt;p&gt;15.&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;（不定项选择）中医常用拔火罐来治疗某些疾病,方法是将点燃的纸片放入一个小罐内,当纸片燃烧完时,迅速将火罐的开口端紧压在皮肤上,火罐就会紧紧地&amp;ldquo;吸&amp;rdquo;在皮肤上｡其原因是,当火罐内的气体（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;温度不变时,体积减小,压强增大&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;体积不变时,温度降低,压强减小&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;压强不变时,温度降低,体积减小&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;质量不变时,压强增大,体积减小&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'B',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;B。&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;加热拔火罐里面的空气时,空气受热膨胀,有一部分热空气被赶出拔火罐｡纸片在罐子里燃烧,里面的空气受热膨胀,部分气体溢出罐子｡纸片燃烧完时,迅速将火罐开口端紧压在皮肤上,待里面的空气自然冷却后,罐内气体温度降低,会由于空气体积缩小而使得拔火罐内气压降低,内外就产生压力差(内部压力小于外界大气压),于是在大气压强的作用下就把拔火罐紧紧地压吸到了皮肤上了，本题选择B项。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  17 => 
+  stdClass::__set_state(array(
+     'question_no' => 18,
+     'answered' => '',
+     'question' => '&lt;p&gt;20.&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;（不定项选择）&amp;ldquo;十五&amp;rdquo;期间，我国经济发展的各项指标大多超额完成，但环境保护的指标没有完成，主要是二氧化硫排放量与化学需氧量两个指标没完成。环境污染严重。导致这一现象的主要原因是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;环境污染物过多&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;对环境保护重视不够&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;产业结构不合理，经济增长方式粗放&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;环境保护执法不严，监管不力&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'BCD',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;BCD。温家宝在第六次全国环境保护大会上指出，环境污染严重的主要原因是：对环境保护重视不够，投入不足，环保欠账过多，环境治理明显滞后于经济发展；产业结构不合理，经济增长方式粗放，能源资源消耗比较高，高投入、高消耗、高排放；环境保护执法不严，监管不力，有法不依、违法不究的现象还比较普遍。环境保护已成为经济社会发展中的一个薄弱环节。综上，本题正确答案为BCD。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  18 => 
+  stdClass::__set_state(array(
+     'question_no' => 19,
+     'answered' => '',
+     'question' => '&lt;p&gt;21.&lt;span style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-size: 14px; font-family: Arial, Verdana, Lucida, Helvetica, sans-serif; line-height: normal;&quot;&gt;（不定项选择）&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;新石器时代始于距今8000年前的人类原始氏族的繁荣时期，以磨制的石斧、石铸、石锛和石铲，琢制的磨盒和打制的石锤、石片、石器为主要工具。下列中国著名的文化遗址中，属于新石器时代的是（ &amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;河姆渡遗址&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;半坡遗址&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;三星堆遗址&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;margin: 0px auto; padding: 0px; width: 815px; float: left; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin-right: auto; margin-bottom: 0px; margin-left: 10px; padding: 0px; float: left; width: 765px;&quot;&gt;周口店遗址&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'AB',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;AB。河姆渡遗址，是中国南方早期新石器时代遗址。B半坡遗址位于陕西省西安市东郊灞桥区浐河东岸，是黄河流域一处典型的原始社会母系氏族公社村落遗址，属新石器时代仰韶文化，距今6000年左右。C三星堆遗址是是中国西南地区的青铜时代遗址。D周口店遗址是是世界上材料最丰富、最系统、最有价值的旧石器时代早期的人类遗址。故答案为AB。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  19 => 
+  stdClass::__set_state(array(
+     'question_no' => 20,
+     'answered' => '',
+     'question' => '&lt;p&gt;7.&lt;span style=&quot;font: 14px/normal Arial, Verdana, Lucida, Helvetica, sans-serif; margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;（不定项选择）&lt;/span&gt;&lt;span style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;中国共产党第十八届中央委员会第三次全体会议，于2013年11月9日至12日在北京举行，全会审议通过了《中共中央关于全面深化改革若干重大问题的决定》。全会提出，__________，是把权力关进笼子的根本之策。&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;A.&lt;/span&gt;
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;坚持用制度管权管事管人&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;B.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;健全惩治和预防腐败体系&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;C.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;让人民监督权力&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;option&quot; style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; margin: 0px auto; padding: 0px; width: 815px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: left; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px auto; padding: 0px; float: left;&quot;&gt;D.&lt;/span&gt;
+
+&lt;p style=&quot;margin: 0px auto 0px 10px; padding: 0px; width: 765px; float: left; display: block;&quot;&gt;让权力在阳光下运行&lt;/p&gt;
+&lt;/div&gt;',
+     'questionanswer' => 'ACD',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;font: 14px/26px 宋体, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;ACD。十八届三中全会公报指出：坚持用制度管权管事管人，让人民监督权力，让权力在阳光下运行，是把权力关进制度笼子的根本之策。因此本题选ACD&lt;/span&gt;&lt;/p&gt;',
+  )),
+  20 => 
+  stdClass::__set_state(array(
+     'question_no' => 21,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;某商店10月1日开业后，每天的营业额均以100元的速度上涨，已知该月15号这一天的营业额为5000元，问该商店10月份的总营业额为（155000）元&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'B',
+     'questiondescribe' => '&lt;p&gt;10月份营业额成一个公差为100的等差数列&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;',
+  )),
+  21 => 
+  stdClass::__set_state(array(
+     'question_no' => 22,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;交响乐团通常由（弦乐、管乐、打击乐）三大声部组成&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;音乐基础知识中将交响乐分为弦乐、管乐、打击乐。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  22 => 
+  stdClass::__set_state(array(
+     'question_no' => 23,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有(6)个&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/span&gt;&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;由题干可知本题是找全国租赁贸易总额及同比增长率均高于上月的月份数，可判定本题为直接找数问题。定位图表材料，观察全国贸易总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  23 => 
+  stdClass::__set_state(array(
+     'question_no' => 24,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;木匠加工2张桌子和4张凳子共需要10个小时，加工4张桌子和8张椅子需要22个小时。问如果他加工桌子、凳子和椅子各10张，共需要（52.5）小时&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;假设每张桌子、凳子、椅子的所需工作量分别为a、b、c，木匠每小时的效率为1，则2a+4b=10&amp;times;1、4a+8b=22&amp;times;1，化简得到①a+2b=5，②a+2c=5.5，①+②=2a+2b+2c=10.5，则10（a+b+c）=52.5，所需时间t=52.5&amp;divide;1=52.5小时&lt;/span&gt;&lt;/p&gt;',
+  )),
+  24 => 
+  stdClass::__set_state(array(
+     'question_no' => 25,
+     'answered' => '',
+     'question' => '&lt;p&gt;A工程队的效率是B工程队的2倍，某工程交给两队共同完成需要6天。如果两队的工作效率均提高一倍，且B队中途休息了1天，问要保证工程按原来的时间完成，A队中途最多可以休息（4）天&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;A工程队的效率是B工程队的2倍，可以赋值A队效率为2，B队效率为1，此时工程总量为6&amp;times;（2+1）=18。如果两队的工作效率均提高一倍，A队效率即为2&amp;times;（1+1）=4，B队效率为1&amp;times;（1+1）=2。设A队休息t天，则有4&amp;times;（6-t）+2&amp;times;（6-1）=18，解得t=4&lt;/span&gt;&lt;/p&gt;',
+  )),
+  25 => 
+  stdClass::__set_state(array(
+     'question_no' => 26,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;物品利用凸透镜透光原现的是（ 显微镜目镜&amp;nbsp;）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;凸透镜有会聚作用，显微镜是利用凸透镜原理。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  26 => 
+  stdClass::__set_state(array(
+     'question_no' => 27,
+     'answered' => '',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;某企业原有职工110人，其中技术人员是非技术人员的10倍，今年招聘后，两类人员的人数之比未变，且现有职工中技术人员比非技术人员多153人。问今年新招非技术人员（6）名&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'B',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;原有职工110人，其中技术人员是非技术人员的10倍，可知二者人数之比为10:1，总数共为11份，每份10人，可以得到非技术人员为1份10人，技术人员为10份100人。招聘后，两类人员的人数之比未变，即新招聘的技术人员是非技术人员的10倍，可以设新招聘的非技术人员为x，则技术人员为10x，则有100+10x-（10+x）=153，解得x=7。&lt;/span&gt;&lt;/p&gt;',
+  )),
+  27 => 
+  stdClass::__set_state(array(
+     'question_no' => 28,
+     'answered' => 'A',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;王某将与其有私仇的李某打昏在地后逃走，此时李某的熟人张某路过，见李某不省人事，遂将其手机、钱包拿走。本案中（王某构成故意伤害罪，张某构成盗窃罪）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;本案中两人均构成犯罪，王某构成故意伤害罪，张某构成盗窃罪&lt;/span&gt;&lt;/p&gt;',
+  )),
+  28 => 
+  stdClass::__set_state(array(
+     'question_no' => 29,
+     'answered' => 'B',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;在西方，足球曾经是卑贱、粗野的代名词。那时的足球活动没有什么规则，更谈不上什么礼仪，和打群架没有什么区别，弄出人命是常有的事。但这种游戏特别血腥，特别刺激，特别有吸引力，虽屡屡遭禁，却每每&amp;ldquo;春风吹又生&amp;rdquo;。为了使得这个人们又爱又恨的游戏益于身心，也为了改变&amp;ldquo;下贱的踢球人&amp;rdquo;的形象，人们创造了足球规则，增加了足球礼仪。&lt;/span&gt;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot; /&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;这段文字意在强调（规则和礼仪对足球运动很重要）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;&lt;font color=&quot;#000000&quot; face=&quot;宋体, tahoma, arial, Hiragino Sans GB, 宋体, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; line-height: 26px;&quot;&gt;A、对 &amp;nbsp; &amp;nbsp; B、错&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;文段讲的是有了规则和礼仪后，足球运动改变了过去的不良形象，有益于身心。分析文段主要内容可知，作者强调的重点在最后一句，作者想通过文段论述说明在足球运动中，规则和礼仪非常重要&lt;/span&gt;&lt;/p&gt;',
+  )),
+  29 => 
+  stdClass::__set_state(array(
+     'question_no' => 30,
+     'answered' => 'A',
+     'question' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;生态整体主义追求的最高价值是（生态系统整体利益 ）&lt;/span&gt;&lt;/p&gt;',
+     'questionselect' => '&lt;p&gt;A、对 &amp;nbsp; &amp;nbsp; &amp;nbsp;B、错&lt;/p&gt;',
+     'questionanswer' => 'A',
+     'questiondescribe' => '&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 宋体, tahoma, arial, \\\'Hiragino Sans GB\\\', 宋体, sans-serif; font-size: 14px; line-height: 26px;&quot;&gt;生态整体主义强调的是把人类的物质欲望、经济的增长、对自然的改造和扰乱限制的能为生态系统所承受、吸收、降解和恢复的范围内。这种限制为的是生态系统的整体利益，而生态系统的整体利益与人类的长远利益和根本利益是一致的。生态整体主义的核心思想是:把生态系统的整体利益作为最高价值而不是把人类的利益作为最高价值。&lt;/span&gt;&lt;/p&gt;',
+  )),
+)
+

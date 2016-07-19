@@ -83,7 +83,7 @@ class CollectController extends Controller
         ]);
 
         $favor = DB::table('x2_favor as A')
-                        ->select('A.favorid', 'B.question', 'B.questiontype', 'B.questionselect')
+                        ->select('A.favorid', 'B.questionid','B.question', 'B.questiontype', 'B.questionselect')
                         ->addSelect('B.questionanswer', 'B.questiondescribe')
                         ->join('x2_questions as B', 'A.favorquestionid', '=', 'B.questionid')
                         ->where('A.favorid', $request->input('favorid'))
