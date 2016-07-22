@@ -43,5 +43,24 @@ class InfoController extends Controller {
         return $this->succ($request);
 
     }
-    
+       public function finishUserInfo (Request $request, Valid $valid) {
+        $valid->rule ($request, [
+            'address' => 'require@地址',
+            'qq' => 'number@qq'
+        ]);
+
+        try {
+            $user = JWTAuth::parseToken()->authenticate();
+            $user->qq = $request->input('qq');
+            $user->weixin = $request->input('weixin');
+            $user->address= $request->input('address');
+            $user->save();
+             
+        } catch (\Exception $e) {
+            throw new \Exception('完善失败,稍后重试');
+        }
+
+        return $this->succ($request);
+
+    }
 }

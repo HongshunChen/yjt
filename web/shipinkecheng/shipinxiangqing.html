@@ -13,6 +13,29 @@
 			$(function() {
 				//智能浮动层
 				$("#tabHead").smartFloat();
+                                function comment(id) {
+                     $.ajax({
+                                           type: "get",
+                                           url: config.host + "/video/comment/create",
+                                           data: {
+                                                   token: localStorage.getItem('token'),
+                                                   courseid: id,
+                                                   
+                                           },
+                                           dataType: "jsonp",
+                                           success: function(data) {
+                                                   if (data.status == 1) {
+                                                           alert('购买成功');
+                                                   } else {
+                                                           alert(data.data);
+                                                   }
+                                           },
+                                           error: function() {
+                                                   alert('网络异常');
+                                           }
+                                   });
+                }
+
 			});
 		</script>
 	</head>
@@ -59,7 +82,7 @@
 						<p class="kep1" style="margin-top: 52px;">{{list.data.teachername}}</p>
 						<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：300天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>
 					</div>
-					<p class="kep3">历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火~</p>
+					<p class="kep3">{{list.data.courseatract}}</p>
 				</div>
 				<img style="margin-top:23px; float:left;" src="../images/xian.jpg" />
 				<div class="zi">
@@ -68,7 +91,7 @@
 					<div class="xia">
 					<ul>
 						<h5>已有</h5>
-						<li>1253121</li>
+						<li>3121</li>
 						<h5>人购买</h5></ul>
 					<ul style="margin-left:210px;">
 						<h5>距离停售</h5>
@@ -111,7 +134,7 @@
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="mingshi">
 							<p style="color:#f53c3a; font-size:22px;">名师介绍</p>
-							<p class="pq2">{{#list.data.courseintro}}</p>
+							<p class="pq2">{{#list.data.teacherintro}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 
@@ -130,7 +153,7 @@
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="mingshi">
 							<p style="color:#f53c3a; font-size:22px;">名师介绍</p>
-							<p class="pq2">{{#list.data.courseintro}}</p>
+							<p class="pq2">{{#list.data.teacherintro}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 					</div>
@@ -147,7 +170,7 @@
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="kaoshi">
 							<p style="color:#f53c3a; font-size:22px;">课程简介</p>
-							<p class="pq2">{{#list.data.courseintro}}</p>
+							<p class="pq2">{{#list.data.teacherintro}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						
@@ -178,56 +201,28 @@
 						<p class="pd7"></p>
 					</a>
 				</div>
-				<div class="pinglun">
+                </script>
+<div class="pinglun"  >
 <p style="font-size:16px; color:#333333; margin-left:10px; margin-top:20px;">网友留言：</p>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒，胡敬源老师好棒，胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
+<div id="comment_list"></div>
+	
 </div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
+<div class="tijiao" >
+   
+<textarea name="" style="width:285px; height:100px; margin-top:20px;" cols="" rows="" placeholder="点此输入评论" id="content"></textarea>
+<a href="#"><p class="bei" id="tijiao" onclick="shipinxiangqing.fn.comment()">提交</p></a>
 </div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
-</div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
-</div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
-</div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-<div class="xian"></div>
-</div>
-<div>
-<p class="pq7">用户：18618142095</p>
-<p class="pq8">胡敬源老师好棒</p>
-<p class="pq9">评论时间：2016.01.01</p>
-</div>
-</div>
-<div class="tijiao">
-<textarea name="" style="width:285px; height:100px; margin-top:20px;" cols="" rows="">点此输入评论</textarea>
-<a href="#"><p class="bei">提交</p></a>
-</div>
-				
-		</script>
+	 <script type="text/html" id="commentList"> 
+                {{each list.data.data as comment}}
+                <div>
+                <p class="pq7">用户：{{comment.username}}</p>
+                <p class="pq8">{{comment.content}}</p>
+                <p class="pq9">{{comment.createtime }}</p>
+                <div class="xian"></div>
+                </div>
+                {{/each}}
+                 </script>			
+		 
 		
 		<script type="text/javascript" src="../res/js/config.js"></script>
 		<script type="text/javascript" src="js/shipinxiangqing.js"></script>

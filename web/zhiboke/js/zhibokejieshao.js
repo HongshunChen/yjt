@@ -69,6 +69,8 @@ var zhibojieshao = {
 				var data = {
 					list: list,
 				};
+                            
+                                 list.data.endday = zhibojieshao.fn.forDay(list.data.endtime);
 				var html = template('zhiboKe', data);
 				document.getElementById('zhibo_ke').innerHTML = html;
 			}
@@ -76,6 +78,11 @@ var zhibojieshao = {
 		cordavaDataGet: function() {
 			zhibojieshao.dataInit();
 		},
+                 forDay:function(timer){
+                    var timestamp = Date.parse(new Date())/1000;
+                    var day=parseInt((timer-timestamp)/(60*60*24));
+                    return day<0 ? 0 :day;
+                },
 		zhibo_by:function(id){
 			
 			$.ajax({

@@ -358,3 +358,4 @@ var quanzhenmoni = {
 $(function($) {
 	quanzhenmoni.fn.cordavaDataGet();
 });
+

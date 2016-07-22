@@ -169,6 +169,67 @@ class VideoController extends Controller
         }
         return $this->succ($request);
     }
+     /* 
+     * 插入课程用户的评论
+     * 传入参数：courseid 课程ID
+      *         content  评论内容
+     */
+    public function createcomment (Request $request, Valid $valid)
+    {
+       
+        $valid->rule($request, [
+            'courseid' => 'require|integer',
+            'content'=>'require',
+        ]);
+      
+        $courseid = $request->input('courseid');
+        $content = $request->input('content');
+        $user = JWTAuth::parseToken()->authenticate();
+        $userid = $user->userid;
+       
+       
+        //插入评论列表
+       
+        
+            try{
+                $commentlist = [];
+
+                $commentlist['courseid'] = $courseid;
+                $commentlist['userid'] = $userid;
+                $commentlist['content'] = '"'.$content.'"';
+                $commentlist['createtime']=time();
+           
+                DB::table('x2_user_comment')->insert($commentlist);
+                //DB::insert('insert into x2_user_comment (courseid,userid,content,createtime1) values(?,?,?,?)',$commentlist);
+                return $this->succ($request);
+            }
+            catch (\Exception $e) {
+               
+                throw new \Exception('生成错误');
+            }
+        
+        
+    }
+      /* 练习中心
+     * 传入参数：token
+     */
+    public function listcomment (Request $request, Valid $valid)
+    {
+        $valid->rule($request, [
+            'courseid' => 'require|integer'
+        ]);
+        //获取用户ID
+        $user = JWTAuth::parseToken()->authenticate();
+        $userid = $user->userid;
+        $courseid = $request->input('courseid');
+        $list = DB::table('x2_user_comment as A')
+            ->join('x2_user as B', 'A.userid', '=', 'B.userid')
+            ->select( 'A.content','A.createtime','B.username')
+            ->where('A.courseid', $courseid)
+            ->paginate(6);
+
+        return $this->succ($request, $list);
+    }
 
     /* 插入购买成功后的直播课视频
      * 传入参数：vid 直播课ID

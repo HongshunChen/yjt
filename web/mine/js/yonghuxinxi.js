@@ -31,6 +31,13 @@ var yonghuxinxi = {
 			};
 			var tem = template('page', data);
 			document.getElementById('page').innerHTML = tem;
+                        var data = {
+				qq: JSON.parse(localStorage.getItem('userInfo')).qq,
+				weixin: JSON.parse(localStorage.getItem('userInfo')).weixin,
+                                address:JSON.parse(localStorage.getItem('userInfo')).address
+			};
+			var html= template('finishuser', data);
+			document.getElementById('finishuser').innerHTML = html;
 		},
 		initialize: function() {
 			yonghuxinxi.fn.tagFill();
@@ -68,6 +75,40 @@ var yonghuxinxi = {
 					alert('网络异常');
 				}
 			});
+		},
+               //完善用户信息
+               finish_userinfo: function() {
+			var qq= document.getElementById('qq').value;
+			var weixin = document.getElementById('weixin').value;
+			var address = document.getElementById('address').value;
+			if ( address.length ==0) {
+				alert('用户地址不能为空');
+			}else {
+				$.ajax({
+					type: 'GET',
+					url: config.host + "/user/finish",
+					data: {
+						token: localStorage.getItem('token'),
+						qq: qq ,
+						weixin: weixin,
+                                                address:address
+					},
+					dataType: "jsonp",
+					success: function(list) {
+						if (list.status == 1) {
+							console.log("请求成功");
+							alert('完善信息成功');
+                                                        yonghuxinxi.fn.init_user();
+						} else {
+							alert(list.data);
+						}
+					},
+					error: function(xhr, type) {
+						console.log("请求失败");
+						alert('网络异常');
+					}
+				});
+			}
 		},
 		init_user:function(){
 			//初始化用户信息

@@ -101,7 +101,7 @@ class CourseController extends Controller
 
         $detail = DB::table('x2_video_course as A')
             ->join('x2_user as B', 'A.teacherid', '=', 'B.userid')
-            ->select('A.courseid', 'A.courseintro as courseintro', 'A.contentintro', 'A.coursename', 'A.courseprice', 'A.coursethumb')
+            ->select('A.courseid', 'A.courseintro as courseintro', 'A.contentintro', 'A.coursename', 'A.courseprice', 'A.coursethumb','A.courseatract')
             ->addSelect('B.userid as teacherid', 'B.photo as teacherthumb', 'B.usertruename as teachername', 'B.teacher_subjects as teacherintro')
             ->where('A.courseid', $courseid)
             ->first();

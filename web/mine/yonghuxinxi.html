@@ -62,7 +62,7 @@
 			<div class="youbian">
 				<!--右边-->
 				<div class="shipin">用户信息</div>
-				<!--<div class="youbianp">
+<!--				<div class="youbianp">
 					<p>我的代金券：</p>
 					<div class="daijinquan">
 						<img src="../images/daijinquan.jpg" />
@@ -77,6 +77,7 @@
 					<div class="youbianp1">
 						<p>昵&nbsp;&nbsp;称：</p>
 						<p>{{user_name}}</p>
+                                               
 					</div>
 					<div style="margin-left:20px; margin-top:30px;">
 						<label class="rounded">新昵称：</label>
@@ -97,6 +98,20 @@
 						<input class="rounded rounded_two" placeholder="确认您的密码" id="again_pwd" /></div>
 					<span style="margin-left:80px; float:left;" onclick="yonghuxinxi.fn.change_pwd()">提交</span>
 					<li style="color:#333; font-size:14px; margin-left:30px; margin-top:25px; float:left;"><a href="../login_register/zhaohuimima.html">忘记原密码？点此找回</a></li>
+				</div>
+				<div class="youbianp" id="finishuser">
+					<p>完善资料</p>
+					<div style="margin-left:20px; margin-top:15px;">
+						<label class="rounded">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ号：</label>
+                                                <input class="rounded rounded_two" placeholder="完善您的QQ号" id="qq" value="{{qq}}"/></div>
+					<div style="margin-left:20px; margin-top:15px;">
+						<label class="rounded">&nbsp;&nbsp;&nbsp;&nbsp;微信号：</label>
+                                                <input class="rounded rounded_two" placeholder="完善您的微信号"  value="{{weixin}}"id="weixin" /></div>
+					<div style="margin-left:20px; margin-top:15px;">
+						<label class="rounded">邮寄地址：</label>
+						<input class="rounded rounded_two" placeholder="完善您的邮寄地址" id="address" value="{{address}}"/></div>
+					<span style="margin-left:80px; float:left;" onclick="yonghuxinxi.fn.finish_userinfo()">提交</span>
+					<li style="color:#333; font-size:14px; margin-left:30px; margin-top:25px; float:left;"></li>
 				</div>
 			</div>
 			<!--右边-->

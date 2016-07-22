@@ -59,7 +59,7 @@ class CourseLiveController extends Controller
 
         $detail = DB::table('x2_video_special as A')
             ->join('x2_user as B', 'A.uid', '=', 'B.userid')
-            ->select('A.vid', 'A.vintro as vintro', 'A.vcontent', 'A.vname',DB::raw('round(A.vprice,0) as  vprice'),'A.vurl', 'A.videohumb','A.mp4url')
+            ->select('A.vid', 'A.vintro as vintro', 'A.vcontent', 'A.vname',DB::raw('round(A.vprice,0) as  vprice'),'A.vurl', 'A.videohumb','A.mp4url','A.endtime')
             ->addSelect('B.userid as teacherid','B.photo as teacherthumb','B.usertruename as teachername','B.teacher_subjects as teacherintro')
             ->where('A.vid', $vid)
             ->first();

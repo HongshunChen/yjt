@@ -53,6 +53,26 @@
 
 			</div>
 		</div>
+                <script language="javascript" type="text/javascript"> 
+                var interval = 1000; 
+                function ShowCountDown(year,month,day,divname) 
+                { 
+                var now = new Date(); 
+                var endDate = new Date(year, month-1, day); 
+                var leftTime=endDate.getTime()-now.getTime(); 
+                var leftsecond = parseInt(leftTime/1000); 
+                //var day1=parseInt(leftsecond/(24*60*60*6)); 
+                var day1=Math.floor(leftsecond/(60*60*24)); 
+                var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+                var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+                var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+                //var cc = document.getElementsByClassName(divname); 
+                var yuan = "<p>倒计时</p><span>"+day1+"</span><p>天</p><span>"+hour+"</span><p>时</p><span>"+minute+"</span><p>分</p><span>"+second+"</span><p>秒</p>"; 
+                $(divname).html(yuan);
+               // cc.innerHTML = "<p>倒计时</p><span>"+day1+"</span><p>天</p><span>"+hour+"</span><p>时</p><span>"+minute+"</span><p>分</p><span>"+second+"</span><p>秒</p>"; 
+                } 
+                window.setInterval(function(){ShowCountDown(2016,7,30,'.tehui3');}, interval); 
+                </script> 
 		<script type="text/html" id="tehuiList">
 			<ul style="margin-top:-20px;" class="ul_li">
 				{{if total>0}}
@@ -63,7 +83,7 @@
 						<p>{{shipin.coursename}}</p>
 						<ul>主讲老师：<span>{{shipin.courseusername}}</span></ul>
 						<ul>适用人群：<span>公务员</span></ul>
-						<ul>购买人数：<span><span id="by{{i}}"></span>人已购买</span>
+						<ul>购买人数：<span><span id="by{{i}}"></span>{{i}}人已购买</span>
 						</ul>
 					</div>
 					<div class="wenb">
@@ -72,12 +92,8 @@
 							<p class="tehui1">限时特惠</p>
 							<b class="tehui2">￥{{shipin.courseprice}}</b>
 						</div>
-						<div class="tehui3">
-							<p>倒计时</p><span>01</span>
-							<p>天</p><span>01</span>
-							<p>时</p><span>01</span>
-							<p>分</p><span>01</span>
-							<p>秒</p>
+						<div class="tehui3" >
+							
 						</div>
 						<div class="tehui4">
 							<a href="shipinxiangqing.html?id={{shipin.courseid}}">

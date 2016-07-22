@@ -107,8 +107,11 @@ var zhibo = {
 					total: list.data.data.length,
 				};
 				for (var i = 0; i < list.data.data.length; i++) {
+                                    
 					list.data.data[i].createtime = zhibo.fn.forData(list.data.data[i].createtime);
+                                        list.data.data[i].endday = zhibo.fn.forDay(list.data.data[i].endtime);
 					list.data.data[i].endtime = zhibo.fn.forData(list.data.data[i].endtime);
+                                       
 				}
 				var html = template('zhiboList', data);
 				document.getElementById('zhibo_list').innerHTML = html;
@@ -145,7 +148,7 @@ var zhibo = {
 			$("#pageGro ul li").eq(t).addClass("on");
 		},
 		forData: function(timer) {
-			var date = new Date(timer);
+			var date = new Date(timer*1000);
 			Y = date.getFullYear() + '.';
 			M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '.';
 			D = date.getDate() + ' ';
@@ -154,6 +157,11 @@ var zhibo = {
 			s = date.getSeconds();
 			return Y + M + D;
 		},
+                forDay:function(timer){
+                    var timestamp = Date.parse(new Date())/1000;
+                    var day=parseInt((timer-timestamp)/(60*60*24));
+                    return day<0 ? 0 :day;
+                },
 		 ran: function(no) {
 			for (var i = 0; i < no; i++) { 
 				var  a, b;            

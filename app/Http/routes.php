@@ -56,6 +56,8 @@ Route::get('/course/type', 'Video\CourseController@getcate');
 
 //成员统计
 Route::get('/members', 'Common\StatisController@members');
+//课程评论列表
+Route::get('/video/comment/list','Video\VideoController@listcomment');
 
 /**
  * 需要身份验证的路由
@@ -65,6 +67,7 @@ Route::group(['middleware' => 'jwt.auth'], function () {
 		
 	Route::get('/pssword/retrieve', 'User\PwdController@retrieve');
 	Route::get('/user/info', 'User\InfoController@index');
+        Route::get('/user/finish', 'User\InfoController@finishUserInfo');
 	Route::get('user/info/update', 'User\InfoController@update');
 
 	Route::get('/collect/update', 'User\CollectController@update');
@@ -107,8 +110,9 @@ Route::group(['middleware' => 'jwt.auth'], function () {
 	Route::get('/course/createlive', 'Video\VideoController@createlive');
 	//插入观看视频历史记录
 	Route::get('/course/createlib', 'Video\VideoController@createlib');
-
-
+        //我的课程的评论
+        Route::get('/video/comment/create','Video\VideoController@createcomment');
+     
 
 	//*************************订单相关*******************************start
 

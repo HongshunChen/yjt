@@ -103,7 +103,13 @@
 				  		</select>
 					</div>
 				</div>
-				
+				<div class="control-group">
+					<label for="basicprice" class="control-label">课程吸引</label>
+					<div class="controls">
+						<textarea class="input-xlarge" rows="4" name="args[courseatract]" id="courseatract">{x2;$basic['basicprice']}</textarea>
+					  	<span class="help-block">介绍一下课程吸引点，限制100字</span>
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="basicprice" class="control-label">课程简介</label>
 					<div class="controls">
@@ -112,7 +118,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">课程内容：</label>
+					<label class="control-label">课程内容</label>
 				  	<div class="controls">
 					  	<textarea class="ckeditor" name="args[contentintro]" id="question"></textarea>
 					  
