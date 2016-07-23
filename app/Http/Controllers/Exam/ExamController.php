@@ -101,13 +101,56 @@ class ExamController extends Controller
 	 *  单选, 多选, 判断, 主观题
 	 */
 	protected function createSimulate ($areaid) {
-		$radio_list = $this->_getQuestions(1, config('yjt.simulate.radio_num'), $areaid);
-		$multiple_list = $this->_getQuestions(2, config('yjt.simulate.multiple_num'), $areaid);
-		$judgement_list = $this->_getQuestions(3, config('yjt.simulate.judgement_num'), $areaid);
-		$subject_list = $this->createSubject(config('yjt.simulate.subject_num'), $areaid);
+            
+                $paperInfo= $this->getPaperInfoByAreaid ($areaid);
+                $radio_num=isset($paperInfo['questype'][1]['number'])?$paperInfo['questype'][1]['number']:0;
+                $multiple_num=isset($paperInfo['questype'][1]['number'])?$paperInfo['questype'][1]['number']:0;
+                $judgement_num=isset($paperInfo['questype'][1]['number'])?$paperInfo['questype'][1]['number']:0;
+                $subject_num=isset($paperInfo['questype'][1]['number'])?$paperInfo['questype'][1]['number']:0;
+                $radio_list = $this->_getQuestions(1, $radio_num, $areaid);
+		$multiple_list = $this->_getQuestions(2, $multiple_num, $areaid);
+		$judgement_list = $this->_getQuestions(3, $judgement_num, $areaid);
+		$subject_list = $this->createSubject($subject_num, $areaid);
+//		$radio_list = $this->_getQuestions(1, config('yjt.simulate.radio_num'), $areaid);
+//		$multiple_list = $this->_getQuestions(2, config('yjt.simulate.multiple_num'), $areaid);
+//		$judgement_list = $this->_getQuestions(3, config('yjt.simulate.judgement_num'), $areaid);
+//		$subject_list = $this->createSubject(config('yjt.simulate.subject_num'), $areaid);
 		$data = array_merge($radio_list, $multiple_list, $judgement_list, $subject_list);
 		return $data;
 
+	}
+        /**
+	 * 根据地区名, 获取地区id
+	 */
+	protected function getPaperInfoByAreaid ($areaid) {
+		if($areaid) {
+			$paperInfo = DB::table('x2_exams')->select('examsetting')->where('areaid', $areaid)->first();
+                        
+			if($paperInfo) {
+				return unserialize($paperInfo->examsetting);
+			} else {
+				throw new \Exception('所选地区不存在全真模拟卷');
+			}
+
+		} else {
+			return 0;
+		}
+	}
+        /**
+	 * 根据地区名, 获取地区id
+	 */
+	protected function getAreaid ($areaname) {
+		if($areaname) {
+			$area = DB::table('x2_area')->select('areaid')->where('area', $areaname)->first();
+			if($area) {
+				return $area->areaid;
+			} else {
+				throw new \Exception('所选地区不存在');
+			}
+
+		} else {
+			return 0;
+		}
 	}
 
 	/**
@@ -527,7 +570,7 @@ class ExamController extends Controller
 		$paper_id = $request->input('paper_id');
 
 		$paper = Paper::find($paper_id);
-
+               
 		if(!$paper) {
 			throw new \Exception('试卷不存在');
 		}
@@ -706,21 +749,6 @@ class ExamController extends Controller
 		DB::table('x2_paper_questions')->insert($new_questions);
 	}
 
-	/**
-	 * 根据地区名, 获取地区id
-	 */
-	protected function getAreaid ($areaname) {
-		if($areaname) {
-			$area = DB::table('x2_area')->select('areaid')->where('area', $areaname)->first();
-			if($area) {
-				return $area->areaid;
-			} else {
-				throw new \Exception('所选地区不存在');
-			}
-
-		} else {
-			return 0;
-		}
-	}
+	
 
 }

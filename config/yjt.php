@@ -14,7 +14,7 @@ return [
         'radio_num' => 10,
         'multiple_num' => 10,
         'judgement_num' => 10,
-        'subject_num' => 1
+        'subject_num' => 2
     ],
 
     /**

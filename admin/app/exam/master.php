@@ -2132,13 +2132,14 @@ class app
                     $args['examauthorid'] = $this->_user['sessionuserid'];
                     $args['examauthor'] = $this->_user['sessionusername'];
                     $args['examtype'] = 1;
-
+                   // print_r($args);
                     foreach ($args['examsetting']['questype'] as $key => $p) {
                         if (!$args['examsetting']['questypelite'][$key]) {
                             unset($args['examsetting']['questype'][$key], $args['examquestions'][$key]);
                         }
                     }
-
+//                    print_r($args);
+//                    exit;
                     $this->exam->addExamSetting($args);
                     $message = array(
                         'statusCode' => 200,
@@ -2149,6 +2150,9 @@ class app
                 } else {
                     $subjects = $this->basic->getSubjectList();
                     $questypes = $this->basic->getQuestypeList();
+                    $questionarea = $this->exam->getQuestionarea(array(array()), false);
+                    $this->tpl->assign("questionarea", $questionarea);
+                    
                     $this->tpl->assign('questypes', $questypes);
                     $this->tpl->assign('subjects', $subjects);
                     $this->tpl->display('exams_auto');

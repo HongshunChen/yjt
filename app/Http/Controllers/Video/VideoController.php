@@ -126,29 +126,29 @@ class VideoController extends Controller
      */
     public function create (Request $request, Valid $valid)
     {
-       
+
         $valid->rule($request, [
             'courseid' => 'require|integer',
             'type'=>'require|integer'
         ]);
-      
+
         $courseid = $request->input('courseid');
         $type = $request->input('type');
         $user = JWTAuth::parseToken()->authenticate();
         $userid = $user->userid;
-       
+
         //首先判断是否已经有这个课程了，有的话直接返回
         $IsHaveCourse = DB::table('x2_user_video')
                             ->where([
                                 ['courseid', $courseid],
                                 ['userid', $userid]
                             ]) ->get();
-          
+
         if(count($IsHaveCourse) >= 1)
         {
             throw new \Exception('已购买过该课程');
         }
-       
+
         //获取视频列表
         $course = Videos::select('videoid')
             ->where('courceid', $request->input('courseid'))
@@ -157,22 +157,22 @@ class VideoController extends Controller
 //       return  $this->_request($curl);
 //       exit;
        // print_r($course);
-       
+
         if($type==1){
             $detail = DB::table('x2_video_course')
             ->select( 'coursename','courseintro','courseprice')
             ->where('courseid', $courseid)->get();
            // $detail= DB::select('select * from x2_video_course where courseid=? limit 1',[$courseid]);
 
-            
+
             if($detail){
                  try{
-                
+
                     $orderlist=[];
                     $orderlist['courseid'] = $courseid;
                     $orderlist['orderuserid'] = $userid;
                    // $orderlist['videoid'] = '';
-                  
+
                     $orderlist['ordersn'] = time().$userid.$courseid.$type;
                     $orderlist['ordertitle'] = $detail[0]->coursename;
                     $orderlist['orderdescribe'] = $detail[0]->courseintro;
@@ -182,20 +182,20 @@ class VideoController extends Controller
                     $orderlist['couponsn'] = 30;
                     $orderlist['orderstatus'] = 0;
                     $orderlist['ordercreatetime'] = time();
-               
+
                     DB::table('x2_orders')->insert($orderlist);
                    // return $this->succ($request);
                 }
                 catch (\Exception $e) {
                     throw new \Exception('生成错误');
                 }
-                
+
             }else{
                  throw new \Exception('课程已过期');
             }
-         
+
         }
-         
+
         //插入视频列表
         if ($course) {
             try{
@@ -206,7 +206,7 @@ class VideoController extends Controller
                     $videolist[$key]['videoid'] = $videos['videoid'];
                     $videolist[$key]['status'] = 1;
                 }
-             
+
                 DB::table('x2_user_video')->insert($videolist);
                 return $this->succ($request);
             }
@@ -214,7 +214,7 @@ class VideoController extends Controller
                 throw new \Exception('生成错误');
             }
         }
-        
+
         return $this->succ($request);
     }
     /* 服务器端请求*/
@@ -235,28 +235,28 @@ class VideoController extends Controller
 		curl_close($ch);//关闭 cURL 释放资源
 		return $content;
 	}
-     /* 
+     /*
      * 插入课程用户的评论
      * 传入参数：courseid 课程ID
       *         content  评论内容
      */
     public function createcomment (Request $request, Valid $valid)
     {
-       
+
         $valid->rule($request, [
             'courseid' => 'require|integer',
             'content'=>'require',
         ]);
-      
+
         $courseid = $request->input('courseid');
         $content = $request->input('content');
         $user = JWTAuth::parseToken()->authenticate();
         $userid = $user->userid;
-       
-       
+
+
         //插入评论列表
-       
-        
+
+
             try{
                 $commentlist = [];
 
@@ -264,17 +264,17 @@ class VideoController extends Controller
                 $commentlist['userid'] = $userid;
                 $commentlist['content'] = '"'.$content.'"';
                 $commentlist['createtime']=time();
-           
+
                 DB::table('x2_user_comment')->insert($commentlist);
                 //DB::insert('insert into x2_user_comment (courseid,userid,content,createtime1) values(?,?,?,?)',$commentlist);
                 return $this->succ($request);
             }
             catch (\Exception $e) {
-               
+
                 throw new \Exception('生成错误');
             }
-        
-        
+
+
     }
       /* 练习中心
      * 传入参数：token
@@ -320,7 +320,7 @@ class VideoController extends Controller
             throw new \Exception('已购买过该课程');
         }
         //获取视频列表
-     ??????   $course = Videos::select('videoid')
+       $course = Videos::select('videoid')
             ->where('courceid', $request->input('courseid'))
             ->get();
         //插入视频列表
