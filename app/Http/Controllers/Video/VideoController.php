@@ -129,9 +129,11 @@ class VideoController extends Controller
        
         $valid->rule($request, [
             'courseid' => 'require|integer',
+            'type'=>'require|integer'
         ]);
       
         $courseid = $request->input('courseid');
+        $type = $request->input('type');
         $user = JWTAuth::parseToken()->authenticate();
         $userid = $user->userid;
        
@@ -140,16 +142,60 @@ class VideoController extends Controller
                             ->where([
                                 ['courseid', $courseid],
                                 ['userid', $userid]
-                            ])
-                             ->get();
-        If(count($IsHaveCourse) >= 1)
+                            ]) ->get();
+          
+        if(count($IsHaveCourse) >= 1)
         {
-            throw new \Exception('已购买过该视频');
+            throw new \Exception('已购买过该课程');
         }
+       
         //获取视频列表
         $course = Videos::select('videoid')
             ->where('courceid', $request->input('courseid'))
             ->get();
+//       $curl="http://localhost/yijiangtang/admin/index.php?core-api-zhifu&ordersn='654143251155'&ordertitle='45654'&orderprice=100ordercenter='h565444";
+//       return  $this->_request($curl);
+//       exit;
+       // print_r($course);
+       
+        if($type==1){
+            $detail = DB::table('x2_video_course')
+            ->select( 'coursename','courseintro','courseprice')
+            ->where('courseid', $courseid)->get();
+           // $detail= DB::select('select * from x2_video_course where courseid=? limit 1',[$courseid]);
+
+            
+            if($detail){
+                 try{
+                
+                    $orderlist=[];
+                    $orderlist['courseid'] = $courseid;
+                    $orderlist['orderuserid'] = $userid;
+                   // $orderlist['videoid'] = '';
+                  
+                    $orderlist['ordersn'] = time().$userid.$courseid.$type;
+                    $orderlist['ordertitle'] = $detail[0]->coursename;
+                    $orderlist['orderdescribe'] = $detail[0]->courseintro;
+                    $orderlist['ordertype'] = $type;
+                    $orderlist['orderprice'] = $detail[0]->courseprice;//应该减去优惠券金额
+                    $orderlist['orderfullprice'] = $detail[0]->courseprice;
+                    $orderlist['couponsn'] = 30;
+                    $orderlist['orderstatus'] = 0;
+                    $orderlist['ordercreatetime'] = time();
+               
+                    DB::table('x2_orders')->insert($orderlist);
+                   // return $this->succ($request);
+                }
+                catch (\Exception $e) {
+                    throw new \Exception('生成错误');
+                }
+                
+            }else{
+                 throw new \Exception('课程已过期');
+            }
+         
+        }
+         
         //插入视频列表
         if ($course) {
             try{
@@ -160,6 +206,7 @@ class VideoController extends Controller
                     $videolist[$key]['videoid'] = $videos['videoid'];
                     $videolist[$key]['status'] = 1;
                 }
+             
                 DB::table('x2_user_video')->insert($videolist);
                 return $this->succ($request);
             }
@@ -167,8 +214,27 @@ class VideoController extends Controller
                 throw new \Exception('生成错误');
             }
         }
+        
         return $this->succ($request);
     }
+    /* 服务器端请求*/
+    public function _request($curl, $https = true, $method = 'GET', $data = null){
+		$ch = curl_init(); // 初始化curl
+		curl_setopt($ch, CURLOPT_URL, $curl); //设置访问的 URL
+		curl_setopt($ch, CURLOPT_HEADER, false); //放弃 URL 的头信息
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //返回字符串，而不直接输出
+		if($https){ //判断是否是使用 https 协议
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); //不做服务器的验证
+			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);  //做服务器的证书验证
+		}
+		if($method == 'POST'){ //是否是 POST 请求
+			curl_setopt($ch, CURLOPT_POST, true); //设置为 POST 请求
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $data); //设置POST的请求数据
+		}
+		$content = curl_exec($ch); //开始访问指定URL
+		curl_close($ch);//关闭 cURL 释放资源
+		return $content;
+	}
      /* 
      * 插入课程用户的评论
      * 传入参数：courseid 课程ID
@@ -249,12 +315,12 @@ class VideoController extends Controller
             ->whereExists(function  ($query) use($vid,$user) {
                 $query ->where('videoid', '=',$vid)->where('userid', '=',$user)->where('videotype', '=',0);
             }) ->get();
-        If(count($IsHaveCourse)<1)
+        If(count($IsHaveCourse)>=1)
         {
-            return $this->succ($request);
+            throw new \Exception('已购买过该课程');
         }
         //获取视频列表
-        $course = Videos::select('videoid')
+     ??????   $course = Videos::select('videoid')
             ->where('courceid', $request->input('courseid'))
             ->get();
         //插入视频列表

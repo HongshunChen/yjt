@@ -118,7 +118,7 @@
 					<label for="basicprice" class="control-label">课程吸引</label>
 					<div class="controls">
 						<textarea class="input-xlarge" rows="4" name="args[courseatract]" id="courseatract"><?php echo $this->tpl_var['cat']['courseatract']; ?></textarea>
-					  	<span class="help-block">介绍一下课程点，限制100字</span>
+					  	<span class="help-block">介绍一下课程吸引点，限制100字</span>
 					</div>
 				</div>
 				<div class="control-group">

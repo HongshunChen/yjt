@@ -301,10 +301,10 @@ var quanzhenmoni = {
 		papers: function() {
 			var keytype = localStorage.getItem('keytype');
 			if (keytype == 2) {
-				if($.confirm('是否确认交卷？')) {
+				//if($.confirm('是否确认交卷？')) {
 					quanzhenmoni.fn.jianda_sub(keytype);
 
-				}
+				//}
 							} else {
 				quanzhenmoni.fn.assignment();
 			}
@@ -334,7 +334,7 @@ var quanzhenmoni = {
 						token: localStorage.getItem('token'),
 						paper_question_id: id,
 						answertype: types,
-						answered: texts,
+						answered: answer,
 					},
 					
 					success: function(data) {

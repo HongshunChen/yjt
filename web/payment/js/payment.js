@@ -31,8 +31,8 @@ var payment = {
 					console.log("请求失败");
 					$.alert('网络异常');
 				}
-			});}
-			if(t==2){
+			});
+                    }else if(t==2){
 			$.ajax({
 				type: 'GET',
 				url: config.host + "/course/livedetail",
@@ -54,7 +54,8 @@ var payment = {
 					console.log("请求失败");
 					$.alert('网络异常');
 				}
-			});}
+			});
+                    }
 
 		},
 
@@ -89,7 +90,7 @@ var payment = {
 		
 		buy:function(){
 			var urls = window.location.href;
-			var id = urls.substring(urls.indexOf("id=") + 3, urls.indexOf("&title"));
+			var id = urls.substring(urls.indexOf("id=") + 3);
 			var t = urls.substring(urls.indexOf("t=") + 2, urls.indexOf("t=") + 3);
 			if(t==1){
 			$.ajax({
@@ -98,29 +99,35 @@ var payment = {
 				data:{
 					token:localStorage.getItem('token'),
 					courseid:id,
+                                        type:t,
 				},
 				dataType:"jsonp",
 				success:function(data){
-						var now = new Date();
-                					var year = now.getFullYear();
-              					var month =(now.getMonth() + 1).toString();
-                					var day = (now.getDate()).toString();
-                					if (month.length == 1) {
-                					    month = "0" + month;
-                					}
-                					if (day.length == 1) {
-                					    day = "0" + day;
-                					}
-                					var dateTime = year + month +  day;
-						var rd = Math.floor(10000+Math.random()*(89999));
-						var str = "";
-						str += dateTime;
-						str += "1";
-						str += rd;
-						
-						if(confirm(str)){
-							document.write(str+ courseid );
-						}
+//						var now = new Date();
+//                					var year = now.getFullYear();
+//              					var month =(now.getMonth() + 1).toString();
+//                					var day = (now.getDate()).toString();
+//                					if (month.length == 1) {
+//                					    month = "0" + month;
+//                					}
+//                					if (day.length == 1) {
+//                					    day = "0" + day;
+//                					}
+//                					var dateTime = year + month +  day;
+//						var rd = Math.floor(10000+Math.random()*(89999));
+//						var str = "";
+//						str += dateTime;
+//						str += "1";
+//						str += rd;
+						if(data.status==1){
+                                                    alert('购买成功,请前去个人中心完善您的个人资料，方便我们将课程资料邮寄到你的手中！');
+                                                    window.location.href="../mine/yonghuxinxi.html";
+                                                }else{
+                                                    alert(data.data);
+                                                }
+//						if(confirm(str)){
+//							document.write(str+ courseid );
+//						}
 					
 
 					 

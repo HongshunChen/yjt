@@ -82,7 +82,7 @@ class CourseController extends Controller
                 }
             })
             ->groupBy('A.courseid')
-            ->paginate(6);
+            ->paginate(5);
 
         return $this->succ($request, $list);
     }
