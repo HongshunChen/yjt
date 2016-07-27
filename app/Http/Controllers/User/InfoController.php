@@ -46,7 +46,11 @@ class InfoController extends Controller {
        public function finishUserInfo (Request $request, Valid $valid) {
         $valid->rule ($request, [
             'address' => 'require@地址',
-            'qq' => 'number@qq'
+            'qq' => 'number@qq',
+            'weixin'=>'require@微信',
+            'mailphone'=>'require|number@手机号',
+            'mailname'=>'require'
+            
         ]);
 
         try {
@@ -54,6 +58,9 @@ class InfoController extends Controller {
             $user->qq = $request->input('qq');
             $user->weixin = $request->input('weixin');
             $user->address= $request->input('address');
+            $user->mailname = $request->input('mailname');
+            $user->mailphone = $request->input('mailphone');
+
             $user->save();
              
         } catch (\Exception $e) {

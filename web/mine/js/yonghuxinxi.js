@@ -34,7 +34,9 @@ var yonghuxinxi = {
                         var data = {
 				qq: JSON.parse(localStorage.getItem('userInfo')).qq,
 				weixin: JSON.parse(localStorage.getItem('userInfo')).weixin,
-                                address:JSON.parse(localStorage.getItem('userInfo')).address
+                                address:JSON.parse(localStorage.getItem('userInfo')).address,
+                                mailname: JSON.parse(localStorage.getItem('userInfo')).mailname,
+                                mailphone: JSON.parse(localStorage.getItem('userInfo')).mailphone,
 			};
 			var html= template('finishuser', data);
 			document.getElementById('finishuser').innerHTML = html;
@@ -81,7 +83,17 @@ var yonghuxinxi = {
 			var qq= document.getElementById('qq').value;
 			var weixin = document.getElementById('weixin').value;
 			var address = document.getElementById('address').value;
-			if ( address.length ==0) {
+                        var mailname = document.getElementById('mailname').value;
+			var mailphone= document.getElementById('mailphone').value;
+			if ( qq.length ==0) {
+				alert('qq不能为空');
+			}else if ( weixin.length ==0) {
+				alert('微信号不能为空');
+                        }else if ( mailname.length ==0) {
+				alert('姓名不能为空');
+                        }else if ( mailphone.length ==0) {
+				alert('手机号不能为空');
+                        }else if ( address.length ==0) {
 				alert('用户地址不能为空');
 			}else {
 				$.ajax({
@@ -91,7 +103,9 @@ var yonghuxinxi = {
 						token: localStorage.getItem('token'),
 						qq: qq ,
 						weixin: weixin,
-                                                address:address
+                                                address:address,
+                                                mailname: mailname,
+                                                mailphone:mailphone
 					},
 					dataType: "jsonp",
 					success: function(list) {

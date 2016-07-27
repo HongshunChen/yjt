@@ -1,6 +1,6 @@
 ﻿config = window.config || {
-	host: 'http://115.29.48.47/public/',
-	files:'http://115.29.48.47/public/',
+	host: 'http://localhost/yijiangtang/public/',
+	files:'http://localhost/yijiangtang/public/',
 	jsonToString: function(o) {
 		var r = [];
 		if (typeof o == "string")
