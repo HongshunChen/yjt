@@ -131,7 +131,7 @@ var zhibo = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				zhibo.fn.page_icon(1, 5, no);
+				zhibo.fn.page_icon(1, pageCount, no);
 			} else {
 				zhibo.fn.page_icon(1, pageCount, no);
 			}

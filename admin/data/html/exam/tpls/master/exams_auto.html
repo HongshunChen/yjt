@@ -131,6 +131,39 @@
 				</li>
 			</ul>
 	        <form action="?exam-master-exams-autopage" method="post" class="form-horizontal">
+                               <div class="control-group">
+				<label class="control-label" for="qrarea">试卷所属区域：</label>
+			  		<div class="controls">
+			  			<select id="qrarea" needle='needle' msg="您必须为要添加的试题选择一个地区" name="args[areaid]" class="combox" onchange="javascript:setAnswerHtml($(this).find('option:selected').attr('rel'),'answerbox');">
+			  						<option rel="1" value="1">全国</option>
+									<option rel="3" value="3">河南</option>
+									<option rel="4" value="4">北京</option>
+									<option rel="5" value="5">陕西</option>
+									<option rel="6" value="6">河北</option>
+									<option rel="7" value="7">天津</option>
+									<option rel="8" value="8">山东</option>
+									<option rel="9" value="9">江苏</option>
+									<option rel="10" value="10">湖北</option>
+									<option rel="11" value="11">辽宁</option>
+									<option rel="12" value="12">贵州</option>
+									<option rel="14" value="14">云南</option>
+									<option rel="15" value="15">四川</option>
+									<option rel="16" value="16">安徽</option>
+									<option rel="17" value="17">深圳</option>
+									<option rel="18" value="18">吉林</option>
+									<option rel="19" value="19">广东</option>
+									<option rel="20" value="20">新疆</option>
+									<option rel="21" value="21">广西</option>
+									<option rel="22" value="22">福建</option>
+									<option rel="23" value="23">湖南</option>
+									<option rel="24" value="24">上海</option>
+									<option rel="25" value="25">重庆</option>
+									<option rel="26" value="26">江西</option>
+									<option rel="27" value="27">浙江</option>
+									<option rel="28" value="28">山西</option>
+									  			</select>
+					</div>
+				</div>
 				<div class="control-group">
 					<label class="control-label" for="content">试卷名称：</label>
 			  		<div class="controls">

@@ -1,4 +1,4 @@
-var yigoushipin = {
+﻿var yigoushipin = {
 	data: {},
 	dataInit: function() {
 		yigoushipin.fn.list_init();
@@ -22,8 +22,8 @@ var yigoushipin = {
 						//成功操作
 						yigoushipin.fn.dataFill(list,no);
 					} else {
-						//alert(list.data);
-						window.location.href="../login_register/deng.html";
+						alert(list.data);
+						//window.location.href="../login_register/deng.html";
 					}
 				},
 				error: function(xhr, type) {
@@ -51,7 +51,7 @@ var yigoushipin = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				yigoushipin.fn.page_icon(1, 5, no);
+				yigoushipin.fn.page_icon(1, pageCount, no);
 			} else {
 				yigoushipin.fn.page_icon(1, pageCount, no);
 			}
@@ -67,7 +67,7 @@ var yigoushipin = {
 			$("#pageGro ul li").eq(t).addClass("on");
 		},
 		//缓存记录
-		jilu:function(no){
+		jilu:function(no,url){
 			$.ajax({
 				type:"get",
 				url:config.host+"/course/createlib",
@@ -78,7 +78,9 @@ var yigoushipin = {
 				dataType:"jsonp",
 				success:function(data){
 					if(data.status==1){
-						alert("缓存成功");
+						//alert("缓存成功");
+                                                //window.location.href='../mine/swfplayer.html?v='+url;
+                                                window.open('../mine/swfplayer.html?v='+url,'_blank')
 					}else{
 						alert(data.data);
 					}

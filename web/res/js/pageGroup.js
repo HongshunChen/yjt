@@ -3,13 +3,13 @@ $(function(){
 	//根据总页数判断，如果小于5页，则显示所有页数，如果大于5页，则显示5页。根据当前点击的页数生成
 	
 //	var pageCount = 11;//模拟后台总页数
-//	//生成分页按钮
-var pageCount=localStorage.getItem('page');
-//	if(pageCount>5){
-//		page_icon(1,5,0);
-//	}else{
-//		page_icon(1,pageCount,0);
-//	}
+生成分页按钮
+	var pageCount=localStorage.getItem('page');
+	if(pageCount>5){
+		page_icon(1,5,0);
+	}else{
+		page_icon(1,pageCount,0);
+	}
 	
 	//点击分页按钮触发
 	$("#pageGro li").live("click",function(){
@@ -73,14 +73,14 @@ function pageGroup(pageNum,pageCount){
 }
 
 //根据当前选中页生成页面点击按钮
-//function page_icon(page,count,eq){
-//	var ul_html = "";
-//	for(var i=page; i<=count; i++){
-//		ul_html += "<li onclick='one("+i+")'>"+i+"</li>";
-//	}
-//	$("#pageGro ul").html(ul_html);
-//	$("#pageGro ul li").eq(eq).addClass("on");
-//}
+function page_icon(page,count,eq){
+	var ul_html = "";
+	for(var i=page; i<=count; i++){
+		ul_html += "<li onclick='one("+i+")'>"+i+"</li>";
+	}
+	$("#pageGro ul").html(ul_html);
+	$("#pageGro ul li").eq(eq).addClass("on");
+}
 
 //上一页
 function pageUp(pageNum,pageCount){

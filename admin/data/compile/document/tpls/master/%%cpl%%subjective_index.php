@@ -45,7 +45,7 @@
 								<span><?php echo $cal[subid]; ?></span>
 							</td>
 							<td>
-                                                            <?php if($cal[videourl] !=''){ ?>
+                                                            <?php if($cal[is_correcting] ==1){ ?>
 								<a title="点击预览题目" class="selfmodal"  style="color: #DDD"  href="javascript:;" url="index.php?<?php echo $this->tpl_var['_app']; ?>-master-subjective-modal&catid=<?php echo $cal[subid]; ?>" data-target="#modal">
 								<?php echo html_entity_decode($this->ev->stripSlashes($cal[subname])); ?>
 								</a>

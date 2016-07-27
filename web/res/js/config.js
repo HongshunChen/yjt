@@ -1,6 +1,6 @@
 ﻿config = window.config || {
-	host: 'http://localhost/yijiangtang/public/',
-	files:'http://localhost/yijiangtang/public/',
+	host: 'http://115.29.48.47/public/',
+	files:'http://115.29.48.47/public/',
 	jsonToString: function(o) {
 		var r = [];
 		if (typeof o == "string")
@@ -46,12 +46,12 @@ return str.replace(/<[^>]+>/g,"");//去掉所有的html标记
 				return "";
 			}
 			var map = {
-				"y": e.substr(0, 4), //年份 
+				"y": e.substr(0, 4), //年份
 				"M": e.substr(4, 2), //月份
 				"d": e.substr(6, 2), //日
-				"h": e.substr(8, 2), //小时 
-				"m": e.substr(10, 2), //分 
-				"s": e.substr(12, 2) //秒 
+				"h": e.substr(8, 2), //小时
+				"m": e.substr(10, 2), //分
+				"s": e.substr(12, 2) //秒
 			};
 			format = format.replace(/([yMdhms])+/g, function(all, t) {
 				var v = map[t];
@@ -183,10 +183,10 @@ return str.replace(/<[^>]+>/g,"");//去掉所有的html标记
 
 
 //全局的ajax访问，处理ajax清求时sesion超时
-/*$.ajaxSettings({ 
-    contentType:"application/x-www-form-urlencoded;charset=utf-8", 
+/*$.ajaxSettings({
+    contentType:"application/x-www-form-urlencoded;charset=utf-8",
     statusCode: {
-        900: function () { 
+        900: function () {
         },
         901 :function(){
         }
@@ -198,7 +198,7 @@ return str.replace(/<[^>]+>/g,"");//去掉所有的html标记
 		  if(textStatus=="error"){
 	   	  }
             var sessionstatus=XMLHttpRequest.getResponseHeader("sessionstatus"); //通过XMLHttpRequest取得响应头，sessionstatus，
-            if(sessionstatus=="timeout"){ 
+            if(sessionstatus=="timeout"){
                         //如果超时就处理 ，指定要跳转的页面
              }
             XMLHttpRequest=null;

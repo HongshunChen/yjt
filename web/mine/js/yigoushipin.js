@@ -51,7 +51,7 @@ var yigoushipin = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				yigoushipin.fn.page_icon(1, 5, no);
+				yigoushipin.fn.page_icon(1, pageCount, no);
 			} else {
 				yigoushipin.fn.page_icon(1, pageCount, no);
 			}

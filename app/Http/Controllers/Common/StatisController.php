@@ -15,9 +15,9 @@ class StatisController extends Controller
      */
     public function members (Request $request, StatisResponsity $statis) {
         //视频课程
-        $video = 0;
+        $video = $statis->videoMembers();
         //直播课程
-        $live = 0;
+        $live = $statis->liveMembers();
         //客观题课程
         $objective = $statis->objectiveMembers();
         //主观题课程

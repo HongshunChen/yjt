@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>一讲堂-公职培训平台</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.questionselect {
+				margin-left: 100px;
+				width: 600px;
+			}
+			
+			.questionselect p {
+				font-size: 16px;
+				margin: 5px 0px;
+				margin-left: 96px;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top">
+			<div class="top1">
+				<div id="top"></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<div style="position:relative;top:65px;">
+		<div class="da1">
+			<!--大-->
+			<div class="daohang">
+				<a>
+					<div class="xia1"><img src="../images/biao.jpg" />
+						<p id="showtime">已用时&nbsp;&nbsp;00:00</p>
+					</div>
+				</a>
+				<a>
+					<div class="xia2"><img src="../images/biao1.jpg" />
+						<p>考题练习</p>
+					</div>
+				</a>
+				<a onclick="myFunction()">
+					<div class="xia3 xia4" ><img src="../images/biao2.jpg" />
+						<p>我要交卷</p>
+					</div>
+				</a>
+				
+				<div class="xia4">
+					<div style="float: left; margin-left: 40px; margin-top: 35px;">
+				<!-- JiaThis Button BEGIN -->
+
+							<div class="jiathis_style_32x32">
+<a class="jiathis  jtico jtico_jiathis" target="_blank" style="font-size: 16px; line-height: 98px; color: #999999;">&nbsp;&nbsp;&nbsp;&nbsp;我要分享</a>
+</div>
+							
+<script type="text/javascript" >
+var jiathis_config={
+	siteNum:7,
+	sm:"weixin,qzone,tqq,tsina,cqq,kaixin001,hi",
+	summary:":快来看呀，我在一讲堂获得的代金券,可以使用它购买公职人员考试培训课程哟！",
+	boldNum:5,
+	shortUrl:false,
+	hideMore:true
+}
+function myFunction()
+{
+	var x='你确定是否要交卷？';
+	var r=confirm(x);
+	if (r==true)
+	{
+		
+                quanzhenmoni.fn.papers()
+	}
+	else
+	{
+		x="你按下了\"取消\"按钮!";
+	}
+	
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+	</div>
+					</div>
+				</a>
+			</div>
+			<img style="margin-top:12px;" src="../images/you.jpg" />
+			<div class="daohangxia"></div>
+		</div>
+		<div id="all">
+
+		</div>
+		<!--all结束-->
+
+		<!--------------------------------------------------------------------------------------------------
+        	作者：1303018273@qq.com
+        	时间：2016-06-19
+        	描述：
+        -->
+		<div id="quan_dan"></div>
+
+		<!--我要交卷-->
+		<div class="theme-buy">
+			<a class="btn-primary btn-large theme-login woya" href="javascript:;"></a>
+		</div>
+		<div class="theme-popover">
+			<div class="theme-popbod dform">
+				<ol>
+					<p class="zaida">友情提示</p>
+					<div style="width:269px; margin:0 auto; overflow:hidden; margin-top:10px;">
+						<a class="zaida1" onclick="quanzhenmoni.fn.carry_over()">继续答题</a>
+						<a class="zaida2" onclick="quanzhenmoni.fn.papers()">立即交卷</a></div>
+				</ol>
+			</div>
+		</div>
+		<div class="theme-popover-mask"></div>
+		<div class="zuihou">
+		</div>
+		<script type="text/html" id="Top">
+			<!--top-->
+			
+				<div style="float:left;">
+
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /> {{if keytype=='1'}} {{if questid=='1'}}
+					<!--单选题的-->
+
+					<img class="top1img2" src="../images/logo3.png" />
+					<!--单选题结束-->
+					{{else if questid=='2'}}
+					<!--多选题开始-->
+					<img class="top1img2" src="../images/logo4.png" /> {{else if questid=='3'}}
+					<!--判断题-->
+					<img class="top1img2" src="../images/logo2.png" /> {{/if}} {{else}}
+					<!--全真模拟-->
+					<img class="top1img2" src="../images/quanzhen.jpg" /> {{/if}}
+				</div>
+					
+
+			<!--top-->
+		</script>
+		<script type="text/html" id="All">
+			
+			
+			<div class="timu">
+				<p>一、 {{if questid=='1'}} 单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{else if questid=='2'}} 多项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{else if questid=='3'}} 判断题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{/if}} 共{{total_content}}题，{{total_score}}。）
+				</p>
+			</div>
+			<div class="dashi" id="dan_xuan">
+				<!--狂-->
+				<section id="keguan_title">
+					<div class="shi1">
+						<p id="title">{{no}}、{{#list.data.question}}</p>
+						<div id="questionId" style="display: none;">{{list.data.id}}</div>
+					</div>
+				</section>
+
+				<div class="shiti1">
+					<section id="keguan_option">
+						<div class="questionselect" id="content">
+							{{#list.data.questionselect}}
+						</div>
+					</section>
+
+					<div class="tabPanel1" style="clear: both;" >
+						<ul id="dan_one" style="margin-left:10px;">
+							<!--选项显示区-->
+						</ul>
+					</div>
+					<div class="fenxiang">
+						<!--上一题-->
+						{{if list.data.prev==0}}
+						<a class="fenxianga1" style="cursor:not-allowed;">
+							{{else}}
+						<a class="fenxianga1" onclick="quanzhenmoni.fn.submit_answer({{list.data.id}},{{list.data.prev}})">
+							{{/if}}
+						<img src="../images/quanzhen11.jpg" /></a>
+						<!--下一题-->
+						{{if list.data.next==0}}
+						<a style="cursor: not-allowed;">
+						{{else}}
+						<a onclick="quanzhenmoni.fn.submit_answer({{list.data.id}},{{list.data.next}})">
+							{{/if}}
+							<img src="../images/quanzhen10.jpg" /></a>
+						<div class="wrapper">
+							<!--收藏切换-->
+							<div class="imageContainer" onclick="change_one(this),collect({{list.data.questionid}})">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
+							</div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--分享-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+				
+						
+					
+				</div>
+		</div>
+		</script>
+
+		<script type="text/html" id="quanDan">
+			<div class="timu">
+				<p>一、单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分，{{radio.total_num}}共题，{{radio.total_score}}分。）</p>
+			</div>
+
+			{{each radio.list as radios i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{i+1}}、{{#radios.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="questionselect">
+						{{#radios.questionselect}}
+					</div>
+					<div class="tabPanel1">
+						<ul style="margin-left: 10px;clear: both;" id="dan_one1">
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'A');" id='A'><a>A</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'B');" id='B'><a>B</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'C');" id='C'><a>C</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'D');" id='D'><a>D</a></li>
+						</ul>
+					</div>
+					<div class="fenxiangq">
+						<img style="margin-left:240px;" src="../images/quanzh.jpg">
+						<div class="wrapper">
+							<div class="imageContainer" onclick="change_one(this),collect({{radios.questionid}})">
+								<img style="padding-top:15px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:15px;" src="../images/quanzhen6.jpg" /> </div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+	
+			{{/each}}
+			<div class="timu">
+				<p>二、多选题（下列各题所给选项中有两个或两个以上符合题意的正确答案，少答、不答或多答均不得分。共{{multiple.total_num}}题，{{multiple.total_score}}分）</p>
+			</div>
+
+			{{each multiple.list as multiple i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+i+1}}、{{#multiple.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="questionselect">
+						{{#multiple.questionselect}}
+					</div>
+					<div class="tabPanel1" style="clear: both;">
+						<ul id="dan_one2" style="margin-left: 10px;">
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'A');" id='A'><a>A</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'B');" id='B'><a>B</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'C');" id='C'><a>C</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'D');" id='D'><a>D</a></li>
+						</ul>
+					</div>
+					<div class="fenxiangq">
+						<img style="margin-left:240px;" src="../images/quanzh.jpg">
+						<div class="wrapper">
+							<div class="imageContainer" onclick="change_one(this),collect({{multiple.questionid}})">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
+							</div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--狂-->
+
+
+			{{/each}}
+
+			<div class="timu">
+				<p>三、判断题（{{judgement.tota3}}题，共{{judgement.total_score}} 分）</p>
+			</div>
+
+			{{each judgement.list as judgement i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+multipleT+i+1}}、{{#judgement.question}}</p>
+				</div>
+				<div class="shiti1">
+					<div class="questionselect">
+						{{#judgement.questionselect}}
+					</div>
+					<div class="tabPanel1" style="clear: both;">
+						<ul id="dan_one3" style="margin-left: 10px;">
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'B');" id="B"><a>错</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'A');" id="A"><a>对</a></li>
+						</ul>
+					</div>
+
+					<div class="fenxiangq" style="clear: both;">
+						<img style="margin-left:300px;" src="../images/quanzh.jpg">
+						<div class="wrapper">
+							<div class="imageContainer" onclick="change_one(this),collect({{judgement.questionid}})">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
+						</div>
+					
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--狂-->
+
+
+			{{/each}}
+
+			<div class="timu" style="margin-top:20px;">
+				<p>四、简答题（本大题共1{{subject.total_num}}题，每题{{subject.total4}}分）</p>
+			</div>
+
+			{{each subject.list as subject i}}
+			<div class="dashiq" style="margin-top:15px;">
+				<!--狂-->
+				<div class="shi1">
+					<p>{{radioT+multipleT+judgementT+i+1}}、{{#subject.question}}</p>
+					<div id="subject" style="display: none;">{{subject.id}}</div>
+				</div>
+
+				<div class="fenxiang1" style="position:absolute; margin-left:490px; margin-top:230px; overflow:hidden;">
+					<div class="wrapper">
+						<div style="height: 34px;margin-top: 54px;margin-left: 439px;" class="imageContainer" onclick="change_one(this),collect({{subject.questionid}})">
+							<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+							<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
+					</div>
+				
+
+				</div>
+				<div class="shiti4">
+					<div id="image-wrap" style="display: none;"></div>
+					<textarea id="text-wrap" style="width: 1000px;height: 300px;display: none;"></textarea>
+					<div class="demo">
+
+						<!--<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>-->
+						<div id="up_btn_text" class="btn" style="margin-left:237px;" onclick="none_blo(0,'image-wrap','text-wrap')">
+							<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
+							<span style="">文字答案上传</span>
+							<input id="texts" style="height:100px;" type="button">
+						</div>
+						<div id="up_btn_img" class="btn" style="margin-left:20px;">
+							<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen1.jpg" />
+							<span style="">图片答案上传</span>
+							<input style="height:100px;" type="file" onclick="none_blo(1,'image-wrap','text-wrap')" onchange="show_img(this,'#image-wrap')" />
+						</div>
+						<input id="file1"/>
+					</div>
+					<div style="height:60px;">
+
+					</div>
+				</div>
+				<!--分享-->
+			</div>
+
+			<!--狂-->
+			
+			</div>
+			{{/each}}
+			<!--狂-->
+			<!--<div style="margin:0 auto; width:1000px;"><img src="../images/quanzhen3.jpg" /></div>
+			<div style="width:1000px; margin:0 auto;">
+				<a class="woya"></a>
+			</div>-->
+		</script>
+
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/quanzhenmoni.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../res/js/showtime.js"></script>
+		
+		<script type="text/javascript" src="../res/js/collection.js"></script>
+		<!--<script type="text/javascript" src="../res/js/share.js"></script>-->
+		<script type="text/javascript" src="../res/js/zhuguan_div_none_block.js"></script>
+		<script type="text/javascript" src="../res/js/img_show.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+</div>
+	</body>
+
+</html>

@@ -51,7 +51,7 @@ var huancunshipin = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-			huancunshipin.fn.page_icon(1, 5, no);
+			huancunshipin.fn.page_icon(1, pageCount, no);
 			} else {
 				huancunshipin.fn.page_icon(1, pageCount, no);
 			}
@@ -62,6 +62,7 @@ var huancunshipin = {
 			var ul_html = "";
 			for (var i = page; i <= count; i++) {
 				ul_html += "<li onclick='one(" + i + ")'>" + i + "</li>";
+				
 			}
 			$("#pageGro ul").html(ul_html);
 			$("#pageGro ul li").eq(t).addClass("on");

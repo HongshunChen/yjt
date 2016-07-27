@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
@@ -73,11 +73,11 @@
 						</ul>
 					</div>
 					<div class="wenb"><b>￥{{shipin.courseprice}}</b>
-						<a onclick="yigoushipin.fn.jilu({{shipin.videoid}})" href="../mine/swfplayer.html?v={{shipin.remoteurl}}" target="_blank">
-							<div class="wenbp1">观看</div>
-						</a>
-						<a href="shipinxiangqing.html?id={{shipin.videoid}}">
+						<a href="mykechengxiangqing.html?id={{shipin.videoid}}">
 							<div class="wenbspan">查看详情</div>
+						</a>
+						<a onclick="yigoushipin.fn.jilu({{shipin.videoid}},'{{shipin.remoteurl}}')" >
+							<div class="wenbp1">观看</div>
 						</a>
 					</div>
 					<div style="width:100px; height:6px;"></div>
@@ -125,8 +125,9 @@
 		<script>
 			function one(no) {
 				localStorage.setItem('pageto', no);
-				//				shipinkecheng.fn.shipin_list(no);
-				shipinkecheng.fn.left_type();
+				yigoushipin.fn.shipinList(no);
+				//shipinkecheng.fn.shipin_list(no);
+				//shipinkecheng.fn.left_type();
 			}
 		</script>
 		<script type="text/javascript" src="../res/js/pageGroup.js"></script>

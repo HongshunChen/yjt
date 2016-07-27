@@ -19,7 +19,8 @@ class SelfQuesResponsity {
         $question_sub->questionid = 0;
         $question_sub->userid = $userid;
         $question_sub->subname = $question;
-
+        $question_sub->usertime = time();
+        $question_sub->orderid = 1;
         if ($answer_type == 1) {
             $question_sub->answer_type = 1;
             $question_sub->answer_text = $answer;

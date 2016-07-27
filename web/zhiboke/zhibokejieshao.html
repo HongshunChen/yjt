@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
@@ -8,11 +8,16 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
 		<script src="../js/lab1.js"></script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="js/zhibokejieshao.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+		<script type="text/javascript" src="../js/ding_fudong.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
 
 	</head>
 
 	<body>
-		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
+		<!--<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>-->
 		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
 		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
 		<div class="top" id="page">
@@ -28,19 +33,20 @@
 				<!--you-->
 			</div>
 		</div>
-		<div style="width: 1000px;margin-left: 10%;">
+		<div style="width: 1200px;margin: 0 auto;">
 		<!--top-->
-<div style="position:relative;top:65px;">
+<div style="position:relative;top:65px;width: 1000px;margin: 0 auto;">
 		<div id="zhibo_ke" style="width: 684px;float: left;">
 
 		</div>
 		
-		<div class="y" id="teacher_list">
+		<div class="y2" id="teacher_list">
 			<!--右-->
 		</div>
+		<div style="clear:both;"></div>
 		</div>
 		<!--中间-->
-		<div class="zuihou" style="clear: both;">
+		<div class="zuihou" style="clear: both;    margin-top: 80px;">
 
 		</div>
 		<script type="text/html" id="zhiboKe">
@@ -53,7 +59,7 @@
 						<p class="kep1">主播老师：{{list.data.teachername}}</p>
 						<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：30天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>
 					</div>
-					<p class="kep3" style="margin-top: 115px;">历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火~</p>
+					<p class="kep3">历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火~</p>
 				</div>
 				<img style="margin-top:23px; float:left;" src="../images/xian.jpg" />
 				<div class="zi">
@@ -158,9 +164,9 @@
 				<!--右-->
 			</div>
 		</script>
-<!--		<script type="text/html" id="teacherList">
-			{{each list.data as teacher i}} {{if i==0}}
-			<div class="yo1" style="height: auto;margin-top: 246px">
+		<script type="text/html" id="teacherList">
+			{{   teacher=list.data[0]  }} {{if i==0}}
+			<div class="yo1" style="height: auto;">
 				{{else}}
 				<div class="yo1" style="margin-top: 10px;">
 					{{/if}}
@@ -177,13 +183,12 @@
 						<p class="pd7"></p>
 					</a>
 				</div>
-				{{/each}}
-		</script>-->
+                </script>
 		<script type="text/javascript" src="../res/js/config.js"></script>
 		<script type="text/javascript" src="js/zhibokejieshao.js"></script>
 		<script type="text/javascript" src="../res/js/quit.js"></script>
 		<script type="text/javascript" src="../js/ding_fudong.js"></script>
-		<script type="text/javascript" src="../common.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				//智能浮动层

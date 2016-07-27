@@ -100,7 +100,7 @@ var shipinkecheng = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				shipinkecheng.fn.page_icon(1, 5, no);
+				shipinkecheng.fn.page_icon(1, pageCount, no);
 			} else {
 				shipinkecheng.fn.page_icon(1, pageCount, no);
 			}

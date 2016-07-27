@@ -13,10 +13,19 @@ class StatisResponsity {
 
     //视频参与人数
     public function videoMembers () {
+	$sta = DB::table('x2_videohistory')
+            ->select(DB::raw('count(vhid) as total_count'))
+            ->first();
+        return $sta ? $sta->total_count : 0;
+
 
     }
     //直播参与人数
     public function liveMembers () {
+	$sta = DB::table('x2_user')
+            ->select(DB::raw('count(userid) as total_count'))
+	   ->first();
+        return $sta ? $sta->total_count : 0;
 
     }
     //主观题参与人数

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>查看全部</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/pageGroup.css" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.ul_li li {
+				margin-top: 20px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../res/jslib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
+		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
+		<div class="top" id="page">
+			<!--top-->
+			<div class="top1">
+				<div style="float:left;">
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /></a>
+					<img class="top1img2" src="../images/zhibo.jpg" /></div>
+				<div style="margin-left: 185px;" class="wode"><a href="../zhiboke/zhibo.html">全部直播课</a></div>
+				<div style="margin-left: 0px;" class="kecheng"><a href="../mine/zbkecheng.html">我的直播课</a></div>
+				<div class="you">
+					<!--you-->
+
+				</div>
+				<!--you-->
+			</div>
+		</div>
+		<!--top-->
+<div style="position:relative;top:65px;">
+		<div class="zhongjian">
+			<div class="liebiao">
+				<!--开始-->
+				<p class="lip">课程回放</p>
+				
+			</div>
+			<!--结束-->
+			<div class="youbian">
+				<!--右边-->
+				<div class="shipin">我的直播课</div>
+				<div id="quanbushi_pin"></div>
+				
+
+				
+
+			</div>
+			<!--右边-->
+		</div>
+	
+		<!--分页结束-->
+		<!--bottom-->
+		
+		<div class="zuihou">
+
+		</div>
+		
+		<script type="text/html" id="quanbushiPin">
+			
+			{{if total>0}}
+			<ul class="ul_li" style="margin-top: 0px;" >
+				{{each list.data.data as zhibo i}}
+			<li onclick="location='../zhiboke/zhibokejieshao.html?id={{zhibo.vid}}'">
+				<a>
+					<div class="youlla">
+						<div class="yp">
+							<p>简答</p>
+							<img src="../images/zhi.jpg" />
+						</div>
+						<div class="yp1"><img src="../images/zhi1.jpg" /></div>
+						<!--<p class="yp2">5课时</p>-->
+					</div>
+				</a>
+				<div class="wen1">
+					<p class="wen1p">{{zhibo.usertruename}}</p>
+					<ul>开课时间：<span>{{zhibo.createtime}}-{{zhibo.endtime}}</span></ul>
+					<p class="wen1p1">{{zhibo.vintro}}</p>
+				</div>
+				<div class="wenb1" style="margin-left: 0px;"><span>￥</span>
+					<p>{{zhibo.vprice}}</p>
+				</div>
+				<!--<a href="../zhiboke/zhibokejieshao.html?id={{zhibo.vid}}">
+						<div class="wenbspan">查看详情</div>
+					</a>-->
+				<a href="{{zhibo.vurl}}" style="float: right;margin-right: 20px;margin-top: 10px;">
+					<div class="wenbp1">观看</div>
+				</a>
+				<div class="wenbi21">
+
+					<!--<p class="w">已有<span id="by{{i}}"></span>人购买</p>-->
+					<!--<p style="margin-left:35px;">距离停售<span>10天</span></p>-->
+				</div>
+			</li>
+			{{/each}} 
+			</ul>
+			
+			<div style="width:1000px; margin:0 auto;">
+				<!--分页开始-->
+				<div id="pageGro" class="cb">
+					{{if list.data.current_page==1}}
+					<div class="pageUp" style="cursor:not-allowed;">上一页</div>
+					{{else}}
+					<div class="pageUp" onclick="one({{list.data.current_page-1}})">上一页</div>
+					{{/if}}
+					<div class="pageList" style="margin-top: 0px;">
+						<ul>
+							<li onclick='one(1)' class="on">1</li>
+						</ul>
+					</div>
+					{{if list.data.last_page==list.data.current_page}}
+					<div class="pageDown" style="cursor:not-allowed">下一页</div>
+					{{else}}
+					<div class="pageDown" onclick="one({{list.data.current_page+1}})">下一页</div>
+					{{/if}}
+				</div>
+			</div>
+			
+		
+			
+			
+			{{else}}
+			<div style="  text-align:center; padding:50px;">
+				<a href="../zhiboke/zhibo.html">
+					<image src="../images/free.jpg" style="border:1px solid #FFFFFF,display:block; margin:0 auto;"></image>
+			    </a>	
+			</div>
+			{{/if}}
+			
+		</script>
+		<script type="text/javascript" src="../res/js/config.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="js/chakanquanbu.js"></script>
+		<script type="text/javascript" src="../res/js/quit.js"></script>
+
+		<script type="text/javascript" src="../res/js/pageGroup.js"></script>
+		<script>
+			function one(no) {
+				chakanquanbu.fn.zhiboList(no);
+			}
+		</script>
+</div>	</body>
+
+</html>

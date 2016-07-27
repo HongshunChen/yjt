@@ -43,7 +43,7 @@
 								<span>{x2;v:cal[subid]}</span>
 							</td>
 							<td>
-                                                            {x2;if:v:cal[videourl] !=''}
+                                                            {x2;if:v:cal[is_correcting] ==1}
 								<a title="点击预览题目" class="selfmodal"  style="color: #DDD"  href="javascript:;" url="index.php?{x2;$_app}-master-subjective-modal&catid={x2;v:cal[subid]}" data-target="#modal">
 								{x2;realhtml:v:cal[subname]}
 								</a>

@@ -23,6 +23,18 @@
 				</li>
 			</ul>
 	        <form action="?exam-master-exams-autopage" method="post" class="form-horizontal">
+                               <div class="control-group">
+				<label class="control-label" for="qrarea">试卷所属区域：</label>
+			  		<div class="controls">
+			  			<select id="qrarea" needle='needle' msg="您必须为要添加的试题选择一个地区" name="args[areaid]" class="combox" onchange="javascript:setAnswerHtml($(this).find('option:selected').attr('rel'),'answerbox');">
+			  			<?php $qid = 0;
+ foreach($this->tpl_var['questionarea'] as $key => $quesarea){ 
+ $qid++; ?>
+			<option rel="<?php echo $quesarea['areaid']; ?>" value="<?php echo $quesarea['areaid']; ?>"<?php if($quesarea['areaid'] == $this->tpl_var['question']['questionsarea']){ ?> selected<?php } ?>><?php echo $quesarea['area']; ?></option>
+						<?php } ?>
+			  			</select>
+					</div>
+				</div>
 				<div class="control-group">
 					<label class="control-label" for="content">试卷名称：</label>
 			  		<div class="controls">

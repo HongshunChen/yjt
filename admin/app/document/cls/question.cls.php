@@ -35,10 +35,11 @@ class question_document
 	{
 		$page = $page > 0?$page:1;
 		$r = array();
-
-		$data = array(false,array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"orderid = :bid",'bid',1)),'questions_sub.subid DESC','',array(intval($page-1)*$number,$number));
+//array('AND',"questionid = :questid",'questid',$quesid),
+		$data = array(false,array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('OR',"questions_sub.subtype = questype.questid"),array('AND',"orderid = :bid",'bid',1)),'questions_sub.subid DESC','',array(intval($page-1)*$number,$number));
 		$sql = $this->pdosql->makeSelect($data);
-
+//print_r($sql);
+//exit;
 		$r['data'] = $this->db->fetchAll($sql);
 
 		$data = array('count(*) AS number',array('questions_sub','user','questype'),array(array('AND',"questions_sub.userid = user.userid"),array('AND',"questions_sub.subtype = questype.questid"),array('AND',"questionid = :questid",'questid',$quesid),array('AND',"orderid = :bid",'bid',1)));

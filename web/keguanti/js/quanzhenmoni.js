@@ -165,6 +165,7 @@ var quanzhenmoni = {
 				dataType: "jsonp",
 				success: function(data) {
 					if (data.status == 1) {
+						
 						//alert('提交成功');
 					} else {
 						//alert(data.data);
@@ -179,7 +180,6 @@ var quanzhenmoni = {
 		submit_answer: function(id, no) {
 			quanzhenmoni.fn.getOne(no);
 		},
-
 		//交卷
 		assignment: function() {
 			$.ajax({
@@ -223,7 +223,7 @@ var quanzhenmoni = {
 				var html = template('Top', data);
 				document.getElementById('top').innerHTML = html;
 				//1、id 2、问题类型 3、选项个数
-				quanzhenmoni.fn.zimu_dan(list.data.id, list.data.questiontype, list.data.questionselectnumber);
+				quanzhenmoni.fn.zimu_dan(list.data.id, list.data.questiontype, list.data.questionselectnumber, no);
 				//如果答过该题就会显示答案，一般用在上一题
 				var name = list.data.answered;
 				if (name != "") {
@@ -236,7 +236,7 @@ var quanzhenmoni = {
 			quanzhenmoni.dataInit();
 		},
 		//循环显示选项
-		zimu_dan: function(id, type, shu) {
+		zimu_dan: function(id, type, shu, no) {
 			//多选      <li onclick="duo_more(this)" value='D'><a>D</a></li>
 			//判断          <li onclick="dan(this)" value="B"><a>错</a></li>
 			//	<li onclick="dan(this)" value="A"><a>对</a></li>
@@ -247,15 +247,17 @@ var quanzhenmoni = {
 				var B = 'B';
 				var ot1 = '"' + A + '"';
 				var ot2 = '"' + B + '"';
-				at = "<li id='A' onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot1 + ")'><a>对</a></li>" +
-					"<li id='B' onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot2 + ")'><a>错</a></li>";
+				var next = no+1;
+				at = "<li id='A' onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot1 + ");quanzhenmoni.fn.submit_answer(" + id + "," + next + ");'><a>对</a></li>" +
+					"<li id='B' onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot2 + ");quanzhenmoni.fn.submit_answer(" + id + "," + next + ");'><a>错</a></li>";
 			} else {
 				for (var i = 65; i < 91; i++) {
 					if (i < a + shu) {
 						var o = String.fromCharCode(i);
 						var ot = '"' + o + '"';
+						var next = no+1;
 						if (type == '1') {
-							at += "<li id=" + o + " onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot + ")'><a>" + o + "</a></li>";
+							at += "<li id=" + o + " onclick='dan(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot + ");quanzhenmoni.fn.submit_answer(" + id + "," + next + ");'><a>" + o + "</a></li>";
 						} else if (type == '2') {
 							at += "<li id=" + o + " onclick='duo_more(this),quanzhenmoni.fn.onclick_answer(" + id + "," + ot + ")'><a>" + o + "</a></li>";
 						}
@@ -309,6 +311,7 @@ var quanzhenmoni = {
 				quanzhenmoni.fn.assignment();
 			}
 		},
+
 		//如果是模拟题提交客观题
 		jianda_sub: function(keytype) {
 			var id = document.getElementById('subject').innerHTML;

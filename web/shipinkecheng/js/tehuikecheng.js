@@ -159,7 +159,7 @@ var tehuikecheng = {
 		totalPage: function(pages,no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				tehuikecheng.fn.page_icon(1, 5, no);
+				tehuikecheng.fn.page_icon(1, pageCount, no);
 			} else {
 				tehuikecheng.fn.page_icon(1, pageCount, no);
 			}

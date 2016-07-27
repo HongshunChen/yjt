@@ -15,8 +15,7 @@
 			.questionselect p {
 				font-size: 16px;
 				margin: 5px 0px;
-				margin-left: 96px;
-				float: left;
+				margin-left: 96px;color:#666;
 			}
 		</style>
 	</head>
@@ -220,7 +219,7 @@ function myFunction()
 			</div>
 
 			{{each radio.list as radios i}}
-			<div class="dashiq" style="margin-top:15px;">
+			<div class="dashiq" style="margin-top:15px;" id="{{i+1}}">
 				<!--狂-->
 				<div class="shi1">
 					<p>{{i+1}}、{{#radios.question}}</p>
@@ -231,10 +230,10 @@ function myFunction()
 					</div>
 					<div class="tabPanel1">
 						<ul style="margin-left: 10px;clear: both;" id="dan_one1">
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'A');" id='A'><a>A</a></li>
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'B');" id='B'><a>B</a></li>
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'C');" id='C'><a>C</a></li>
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'D');" id='D'><a>D</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'A');javascript:scroller('{{i+2}}', 800);" id='A'><a>A</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'B');javascript:scroller('{{i+2}}', 800);" id='B'><a>B</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'C');javascript:scroller('{{i+2}}', 800);" id='C'><a>C</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'D');javascript:scroller('{{i+2}}', 800);" id='D'><a>D</a></li>
 						</ul>
 					</div>
 					<div class="fenxiangq">
@@ -256,7 +255,7 @@ function myFunction()
 			</div>
 
 			{{each multiple.list as multiple i}}
-			<div class="dashiq" style="margin-top:15px;">
+			<div class="dashiq" style="margin-top:15px;" id="{{radioT+i+1}}">
 				<!--狂-->
 				<div class="shi1">
 					<p>{{radioT+i+1}}、{{#multiple.question}}</p>
@@ -296,7 +295,7 @@ function myFunction()
 			</div>
 
 			{{each judgement.list as judgement i}}
-			<div class="dashiq" style="margin-top:15px;">
+			<div class="dashiq" style="margin-top:15px;" id="{{radioT+multipleT+i+1}}">
 				<!--狂-->
 				<div class="shi1">
 					<p>{{radioT+multipleT+i+1}}、{{#judgement.question}}</p>
@@ -307,15 +306,15 @@ function myFunction()
 					</div>
 					<div class="tabPanel1" style="clear: both;">
 						<ul id="dan_one3" style="margin-left: 10px;">
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'B');" id="B"><a>错</a></li>
-							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'A');" id="A"><a>对</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'B');javascript:scroller('{{radioT+multipleT+i+2}}', 800);" id="B"><a>错</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'A');javascript:scroller('{{radioT+multipleT+i+2}}', 800);" id="A"><a>对</a></li>
 						</ul>
 					</div>
 
 					<div class="fenxiangq" style="clear: both;">
 						<img style="margin-left:300px;" src="../images/quanzh.jpg">
 						<div class="wrapper">
-							<div style="margin-left:850px;" class="imageContainer" onclick="change_one(this),collect({{judgement.questionid}})">
+							<div class="imageContainer" onclick="change_one(this),collect({{judgement.questionid}})">
 								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
 								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
 						</div>
@@ -335,7 +334,7 @@ function myFunction()
 			</div>
 
 			{{each subject.list as subject i}}
-			<div class="dashiq" style="margin-top:15px;">
+			<div class="dashiq" style="margin-top:15px;" id="{{radioT+multipleT+judgementT+i+1}}">
 				<!--狂-->
 				<div class="shi1">
 					<p>{{radioT+multipleT+judgementT+i+1}}、{{#subject.question}}</p>
@@ -343,9 +342,8 @@ function myFunction()
 				</div>
 
 				<div class="fenxiang1" style="position:absolute; margin-left:490px; margin-top:230px; overflow:hidden;">
-					<img style="margin-left:240px;" src="../images/quanzh.jpg">
 					<div class="wrapper">
-						<div style="height: 34px;" class="imageContainer" onclick="change_one(this),collect({{subject.questionid}})">
+						<div style="height: 34px;margin-top: 50px;margin-left: 420px;" class="imageContainer" onclick="change_one(this),collect({{subject.questionid}})">
 							<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
 							<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
 					</div>
@@ -359,7 +357,6 @@ function myFunction()
 
 						<!--<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>-->
 						<div id="up_btn_text" class="btn" style="margin-left:237px;" onclick="none_blo(0,'image-wrap','text-wrap')">
-							<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
 							<span style="">文字答案上传</span>
 							<input id="texts" style="height:100px;" type="button">
 						</div>
@@ -387,7 +384,86 @@ function myFunction()
 				<a class="woya"></a>
 			</div>-->
 		</script>
-
+<script type="text/javascript">
+ 
+// 说明 ：用 Javascript 实现锚点(Anchor)间平滑跳转
+// 来源 ：ThickBox 2.1
+// 整理 ：Yanfu Xie [xieyanfu@yahoo.com.cn]
+// 网址 ：http://www.codebit.cn
+// 日期 ：07.01.17
+ 
+// 转换为数字
+function intval(v)
+{
+	v = parseInt(v);
+	return isNaN(v) ? 0 : v;
+}
+ 
+// 获取元素信息
+function getPos(e)
+{
+	var l = 0;
+	var t  = 0;
+	var w = intval(e.style.width);
+	var h = intval(e.style.height);
+	var wb = e.offsetWidth;
+	var hb = e.offsetHeight;
+	while (e.offsetParent){
+		l += e.offsetLeft + (e.currentStyle?intval(e.currentStyle.borderLeftWidth):0);
+		t += e.offsetTop  + (e.currentStyle?intval(e.currentStyle.borderTopWidth):0);
+		e = e.offsetParent;
+	}
+	l += e.offsetLeft + (e.currentStyle?intval(e.currentStyle.borderLeftWidth):0);
+	t  += e.offsetTop  + (e.currentStyle?intval(e.currentStyle.borderTopWidth):0);
+	return {x:l, y:t, w:w, h:h, wb:wb, hb:hb};
+}
+ 
+// 获取滚动条信息
+function getScroll() 
+{
+	var t, l, w, h;
+	
+	if (document.documentElement && document.documentElement.scrollTop) {
+		t = document.documentElement.scrollTop;
+		l = document.documentElement.scrollLeft;
+		w = document.documentElement.scrollWidth;
+		h = document.documentElement.scrollHeight;
+	} else if (document.body) {
+		t = document.body.scrollTop;
+		l = document.body.scrollLeft;
+		w = document.body.scrollWidth;
+		h = document.body.scrollHeight;
+	}
+	return { t: t, l: l, w: w, h: h };
+}
+ 
+// 锚点(Anchor)间平滑跳转
+function scroller(el, duration)
+{
+	if(typeof el != 'object') { el = document.getElementById(el); }
+ 
+	if(!el) return;
+ 
+	var z = this;
+	z.el = el;
+	z.p = getPos(el);
+	z.s = getScroll();
+	z.clear = function(){window.clearInterval(z.timer);z.timer=null};
+	z.t=(new Date).getTime();
+ 
+	z.step = function(){
+		var t = (new Date).getTime();
+		var p = (t - z.t) / duration;
+		if (t >= z.t+14) {
+			z.clear();
+			window.setTimeout(function(){z.scroll(z.p.y-65, z.p.x)},13);
+		} 
+	};
+	z.scroll = function (t, l){window.scrollTo(l, t)};
+	z.timer = window.setInterval(function(){z.step();},13);	
+}
+ 
+</script>
 		<script type="text/javascript" src="../res/js/config.js"></script>
 		<script type="text/javascript" src="js/quanzhenmoni.js"></script>
 		<script type="text/javascript" src="../res/js/quit.js"></script>

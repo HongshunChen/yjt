@@ -52,7 +52,7 @@ var chakanquanbu = {
 		totalPage: function(pages, no) {
 			var pageCount = pages;
 			if (pageCount > 5) {
-				chakanquanbu.fn.page_icon(1, 5, no);
+				chakanquanbu.fn.page_icon(1, pageCount, no);
 			} else {
 				chakanquanbu.fn.page_icon(1, pageCount, no);
 			}

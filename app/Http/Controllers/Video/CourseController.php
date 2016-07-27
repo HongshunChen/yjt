@@ -81,6 +81,7 @@ class CourseController extends Controller
                     $query->where('A.courseify3', $kid);
                 }
             })
+            ->orderBy('A.coursetime','DESC')
             ->groupBy('A.courseid')
             ->paginate(5);
 

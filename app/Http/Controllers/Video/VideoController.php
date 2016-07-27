@@ -44,10 +44,12 @@ class VideoController extends Controller
                     ->where('B.is_delet', '=', 0);
             })
             ->leftJoin('x2_video_course as C', 'B.courceid', '=', 'C.courseid')
+            ->leftJoin('x2_orders as D','A.orderid','=','D.orderid')      
             ->select('B.videoid', 'B.remoteurl', 'C.coursethumb', 'C.courseusername','B.videoname','B.duration','C.courseprice','B.createtime','B.mp4url', 'C.courseid')
             ->addSelect(DB::raw('if(B.videoid, 0, 1) as is_expired'))
             ->where('A.userid', $userid)
             ->where('A.videotype', 0)
+            ->orderBy('D.ordercreatetime','DESC')
             ->paginate(6);
         return $this->succ($request, $list);
 
@@ -200,11 +202,13 @@ class VideoController extends Controller
         if ($course) {
             try{
                 $videolist = [];
+                $order=DB::select('select orderid from x2_orders order by ordercreatetime desc limit 1');
                 foreach($course as $key => $videos) {
                     $videolist[$key]['courseid'] = $courseid;
                     $videolist[$key]['userid'] = $userid;
                     $videolist[$key]['videoid'] = $videos['videoid'];
                     $videolist[$key]['status'] = 1;
+                    $videolist[$key]['orderid'] = $order[0]->orderid;
                 }
 
                 DB::table('x2_user_video')->insert($videolist);
@@ -285,8 +289,8 @@ class VideoController extends Controller
             'courseid' => 'require|integer'
         ]);
         //获取用户ID
-        $user = JWTAuth::parseToken()->authenticate();
-        $userid = $user->userid;
+//        $user = JWTAuth::parseToken()->authenticate();
+//        $userid = $user->userid;
         $courseid = $request->input('courseid');
         $list = DB::table('x2_user_comment as A')
             ->join('x2_user as B', 'A.userid', '=', 'B.userid')

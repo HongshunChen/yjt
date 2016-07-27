@@ -3,37 +3,30 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>全真模拟练习</title>
+		<title>一讲堂-公职培训平台</title>
 		<link href="../css/index.css" type="text/css" rel="stylesheet" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<style>
 			.questionselect {
-				margin-left: 100px;
-				width: 600px;
+				width: 900px;
 			}
 			
 			.questionselect p {
 				font-size: 16px;
 				margin: 5px 0px;
-				margin-left: 96px;
-				float: left;
+				margin-left: 60px;
+				width: 800px;margin-top: 10px;color: #666;
 			}
 		</style>
-		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
-
-		<!--导航-->
 	</head>
 
 	<body>
-
+		<script type="text/javascript" src="../res/jslib/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../res/jslib/sui.min.js"></script>
 		<script type='text/javascript' src='../res/jslib/artTemplate/template.js' charset='utf-8'></script>
-		<div class="top" id="page">
-			<!--top-->
+		<div class="top">
 			<div class="top1">
-				<div style="float:left;">
-					<img class="top1img1" src="../images/logo.png" />
-					<img class="top1img2" src="../images/quanzhen.jpg" /></div>
+				<div id="top"></div>
 				<div class="you">
 					<!--you-->
 
@@ -41,78 +34,197 @@
 				<!--you-->
 			</div>
 		</div>
-		<!--top-->
-<div style="position:relative;top:65px;">
+		<div style="position:relative;top:65px;">
 		<div class="da1">
 			<!--大-->
 			<div class="daohang">
 				<a>
 					<div class="xia1"><img src="../images/biao.jpg" />
-						<p id="showtime">已用时 &nbsp;00:00</p>
+						<p id="showtime">已用时&nbsp;&nbsp;00:00</p>
 					</div>
 				</a>
 				<a>
 					<div class="xia2"><img src="../images/biao1.jpg" />
-						<p>收藏本卷</p>
+						<p>考题练习</p>
 					</div>
 				</a>
-				<a>
-					<div class="xia3" style="border-right: 0px;"><img src="../images/biao2.jpg" />
+				<a onclick="quanzhenmoni.fn.papers()">
+					<div class="xia3 xia4" ><img src="../images/biao2.jpg" />
 						<p>我要交卷</p>
 					</div>
 				</a>
-				<!--<a href="#">
-					<div class="xia4"><img src="../images/biao3.jpg" />
-						<p>下载本卷</p>
+				
+				<div class="xia4">
+					<div style="float: left; margin-left: 40px; margin-top: 35px;">
+				<!-- JiaThis Button BEGIN -->
+
+							<div class="jiathis_style_32x32">
+<a class="jiathis  jtico jtico_jiathis" target="_blank" style="font-size: 16px; line-height: 98px; color: #999999;">&nbsp;&nbsp;&nbsp;&nbsp;我要分享</a>
+</div>
+							
+<script type="text/javascript" >
+var jiathis_config={
+	siteNum:7,
+	sm:"weixin,qzone,tqq,tsina,cqq,kaixin001,hi",
+	summary:":快来看呀，我在一讲堂获得的代金券,可以购买使用它购买公职人员考试培训课程哟！",
+	boldNum:5,
+	shortUrl:false,
+	hideMore:true
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+	</div>
 					</div>
-				</a>-->
+				</a>
 			</div>
 			<img style="margin-top:12px;" src="../images/you.jpg" />
 			<div class="daohangxia"></div>
 		</div>
-		<!--大-->
-
-		<div id="quan_zhen">
-			<!--数据填充-->
+		<div id="all">
 
 		</div>
+		<!--all结束-->
 
-		<!--狂-->
-		<div style="margin:0 auto; width:1000px;"><img src="../images/quanzhen3.jpg" /></div>
-		<div style="width:1000px; margin:0 auto;">
-			<a class="woya"></a>
+		<!--------------------------------------------------------------------------------------------------
+        	作者：1303018273@qq.com
+        	时间：2016-06-19
+        	描述：
+        -->
+		<div id="quan_dan"></div>
+
+		<!--我要交卷-->
+		<div class="theme-buy">
+			<a class="btn-primary btn-large theme-login woya" href="javascript:;"></a>
 		</div>
-
-		<div class="zuihou">
-
-		</div>
-		<script type="text/html" id="quanZhen">
-			<!--单选题开始-->
-			<div class="timu">
-				<p>一、单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分，共5题，20分。）</p>
+		<div class="theme-popover">
+			<div class="theme-popbod dform">
+				<ol>
+					<p class="zaida">友情提示</p>
+					<div style="width:269px; margin:0 auto; overflow:hidden; margin-top:10px;">
+						<a class="zaida1" onclick="quanzhenmoni.fn.carry_over()">继续答题</a>
+						<a class="zaida2" onclick="quanzhenmoni.fn.papers()">立即交卷</a></div>
+				</ol>
 			</div>
-			{{each radio_list as radios i}}
-			<div class="dashiq">
+		</div>
+		<div class="theme-popover-mask"></div>
+		<div class="zuihou">
+		</div>
+		<script type="text/html" id="Top">
+			<!--top-->
+			
+				<div style="float:left;">
+
+					<a href="../index/index.html"><img class="top1img1" src="../images/logo.png" /> {{if keytype=='1'}} {{if questid=='1'}}
+					<!--单选题的-->
+
+					<img class="top1img2" src="../images/logo3.png" />
+					<!--单选题结束-->
+					{{else if questid=='2'}}
+					<!--多选题开始-->
+					<img class="top1img2" src="../images/logo4.png" /> {{else if questid=='3'}}
+					<!--判断题-->
+					<img class="top1img2" src="../images/logo2.png" /> {{/if}} {{else}}
+					<!--全真模拟-->
+					<img class="top1img2" src="../images/quanzhen.jpg" /> {{/if}}
+				</div>
+					
+
+			<!--top-->
+		</script>
+		<script type="text/html" id="All">
+			
+			
+			<div class="timu">
+				<p>一、 {{if questid=='1'}} 单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{else if questid=='2'}} 多项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{else if questid=='3'}} 判断题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分， {{/if}} 共{{total_content}}题，{{total_score}}。）
+				</p>
+			</div>
+			<div class="dashi" id="dan_xuan">
+				<!--狂-->
+				<section id="keguan_title">
+					<div class="shi1">
+						<p id="title">{{no}}、{{#list.data.question}}</p>
+						<div id="questionId" style="display: none;">{{list.data.id}}</div>
+					</div>
+				</section>
+
+				<div class="shiti1">
+					<section id="keguan_option">
+						<div class="questionselect" id="content">
+							{{#list.data.questionselect}}
+						</div>
+					</section>
+
+					<div class="tabPanel1" style="clear: both;">
+						<ul id="dan_one" style="margin-left:10px;">
+							<!--选项显示区-->
+						</ul>
+					</div>
+					<div class="fenxiang">
+						<!--上一题-->
+						{{if list.data.prev==0}}
+						<a class="fenxianga1" style="margin-left:15px;cursor:not-allowed;">
+							{{else}}
+						<a class="fenxianga1" onclick="quanzhenmoni.fn.submit_answer({{list.data.id}},{{list.data.prev}})">
+							{{/if}}
+						<img src="../images/quanzhen11.jpg" /></a>
+						<!--下一题-->
+						{{if list.data.next==0}}
+						<a style="cursor: not-allowed;">
+						{{else}}
+						<a onclick="quanzhenmoni.fn.submit_answer({{list.data.id}},{{list.data.next}})">
+							{{/if}}
+							<img src="../images/quanzhen10.jpg" /></a>
+						<div class="wrapper">
+							<!--收藏切换-->
+							<div class="imageContainer" onclick="change_one(this),collect({{list.data.questionid}})">
+								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
+								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
+							</div>
+						</div>
+					</div>
+					<!--分享-->
+				</div>
+				<div><img src="../images/quanzhen3.jpg" /></div>
+			</div>
+			<!--分享-->
+			<div style="width:1000px; margin:0 auto;">
+				<div class="navmenu" style="margin-top:-53px;">
+				
+						
+					
+				</div>
+		</div>
+		</script>
+
+		<script type="text/html" id="quanDan">
+			<div class="timu">
+				<p>一、单项选择题（下面各题所给答案中只有一个符合题意的正确答案，错答、漏答、不答或多答均不得分，{{radio.total_num}}共题，{{radio.total_score}}分。）</p>
+			</div>
+
+			{{each radio.list as radios i}}
+			<div class="dashiq" style="margin-top:15px;">
 				<!--狂-->
 				<div class="shi1">
-					<p>{{i+1}}、{{radios.question}}</p>
+					<p>{{i+1}}、{{#radios.question}}</p>
 				</div>
 				<div class="shiti1">
-					<div class="questionselect" >
+					<div class="questionselect">
 						{{#radios.questionselect}}
 					</div>
 					<div class="tabPanel1">
-						<ul>
-							<li style="margin-left:10px;" onclick="dan(this)" value="A"><a>A</a></li>
-							<li onclick="dan(this)" value="B"><a>B</a></li>
-							<li onclick="dan(this)" value="C"><a>C</a></li>
-							<li onclick="dan(this)" value="D"><a>D</a></li>
+						<ul style="margin-left: 10px;clear: both;" id="dan_one1">
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'A');" id='A'><a>A</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'B');" id='B'><a>B</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'C');" id='C'><a>C</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{radios.id}},'D');" id='D'><a>D</a></li>
 						</ul>
 					</div>
 					<div class="fenxiangq">
 						<img style="margin-left:240px;" src="../images/quanzh.jpg">
 						<div class="wrapper">
-							<div class="imageContainer" onclick="change_one(this)">
+							<div class="imageContainer" onclick="change_one(this),collect({{radios.questionid}})">
 								<img style="padding-top:15px;" src="../images/quanzhe6.jpg" />
 								<img style="padding-top:15px;" src="../images/quanzhen6.jpg" /> </div>
 						</div>
@@ -121,127 +233,34 @@
 				</div>
 				<div><img src="../images/quanzhen3.jpg" /></div>
 			</div>
-			<!--狂-->
-			<div style="width:1000px; margin:0 auto;">
-				<div class="navmenu" style="margin-top:-53px;">
-					<ul class="menu">
-						<li>
-							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
-							<ul style="display: none; margin-left:-20px;">
-								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
-									<div class="wei">
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","wx")'>
-											<div style="margin-left:5px; float:left;">
-												<p><img src="../images/f.jpg" />
-													<p>微信</p>
-												</p>
-											</div>
-										</a>
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","bd")'>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f1.jpg" />
-													<p>百度</p>
-												</p>
-											</div>
-										</a>
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","kj")'>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f2.jpg" />
-													<p>空间</p>
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="wei">
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","xl")'>
-											<div style="float:left;">
-												<p><img src="../images/f3.jpg" />
-													<p>新浪</p>
-												</p>
-											</div>
-										</a>
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","qq")'>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f4.jpg" />
-													<p>QQ</p>
-												</p>
-											</div>
-										</a>
-										<a onclick='share_quan("{{radios.question}}","{{radios.questionselect}}","rr")'>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f5.jpg" />
-													<p>人人</p>
-												</p>
-											</div>
-										</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
+	
 			{{/each}}
-			<!--多选题开始-->
 			<div class="timu">
-				<p>二、多选题（下列各题所给选项中有两个或两个以上符合题意的正确答案，少答、不答或多答均不得分。共3题，40 分）</p>
+				<p>二、多选题（下列各题所给选项中有两个或两个以上符合题意的正确答案，少答、不答或多答均不得分。共{{multiple.total_num}}题，{{multiple.total_score}}分）</p>
 			</div>
-			{{each multiple_list as multiple i}}
-			<!--狂-->
-			
+
+			{{each multiple.list as multiple i}}
 			<div class="dashiq" style="margin-top:15px;">
 				<!--狂-->
 				<div class="shi1">
-					<p>{{radioT+i+1}}、{{multiple.question}}</p>
+					<p>{{radioT+i+1}}、{{#multiple.question}}</p>
 				</div>
 				<div class="shiti1">
 					<div class="questionselect">
-					{{#multiple.questionselect}}
-				</div>
-					<!--<div class="shiti2">
-						<p>A.真理的有限性</p>
-						<p style="float:right; margin-left:90px;">B.真理的条件性</p>
+						{{#multiple.questionselect}}
 					</div>
-					<div class="shiti2">
-						<p>C.任何真理都是对客观事物近似的正确反映</p>
-						<p style="float:right; margin-left:90px;">D.真理中有错误</p>
-					</div>-->
-					<div class="wrapper4">
-						<div class="imageContainer4" onclick="change_one(this)">
-							<img style="padding-top:7px;" src="../images/du.jpg" />
-							<img style="padding-top:7px;" src="../images/du1.jpg" />
-							<ul>
-								<li style="margin-left:10px;"><a>A</a></li>
-							</ul>
-						</div>
-						<div class="imageContainer4" onclick="change_one(this)">
-							<img style="padding-top:7px;" src="../images/du2.jpg" />
-							<img style="padding-top:7px;" src="../images/du3.jpg" />
-							<ul>
-								<li><a>B</a></li>
-							</ul>
-						</div>
-						<div class="imageContainer4" onclick="change_one(this)">
-							<img style="padding-top:7px;" src="../images/du4.jpg" />
-							<img style="padding-top:7px;" src="../images/du5.jpg" />
-							<ul>
-								<li><a>C</a></li>
-							</ul>
-						</div>
-						<div class="imageContainer4" onclick="change_one(this)">
-							<img style="padding-top:7px;" src="../images/du6.jpg" />
-							<img style="padding-top:7px;" src="../images/du7.jpg" />
-							<ul>
-								<li><a>D</a></li>
-							</ul>
-						</div>
+					<div class="tabPanel1" style="clear: both;">
+						<ul id="dan_one2" style="margin-left: 10px;">
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'A');" id='A'><a>A</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'B');" id='B'><a>B</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'C');" id='C'><a>C</a></li>
+							<li onclick="duo_more(this),quanzhenmoni.fn.onclick_answer({{multiple.id}},'D');" id='D'><a>D</a></li>
+						</ul>
 					</div>
 					<div class="fenxiangq">
 						<img style="margin-left:240px;" src="../images/quanzh.jpg">
-
-						<div class="wrapper5">
-
-							<div class="imageContainer5" onclick="change_one(this)">
+						<div class="wrapper">
+							<div class="imageContainer" onclick="change_one(this),collect({{multiple.questionid}})">
 								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
 								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" />
 							</div>
@@ -252,287 +271,118 @@
 				<div><img src="../images/quanzhen3.jpg" /></div>
 			</div>
 			<!--狂-->
-			<div style="width:1000px; margin:0 auto;">
-				<div class="navmenu" style="margin-top:-53px;">
-					<ul class="menu">
-						<li>
-							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
 
-							<ul style="display: none; margin-left:-20px;">
 
-								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
-									<div class="wei">
-										<a>
-											<div style="margin-left:5px; float:left;">
-												<p><img src="../images/f.jpg" />
-													<p>微信</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f1.jpg" />
-													<p>百度</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f2.jpg" />
-													<p>空间</p>
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="wei">
-										<a>
-											<div style="float:left;">
-												<p><img src="../images/f3.jpg" />
-													<p>新浪</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f4.jpg" />
-													<p>QQ</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f5.jpg" />
-													<p>人人</p>
-												</p>
-											</div>
-										</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-{{/each}}
-			<!--狂-->
-			<!--判断题开始-->
-			<!--狂-->
+			{{/each}}
+
 			<div class="timu">
-				<p>三、判断题（20 分）</p>
+				<p>三、判断题（{{judgement.tota3}}题，共{{judgement.total_score}} 分）</p>
 			</div>
-			
-			{{each judgement_list as judgement i}}
+
+			{{each judgement.list as judgement i}}
 			<div class="dashiq" style="margin-top:15px;">
 				<!--狂-->
 				<div class="shi1">
-					<p>{{radioT+multipleT+i+1}}、{{judgement.question}}</p>
+					<p>{{radioT+multipleT+i+1}}、{{#judgement.question}}</p>
 				</div>
 				<div class="shiti1">
-					<div class="tabPanel2">
-						<ul class="tabPane12ul">
-							<li onclick="dan(this)"><a>错</a></li>
-							<li onclick="dan(this)"><a>对</a></li>
+					<div class="questionselect">
+						{{#judgement.questionselect}}
+					</div>
+					<div class="tabPanel1" style="clear: both;">
+						<ul id="dan_one3" style="margin-left: 10px;">
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'B');" id="B"><a>错</a></li>
+							<li onclick="dan(this),quanzhenmoni.fn.onclick_answer({{judgement.id}},'A');" id="A"><a>对</a></li>
 						</ul>
 					</div>
-					<div class="fenxiangq">
-						<img style="margin-left:240px;" src="../images/quanzh.jpg">
 
+					<div class="fenxiangq" style="clear: both;">
+						<img style="margin-left:300px;" src="../images/quanzh.jpg">
 						<div class="wrapper">
-
-							<div style="margin-left:850px;" class="imageContainer" onclick="change_one(this)">
+							<div style="margin-left: 0px;" class="imageContainer" onclick="change_one(this),collect({{judgement.questionid}})">
 								<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
 								<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
 						</div>
+					
 					</div>
 					<!--分享-->
 				</div>
 				<div><img src="../images/quanzhen3.jpg" /></div>
 			</div>
 			<!--狂-->
-			<div style="width:1000px; margin:0 auto;">
-				<div class="navmenu" style="margin-top:-53px;">
-					<ul class="menu">
-						<li>
-							<a><img style="padding-top:7px;" src="../images/fe.jpg" /></a>
-							<ul style="display: none; margin-left:-20px;">
-								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
-									<div class="wei">
-										<a>
-											<div style="margin-left:5px; float:left;">
-												<p><img src="../images/f.jpg" />
-													<p>微信</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f1.jpg" />
-													<p>百度</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f2.jpg" />
-													<p>空间</p>
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="wei">
-										<a>
-											<div style="float:left;">
-												<p><img src="../images/f3.jpg" />
-													<p>新浪</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f4.jpg" />
-													<p>QQ</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f5.jpg" />
-													<p>人人</p>
-												</p>
-											</div>
-										</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+
 			{{/each}}
-			<!--简答题开始-->
+
 			<div class="timu" style="margin-top:20px;">
-				<p>四、简答题（本大题共1 题，每题5 分）</p>
+				<p>四、简答题（本大题共1{{subject.total_num}}题，每题{{subject.total4}}分）</p>
 			</div>
-			{{each subject_list as subject i}}
+
+			{{each subject.list as subject i}}
 			<div class="dashiq" style="margin-top:15px;">
 				<!--狂-->
 				<div class="shi1">
-					<p>{{radioT+multipleT+judgementT+i+1}}、{{subject.question}}</p>
-				</div>
-				<div>
-					<textarea rows="7" class="shiti3" style="color:#333; font-size:14px; line-height:30px; display:block; width:998px;" align="center">
-					【参考答案】科学发展观，是立足社会主义初级阶段基本国情，总结我国发展实践，借鉴国外发展经验，适应新的发展要求提出来的。科学发展观，第一要义是发展，核心是以人为本，基本要求是全面协调可持续，根本方法是统筹兼顾。
-					坚持科学发展观：
-					（1）必须坚持把发展作为党执政兴国的第一要务；
-					（2）必须坚持以人为本；
-					（3）必须坚持全面协调可持续发展；
-					（4）必须坚持统筹兼顾。
-					</textarea>
+					<p>{{radioT+multipleT+judgementT+i+1}}、{{#subject.question}}</p>
+					<div id="subject" style="display: none;">{{subject.id}}</div>
 				</div>
 
 				<div class="fenxiang1" style="position:absolute; margin-left:490px; margin-top:230px; overflow:hidden;">
 					<img style="margin-left:240px;" src="../images/quanzh.jpg">
-
 					<div class="wrapper">
-
-						<div class="imageContainer" onclick="change_one(this)">
+						<div style="height: 34px;" class="imageContainer" onclick="change_one(this),collect({{subject.questionid}})">
 							<img style="padding-top:7px;" src="../images/quanzhe6.jpg" />
 							<img style="padding-top:7px;" src="../images/quanzhen6.jpg" /> </div>
+					</div>
+				
+
+				</div>
+				<div class="shiti4">
+					<div id="image-wrap" style="display: none;"></div>
+					<textarea id="text-wrap" style="width: 1000px;height: 300px;display: none;"></textarea>
+					<div class="demo">
+
+						<!--<div id="up_status" style="display:none"><img src="loader.gif" alt="uploading" /></div>-->
+						<div id="up_btn_text" class="btn" style="margin-left:237px;" onclick="none_blo(0,'image-wrap','text-wrap')">
+							<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen.jpg" />
+							<span style="">文字答案上传</span>
+							<input id="texts" style="height:100px;" type="button">
+						</div>
+						<div id="up_btn_img" class="btn" style="margin-left:20px;">
+							<img style="float:left; margin-top:15px; margin-left:13px;" src="../images/wen1.jpg" />
+							<span style="">图片答案上传</span>
+							<input style="height:100px;" type="file" onclick="none_blo(1,'image-wrap','text-wrap')" onchange="show_img(this,'#image-wrap')" />
+						</div>
+						<input id="file1"/>
+					</div>
+					<div style="height:60px;">
+
 					</div>
 				</div>
 				<!--分享-->
 			</div>
 
 			<!--狂-->
-			<div style="width:1000px; margin:0 auto;">
-				<div class="navmenu" style="margin-top:-53px;">
-					<ul class="menu">
-						<li>
-							<a><img style="padding-top:14px;" src="../images/fe.jpg" /></a>
-
-							<ul style="display: none; margin-left:-20px;">
-
-								<li style="width:150px; height:152px; background:#ffffff; border:#999999 1px solid;">
-									<div class="wei">
-										<a>
-											<div style="margin-left:5px; float:left;">
-												<p><img src="../images/f.jpg" />
-													<p>微信</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f1.jpg" />
-													<p>百度</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f2.jpg" />
-													<p>空间</p>
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="wei">
-										<a>
-											<div style="float:left;">
-												<p><img src="../images/f3.jpg" />
-													<p>新浪</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f4.jpg" />
-													<p>QQ</p>
-												</p>
-											</div>
-										</a>
-										<a>
-											<div style="margin-left:10px; float:left;">
-												<p><img src="../images/f5.jpg" />
-													<p>人人</p>
-												</p>
-											</div>
-										</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+			
 			</div>
 			{{/each}}
+			<!--狂-->
+			<!--<div style="margin:0 auto; width:1000px;"><img src="../images/quanzhen3.jpg" /></div>
+			<div style="width:1000px; margin:0 auto;">
+				<a class="woya"></a>
+			</div>-->
 		</script>
+
 		<script type="text/javascript" src="../res/js/config.js"></script>
 		<script type="text/javascript" src="js/quanzhenmoni.js"></script>
 		<script type="text/javascript" src="../res/js/quit.js"></script>
 		<script type="text/javascript" src="../res/js/showtime.js"></script>
-		<script type="text/javascript" src="../js/common.js"></script>
+		
 		<script type="text/javascript" src="../res/js/collection.js"></script>
-		<script type="text/javascript" src="../res/js/share.js"></script>
-		<script>
-			window.onload  =   function() {
-				//全部加载完成！！ 
-				$(".navmenu ul li:has(ul)").hover(function() {
-						$(this).find("li").children("a").css({
-							color: "#fff"
-						});
-						if ($(this).find("li").length > 0) {
-							$(this).children("ul").stop(true, true).slideDown(100)
-						}
-					},
-					function() {
-						$(this).find("li").children("a").css({
-							color: "#fff"
-						});
-						$(this).children("ul").stop(true, true).slideUp("fast")
-					});
-			}
-		</script>
-</div>	</body>
+		<!--<script type="text/javascript" src="../res/js/share.js"></script>-->
+		<script type="text/javascript" src="../res/js/zhuguan_div_none_block.js"></script>
+		<script type="text/javascript" src="../res/js/img_show.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+</div>
+	</body>
 
 </html>

@@ -1,4 +1,4 @@
-var shipinxiangqing = {
+﻿var shipinxiangqing = {
 	data: {},
 	dataInit: function() {
 		shipinxiangqing.fn.list_init();
@@ -23,7 +23,13 @@ var shipinxiangqing = {
 						//成功操作
 						shipinxiangqing.fn.dataFill(list);
 					} else {
-						$.alert(list.data);
+                                              if(list.data=='Trying to get property of non-object'){
+                                                alert('视频已经下架');
+                                                window.location.href='./mykecheng.html'
+                                            }else{
+                                               $.alert(list.data);
+                                           }
+						
 					}
 				},
 				error: function(xhr, type) {
@@ -216,13 +222,15 @@ var shipinxiangqing = {
                                            dataType: "jsonp",
                                            success: function(data) {
                                                    if (data.status == 1) {
-                                                           alert('评论成功');
+                                                       shipinxiangqing.fn.comment_list(id);
+                                                        //   alert('评论成功');
+                                                           
                                                    } else {
-                                                           alert(data.data);
+                                                        //   alert(data.data);
                                                    }
                                            },
                                            error: function() {
-                                                   alert('网络异常');
+                                                //   alert('网络异常');
                                            }
                                    });
                 }

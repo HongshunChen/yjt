@@ -68,11 +68,11 @@ var index = {
 				}
 			});
 		},
-
+		
 		cordavaDataGet: function() {
 			index.dataInit();
 		},
-		dataFill: function(list) {
+		dataFill: function(list) { 
 			if (list) {
 				var data = {
 					list: list,
@@ -81,6 +81,7 @@ var index = {
 				document.getElementById('zhuYe').innerHTML = html;
 			}
 		},
+		
 	}
 }
 $(function($) {
