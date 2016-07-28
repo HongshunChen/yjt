@@ -217,7 +217,9 @@ class vedio_vedio
 	{
 		$data = array('video_special',$args,array(array("AND","vid = :catid",'catid',$catid)));
 		$sql = $this->pdosql->makeUpdate($data);
+
 		$this->db->exec($sql);
+                
 		return true;
 	}
 

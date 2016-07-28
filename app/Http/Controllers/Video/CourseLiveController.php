@@ -26,7 +26,8 @@ class CourseLiveController extends Controller
         $kid = $request->input('k');
         $list = DB::table('x2_video_special as A')
             ->join('x2_user as B', 'A.uid', '=', 'B.userid')
-            ->select('A.vid', 'A.vurl', 'B.usertruename', 'A.vname', 'A.vintro', 'A.videohumb', DB::raw('round(A.vprice,0) as  vprice'), 'A.createtime', 'A.endtime','A.mp4url')
+          
+            ->select('A.vid', 'A.vurl', 'B.usertruename', 'A.vname','A.vintro','A.vteachername','A.vatract','A.vteacherintro', 'A.videohumb', DB::raw('round(A.vprice,0) as  vprice'), 'A.createtime', 'A.endtime','A.mp4url')
             ->where(function ($query) use ($cid) {
                 if (isset($cid) && !empty($cid)) {
                     $query->where('courseify1', $cid);
@@ -40,6 +41,7 @@ class CourseLiveController extends Controller
                     $query->where('courseify3', $kid);
                 }
             })
+            ->orderBy('A.createtime','DESC')
             ->paginate(6);
 
 
@@ -56,13 +58,26 @@ class CourseLiveController extends Controller
             'vid' => 'require|integer',
         ]);
         $vid = $request->input('vid');
-
-        $detail = DB::table('x2_video_special as A')
-            ->join('x2_user as B', 'A.uid', '=', 'B.userid')
-            ->select('A.vid', 'A.vintro as vintro', 'A.vcontent', 'A.vname',DB::raw('round(A.vprice,0) as  vprice'),'A.vurl', 'A.videohumb','A.mp4url','A.endtime')
-            ->addSelect('B.userid as teacherid','B.photo as teacherthumb','B.usertruename as teachername','B.teacher_subjects as teacherintro')
+        $paidstatus=DB::table('x2_orders')->select('orderid')->where('videoid',$vid)->get();
+        if($paidstatus){
+             $detail = DB::table('x2_video_special as A')
+              ->leftJoin('x2_orders as C','C.videoid','=','A.vid')
+            //->join('x2_user as B', 'A.uid', '=', 'B.userid')
+            ->select('A.vid', 'A.vteachername as teachername','A.vteacherintro as teacherintro','A.vatract','A.vpaidcontent','A.vintro as vintro', 'A.vcontent', 'A.vname',DB::raw('round(A.vprice,0) as  vprice'),'A.vurl', 'A.videohumb as coursethumb','A.mp4url','A.endtime')
+          // ->addSelect('B.userid as teacherid','B.photo as teacherthumb','B.usertruename as teachername','B.teacher_subjects as teacherintro')
             ->where('A.vid', $vid)
             ->first();
+        }else{
+             $detail = DB::table('x2_video_special as A')
+              ->leftJoin('x2_orders as C','C.videoid','=','A.vid')
+            //->join('x2_user as B', 'A.uid', '=', 'B.userid')
+            ->select('A.vid', 'A.vteachername as teachername','A.vteacherintro as teacherintro','A.vatract','A.vintro as vintro', 'A.vcontent', 'A.vname',DB::raw('round(A.vprice,0) as  vprice'),'A.vurl', 'A.videohumb as coursethumb','A.mp4url','A.endtime')
+          // ->addSelect('B.userid as teacherid','B.photo as teacherthumb','B.usertruename as teachername','B.teacher_subjects as teacherintro')
+            ->where('A.vid', $vid)
+            ->first();
+        }
+       
+   
         $detail->vintro = htmlspecialchars_decode($detail->vintro);
         $detail->vcontent = htmlspecialchars_decode($detail->vcontent);
         $detail->teacherintro = htmlspecialchars_decode($detail->teacherintro);

@@ -59,7 +59,7 @@
 						<p class="kep1">主播老师：{{list.data.teachername}}</p>
 						<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：30天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>
 					</div>
-					<p class="kep3">历年真题该怎么看？字里行间的命题点在哪，你知道吗？名师胡敬源，教你读懂、吃透真题深度掌握趋势，提升复习效率！给备考加把火~</p>
+					<p class="kep3">{{list.data.vatract}}</p>
 				</div>
 				<img style="margin-top:23px; float:left;" src="../images/xian.jpg" />
 				<div class="zi">
@@ -114,7 +114,7 @@
 							<div class="xi"><img src="../images/x.jpg" /></div>
 							<div class="xiangqing">
 								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-								<p class="pq2">{{#list.data.vcontent}}</p>
+								<p class="pq2">{{#list.data.vcontent}}{{#list.data.vpaidcontent}}</p>
 							</div>
 							<div class="xi"><img src="../images/x.jpg" /></div>
 						</div>
@@ -134,14 +134,14 @@
 							<div class="xi"><img src="../images/x.jpg" /></div>
 							<div class="xiangqing">
 								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-								<p class="pq2">{{#list.data.vcontent}}</p>
+								<p class="pq2">{{#list.data.vcontent}}{{#list.data.vpaidcontent}}</p>
 							</div>
 							<div class="xi"><img src="../images/x.jpg" /></div>
 						</div>
 						<div id="tabcontent3" style="display:none;">
 							<div class="xiangqing">
 								<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-								<p class="pq2">{{#list.data.vcontent}}</p>
+								<p class="pq2">{{#list.data.vcontent}}{{#list.data.vpaidcontent}}</p>
 							</div>
 							<div class="xi"><img src="../images/x.jpg" /></div>
 							<div class="xiangqing">

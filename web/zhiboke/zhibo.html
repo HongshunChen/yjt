@@ -74,7 +74,7 @@
 					</div>
 				</a>
 				<div class="wen1">
-					<p class="wen1p">主讲老师：{{zhibo.usertruename}}</p>
+					<p class="wen1p">主讲老师：{{zhibo.vteachername}}</p>
 					<ul>开课时间：<span>{{zhibo.createtime}}-{{zhibo.endtime}}</span></ul>
 					<p class="wen1p1">{{zhibo.vintro}}</p>
 				</div>
@@ -83,7 +83,7 @@
 				</div>
 				<div class="wenbi21">
 					<p class="w">已有<span id="by{{i}}"></span>人购买</p>
-					<p style="float: right;margin-right: 10px;">距离停售<span>10天</span></p>
+					<p style="float: right;margin-right: 10px;">距离停售<span>{{zhibo.endday}}天</span></p>
 				</div>
 			</li>
 			{{/each}}

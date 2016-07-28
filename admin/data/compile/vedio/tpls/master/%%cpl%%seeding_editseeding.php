@@ -148,7 +148,26 @@
 						<input class="input-small datetimepicker" data-date="<?php echo date('Y-m-d',TIME); ?>" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="20" id="stime" value="<?php echo date('Y-m-d H:i:s',$this->tpl_var['cat']['endtime']); ?>"/>
 					</div>
 				</div>
-				
+                                <div class="control-group">
+					<label for="vteachername" class="control-label">直播老师</label>
+					<div class="controls">
+						<input id="vteachername" name="args[vteachername]" type="text" value="<?php echo $this->tpl_var['cat']['vteachername']; ?>" needle="needle" msg="您必须输入老师名称" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="vteacherintro" class="control-label">直播课老师简介</label>
+					<div class="controls">
+						<textarea class="input-xlarge" rows="4" name="args[vteacherintro]" id="vteacherintro"><?php echo $this->tpl_var['cat']['vteacherintro']; ?></textarea>
+					  	<span class="help-block">介绍一下老师，限制200字</span>
+					</div>
+				</div>
+                                <div class="control-group">
+					<label for="vatract" class="control-label">直播课吸引点</label>
+					<div class="controls">
+						<textarea class="input-xlarge" rows="4" name="args[vatract]" id="vatract"><?php echo $this->tpl_var['cat']['vatract']; ?></textarea>
+					  	<span class="help-block">介绍一下课程，限制200字</span>
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="vintro" class="control-label">直播课程简介</label>
 					<div class="controls">
@@ -160,18 +179,24 @@
 					<label class="control-label">直播课程内容</label>
 				  	<div class="controls">
 					  	<textarea class="ckeditor" name="args[vcontent]" id="vcontent"><?php echo $this->tpl_var['cat']['vcontent']; ?></textarea>
-					  	<span class="help-block">无选择项的请不要填写，如填空题、问答题等主观题。</span>
+					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
 					</div>
 				</div>
-			
+			        <div class="control-group">
+					<label class="control-label">需购买后查看的内容</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[vpaidcontent]" id="vpaidcontent"><?php echo $this->tpl_var['cat']['vpaidcontent']; ?></textarea>
+					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
+					</div>
+				</div>
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" onclick="ceshi();" type="submit">提交</button>
+						<button class="btn btn-primary" onclick="ceshi();" type="submit">保存</button>
 						
 						<input type="hidden" name="args[vurl]" id="remoteurl" value="<?php echo $this->tpl_var['cat']['vurl']; ?>">
 						<input type="hidden" name="args[videoid]" id="videovid" value="<?php echo $this->tpl_var['cat']['videoid']; ?>">
 						<input type="hidden" name="catid" id="catid" value="<?php echo $this->tpl_var['cat']['vid']; ?>">
-						<input type="hidden" name="args[mp4]" id="mp4" value="">
+						<input type="hidden" name="args[mp4url]" id="mp4" value="">
 						<input type="hidden" name="insertquestype" value="1"/>
 						<input type="hidden" name="args[videohumb]" value="<?php echo $this->tpl_var['cat']['videohumb']; ?>" id="imaes">
 						

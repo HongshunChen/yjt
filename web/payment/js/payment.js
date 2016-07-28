@@ -74,7 +74,7 @@ var payment = {
 		dataFill2: function(list) {
 			if (list) {
 				var data = {
-					files:config.files,
+					//files:config.files,
 					list: list,
 				};
 
