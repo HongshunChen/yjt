@@ -86,7 +86,8 @@ class vedio_vedio
 	{
 		$data = array('video_course',$args,array(array("AND","courseid = :catid",'catid',$catid)));
 		$sql = $this->pdosql->makeUpdate($data);
-	
+//                print_r($sql);
+//                exit;
 		$this->db->exec($sql);
 		return true;
 	}

@@ -127,25 +127,25 @@
 		<div class="span10" id="datacontent">
 			<ul class="breadcrumb">
 				<li><a href="index.php?vedio-master">视频模块</a> <span class="divider">/</span></li>
-			<li><a href="#">课程管理</a> <span class="divider">/</span></li>
-				<li class="active">编辑课程</li>
+				<li><a href="#">课程管理</a> <span class="divider">/</span></li>
+				<li class="active">添加课程</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">编辑课程</a>
+					<a href="#">添加课程</a>
 				</li>
 				<li class="pull-right">
 					<a href="index.php?vedio-master-demand-course">课程管理</a>
 				</li>
 			</ul>
-	      <form action="index.php?vedio-master-demand-editcourse" method="post" class="form-horizontal">
+	      <form action="index.php?vedio-master-demand-addcourse" method="post" class="form-horizontal">
 				<fieldset>
 				<div style="width:100%;height:270px;">
 				<div class="top_left" style="width: 40%;float: left;">
 				<div class="control-group">
 					<label for="basic" class="control-label">课程名称</label>
 					<div class="controls">
-						<input id="basic" name="args[coursename]" type="text" value="sdfd" needle="needle" msg="您必须输入课程名称" />
+						<input id="basic" name="args[coursename]" type="text" value="" needle="needle" msg="您必须输入课程名称" />
 					</div>
 				</div>
 				<div class="control-group">
@@ -155,22 +155,21 @@
 					<span class="help-block">如果上传者不是讲师 请修改为讲师的姓名</span>
 					</div>
 				</div>
-                                
-                                
 				<div class="control-group">
 					<label for="basicapi" class="control-label">课程价格</label>
 					<div class="controls">
-						<input id="basicapi" name="args[courseprice]" type="text" value="0.00" max="12" msg="" />
+						<input id="basicapi" name="args[courseprice]" type="text" value="" max="12" msg="" />
 					
 					</div>
 				</div>
 				<div class="control-group">
 					<label for="basicsubjectid" class="control-label">课程内容</label>
 					<div class="controls">
-						<select id="basicsubjectid" name="args[courseify1]">
-		        		<option selected = "selected" value="专项精讲">专项精讲</option>
-				  						  						  						  						  						  						  						  		<option value="系统课程">系统课程</option>
-				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		</select>
+						<select id="basicsubjectid" name="args[courseify1]" needle="needle" msg="您必须选择课程分类">
+		        		<option value="">选择分类</option>
+				  						  							  		<option value="专项精讲">专项精讲</option>
+				  						  						  							  		<option value="系统课程">系统课程</option>
+				  						  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  		</select>
 					</div>
 				</div>
 				</div>
@@ -182,7 +181,7 @@
 							<div class="thumbnail">
 								<a href="javascript:;" class="second label"><em class="uploadbutton" id="catimg" exectype="thumb"></em></a>
 								<div class="first" id="catimg_percent"></div>
-								<div class="boot"><img src="" id="catimg_view"/><input type="hidden" name="args[coursethumb]" value="" id="catimg_value"/></div>
+								<div class="boot"><img src="app/core/styles/images/noimage.gif" id="catimg_view"/><input type="hidden" name="args[coursethumb]" value="" id="catimg_value"/></div>
 							</div>
 						</div>
 					</div>
@@ -190,64 +189,67 @@
 				</div>
 				</div>
 				
+
 				<div class="control-group">
 					<label for="basicareaid" class="control-label">课程类别</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[courseify2]" >
-		        		<option selected = "selected" value="面试">面试</option>
-				  						  						  						  						  						  						  						  						  						  						  						  		<option value="申论">申论</option>
-				  						  						  						  						  						  		<option value="行测">行测</option>
-				  						  						  						  						  						  		<option value="公益课">公益课</option>
-				  						  						  						  						  						  						  						  						  						  						  						  		</select>
+						<select id="basicareaid" name="args[courseify2]" needle="needle" msg="您必须选择课程类别">
+		        		<option value="">选择类别</option>
+				  													  													  													  		<option value="面试">面试</option>
+				  						  													  		<option value="申论">申论</option>
+				  						  													  		<option value="行测">行测</option>
+				  						  													  		<option value="公益课">公益课</option>
+				  						  													  													  													  													  						  		</select>
 					</div>
 				</div>
                                 <div class="control-group">
 					<label for="basic" class="control-label">截止时间</label>
 					<div class="controls">
-						<input class=" datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[courseendtime]" size="20" id="stime" value="1970-01-01 08:31:39"/>
+						<input class=" datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[courseendtime]" size="10" id="stime" value=""/>
 					</div>
 				</div>
 				<div class="control-group">
 					<label for="basicareaid" class="control-label">考试类别</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[courseify3]" >
-		        		<option  selected = "selected" value="国考">国考</option>
-				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		</select>
+						<select id="basicareaid" name="args[courseify3]" needle="needle" msg="您必须选择课程类别">
+		        		<option value="">选择类别</option>
+				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		<option value="国考">国考</option>
+				  						  						  						  						  						  						  						  						  		</select>
 					</div>
 				</div>
-                              
+                               
 				<div class="control-group">
 					<label for="basicprice" class="control-label">课程吸引</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[courseatract]" id="courseatract">sdfsd</textarea>
+						<textarea class="input-xlarge" rows="4" name="args[courseatract]" id="courseatract"></textarea>
 					  	<span class="help-block">介绍一下课程吸引点，限制100字</span>
 					</div>
 				</div>
                                  <div class="control-group">
-					<label for="teacherintro" class="control-label">老师简介</label>
+					<label for="teacherintro" class="control-label">名师简介</label>
 					<div class="controls">
-						<textarea class="ckeditor" rows="4" name="args[teacherintro]" id="teacherintro">&lt;p&gt;fdsssssssssssssss&lt;/p&gt;</textarea>
+						<textarea class="ckeditor" rows="4" name="args[teacherintro]" id="teacherintro"></textarea>
 					  	
 					</div>
 				</div>
 				<div class="control-group">
 					<label for="basicprice" class="control-label">课程简介</label>
 					<div class="controls">
-						<textarea class="ckeditor" rows="4" name="args[courseintro]" id="basicprice">&lt;p&gt;fdsssssssssss&lt;/p&gt;</textarea>
+						<textarea class="ckeditor" rows="4" name="args[courseintro]" id="basicprice"></textarea>
 					  	
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">课程内容</label>
 				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[contentintro]" id="question">&lt;p&gt;sdfffffff&lt;/p&gt;</textarea>
+					  	<textarea class="ckeditor" name="args[contentintro]" id="question"></textarea>
 					  
 					</div>
 				</div>
-                               <div class="control-group">
+                                  <div class="control-group">
 					<label class="control-label">需购买后查看的内容</label>
 				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[cpaidcontent]" id="cpaidcontent">&lt;p&gt;fdsssssssss&lt;/p&gt;</textarea>
+					  	<textarea class="ckeditor" name="args[cpaidcontent]" id="cpaidcontent"></textarea>
 					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
 					</div>
 				</div>
@@ -255,7 +257,6 @@
 					<div class="controls">
 						<button class="btn btn-primary" type="submit">保存</button>
 						<input type="hidden" name="args[teacherid]" value="1">
-						<input type="hidden" name="catid" value="30">
 						<input type="hidden" name="insertquestype" value="1"/>
 						
 					</div>

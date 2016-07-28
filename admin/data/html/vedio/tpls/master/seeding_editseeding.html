@@ -169,8 +169,8 @@
             uploadButtton: "upload",   //打开上传控件按钮id
             writeToken: "c7679704-ffbc-40ab-839d-72a8e4521a10",
             userid : 'e48926e810',
-            ts : '1469674952',
-            hash : '78de66be8d4c1f3f08f9c2b4db86022d' ,
+            ts : '1469695063',
+            hash : '4e34a16191f1e015b6f14046c2adfa2b' ,
             readToken: 'c05bccf2-849b-4ce0-97ee-12ac810a35c3',
              response: function(json) { 
              	document.getElementById('VEDIO_IMG').src = json.swf_link;
@@ -238,7 +238,7 @@
 				<div class="control-group">
 					<label for="basic" class="control-label">截止时间</label>
 					<div class="controls">
-						<input class="input-small datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="20" id="stime" value="2016-07-29 00:00:00"/>
+						<input class=" datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="20" id="stime" value="2016-07-29 00:00:00"/>
 					</div>
 				</div>
                                 <div class="control-group">
@@ -247,38 +247,39 @@
 						<input id="vteachername" name="args[vteachername]" type="text" value="czxs" needle="needle" msg="您必须输入老师名称" />
 					</div>
 				</div>
-				<div class="control-group">
-					<label for="vteacherintro" class="control-label">直播课老师简介</label>
-					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vteacherintro]" id="vteacherintro">asdasas</textarea>
-					  	<span class="help-block">介绍一下老师，限制200字</span>
-					</div>
-				</div>
+				
                                 <div class="control-group">
-					<label for="vatract" class="control-label">直播课吸引点</label>
+					<label for="vatract" class="control-label">直播课吸引</label>
 					<div class="controls">
 						<textarea class="input-xlarge" rows="4" name="args[vatract]" id="vatract">asdasdas</textarea>
 					  	<span class="help-block">介绍一下课程，限制200字</span>
 					</div>
 				</div>
+                                <div class="control-group">
+					<label for="vteacherintro" class="control-label">名师简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[vteacherintro]" id="vteacherintro">&lt;p&gt;asdasasbbbbbbbbbbbbbbbbb&lt;/p&gt;</textarea>
+					  	
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="vintro" class="control-label">直播课程简介</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vintro]" id="vintro">dsadasd</textarea>
-					  	<span class="help-block">介绍一下课程，限制200字</span>
+						<textarea class="ckeditor" rows="4" name="args[vintro]" id="vintro">&lt;p&gt;dsadasdbbbbbbbbbb&lt;/p&gt;</textarea>
+					  	
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">直播课程内容</label>
 				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[vcontent]" id="vcontent">&lt;p&gt;asddasas&lt;/p&gt;</textarea>
+					  	<textarea class="ckeditor" name="args[vcontent]" id="vcontent">&lt;p&gt;asddasasbbbbbbbbbbbb&lt;/p&gt;</textarea>
 					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
 					</div>
 				</div>
 			        <div class="control-group">
 					<label class="control-label">需购买后查看的内容</label>
 				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[vpaidcontent]" id="vpaidcontent">&lt;p&gt;asdassadas&lt;/p&gt;</textarea>
+					  	<textarea class="ckeditor" name="args[vpaidcontent]" id="vpaidcontent">&lt;p&gt;asdassadasbbbbbbbbbb&lt;/p&gt;</textarea>
 					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
 					</div>
 				</div>

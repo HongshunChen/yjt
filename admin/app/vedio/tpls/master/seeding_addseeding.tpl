@@ -134,7 +134,7 @@
 				<div class="control-group">
 					<label for="basic" class="control-label">截止时间</label>
 					<div class="controls">
-						<input class="input-small datetimepicker" data-date="{x2;date:TIME,'Y-m-d'}" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="10" id="stime" value=""/>
+						<input class=" datetimepicker" data-date="{x2;date:TIME,'Y-m-d'}" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="10" id="stime" value=""/>
 					</div>
 				</div>
                                   <div class="control-group">
@@ -143,13 +143,7 @@
 						<input id="vteachername" name="args[vteachername]" type="text" value="" needle="needle" msg="您必须输入老师名称" />
 					</div>
 				</div>
-				<div class="control-group">
-					<label for="vteacherintro" class="control-label">直播课老师简介</label>
-					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vteacherintro]" id="vteacherintro"></textarea>
-					  	<span class="help-block">介绍一下老师，限制200字</span>
-					</div>
-				</div>
+				
                                 <div class="control-group">
 					<label for="vatract" class="control-label">直播课吸引点</label>
 					<div class="controls">
@@ -157,12 +151,19 @@
 					  	<span class="help-block">介绍一下课程，限制200字</span>
 					</div>
 				</div>
+                                 <div class="control-group">
+					<label for="vteacherintro" class="control-label">直播课老师简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[vteacherintro]" id="vteacherintro"></textarea>
+					  	<span class="help-block">介绍一下老师，限制200字</span>
+					</div>
+				</div>
 				
 				<div class="control-group">
 					<label for="vintro" class="control-label">直播课程简介</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vintro]" id="vintro"></textarea>
-					  	<span class="help-block">介绍一下课程，限制200字</span>
+						<textarea class="ckeditor" rows="4" name="args[vintro]" id="vintro"></textarea>
+					  	
 					</div>
 				</div>
 				<div class="control-group">

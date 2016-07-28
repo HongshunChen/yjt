@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 /* 直播课程列表 Course
 * 传入参数：courseify1（可选） courseify2（可选） courseify3（可选）
@@ -58,7 +59,14 @@ class CourseLiveController extends Controller
             'vid' => 'require|integer',
         ]);
         $vid = $request->input('vid');
-        $paidstatus=DB::table('x2_orders')->select('orderid')->where('videoid',$vid)->get();
+        if ($request->input('token')) {
+            $user = JWTAuth::parseToken()->authenticate();
+            $userid = $user->userid;
+        } else {
+            $userid = 0;
+        }
+     
+        $paidstatus=DB::table('x2_orders')->select('orderid')->where([['videoid',$vid],['orderuserid',$userid]])->get();
         if($paidstatus){
              $detail = DB::table('x2_video_special as A')
               ->leftJoin('x2_orders as C','C.videoid','=','A.vid')

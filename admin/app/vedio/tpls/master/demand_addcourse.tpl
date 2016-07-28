@@ -90,6 +90,12 @@
 				  		</select>
 					</div>
 				</div>
+                                <div class="control-group">
+					<label for="basic" class="control-label">截止时间</label>
+					<div class="controls">
+						<input class=" datetimepicker" data-date="{x2;date:TIME,'Y-m-d'}" data-date-format="yyyy-mm-dd" type="text" name="args[courseendtime]" size="10" id="stime" value=""/>
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="basicareaid" class="control-label">考试类别</label>
 					<div class="controls">
@@ -103,6 +109,7 @@
 				  		</select>
 					</div>
 				</div>
+                               
 				<div class="control-group">
 					<label for="basicprice" class="control-label">课程吸引</label>
 					<div class="controls">
@@ -110,11 +117,18 @@
 					  	<span class="help-block">介绍一下课程吸引点，限制100字</span>
 					</div>
 				</div>
+                                 <div class="control-group">
+					<label for="teacherintro" class="control-label">名师简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[teacherintro]" id="teacherintro"></textarea>
+					  	
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="basicprice" class="control-label">课程简介</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[courseintro]" id="basicprice">{x2;$basic['basicprice']}</textarea>
-					  	<span class="help-block">介绍一下课程，限制200字</span>
+						<textarea class="ckeditor" rows="4" name="args[courseintro]" id="basicprice">{x2;$basic['basicprice']}</textarea>
+					  	
 					</div>
 				</div>
 				<div class="control-group">
@@ -124,9 +138,16 @@
 					  
 					</div>
 				</div>
+                                  <div class="control-group">
+					<label class="control-label">需购买后查看的内容</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[cpaidcontent]" id="cpaidcontent"></textarea>
+					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
+					</div>
+				</div>
 				<div class="control-group">
 					<div class="controls">
-						<button class="btn btn-primary" type="submit">提交</button>
+						<button class="btn btn-primary" type="submit">保存</button>
 						<input type="hidden" name="args[teacherid]" value="{x2;$_user['userid']}">
 						<input type="hidden" name="insertquestype" value="1"/>
 						

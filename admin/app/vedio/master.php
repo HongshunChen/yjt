@@ -551,7 +551,7 @@ class app
 				if ($this->ev->get('insertquestype')){
 					$course = $this->ev->get('args');
 					$course['coursetime'] = time();
-
+                                        $args['courseendtime'] = strtotime($args['courseendtime']);
 					$data = $this->db->insertElement(array('table'=>'video_course','query'=>$course));
 				if ($data) {
 					$message= array(
@@ -581,7 +581,7 @@ class app
 
 				
 				$args = $this->ev->get('args');
-
+                                $args['courseendtime'] = strtotime($args['courseendtime']);
 				$args['coursetime'] = time();
 				$catid =  $this->ev->get('catid');
 

@@ -68,7 +68,7 @@
 			<!--右-->
 		</div>
 				<div class="pinglun" style="margin-top: 5px;" >
-<p style="font-size:16px; color:#333333; margin-left:10px; margin-top:20px;">网友留言：</p>
+<p style="font-size:16px; color:#333333; margin-left:10px; margin-top:20px;">学员评价：</p>
 <div style="border: #dfdfdf 1px solid;" id="comment_list"></div>
 	<div class="tijiao" >
    
@@ -92,7 +92,7 @@
 					<div style="margin-top:15px; overflow:hidden;">
 						<p class="kep">{{list.data.coursename}}</p>
 						<p class="kep1" style="margin-top: 52px;">{{list.data.teachername}}</p>
-						<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：300天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>
+						<p class="kep2"><img style="float:left;" src="../images/sjijian.jpg" />&nbsp;观看时间还剩：100天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5课时</p>
 					</div>
 					<p class="kep3">{{list.data.courseatract}}</p>
 				</div>
@@ -103,7 +103,7 @@
 					<div class="xia">
 					<ul>
 						<h5>已有</h5>
-						<li>3121</li>
+						<li>121</li>
 						<h5>人购买</h5></ul>
 					<ul style="margin-left:210px;">
 						<h5>距离停售</h5>
@@ -141,7 +141,7 @@
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="xiangqing">
 							<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-							<p class="pq2">{{#list.data.contentintro}}</p>
+							<p class="pq2">{{#list.data.contentintro}}{{#list.data.cpaidcontent}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="mingshi">
@@ -155,7 +155,7 @@
 					<div id="tabcontent2" style="display:none;">
 						<div class="xiangqing">
 							<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-							<p class="pq2">{{#list.data.contentintro}}</p>
+							<p class="pq2">{{#list.data.contentintro}}{{#list.data.cpaidcontent}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="kaoshi">
@@ -177,7 +177,7 @@
 						<div class="xi"><img src="../images/x.jpg" /></div>				
 						<div class="xiangqing">
 							<p style="color:#f53c3a; font-size:22px;">课程内容</p>
-							<p class="pq2">{{#list.data.contentintro}}</p>
+							<p class="pq2">{{#list.data.contentintro}}{{#list.data.cpaidcontent}}</p>
 						</div>
 						<div class="xi"><img src="../images/x.jpg" /></div>
 						<div class="kaoshi">
@@ -203,10 +203,10 @@
 					<div class="m">
 						<img src="{{files}}{{teacher.photo}}" style="width: 115px;height: 120px;" />
 						<span></span>
-						<p>{{teacher.title}}</p>
+						<p>客服：小美</p>
 						<p>评分：{{teacher.score}}分</p>
 					</div>
-					<div class="pq6">{{teacher.teacher_subjects}}
+					<div class="pq6">
 
 					</div>
 					<a href="#">

@@ -82,7 +82,7 @@
 		<div class="accordion-heading">
 			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">课程管理</a>
 		</div>
-		<div class="accordion-body in collapse" id="accordion-element-707348">
+		<div class="accordion-body collapse" id="accordion-element-707348">
 			<div class="accordion-inner">
 				<ul class="unstyled">
 					<!-- <li><a href="?vedio-master-demand-vedio">视频列表</a></li> -->
@@ -99,7 +99,7 @@
 		<div class="accordion-heading">
 			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">直播管理 </a>
 		</div>
-		<div class="accordion-body collapse" id="accordion-element-212090">
+		<div class="accordion-body in collapse" id="accordion-element-212090">
 			<div class="accordion-inner">
 				<ul class="unstyled">
 					<li><a href="index.php?vedio-master-seeding">直播列表</a></li>
@@ -127,140 +127,199 @@
 		<div class="span10" id="datacontent">
 			<ul class="breadcrumb">
 				<li><a href="index.php?vedio-master">视频模块</a> <span class="divider">/</span></li>
-			<li><a href="#">课程管理</a> <span class="divider">/</span></li>
-				<li class="active">编辑课程</li>
+				<li><a href="#">直播课程管理</a> <span class="divider">/</span></li>
+				<li  class="active">添加直播课程</li>
+				
 			</ul>
-			<ul class="nav nav-tabs">
+				<ul class="nav nav-tabs">
 				<li class="active">
-					<a href="#">编辑课程</a>
+					<a href="#">添加直播课程</a>
 				</li>
 				<li class="pull-right">
-					<a href="index.php?vedio-master-demand-course">课程管理</a>
+					<a href="index.php?vedio-master-seeding">直播课程管理</a>
 				</li>
 			</ul>
-	      <form action="index.php?vedio-master-demand-editcourse" method="post" class="form-horizontal">
+	      <form action="index.php?vedio-master-seeding-addseeding" method="post" class="form-horizontal">
 				<fieldset>
-				<div style="width:100%;height:270px;">
 				<div class="top_left" style="width: 40%;float: left;">
 				<div class="control-group">
-					<label for="basic" class="control-label">课程名称</label>
+					<label for="vname" class="control-label">直播课程名称</label>
 					<div class="controls">
-						<input id="basic" name="args[coursename]" type="text" value="sdfd" needle="needle" msg="您必须输入课程名称" />
+						<input id="vname" name="args[vname]" type="text" value="" needle="needle" msg="您必须输入视频名称" />
 					</div>
 				</div>
 				<div class="control-group">
-					<label for="basicapi" class="control-label">主讲老师</label>
+					<label for="vprice" class="control-label">直播课程价格</label>
 					<div class="controls">
-						<input id="basicapi" name="args[courseusername]" type="text" value="曾志伟" max="12" msg="" />
-					<span class="help-block">如果上传者不是讲师 请修改为讲师的姓名</span>
+						<input id="vprice" name="args[vprice]" type="text" value="" needle="needle" msg="您必须输入视频名称" />
 					</div>
-				</div>
-                                
-                                
-				<div class="control-group">
-					<label for="basicapi" class="control-label">课程价格</label>
-					<div class="controls">
-						<input id="basicapi" name="args[courseprice]" type="text" value="0.00" max="12" msg="" />
-					
-					</div>
-				</div>
-				<div class="control-group">
-					<label for="basicsubjectid" class="control-label">课程内容</label>
-					<div class="controls">
-						<select id="basicsubjectid" name="args[courseify1]">
-		        		<option selected = "selected" value="专项精讲">专项精讲</option>
-				  						  						  						  						  						  						  						  		<option value="系统课程">系统课程</option>
-				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		</select>
-					</div>
-				</div>
-				</div>
-				<div class="top_right" style="width: 50%;float: left;">
-				<div class="control-group">
-					<label for="basicthumb" class="control-label">课程首图</label>
-					<div class="controls">
-						<div class="thumbuper pull-left">
-							<div class="thumbnail">
-								<a href="javascript:;" class="second label"><em class="uploadbutton" id="catimg" exectype="thumb"></em></a>
-								<div class="first" id="catimg_percent"></div>
-								<div class="boot"><img src="" id="catimg_view"/><input type="hidden" name="args[coursethumb]" value="" id="catimg_value"/></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
 				</div>
 				
 				<div class="control-group">
-					<label for="basicareaid" class="control-label">课程类别</label>
+					<label for="basicthumb" class="control-label">直播课程上传</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[courseify2]" >
-		        		<option selected = "selected" value="面试">面试</option>
-				  						  						  						  						  						  						  						  						  						  						  						  		<option value="申论">申论</option>
-				  						  						  						  						  						  		<option value="行测">行测</option>
-				  						  						  						  						  						  		<option value="公益课">公益课</option>
-				  						  						  						  						  						  						  						  						  						  						  						  		</select>
+
+				<input type="button" id="upload" value="上传"></input>	
+			
+				<script src="app/core/styles/js/polyv-upload.js"></script>
+				
+<script type="text/javascript">
+
+    var obj = {
+            uploadButtton: "upload",   //打开上传控件按钮id
+            writeToken: "c7679704-ffbc-40ab-839d-72a8e4521a10",
+            userid : 'e48926e810',
+            ts : '1469696363',
+            hash : '93b24f12d1d3dcfee52848921dd715b7' ,
+            readToken: 'c05bccf2-849b-4ce0-97ee-12ac810a35c3',
+             response: function(json) { 
+             	document.getElementById('VEDIO_IMG').src = json.swf_link;
+             	var html = "<table class='table table-hover'><thead><tr><th width='20%'>项目</th><th>参数</th></tr></thead><tbody><tr><td>视频地址</td><td>"+json.swf_link+"</td></tr><tr><td>视频时长</td><td>"+json.duration+"</td></tr><tr><td>播放次数</td><td>"+json.times+"</td></tr>	<tr><td>视频大小</td><td>"+json.source_filesize+"</td></tr></tbody></table>";
+
+             	document.getElementById('HTML').innerHTML = html;
+             	document.getElementById('imaes').value = json.first_image;
+     			document.getElementById('remoteurl').value = json.swf_link;
+     			document.getElementById('mp4').value = json.mp4;
+     			document.getElementById('videovid').value = json.vid;
+        //如果需要关闭窗口
+        upload.closeWrap();
+         
+    }
+   }
+    var upload = new PolyvUpload(obj);
+
+	
+</script>
 					</div>
 				</div>
-                                <div class="control-group">
-					<label for="basic" class="control-label">截止时间</label>
+	
+				<div class="control-group">
+					<label for="basicsubjectid" class="control-label">课程内容</label>
 					<div class="controls">
-						<input class=" datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[courseendtime]" size="20" id="stime" value="1970-01-01 08:31:39"/>
+						<select id="basicsubjectid" name="args[courseify1]" needle="needle" msg="您必须选择课程分类">
+		        		<option value="">选择分类</option>
+				  						  							  		<option value="专项精讲">专项精讲</option>
+				  						  						  							  		<option value="系统课程">系统课程</option>
+				  						  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  							  						  		</select>
 					</div>
+				</div>
+				<div class="control-group">
+					<label for="basicareaid" class="control-label">课程类别</label>
+					<div class="controls">
+						<select id="basicareaid" name="args[courseify2]" needle="needle" msg="您必须选择课程类别">
+		        		<option value="">选择类别</option>
+				  													  													  													  		<option value="面试">面试</option>
+				  						  													  		<option value="申论">申论</option>
+				  						  													  		<option value="行测">行测</option>
+				  						  													  		<option value="公益课">公益课</option>
+				  						  													  													  													  													  						  		</select>
+					</div>
+				</div>
+			</div>
+				<div class="top_right" style="width: 50%;float: left;height: 260px;">
+
+				<div class="control-group">
+				<div >
+					
+<embed width="320" height="240" src="/i/bookmark.swf" id="VEDIO_IMG" />
+					</div>
+					<div id="HTML">
+			
+					</div>
+				</div>
 				</div>
 				<div class="control-group">
 					<label for="basicareaid" class="control-label">考试类别</label>
 					<div class="controls">
-						<select id="basicareaid" name="args[courseify3]" >
-		        		<option  selected = "selected" value="国考">国考</option>
-				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		</select>
+						<select id="basicareaid" name="args[courseify3]" needle="needle" msg="您必须选择课程类别">
+		        		<option value=""></option>
+				  						  						  						  						  						  						  						  						  						  						  						  						  						  						  		<option value="国考">国考</option>
+				  						  						  						  						  						  						  						  						  		</select>
 					</div>
 				</div>
-                              
+
+				
 				<div class="control-group">
-					<label for="basicprice" class="control-label">课程吸引</label>
+					<label for="basic" class="control-label">截止时间</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[courseatract]" id="courseatract">sdfsd</textarea>
-					  	<span class="help-block">介绍一下课程吸引点，限制100字</span>
+						<input class=" datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="10" id="stime" value=""/>
 					</div>
 				</div>
-                                 <div class="control-group">
-					<label for="teacherintro" class="control-label">老师简介</label>
+                                  <div class="control-group">
+					<label for="vteachername" class="control-label">直播老师</label>
 					<div class="controls">
-						<textarea class="ckeditor" rows="4" name="args[teacherintro]" id="teacherintro">&lt;p&gt;fdsssssssssssssss&lt;/p&gt;</textarea>
-					  	
-					</div>
-				</div>
-				<div class="control-group">
-					<label for="basicprice" class="control-label">课程简介</label>
-					<div class="controls">
-						<textarea class="ckeditor" rows="4" name="args[courseintro]" id="basicprice">&lt;p&gt;fdsssssssssss&lt;/p&gt;</textarea>
-					  	
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">课程内容</label>
-				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[contentintro]" id="question">&lt;p&gt;sdfffffff&lt;/p&gt;</textarea>
-					  
-					</div>
-				</div>
-                               <div class="control-group">
-					<label class="control-label">需购买后查看的内容</label>
-				  	<div class="controls">
-					  	<textarea class="ckeditor" name="args[cpaidcontent]" id="cpaidcontent">&lt;p&gt;fdsssssssss&lt;/p&gt;</textarea>
-					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="controls">
-						<button class="btn btn-primary" type="submit">保存</button>
-						<input type="hidden" name="args[teacherid]" value="1">
-						<input type="hidden" name="catid" value="30">
-						<input type="hidden" name="insertquestype" value="1"/>
-						
+						<input id="vteachername" name="args[vteachername]" type="text" value="" needle="needle" msg="您必须输入老师名称" />
 					</div>
 				</div>
 				
+                                <div class="control-group">
+					<label for="vatract" class="control-label">直播课吸引点</label>
+					<div class="controls">
+						<textarea class="input-xlarge" rows="4" name="args[vatract]" id="vatract"></textarea>
+					  	<span class="help-block">介绍一下课程，限制200字</span>
+					</div>
+				</div>
+                                 <div class="control-group">
+					<label for="vteacherintro" class="control-label">直播课老师简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[vteacherintro]" id="vteacherintro"></textarea>
+					  	<span class="help-block">介绍一下老师，限制200字</span>
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label for="vintro" class="control-label">直播课程简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[vintro]" id="vintro"></textarea>
+					  	
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">直播课程内容</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[vcontent]" id="vcontent"></textarea>
+					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
+					</div>
+				</div>
+                                 <div class="control-group">
+					<label class="control-label">需购买后查看的内容</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[vpaidcontent]" id="vpaidcontent"></textarea>
+					  	<span class="help-block">加超链接的时候请首先点击源码，然后往给的标签中添加内容</span>
+					</div>
+				</div>
+			
+				<div class="control-group">
+					<div class="controls">
+						<button class="btn btn-primary" onclick="ceshi();" type="submit">保存</button>
+						
+						<input type="hidden" name="args[vurl]" id="remoteurl" value="">
+						<input type="hidden" name="args[videoid]" id="videovid" value="">
+						<input type="hidden" name="args[videohumb]" id="imaes" value="">
+						<input type="hidden" name="args[mp4url]" id="mp4" value="">
+						<input type="hidden" name="insertquestype" value="1"/>
+				
+						
+					</div>
+				</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+  					$("form").submit(function(){
+    				  var  vid = document.getElementById('videovid').value;
+    				  var  basic = document.getElementById('vname').value;
+    				  var  basicprice = document.getElementById('vcontent').value;
+    				  $.post("http://v.polyv.net/uc/services/rest?method=editById",{
+    				  		"writetoken":"c7679704-ffbc-40ab-839d-72a8e4521a10",
+    				  		"vid":vid,
+    				  		"title":basic,
+    				  		"context":basicprice,
+    				  },function (data) {
+    				  	
+    				  });
+    				 
+ 					 });
+				});
+			</script>	
 				</fieldset>
 			</form>
 		</div>

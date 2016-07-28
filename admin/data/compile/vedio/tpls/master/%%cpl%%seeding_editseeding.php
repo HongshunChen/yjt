@@ -145,7 +145,7 @@
 				<div class="control-group">
 					<label for="basic" class="control-label">截止时间</label>
 					<div class="controls">
-						<input class="input-small datetimepicker" data-date="<?php echo date('Y-m-d',TIME); ?>" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="20" id="stime" value="<?php echo date('Y-m-d H:i:s',$this->tpl_var['cat']['endtime']); ?>"/>
+						<input class=" datetimepicker" data-date="<?php echo date('Y-m-d',TIME); ?>" data-date-format="yyyy-mm-dd" type="text" name="args[endtime]" size="20" id="stime" value="<?php echo date('Y-m-d H:i:s',$this->tpl_var['cat']['endtime']); ?>"/>
 					</div>
 				</div>
                                 <div class="control-group">
@@ -154,25 +154,26 @@
 						<input id="vteachername" name="args[vteachername]" type="text" value="<?php echo $this->tpl_var['cat']['vteachername']; ?>" needle="needle" msg="您必须输入老师名称" />
 					</div>
 				</div>
-				<div class="control-group">
-					<label for="vteacherintro" class="control-label">直播课老师简介</label>
-					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vteacherintro]" id="vteacherintro"><?php echo $this->tpl_var['cat']['vteacherintro']; ?></textarea>
-					  	<span class="help-block">介绍一下老师，限制200字</span>
-					</div>
-				</div>
+				
                                 <div class="control-group">
-					<label for="vatract" class="control-label">直播课吸引点</label>
+					<label for="vatract" class="control-label">直播课吸引</label>
 					<div class="controls">
 						<textarea class="input-xlarge" rows="4" name="args[vatract]" id="vatract"><?php echo $this->tpl_var['cat']['vatract']; ?></textarea>
 					  	<span class="help-block">介绍一下课程，限制200字</span>
 					</div>
 				</div>
+                                <div class="control-group">
+					<label for="vteacherintro" class="control-label">名师简介</label>
+					<div class="controls">
+						<textarea class="ckeditor" rows="4" name="args[vteacherintro]" id="vteacherintro"><?php echo $this->tpl_var['cat']['vteacherintro']; ?></textarea>
+					  	
+					</div>
+				</div>
 				<div class="control-group">
 					<label for="vintro" class="control-label">直播课程简介</label>
 					<div class="controls">
-						<textarea class="input-xlarge" rows="4" name="args[vintro]" id="vintro"><?php echo $this->tpl_var['cat']['vintro']; ?></textarea>
-					  	<span class="help-block">介绍一下课程，限制200字</span>
+						<textarea class="ckeditor" rows="4" name="args[vintro]" id="vintro"><?php echo $this->tpl_var['cat']['vintro']; ?></textarea>
+					  	
 					</div>
 				</div>
 				<div class="control-group">

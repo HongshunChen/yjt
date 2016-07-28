@@ -84,7 +84,7 @@ class CourseController extends Controller
             ->orderBy('A.coursetime','DESC')
             ->groupBy('A.courseid')
             ->paginate(5);
-
+   
         return $this->succ($request, $list);
     }
 
@@ -101,9 +101,9 @@ class CourseController extends Controller
         $courseid = $request->input('courseid');
 
         $detail = DB::table('x2_video_course as A')
-            ->join('x2_user as B', 'A.teacherid', '=', 'B.userid')
-            ->select('A.courseid', 'A.courseintro as courseintro', 'A.contentintro', 'A.coursename', 'A.courseprice', 'A.coursethumb','A.courseatract')
-            ->addSelect('B.userid as teacherid', 'B.photo as teacherthumb', 'B.usertruename as teachername', 'B.teacher_subjects as teacherintro')
+           // ->join('x2_user as B', 'A.teacherid', '=', 'B.userid')
+            ->select('A.courseid', 'A.courseintro as courseintro', 'A.contentintro', 'A.coursename', 'A.courseprice', 'A.coursethumb','A.courseatract','A.cpaidcontent','A.courseusername as teachername','A.teacherintro')
+           // ->addSelect('B.userid as teacherid', 'B.photo as teacherthumb', 'B.usertruename as teachername', 'A.teacherintro')
             ->where('A.courseid', $courseid)
             ->first();
 
