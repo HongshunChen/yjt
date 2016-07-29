@@ -341,7 +341,7 @@ class app
 
 			$args = array();
 			if($search['userid'])$args[] = array('AND',"userid = :userid",'userid',$search['userid']);
-			if($search['username'])$args[] = array('AND',"usertruename LIKE :username",'username','%'.$search['username'].'%');
+			if($search['username'])$args[] = array('AND',"username LIKE :username",'username','%'.$search['username'].'%');
 			if($search['useremail'])$args[] = array('AND',"useremail  LIKE :useremail",'useremail','%'.$search['useremail'].'%');
 			if($search['groupid'])$args[] = array('AND',"usergroupid = :usergroupid",'usergroupid',$search['groupid']);
 			if($search['stime'] || $search['etime'])

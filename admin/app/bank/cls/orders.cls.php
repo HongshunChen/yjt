@@ -25,7 +25,7 @@ class orders_bank
 		$page = $page > 0?$page:1;
 
 		$r = array();
-		$data = array('DISTINCT orders.*,user.usertruename',array('orders','user'),$args,'orders.orderid DESC','',array(intval($page-1)*$number,$number));
+		$data = array('DISTINCT orders.*,user.username',array('orders','user'),$args,'orders.orderid DESC','',array(intval($page-1)*$number,$number));
 		$sql = $this->pdosql->makeSelect($data);
 		
 		$r['data'] = $this->db->fetchAll($sql);

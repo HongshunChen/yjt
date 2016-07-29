@@ -22,6 +22,13 @@
 			<form action="index.php?bank-master-orders-seedingorders" method="post">
 				<table class="table">
 			        <tr>
+                                    
+                                                 <td>
+							手机号码：
+						</td>
+						<td>
+							<input name="search[phoneNum]" class="input-small" size="25" type="text" class="number" value="<?php echo $this->tpl_var['search']['phoneNum']; ?>"/>
+						</td>
 						<td>
 							订单编号：
 						</td>
@@ -73,7 +80,7 @@
 								
 								<td width="10%"><?php echo $val['ordersn']; ?></td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=<?php echo $val['orderid']; ?>" data-target="#modal"><?php echo $val['ordertitle']; ?></a></td>
-								<td><?php echo $val['usertruename']; ?></td>
+								<td><?php echo $val['username']; ?></td>
 								<td>
 								<?php if($val['couponsn'] ==''){ ?>
 								未使用
@@ -113,6 +120,7 @@
 					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
 				</div>
 			</div>
+                         <a href="./index.php?download-api-orders&user_type=2" class="btn btn-primary" onclick="">导出直播课报表<a/>
 <?php if(!$this->tpl_var['userhash']){ ?>
 		</div>
 	</div>

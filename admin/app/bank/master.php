@@ -338,6 +338,7 @@ class app
 
 				$args = array();
 					if($search['ordersn'])$args[] = array('AND',"orders.ordersn = :ordersn",'ordersn',$search['ordersn']);
+                                        if($search['phoneNum']) $args[] = array('AND',"user.username= :username",'username',$search['phoneNum']);
 					if($search['stime'] || $search['etime'])
 					{
 						if(!is_array($args))$args = array();
@@ -389,6 +390,7 @@ class app
 
 				$args = array();
 					if($search['ordersn'])$args[] = array('AND',"orders.ordersn = :ordersn",'ordersn',$search['ordersn']);
+                                        if($search['phoneNum']) $args[] = array('AND',"user.username= :username",'username',$search['phoneNum']);
 					if($search['stime'] || $search['etime'])
 					{
 						if(!is_array($args))$args = array();

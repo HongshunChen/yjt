@@ -14,7 +14,7 @@
 				<li class="active">{x2;$sd2}</li>
 			</ul>
 			<ul>
-				<li><a href="./index.php?download-api-index&user_type=2" />导出管理员</li>
+				<li><a   href="./index.php?download-api-index&user_type=2" />导出管理员</li>
 			</ul>
 			<ul class="nav nav-tabs">
 				<li class="active">

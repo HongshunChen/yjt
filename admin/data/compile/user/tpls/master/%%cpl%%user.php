@@ -29,10 +29,10 @@
 				<table class="table">
 			        <tr>
 						<td>
-							昵称：
+							手机号：
 						</td>
 						<td>
-							<input class="input-small" name="search[username]" size="25" type="text" value="<?php echo $this->tpl_var['search']['username']; ?>"/>
+							<input class="input-big" name="search[username]" size="80" type="text" value="<?php echo $this->tpl_var['search']['username']; ?>"/>
 						</td>
 						<td>
 							注册时间：
@@ -42,11 +42,11 @@
 						</td>
 
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-primary" type="submit">搜索</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a href="./index.php?download-api-index&user_type=1" onclick="">导出用户<a/></td>
+						<td><a href="./index.php?download-api-index&user_type=1" class="btn btn-primary" onclick="">导出用户<a/></td>
 					</tr>
 			        <tr>
 						<!-- <td>
@@ -71,9 +71,9 @@
 						<td></td>
 			        </tr>
 				</table>
-				<div class="input">
+				<!--<div class="input">
 					<input type="hidden" value="1" name="search[argsmodel]" />
-				</div>
+				</div>-->
 			</form>
 			<form action="index.php?user-master-user-batdel" method="post">
 				<table class="table table-hover">

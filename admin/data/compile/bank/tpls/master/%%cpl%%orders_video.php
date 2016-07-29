@@ -14,6 +14,9 @@
 				<li><a href="#">订单管理</a> <span class="divider">/</span></li>
 				<li class="active">视频订单</li>
 			</ul>
+                         
+		   
+					
 			<ul class="nav nav-tabs">
 				<li class="active">
 					<a href="#">订单列表</a>
@@ -48,9 +51,11 @@
 						</td>
 						<td>
 							<button class="btn btn-primary" type="submit">搜索</button>
+                                                       
 						</td>
+                                              
 					</tr>
-			       
+			                
 				</table>
 				<div class="input">
 					<input type="hidden" value="1" name="search[argsmodel]" />
@@ -79,7 +84,7 @@
 								
 								<td width="10%"><?php echo $val['ordersn']; ?></td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=<?php echo $val['orderid']; ?>" data-target="#modal"><?php echo $val['ordertitle']; ?></a></td>
-								<td><?php echo $val['usertruename']; ?></td>
+								<td><?php echo $val['username']; ?></td>
 								<td>
 								<?php if($val['couponsn'] ==''){ ?>
 								未使用
@@ -117,7 +122,9 @@
 				<div class="modal-footer">
 					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
 				</div>
+                                
 			</div>
+                                                  <a href="./index.php?download-api-orders&user_type=1" class="btn btn-primary" onclick="">导出视频报表<a/> &nbsp;&nbsp;<a href="./index.php?download-api-orders&user_type=4" class="btn btn-primary" onclick="">导出所有报表<a/>
 <?php if(!$this->tpl_var['userhash']){ ?>
 		</div>
 	</div>

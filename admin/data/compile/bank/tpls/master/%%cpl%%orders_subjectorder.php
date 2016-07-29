@@ -22,6 +22,12 @@
 			<form action="index.php?bank-master-orders-subjectorders" method="post">
 				<table class="table">
 			        <tr>
+                                                 <td>
+							手机号码：
+						</td>
+						<td>
+							<input name="search[phoneNum]" class="input-small" size="25" type="text" class="number" value="<?php echo $this->tpl_var['search']['phoneNum']; ?>"/>
+						</td>
 						<td>
 							订单编号：
 						</td>
@@ -41,7 +47,7 @@
 							<input class="input-small "  type="text" name="search[sprice]" size="10" id="sprice" value="<?php echo $this->tpl_var['search']['sprice']; ?>"/> - <input class="input-small" size="10" type="text" name="search[eprice]" id="eprice" value="<?php echo $this->tpl_var['search']['eprice']; ?>"/>
 						</td>
 						<td>
-							<button class="btn btn-primary" type="submit">提交</button>
+							<button class="btn btn-primary" type="submit">搜索</button>
 						</td>
 					</tr>
 			       
@@ -73,7 +79,7 @@
 								
 								<td width="10%"><?php echo $val['ordersn']; ?></td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=<?php echo $val['orderid']; ?>" data-target="#modal"><?php echo $val['ordertitle']; ?></a></td>
-								<td><?php echo $val['usertruename']; ?></td>
+								<td><?php echo $val['username']; ?></td>
 								<td>
 								<?php if($val['couponsn'] ==''){ ?>
 								未使用
@@ -113,6 +119,7 @@
 					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
 				</div>
 			</div>
+                                                  <a href="./index.php?download-api-orders&user_type=3" class="btn btn-primary" onclick="">导出主观题报表<a/>
 <?php if(!$this->tpl_var['userhash']){ ?>
 		</div>
 	</div>

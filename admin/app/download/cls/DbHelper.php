@@ -2,10 +2,10 @@
 	
 	class DbHelper {
 		
-		private $db_host = "120.27.47.182";
-		private $db_name = "yjt";
-		private $db_user = "root";
-		private $db_pwd = "root";
+		private $db_host = DH;
+		private $db_name = DB;
+		private $db_user = DU;
+		private $db_pwd = DP;
 		private $charset = "utf8";
 		
 		private $dbh = '';

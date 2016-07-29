@@ -31,7 +31,7 @@
 <script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
 <script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
 </head><body>
-<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">一讲堂系统管理平台<span class="label">版本:1.0</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li>						<a href="index.php?exam-master">题库模块</a>					</li>																														<li>						<a href="index.php?document-master">名师批改</a>					</li>																														<li class="active">						<a href="index.php?bank-master">财务模块</a>					</li>																				<li>						<a href="index.php?vedio-master">视频模块</a>					</li>														</ul>				<ul class="nav pull-right">					<li>						<a href="index.php" target="_blank">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">一讲堂系统管理平台<span class="label">版本:1.0</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li>						<a href="index.php?exam-master">题库模块</a>					</li>																														<li>						<a href="index.php?document-master">名师批改</a>					</li>																				<li>						<a href="index.php?content-master">内容模块</a>					</li>																				<li class="active">						<a href="index.php?bank-master">财务模块</a>					</li>																				<li>						<a href="index.php?vedio-master">视频模块</a>					</li>														</ul>				<ul class="nav pull-right">					<li>						<a href="index.php" target="_blank">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span2">
 			<ul class="nav nav-tabs nav-stacked">		<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">订单管理 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">		    		<li><a href="index.php?bank-master-orders-videoorders">视频订单</a></li>		    		<li><a href="index.php?bank-master-orders-subjectorders">主观题订单</a></li>		    		<li><a href="index.php?bank-master-orders-seedingorders">直播订单</a></li>				</ul>			</div>		</div>	</div>	<li>		<a href="index.php?bank-master-coupon">代金券管理</a>	</li></ul>		</div>
@@ -41,6 +41,9 @@
 				<li><a href="#">订单管理</a> <span class="divider">/</span></li>
 				<li class="active">视频订单</li>
 			</ul>
+                         
+		   
+					
 			<ul class="nav nav-tabs">
 				<li class="active">
 					<a href="#">订单列表</a>
@@ -65,7 +68,7 @@
 							时间范围：
 						</td>
 						<td>
-							<input class="input-small datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-07-28" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value=""/>
+							<input class="input-small datetimepicker" data-date="2016-07-29" data-date-format="yyyy-mm-dd" type="text" name="search[stime]" size="10" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-07-29" data-date-format="yyyy-mm-dd" size="10" type="text" name="search[etime]" id="etime" value=""/>
 						</td>
 						<td>
 							价格范围：
@@ -75,9 +78,11 @@
 						</td>
 						<td>
 							<button class="btn btn-primary" type="submit">搜索</button>
+                                                       
 						</td>
+                                              
 					</tr>
-			       
+			                
 				</table>
 				<div class="input">
 					<input type="hidden" value="1" name="search[argsmodel]" />
@@ -103,7 +108,7 @@
 								
 								<td width="10%">146968623354141</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=45" data-target="#modal">2017年公务员申论视频</a></td>
-								<td></td>
+								<td>13969188015</td>
 								<td>
 																已使用
 																</td>
@@ -120,7 +125,7 @@
 								
 								<td width="10%">146960277754281</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=44" data-target="#modal">而特瑞特人</a></td>
-								<td></td>
+								<td>13969188015</td>
 								<td>
 																已使用
 																</td>
@@ -137,7 +142,7 @@
 								
 								<td width="10%">146950430031141</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=43" data-target="#modal">2017年公务员申论视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -154,7 +159,7 @@
 								
 								<td width="10%">14695040083131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=42" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -171,7 +176,7 @@
 								
 								<td width="10%">14695039693131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=41" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -188,7 +193,7 @@
 								
 								<td width="10%">14695039223131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=40" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -205,7 +210,7 @@
 								
 								<td width="10%">14695038013131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=39" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -222,7 +227,7 @@
 								
 								<td width="10%">14695037943131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=38" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -239,7 +244,7 @@
 								
 								<td width="10%">14695035323131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=37" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -256,7 +261,7 @@
 								
 								<td width="10%">14695031733131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=36" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -273,7 +278,7 @@
 								
 								<td width="10%">14695031533131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=35" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -290,7 +295,7 @@
 								
 								<td width="10%">14695031453131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=34" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -307,7 +312,7 @@
 								
 								<td width="10%">14695029843131</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=33" data-target="#modal">2016公务员面试视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -324,7 +329,7 @@
 								
 								<td width="10%">146950294131161</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=32" data-target="#modal">申论-归纳概括</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -341,7 +346,7 @@
 								
 								<td width="10%">146950294031161</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=31" data-target="#modal">申论-归纳概括</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -358,7 +363,7 @@
 								
 								<td width="10%">146950293131161</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=30" data-target="#modal">申论-归纳概括</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -375,7 +380,7 @@
 								
 								<td width="10%">146950291431161</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=29" data-target="#modal">申论-归纳概括</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -392,7 +397,7 @@
 								
 								<td width="10%">146950267131211</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=28" data-target="#modal">公务员考试视频教程 </a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -409,7 +414,7 @@
 								
 								<td width="10%">146950265731161</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=27" data-target="#modal">申论-归纳概括</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -426,7 +431,7 @@
 								
 								<td width="10%">146950147031141</td>
 								<td><a title="查看订单" class="selfmodal" href="javascript:;" url="index.php?bank-master-orders-ordermodal&id=26" data-target="#modal">2017年公务员申论视频</a></td>
-								<td></td>
+								<td>18660825323</td>
 								<td>
 																已使用
 																</td>
@@ -459,7 +464,9 @@
 				<div class="modal-footer">
 					 <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
 				</div>
+                                
 			</div>
+                                                  <a href="./index.php?download-api-orders&user_type=1" class="btn btn-primary" onclick="">导出视频报表<a/> &nbsp;&nbsp;<a href="./index.php?download-api-orders&user_type=4" class="btn btn-primary" onclick="">导出所有报表<a/>
 		</div>
 	</div>
 </div>
